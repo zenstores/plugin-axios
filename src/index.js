@@ -1,4 +1,4 @@
-import VuexOrmAxios from './vuex-orm-axios';
+import VuexOrmAxios from './vuex-orm-axios'
 
 export default class VuexOrmAxiosPlugin {
   /**
@@ -9,6 +9,6 @@ export default class VuexOrmAxiosPlugin {
    * @returns {VuexOrmAxios}
    */
   static install(components, options) {
-    return new VuexOrmAxios(components, options);
+    return new VuexOrmAxios(components, options)
   }
 }

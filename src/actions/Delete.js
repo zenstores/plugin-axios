@@ -1,6 +1,6 @@
-import Axios from '../orm/axios';
-import Action from './Action'
+import Axios from '../orm/axios'
 import Context from '../common/context'
+import Action from './Action'
 
 export default class Delete extends Action {
   /**
@@ -8,19 +8,17 @@ export default class Delete extends Action {
    * @param {object} store
    * @param {object} params
    */
-  static async call ({ state, commit }, params = {}) {
-    const context = Context.getInstance();
-    const model = context.getModelFromState(state);
-    const endpoint = Action.transformParams('$delete', model, params);
-    const axios =  new Axios(model.methodConf.http);
-    const request = axios.delete(endpoint);
+  static async call({ state, commit }, params = {}) {
+    const context = Context.getInstance()
+    const model = context.getModelFromState(state)
+    const endpoint = Action.transformParams('$delete', model, params)
+    const axios = new Axios(model.methodConf.http)
+    const request = axios.delete(endpoint)
 
-    this.onRequest(model, params);
-    request
-      .then(data => this.onSuccess(model, params, data))
-      .catch(error => this.onError(model, params, error))
+    this.onRequest(model, params)
+    request.then(data => this.onSuccess(model, params, data)).catch(error => this.onError(model, params, error))
 
-    return request;
+    return request
   }
 
   /**
@@ -33,8 +31,8 @@ export default class Delete extends Action {
       where: params.params.id,
       data: {
         $isDeleting: true,
-        $deleteErrors: []
-      }
+        $deleteErrors: [],
+      },
     })
   }
 
@@ -61,8 +59,8 @@ export default class Delete extends Action {
       where: params.params.id,
       data: {
         $isDeleting: false,
-        $deleteErrors: error
-      }
+        $deleteErrors: error,
+      },
     })
   }
 }

@@ -1,9 +1,6 @@
-import merge from 'lodash/merge';
-import map from 'lodash/map';
-import forEach from 'lodash/forEach';
-import has from 'lodash/has';
-import Context from '../common/context';
-import { ModuleConfig, ModelConfig } from '../support/interfaces';
+import merge from 'lodash.merge'
+import Context from '../common/context'
+import { ModuleConfig, ModelConfig } from '../support/interfaces'
 
 export default class Action {
   /**
@@ -11,7 +8,7 @@ export default class Action {
    * @param {object} model
    */
   static transformModule(module) {
-    return merge({}, ModuleConfig, module);
+    return merge({}, ModuleConfig, module)
   }
 
   /**
@@ -19,29 +16,33 @@ export default class Action {
    * @param {object} model
    */
   static transformModel(model) {
-    const context = Context.getInstance();
-    ModelConfig.http = merge({}, ModelConfig.http, context.options.http);
-    model.methodConf = merge({}, ModelConfig, model.methodConf);
-    model.methodConf.http.url = (model.methodConf.http.url === '/') ? `/${model.entity}` : model.methodConf.http.url;
+    const context = Context.getInstance()
+    ModelConfig.http = merge({}, ModelConfig.http, context.options.http)
+    model.methodConf = merge({}, ModelConfig, model.methodConf)
+    model.methodConf.http.url = model.methodConf.http.url === '/' ? `/${model.entity}` : model.methodConf.http.url
 
     /**
      * Add Model Interface to each model
      */
     model.getFields = () => {
       if (!model.cachedFields) {
-        model.cachedFields = merge({}, {
-          $id: model.attr(undefined),
-          $isUpdating: model.boolean(false),
-          $updateErrors: model.attr([]),
-          $isDeleting: model.boolean(false),
-          $deleteErrors: model.attr([]),
-        }, model.fields())
+        model.cachedFields = merge(
+          {},
+          {
+            $id: model.attr(undefined),
+            $isUpdating: model.boolean(false),
+            $updateErrors: model.attr([]),
+            $isDeleting: model.boolean(false),
+            $deleteErrors: model.attr([]),
+          },
+          model.fields()
+        )
       }
 
-      return model.cachedFields;
-    };
+      return model.cachedFields
+    }
 
-    return model;
+    return model
   }
 
   /**
@@ -50,15 +51,25 @@ export default class Action {
    * @param {object} model
    * @param {object} config
    */
-  static transformParams (type, model, config = {}) {
-    let endpoint = `${model.methodConf.http.url}${model.methodConf.methods[type].http.url}`;
-    let params = map(endpoint.match(/(\/?)(\:)([A-z]*)/gm), (param) => { return param.replace('/', '') })
+  static transformParams(type, model, config = {}) {
+    let endpoint = `${model.methodConf.http.url}${model.methodConf.methods[type].http.url}`
+    let params = (endpoint.match(/(\/?)(:)([A-z]*)/gm) || []).map(param => {
+      return param.replace('/', '')
+    })
 
-    forEach(params, (param) => {
-      const paramValue = has(config.params, param.replace(':', '')) ? config.params[param.replace(':', '')] : ''
+    params.forEach(param => {
+      let paramName = param.replace(':', '')
+      const paramValue = paramName in config.params ? config.params[paramName] : ''
       endpoint = endpoint.replace(param, paramValue).replace('//', '/')
     })
-    if (config.query) endpoint += `?${Object.keys(config.query).map(k => `${encodeURIComponent(k)}=${encodeURIComponent(config.query[k])}`).join('&')}`;
-    return endpoint;
+
+    const context = Context.getInstance()
+    let suffix = context.options.http.suffix
+    if (suffix) endpoint += suffix
+    if (config.query)
+      endpoint += `?${Object.keys(config.query)
+        .map(k => `${encodeURIComponent(k)}=${encodeURIComponent(config.query[k])}`)
+        .join('&')}`
+    return endpoint
   }
 }

@@ -1,6 +1,5 @@
-import merge from 'lodash/merge';
-import find from 'lodash/find';
-import { VuexOrmPluginConfig } from '../support/interfaces';
+import merge from 'lodash.merge'
+import { VuexOrmPluginConfig } from '../support/interfaces'
 
 export default class Context {
   /**
@@ -11,12 +10,12 @@ export default class Context {
    * @param {Options} options The options passed to VuexORM.install
    */
   constructor(components, options) {
-    this.components = components;
-    this.options = merge({}, VuexOrmPluginConfig, options);
-    this.database = options.database;
+    this.components = components
+    this.options = merge({}, VuexOrmPluginConfig, options)
+    this.database = options.database
 
     if (!options.database) {
-      throw new Error('database option is required to initialise!');
+      throw new Error('database option is required to initialise!')
     }
   }
 
@@ -27,8 +26,8 @@ export default class Context {
    * @returns {Context}
    */
   static setup(components, options) {
-    this.instance = new Context(components, options);
-    return this.instance;
+    this.instance = new Context(components, options)
+    return this.instance
   }
 
   /**
@@ -36,7 +35,7 @@ export default class Context {
    * @returns {Context}
    */
   static getInstance() {
-    return this.instance;
+    return this.instance
   }
 
   /**
@@ -44,8 +43,6 @@ export default class Context {
    * @param {object} state
    */
   getModelFromState(state) {
-    return find(this.database.entities, {
-      name: state.$name
-    }).model;
+    return this.database.entities.find(({ name }) => name == state.$name).model
   }
 }

@@ -1,6 +1,6 @@
-import Axios from '../orm/axios';
-import Action from './Action'
+import Axios from '../orm/axios'
 import Context from '../common/context'
+import Action from './Action'
 
 export default class Get extends Action {
   /**
@@ -8,19 +8,17 @@ export default class Get extends Action {
    * @param {object} store
    * @param {object} params
    */
-  static async call ({ state, commit }, params = {}) {
-    const context = Context.getInstance();
-    const model = context.getModelFromState(state);
-    const endpoint = Action.transformParams('$get', model, params);
-    const axios =  new Axios(model.methodConf.http);
-    const request = axios.get(endpoint);
+  static async call({ state, commit }, params = {}) {
+    const context = Context.getInstance()
+    const model = context.getModelFromState(state)
+    const endpoint = Action.transformParams('$get', model, params)
+    const axios = new Axios(model.methodConf.http)
+    const request = axios.get(endpoint)
 
-    this.onRequest(commit);
-    request
-      .then(data => this.onSuccess(commit, model, data))
-      .catch(error => this.onError(commit, error))
+    this.onRequest(commit)
+    request.then(data => this.onSuccess(commit, model, data)).catch(error => this.onError(commit, error))
 
-    return request;
+    return request
   }
 
   /**
@@ -28,7 +26,7 @@ export default class Get extends Action {
    * @param {object} commit
    */
   static onRequest(commit) {
-    commit('onRequest');
+    commit('onRequest')
   }
 
   /**
@@ -41,7 +39,7 @@ export default class Get extends Action {
     commit('onSuccess')
     model.insertOrUpdate({
       data,
-    });
+    })
   }
 
   /**

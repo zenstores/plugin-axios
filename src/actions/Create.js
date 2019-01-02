@@ -1,6 +1,6 @@
-import Axios from '../orm/axios';
-import Action from './Action'
+import Axios from '../orm/axios'
 import Context from '../common/context'
+import Action from './Action'
 
 export default class Create extends Action {
   /**
@@ -8,23 +8,21 @@ export default class Create extends Action {
    * @param {object} store
    * @param {object} params
    */
-  static async call ({ state, commit }, params = {}) {
-    if(!params.data || typeof params !== 'object') {
-      throw new TypeError("You must include a data object in the params to send a POST request", params)
+  static async call({ state, commit }, params = {}) {
+    if (!params.data || typeof params !== 'object') {
+      throw new TypeError('You must include a data object in the params to send a POST request', params)
     }
 
-    const context = Context.getInstance();
-    const model = context.getModelFromState(state);
-    const endpoint = Action.transformParams('$create', model, params);
-    const axios =  new Axios(model.methodConf.http);
-    const request = axios.post(endpoint, params.data);
+    const context = Context.getInstance()
+    const model = context.getModelFromState(state)
+    const endpoint = Action.transformParams('$create', model, params)
+    const axios = new Axios(model.methodConf.http)
+    const request = axios.post(endpoint, params.data)
 
-    this.onRequest(commit);
-    request
-      .then(data => this.onSuccess(commit, model, data))
-      .catch(error => this.onError(commit, error))
+    this.onRequest(commit)
+    request.then(data => this.onSuccess(commit, model, data)).catch(error => this.onError(commit, error))
 
-    return request;
+    return request
   }
 
   /**
@@ -32,7 +30,7 @@ export default class Create extends Action {
    * @param {object} commit
    */
   static onRequest(commit) {
-    commit('onRequest');
+    commit('onRequest')
   }
 
   /**
@@ -45,7 +43,7 @@ export default class Create extends Action {
     commit('onSuccess')
     model.insertOrUpdate({
       data,
-    });
+    })
   }
 
   /**
