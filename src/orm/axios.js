@@ -13,6 +13,11 @@ export default class Axios {
       error => http.onError(error),
     );
 
+    this.instance.interceptors.request.use(
+      config => http.onRequest(config),
+      error => http.onError(error),
+    );
+
     return this.instance;
   }
 
