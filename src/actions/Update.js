@@ -1,29 +1,29 @@
 import _ from 'lodash';
 import Axios from '../orm/axios';
-import Action from './Action'
-import Context from '../common/context'
+import Action from './Action';
+import Context from '../common/context';
 
 export default class Update extends Action {
-  /**
-   * Call $update method
-   * @param {object} store
-   * @param {object} params
-   */
-  static async call ({ state, commit }, params = {}) {
-    if(!params.data || typeof params !== 'object') {
-      throw new TypeError("You must include a data object in the params to send a POST request", params)
+    /**
+     * Call $update method
+     * @param {object} store
+     * @param {object} params
+     * @param {boolean} save
+     */
+  static async call({ state, commit }, params = { save: true }) {
+    if (!params.data || typeof params !== 'object') {
+      throw new TypeError('You must include a data object in the params to send a POST request', params);
     }
-
     const context = Context.getInstance();
     const model = context.getModelFromState(state);
     const endpoint = Action.transformParams('$update', model, params);
-    const axios =  new Axios(model.methodConf.http);
+    const axios = new Axios(model.methodConf.http);
     const request = axios.put(endpoint, params.data);
 
     this.onRequest(model, params);
     request
-      .then(data => this.onSuccess(model, params, data))
-      .catch(error => this.onError(model, params, error))
+      .then(data => this.onSuccess(model, params, data, params.save))
+      .catch(error => this.onError(model, params, error));
 
     return request;
   }
@@ -38,9 +38,9 @@ export default class Update extends Action {
       where: params.params.id,
       data: {
         $isUpdating: true,
-        $updateErrors: []
-      }
-    })
+        $updateErrors: [],
+      },
+    });
   }
 
   /**
@@ -49,14 +49,16 @@ export default class Update extends Action {
    * @param {object} params
    * @param {object} data
    */
-  static onSuccess(model, params, data) {
-    model.update({
-      where: params.params.id || data.id,
-      data: _.merge({}, data, {
-        $isUpdating: false,
-        $updateErrors: []
-      })
-    })
+  static onSuccess(model, params, data, save) {
+    if (save === true) {
+      model.update({
+        where: params.params.id || data.id,
+        data: _.merge({}, data, {
+          $isUpdating: false,
+          $updateErrors: [],
+        }),
+      });
+    }
   }
 
   /**
@@ -70,8 +72,8 @@ export default class Update extends Action {
       where: params.params.id,
       data: {
         $isUpdating: false,
-        $updateErrors: error
-      }
-    })
+        $updateErrors: error,
+      },
+    });
   }
 }
