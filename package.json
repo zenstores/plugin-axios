@@ -28,8 +28,8 @@
       "^.+\\.jsx?$": "babel-jest"
     }
   },
+  "browserslist": ["IE 11"],
   "dependencies": {
-    "@babel/preset-env": "^7.0.0",
     "@vuex-orm/core": "^0.26.2",
     "axios": "^0.18.0",
     "lodash.merge": "^4.6.1"
