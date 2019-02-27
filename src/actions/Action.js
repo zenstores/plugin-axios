@@ -1,4 +1,4 @@
-import merge from 'lodash.merge'
+import merge from 'lodash-es/merge'
 import Context from '../common/context'
 import { ModuleConfig, ModelConfig } from '../support/interfaces'
 

@@ -1,4 +1,4 @@
-import merge from 'lodash.merge'
+import merge from 'lodash-es/merge'
 import { VuexOrmPluginConfig } from '../support/interfaces'
 
 export default class Context {
