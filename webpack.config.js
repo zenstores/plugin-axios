@@ -1,18 +1,27 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
+  mode: 'production',
   entry: './src/index.js',
-  target: 'node',
+  target: 'web',
   output: {
-    library: 'vuex-orm-axios',
-    libraryTarget: 'umd',
+    library: 'vuexOrmAxios',
+    libraryTarget: 'var',
     path: path.resolve(__dirname, 'dist'),
-    filename: 'index.js',
+    filename: 'index.js'
   },
+  externals: {
+    axios: 'axios'
+  },
+  optimization: {
+    minimize: false
+  },
+  devtool: 'source-map',
   module: {
     rules: [
       {
-        test: /\.m?js$/,
+        test: /\.js$/,
         // exclude: /(node_modules|bower_components)/,
         use: {
           loader: 'babel-loader',
@@ -22,11 +31,13 @@ module.exports = {
                 targets: {
                   ie: 11,
                 },
-                useBuiltIns: 'usage',
+                // useBuiltIns: 'usage',
+                useBuiltIns: false,
                 modules: false,
                 debug: true,
               }],
             ],
+            plugins: ['@babel/plugin-transform-runtime']
           },
         },
       },

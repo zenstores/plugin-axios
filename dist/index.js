@@ -1,8 +1,12151 @@
-!function(t,e){"object"==typeof exports&&"object"==typeof module?module.exports=e():"function"==typeof define&&define.amd?define([],e):"object"==typeof exports?exports["vuex-orm-axios"]=e():t["vuex-orm-axios"]=e()}(global,function(){return function(t){var e={};function n(r){if(e[r])return e[r].exports;var o=e[r]={i:r,l:!1,exports:{}};return t[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}return n.m=t,n.c=e,n.d=function(t,e,r){n.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:r})},n.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},n.t=function(t,e){if(1&e&&(t=n(t)),8&e)return t;if(4&e&&"object"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:t}),2&e&&"string"!=typeof t)for(var o in t)n.d(r,o,function(e){return t[e]}.bind(null,o));return r},n.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return n.d(e,"a",e),e},n.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},n.p="",n(n.s=179)}([function(t,e){t.exports=function(t){if(!t.webpackPolyfill){var e=Object.create(t);e.children||(e.children=[]),Object.defineProperty(e,"loaded",{enumerable:!0,get:function(){return e.l}}),Object.defineProperty(e,"id",{enumerable:!0,get:function(){return e.i}}),Object.defineProperty(e,"exports",{enumerable:!0}),e.webpackPolyfill=1}return e}},function(t,e,n){n(84)("asyncIterator")},function(t,e,n){"use strict";n(1),n(2),n(13);function r(t){return(r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}var o=n(5),i=n(24),u=n(11),a=n(7),s=n(23),c=n(88).KEY,f=n(15),l=n(56),p=n(42),h=n(29),d=n(3),y=n(85),v=n(84),m=n(122),g=n(93),b=n(8),w=n(10),x=n(37),_=n(41),O=n(33),S=n(47),j=n(126),E=n(50),C=n(12),k=n(34),A=E.f,R=C.f,P=j.f,F=o.Symbol,M=o.JSON,I=M&&M.stringify,T=d("_hidden"),$=d("toPrimitive"),L={}.propertyIsEnumerable,U=l("symbol-registry"),K=l("symbols"),B=l("op-symbols"),N=Object.prototype,q="function"==typeof F,z=o.QObject,D=!z||!z.prototype||!z.prototype.findChild,H=u&&f(function(){return 7!=S(R({},"a",{get:function(){return R(this,"a",{value:7}).a}})).a})?function(t,e,n){var r=A(N,e);r&&delete N[e],R(t,e,n),r&&t!==N&&R(N,e,r)}:R,W=function(t){var e=K[t]=S(F.prototype);return e._k=t,e},V=q&&"symbol"==r(F.iterator)?function(t){return"symbol"==r(t)}:function(t){return t instanceof F},G=function(t,e,n){return t===N&&G(B,e,n),b(t),e=_(e,!0),b(n),i(K,e)?(n.enumerable?(i(t,T)&&t[T][e]&&(t[T][e]=!1),n=S(n,{enumerable:O(0,!1)})):(i(t,T)||R(t,T,O(1,{})),t[T][e]=!0),H(t,e,n)):R(t,e,n)},Y=function(t,e){b(t);for(var n,r=m(e=x(e)),o=0,i=r.length;i>o;)G(t,n=r[o++],e[n]);return t},J=function(t){var e=L.call(this,t=_(t,!0));return!(this===N&&i(K,t)&&!i(B,t))&&(!(e||!i(this,t)||!i(K,t)||i(this,T)&&this[T][t])||e)},Q=function(t,e){if(t=x(t),e=_(e,!0),t!==N||!i(K,e)||i(B,e)){var n=A(t,e);return!n||!i(K,e)||i(t,T)&&t[T][e]||(n.enumerable=!0),n}},X=function(t){for(var e,n=P(x(t)),r=[],o=0;n.length>o;)i(K,e=n[o++])||e==T||e==c||r.push(e);return r},Z=function(t){for(var e,n=t===N,r=P(n?B:x(t)),o=[],u=0;r.length>u;)!i(K,e=r[u++])||n&&!i(N,e)||o.push(K[e]);return o};q||(s((F=function(){if(this instanceof F)throw TypeError("Symbol is not a constructor!");var t=h(arguments.length>0?arguments[0]:void 0);return u&&D&&H(N,t,{configurable:!0,set:function e(n){this===N&&e.call(B,n),i(this,T)&&i(this[T],t)&&(this[T][t]=!1),H(this,t,O(1,n))}}),W(t)}).prototype,"toString",function(){return this._k}),E.f=Q,C.f=G,n(39).f=j.f=X,n(49).f=J,n(67).f=Z,u&&!n(28)&&s(N,"propertyIsEnumerable",J,!0),y.f=function(t){return W(d(t))}),a(a.G+a.W+a.F*!q,{Symbol:F});for(var tt="hasInstance,isConcatSpreadable,iterator,match,replace,search,species,split,toPrimitive,toStringTag,unscopables".split(","),et=0;tt.length>et;)d(tt[et++]);for(var nt=k(d.store),rt=0;nt.length>rt;)v(nt[rt++]);a(a.S+a.F*!q,"Symbol",{for:function(t){return i(U,t+="")?U[t]:U[t]=F(t)},keyFor:function(t){if(!V(t))throw TypeError(t+" is not a symbol!");for(var e in U)if(U[e]===t)return e},useSetter:function(){D=!0},useSimple:function(){D=!1}}),a(a.S+a.F*!q,"Object",{create:function(t,e){return void 0===e?S(t):Y(S(t),e)},defineProperty:G,defineProperties:Y,getOwnPropertyDescriptor:Q,getOwnPropertyNames:X,getOwnPropertySymbols:Z}),M&&a(a.S+a.F*(!q||f(function(){var t=F();return"[null]"!=I([t])||"{}"!=I({a:t})||"{}"!=I(Object(t))})),"JSON",{stringify:function(t){for(var e,n,r=[t],o=1;arguments.length>o;)r.push(arguments[o++]);if(n=e=r[1],(w(e)||void 0!==t)&&!V(t))return g(e)||(e=function(t,e){if("function"==typeof n&&(e=n.call(this,t,e)),!V(e))return e}),r[1]=e,I.apply(M,r)}}),F.prototype[$]||n(22)(F.prototype,$,F.prototype.valueOf),p(F,"Symbol"),p(Math,"Math",!0),p(o.JSON,"JSON",!0)},function(t,e,n){"use strict";n.r(e),function(t){n(21);var e=n(56)("wks"),r=n(29),o=n(5).Symbol,i="function"==typeof o;(t.exports=function(t){return e[t]||(e[t]=i&&o[t]||(i?o:r)("Symbol."+t))}).store=e}.call(this,n(0)(t))},function(t,e,n){for(var r=n(19),o=n(34),i=n(23),u=n(5),a=n(22),s=n(36),c=n(3),f=c("iterator"),l=c("toStringTag"),p=s.Array,h={CSSRuleList:!0,CSSStyleDeclaration:!1,CSSValueList:!1,ClientRectList:!1,DOMRectList:!1,DOMStringList:!1,DOMTokenList:!0,DataTransferItemList:!1,FileList:!1,HTMLAllCollection:!1,HTMLCollection:!1,HTMLFormElement:!1,HTMLSelectElement:!1,MediaList:!0,MimeTypeArray:!1,NamedNodeMap:!1,NodeList:!0,PaintRequestList:!1,Plugin:!1,PluginArray:!1,SVGLengthList:!1,SVGNumberList:!1,SVGPathSegList:!1,SVGPointList:!1,SVGStringList:!1,SVGTransformList:!1,SourceBufferList:!1,StyleSheetList:!0,TextTrackCueList:!1,TextTrackList:!1,TouchList:!1},d=o(h),y=0;y<d.length;y++){var v,m=d[y],g=h[m],b=u[m],w=b&&b.prototype;if(w&&(w[f]||a(w,f,p),w[l]||a(w,l,m),s[m]=p,g))for(v in r)w[v]||i(w,v,r[v],!0)}},function(t,e){var n=t.exports="undefined"!=typeof window&&window.Math==Math?window:"undefined"!=typeof self&&self.Math==Math?self:Function("return this")();"number"==typeof __g&&(__g=n)},function(t,e,n){"use strict";n(21),n(57),n(14),n(6);n(57);var r=n(8),o=n(44),i=n(11),u=/./.toString,a=function(t){n(23)(RegExp.prototype,"toString",t,!0)};n(15)(function(){return"/a/b"!=u.call({source:"a",flags:"b"})})?a(function(){var t=r(this);return"/".concat(t.source,"/","flags"in t?t.flags:!i&&t instanceof RegExp?o.call(t):void 0)}):"toString"!=u.name&&a(function(){return u.call(this)})},function(t,e,n){"use strict";n.r(e),function(t){n(21);var e=n(5),r=n(27),o=n(22),i=n(23),u=n(26),a=function t(n,a,s){var c,f,l,p,h=n&t.F,d=n&t.G,y=n&t.P,v=n&t.B,m=d?e:n&t.S?e[a]||(e[a]={}):(e[a]||{}).prototype,g=d?r:r[a]||(r[a]={}),b=g.prototype||(g.prototype={});for(c in d&&(s=a),s)l=((f=!h&&m&&void 0!==m[c])?m:s)[c],p=v&&f?u(l,e):y&&"function"==typeof l?u(Function.call,l):l,m&&i(m,c,l,n&t.U),g[c]!=l&&o(g,c,p),y&&b[c]!=l&&(b[c]=l)};e.core=r,a.F=1,a.G=2,a.S=4,a.P=8,a.B=16,a.W=32,a.U=64,a.R=128,t.exports=a}.call(this,n(0)(t))},function(t,e,n){var r=n(10);t.exports=function(t){if(!r(t))throw TypeError(t+" is not an object!");return t}},function(t,e,n){"use strict";var r,o,i,u,a=n(28),s=n(5),c=n(26),f=n(51),l=n(7),p=n(10),h=n(45),d=n(71),y=n(131),v=n(60),m=n(95).set,g=n(133)(),b=n(96),w=n(134),x=n(135),_=n(136),O=s.TypeError,S=s.process,j=S&&S.versions,E=j&&j.v8||"",C=s.Promise,k="process"==f(S),A=function(){},R=o=b.f,P=!!function(){try{var t=C.resolve(1),e=(t.constructor={})[n(3)("species")]=function(t){t(A,A)};return(k||"function"==typeof PromiseRejectionEvent)&&t.then(A)instanceof e&&0!==E.indexOf("6.6")&&-1===x.indexOf("Chrome/66")}catch(t){}}(),F=function(t){var e;return!(!p(t)||"function"!=typeof(e=t.then))&&e},M=function(t,e){if(!t._n){t._n=!0;var n=t._c;g(function(){for(var r=t._v,o=1==t._s,i=0,u=function(e){var n,i,u,a=o?e.ok:e.fail,s=e.resolve,c=e.reject,f=e.domain;try{a?(o||(2==t._h&&$(t),t._h=1),!0===a?n=r:(f&&f.enter(),n=a(r),f&&(f.exit(),u=!0)),n===e.promise?c(O("Promise-chain cycle")):(i=F(n))?i.call(n,s,c):s(n)):c(r)}catch(t){f&&!u&&f.exit(),c(t)}};n.length>i;)u(n[i++]);t._c=[],t._n=!1,e&&!t._h&&I(t)})}},I=function(t){m.call(s,function(){var e,n,r,o=t._v,i=T(t);if(i&&(e=w(function(){k?S.emit("unhandledRejection",o,t):(n=s.onunhandledrejection)?n({promise:t,reason:o}):(r=s.console)&&r.error&&r.error("Unhandled promise rejection",o)}),t._h=k||T(t)?2:1),t._a=void 0,i&&e.e)throw e.v})},T=function(t){return 1!==t._h&&0===(t._a||t._c).length},$=function(t){m.call(s,function(){var e;k?S.emit("rejectionHandled",t):(e=s.onrejectionhandled)&&e({promise:t,reason:t._v})})},L=function(t){var e=this;e._d||(e._d=!0,(e=e._w||e)._v=t,e._s=2,e._a||(e._a=e._c.slice()),M(e,!0))},U=function t(e){var n,r=this;if(!r._d){r._d=!0,r=r._w||r;try{if(r===e)throw O("Promise can't be resolved itself");(n=F(e))?g(function(){var o={_w:r,_d:!1};try{n.call(e,c(t,o,1),c(L,o,1))}catch(t){L.call(o,t)}}):(r._v=e,r._s=1,M(r,!1))}catch(t){L.call({_w:r,_d:!1},t)}}};P||(C=function(t){d(this,C,"Promise","_h"),h(t),r.call(this);try{t(c(U,this,1),c(L,this,1))}catch(t){L.call(this,t)}},(r=function(t){this._c=[],this._a=void 0,this._s=0,this._d=!1,this._v=void 0,this._h=0,this._n=!1}).prototype=n(74)(C.prototype,{then:function(t,e){var n=R(v(this,C));return n.ok="function"!=typeof t||t,n.fail="function"==typeof e&&e,n.domain=k?S.domain:void 0,this._c.push(n),this._a&&this._a.push(n),this._s&&M(this,!1),n.promise},catch:function(t){return this.then(void 0,t)}}),i=function(){var t=new r;this.promise=t,this.resolve=c(U,t,1),this.reject=c(L,t,1)},b.f=R=function(t){return t===C||t===u?new i(t):o(t)}),l(l.G+l.W+l.F*!P,{Promise:C}),n(42)(C,"Promise"),n(69)("Promise"),u=n(27).Promise,l(l.S+l.F*!P,"Promise",{reject:function(t){var e=R(this);return(0,e.reject)(t),e.promise}}),l(l.S+l.F*(a||!P),"Promise",{resolve:function(t){return _(a&&this===u?C:this,t)}}),l(l.S+l.F*!(P&&n(75)(function(t){C.all(t).catch(A)})),"Promise",{all:function(t){var e=this,n=R(e),r=n.resolve,o=n.reject,i=w(function(){var n=[],i=0,u=1;y(t,!1,function(t){var a=i++,s=!1;n.push(void 0),u++,e.resolve(t).then(function(t){s||(s=!0,n[a]=t,--u||r(n))},o)}),--u||r(n)});return i.e&&o(i.v),n.promise},race:function(t){var e=this,n=R(e),r=n.reject,o=w(function(){y(t,!1,function(t){e.resolve(t).then(n.resolve,r)})});return o.e&&r(o.v),n.promise}})},function(t,e,n){"use strict";n.r(e),function(t){n(1),n(2);function e(t){return(e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}t.exports=function(t){return"object"===e(t)?null!==t:"function"==typeof t}}.call(this,n(0)(t))},function(t,e,n){t.exports=!n(15)(function(){return 7!=Object.defineProperty({},"a",{get:function(){return 7}}).a})},function(t,e,n){var r=n(8),o=n(86),i=n(41),u=Object.defineProperty;e.f=n(11)?Object.defineProperty:function(t,e,n){if(r(t),e=i(e,!0),r(n),o)try{return u(t,e,n)}catch(t){}if("get"in n||"set"in n)throw TypeError("Accessors not supported!");return"value"in n&&(t[e]=n.value),t}},function(t,e,n){"use strict";n(13),n(14);var r=n(59),o=n(8),i=n(60),u=n(61),a=n(16),s=n(46),c=n(68),f=Math.min,l=[].push,p=!!function(){try{return new RegExp("x","y")}catch(t){}}();n(52)("split",2,function(t,e,n,h){var d;return d="c"=="abbc".split(/(b)*/)[1]||4!="test".split(/(?:)/,-1).length||2!="ab".split(/(?:ab)*/).length||4!=".".split(/(.?)(.?)/).length||".".split(/()()/).length>1||"".split(/.?/).length?function(t,e){var o=String(this);if(void 0===t&&0===e)return[];if(!r(t))return n.call(o,t,e);for(var i,u,a,s=[],f=(t.ignoreCase?"i":"")+(t.multiline?"m":"")+(t.unicode?"u":"")+(t.sticky?"y":""),p=0,h=void 0===e?4294967295:e>>>0,d=new RegExp(t.source,f+"g");(i=c.call(d,o))&&!((u=d.lastIndex)>p&&(s.push(o.slice(p,i.index)),i.length>1&&i.index<o.length&&l.apply(s,i.slice(1)),a=i[0].length,p=u,s.length>=h));)d.lastIndex===i.index&&d.lastIndex++;return p===o.length?!a&&d.test("")||s.push(""):s.push(o.slice(p)),s.length>h?s.slice(0,h):s}:"0".split(void 0,0).length?function(t,e){return void 0===t&&0===e?[]:n.call(this,t,e)}:n,[function(n,r){var o=t(this),i=null==n?void 0:n[e];return void 0!==i?i.call(n,o,r):d.call(String(o),n,r)},function(t,e){var r=h(d,t,this,e,d!==n);if(r.done)return r.value;var c=o(t),l=String(this),y=i(c,RegExp),v=c.unicode,m=(c.ignoreCase?"i":"")+(c.multiline?"m":"")+(c.unicode?"u":"")+(p?"y":"g"),g=new y(p?c:"^(?:"+c.source+")",m),b=void 0===e?4294967295:e>>>0;if(0===b)return[];if(0===l.length)return null===s(g,l)?[l]:[];for(var w=0,x=0,_=[];x<l.length;){g.lastIndex=p?x:0;var O,S=s(g,p?l:l.slice(x));if(null===S||(O=f(a(g.lastIndex+(p?0:x)),l.length))===w)x=u(l,x,v);else{if(_.push(l.slice(w,x)),_.length===b)return _;for(var j=1;j<=S.length-1;j++)if(_.push(S[j]),_.length===b)return _;x=w=O}}return _.push(l.slice(w)),_}]})},function(t,e,n){var r=n(5),o=n(83),i=n(12).f,u=n(39).f,a=n(59),s=n(44),c=r.RegExp,f=c,l=c.prototype,p=/a/g,h=/a/g,d=new c(p)!==p;if(n(11)&&(!d||n(15)(function(){return h[n(3)("match")]=!1,c(p)!=p||c(h)==h||"/a/i"!=c(p,"i")}))){c=function(t,e){var n=this instanceof c,r=a(t),i=void 0===e;return!n&&r&&t.constructor===c&&i?t:o(d?new f(r&&!i?t.source:t,e):f((r=t instanceof c)?t.source:t,r&&i?s.call(t):e),n?this:l,c)};for(var y=function(t){t in c||i(c,t,{configurable:!0,get:function(){return f[t]},set:function(e){f[t]=e}})},v=u(f),m=0;v.length>m;)y(v[m++]);l.constructor=c,c.prototype=l,n(23)(r,"RegExp",c)}n(69)("RegExp")},function(t,e){t.exports=function(t){try{return!!t()}catch(t){return!0}}},function(t,e,n){var r=n(31),o=Math.min;t.exports=function(t){return t>0?o(r(t),9007199254740991):0}},function(t,e,n){"use strict";var r=n(8),o=n(25),i=n(16),u=n(31),a=n(61),s=n(46),c=Math.max,f=Math.min,l=Math.floor,p=/\$([$&`']|\d\d?|<[^>]*>)/g,h=/\$([$&`']|\d\d?)/g;n(52)("replace",2,function(t,e,n,d){return[function(r,o){var i=t(this),u=null==r?void 0:r[e];return void 0!==u?u.call(r,i,o):n.call(String(i),r,o)},function(t,e){var o=d(n,t,this,e);if(o.done)return o.value;var l=r(t),p=String(this),h="function"==typeof e;h||(e=String(e));var v=l.global;if(v){var m=l.unicode;l.lastIndex=0}for(var g=[];;){var b=s(l,p);if(null===b)break;if(g.push(b),!v)break;""===String(b[0])&&(l.lastIndex=a(p,i(l.lastIndex),m))}for(var w,x="",_=0,O=0;O<g.length;O++){b=g[O];for(var S=String(b[0]),j=c(f(u(b.index),p.length),0),E=[],C=1;C<b.length;C++)E.push(void 0===(w=b[C])?w:String(w));var k=b.groups;if(h){var A=[S].concat(E,j,p);void 0!==k&&A.push(k);var R=String(e.apply(void 0,A))}else R=y(S,p,j,E,k,e);j>=_&&(x+=p.slice(_,j)+R,_=j+S.length)}return x+p.slice(_)}];function y(t,e,r,i,u,a){var s=r+t.length,c=i.length,f=h;return void 0!==u&&(u=o(u),f=p),n.call(a,f,function(n,o){var a;switch(o.charAt(0)){case"$":return"$";case"&":return t;case"`":return e.slice(0,r);case"'":return e.slice(s);case"<":a=u[o.slice(1,-1)];break;default:var f=+o;if(0===f)return o;if(f>c){var p=l(f/10);return 0===p?o:p<=c?void 0===i[p-1]?o.charAt(1):i[p-1]+o.charAt(1):o}a=i[f-1]}return void 0===a?"":a})}})},function(t,e,n){"use strict";n.r(e),function(t){n(1),n(2),n(17),n(6);function e(t){return(e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}var r=n(100),o=n(143),i=Object.prototype.toString;function u(t){return"[object Array]"===i.call(t)}function a(t){return null!==t&&"object"===e(t)}function s(t){return"[object Function]"===i.call(t)}function c(t,n){if(null!=t)if("object"!==e(t)&&(t=[t]),u(t))for(var r=0,o=t.length;r<o;r++)n.call(null,t[r],r,t);else for(var i in t)Object.prototype.hasOwnProperty.call(t,i)&&n.call(null,t[i],i,t)}t.exports={isArray:u,isArrayBuffer:function(t){return"[object ArrayBuffer]"===i.call(t)},isBuffer:o,isFormData:function(t){return"undefined"!=typeof FormData&&t instanceof FormData},isArrayBufferView:function(t){return"undefined"!=typeof ArrayBuffer&&ArrayBuffer.isView?ArrayBuffer.isView(t):t&&t.buffer&&t.buffer instanceof ArrayBuffer},isString:function(t){return"string"==typeof t},isNumber:function(t){return"number"==typeof t},isObject:a,isUndefined:function(t){return void 0===t},isDate:function(t){return"[object Date]"===i.call(t)},isFile:function(t){return"[object File]"===i.call(t)},isBlob:function(t){return"[object Blob]"===i.call(t)},isFunction:s,isStream:function(t){return a(t)&&s(t.pipe)},isURLSearchParams:function(t){return"undefined"!=typeof URLSearchParams&&t instanceof URLSearchParams},isStandardBrowserEnv:function(){return("undefined"==typeof navigator||"ReactNative"!==navigator.product)&&"undefined"!=typeof window&&"undefined"!=typeof document},forEach:c,merge:function t(){var n={};function r(r,o){"object"===e(n[o])&&"object"===e(r)?n[o]=t(n[o],r):n[o]=r}for(var o=0,i=arguments.length;o<i;o++)c(arguments[o],r);return n},extend:function(t,e,n){return c(e,function(e,o){t[o]=n&&"function"==typeof e?r(e,n):e}),t},trim:function(t){return t.replace(/^\s*/,"").replace(/\s*$/,"")}}}.call(this,n(0)(t))},function(t,e,n){"use strict";var r=n(35),o=n(123),i=n(36),u=n(37);t.exports=n(89)(Array,"Array",function(t,e){this._t=u(t),this._i=0,this._k=e},function(){var t=this._t,e=this._k,n=this._i++;return!t||n>=t.length?(this._t=void 0,o(1)):o(0,"keys"==e?n:"values"==e?t[n]:[n,t[n]])},"values"),i.Arguments=i.Array,r("keys"),r("values"),r("entries")},function(t,e,n){"use strict";n(1),n(2);var r=n(54);function o(t){return(o="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}var i="object"==("undefined"==typeof self?"undefined":o(self))&&self&&self.Object===Object&&self,u=r.a||i||Function("return this")();e.a=u},function(t,e,n){"use strict";n(43);var r=n(12).f,o=Function.prototype,i=/^\s*function ([^ (]*)/;"name"in o||n(11)&&r(o,"name",{configurable:!0,get:function(){try{return(""+this).match(i)[1]}catch(t){return""}}})},function(t,e,n){var r=n(12),o=n(33);t.exports=n(11)?function(t,e,n){return r.f(t,e,o(1,n))}:function(t,e,n){return t[e]=n,t}},function(t,e,n){"use strict";n.r(e),function(t){n(13),n(6);var e=n(5),r=n(22),o=n(24),i=n(29)("src"),u=Function.toString,a=(""+u).split("toString");n(27).inspectSource=function(t){return u.call(t)},(t.exports=function(t,n,u,s){var c="function"==typeof u;c&&(o(u,"name")||r(u,"name",n)),t[n]!==u&&(c&&(o(u,i)||r(u,i,t[n]?""+t[n]:a.join(String(n)))),t===e?t[n]=u:s?t[n]?t[n]=u:r(t,n,u):(delete t[n],r(t,n,u)))})(Function.prototype,"toString",function(){return"function"==typeof this&&this[i]||u.call(this)})}.call(this,n(0)(t))},function(t,e){var n={}.hasOwnProperty;t.exports=function(t,e){return n.call(t,e)}},function(t,e,n){var r=n(32);t.exports=function(t){return Object(r(t))}},function(t,e,n){var r=n(45);t.exports=function(t,e,n){if(r(t),void 0===e)return t;switch(n){case 1:return function(n){return t.call(e,n)};case 2:return function(n,r){return t.call(e,n,r)};case 3:return function(n,r,o){return t.call(e,n,r,o)}}return function(){return t.apply(e,arguments)}}},function(t,e){var n=t.exports={version:"2.6.1"};"number"==typeof __e&&(__e=n)},function(t,e){t.exports=!1},function(t,e,n){"use strict";n.r(e),function(t){n(6);var e=0,r=Math.random();t.exports=function(t){return"Symbol(".concat(void 0===t?"":t,")_",(++e+r).toString(36))}}.call(this,n(0)(t))},function(t,e,n){"use strict";n.r(e),function(t){n(6);var e={}.toString;t.exports=function(t){return e.call(t).slice(8,-1)}}.call(this,n(0)(t))},function(t,e){var n=Math.ceil,r=Math.floor;t.exports=function(t){return isNaN(t=+t)?0:(t>0?r:n)(t)}},function(t,e){t.exports=function(t){if(null==t)throw TypeError("Can't call method on  "+t);return t}},function(t,e){t.exports=function(t,e){return{enumerable:!(1&t),configurable:!(2&t),writable:!(4&t),value:e}}},function(t,e,n){"use strict";n.r(e),function(t){n(4),n(19),n(38);var e=n(92),r=n(64);t.exports=Object.keys||function(t){return e(t,r)}}.call(this,n(0)(t))},function(t,e,n){var r=n(3)("unscopables"),o=Array.prototype;null==o[r]&&n(22)(o,r,{}),t.exports=function(t){o[r][t]=!0}},function(t,e){t.exports={}},function(t,e,n){var r=n(63),o=n(32);t.exports=function(t){return r(o(t))}},function(t,e,n){var r=n(25),o=n(34);n(62)("keys",function(){return function(t){return o(r(t))}})},function(t,e,n){var r=n(92),o=n(64).concat("length","prototype");e.f=Object.getOwnPropertyNames||function(t){return r(t,o)}},function(t,e,n){"use strict";(function(t){n(4),n(9),n(21),n(1),n(2);function e(t){return(e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}!function(n){var r,o=Object.prototype,i=o.hasOwnProperty,u="function"==typeof Symbol?Symbol:{},a=u.iterator||"@@iterator",s=u.asyncIterator||"@@asyncIterator",c=u.toStringTag||"@@toStringTag",f="object"===e(t),l=n.regeneratorRuntime;if(l)f&&(t.exports=l);else{(l=n.regeneratorRuntime=f?t.exports:{}).wrap=x;var p="suspendedStart",h="suspendedYield",d="executing",y="completed",v={},m={};m[a]=function(){return this};var g=Object.getPrototypeOf,b=g&&g(g(F([])));b&&b!==o&&i.call(b,a)&&(m=b);var w=j.prototype=O.prototype=Object.create(m);S.prototype=w.constructor=j,j.constructor=S,j[c]=S.displayName="GeneratorFunction",l.isGeneratorFunction=function(t){var e="function"==typeof t&&t.constructor;return!!e&&(e===S||"GeneratorFunction"===(e.displayName||e.name))},l.mark=function(t){return Object.setPrototypeOf?Object.setPrototypeOf(t,j):(t.__proto__=j,c in t||(t[c]="GeneratorFunction")),t.prototype=Object.create(w),t},l.awrap=function(t){return{__await:t}},E(C.prototype),C.prototype[s]=function(){return this},l.AsyncIterator=C,l.async=function(t,e,n,r){var o=new C(x(t,e,n,r));return l.isGeneratorFunction(e)?o:o.next().then(function(t){return t.done?t.value:o.next()})},E(w),w[c]="Generator",w[a]=function(){return this},w.toString=function(){return"[object Generator]"},l.keys=function(t){var e=[];for(var n in t)e.push(n);return e.reverse(),function n(){for(;e.length;){var r=e.pop();if(r in t)return n.value=r,n.done=!1,n}return n.done=!0,n}},l.values=F,P.prototype={constructor:P,reset:function(t){if(this.prev=0,this.next=0,this.sent=this._sent=r,this.done=!1,this.delegate=null,this.method="next",this.arg=r,this.tryEntries.forEach(R),!t)for(var e in this)"t"===e.charAt(0)&&i.call(this,e)&&!isNaN(+e.slice(1))&&(this[e]=r)},stop:function(){this.done=!0;var t=this.tryEntries[0].completion;if("throw"===t.type)throw t.arg;return this.rval},dispatchException:function(t){if(this.done)throw t;var e=this;function n(n,o){return a.type="throw",a.arg=t,e.next=n,o&&(e.method="next",e.arg=r),!!o}for(var o=this.tryEntries.length-1;o>=0;--o){var u=this.tryEntries[o],a=u.completion;if("root"===u.tryLoc)return n("end");if(u.tryLoc<=this.prev){var s=i.call(u,"catchLoc"),c=i.call(u,"finallyLoc");if(s&&c){if(this.prev<u.catchLoc)return n(u.catchLoc,!0);if(this.prev<u.finallyLoc)return n(u.finallyLoc)}else if(s){if(this.prev<u.catchLoc)return n(u.catchLoc,!0)}else{if(!c)throw new Error("try statement without catch or finally");if(this.prev<u.finallyLoc)return n(u.finallyLoc)}}}},abrupt:function(t,e){for(var n=this.tryEntries.length-1;n>=0;--n){var r=this.tryEntries[n];if(r.tryLoc<=this.prev&&i.call(r,"finallyLoc")&&this.prev<r.finallyLoc){var o=r;break}}o&&("break"===t||"continue"===t)&&o.tryLoc<=e&&e<=o.finallyLoc&&(o=null);var u=o?o.completion:{};return u.type=t,u.arg=e,o?(this.method="next",this.next=o.finallyLoc,v):this.complete(u)},complete:function(t,e){if("throw"===t.type)throw t.arg;return"break"===t.type||"continue"===t.type?this.next=t.arg:"return"===t.type?(this.rval=this.arg=t.arg,this.method="return",this.next="end"):"normal"===t.type&&e&&(this.next=e),v},finish:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var n=this.tryEntries[e];if(n.finallyLoc===t)return this.complete(n.completion,n.afterLoc),R(n),v}},catch:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var n=this.tryEntries[e];if(n.tryLoc===t){var r=n.completion;if("throw"===r.type){var o=r.arg;R(n)}return o}}throw new Error("illegal catch attempt")},delegateYield:function(t,e,n){return this.delegate={iterator:F(t),resultName:e,nextLoc:n},"next"===this.method&&(this.arg=r),v}}}function x(t,e,n,r){var o=e&&e.prototype instanceof O?e:O,i=Object.create(o.prototype),u=new P(r||[]);return i._invoke=function(t,e,n){var r=p;return function(o,i){if(r===d)throw new Error("Generator is already running");if(r===y){if("throw"===o)throw i;return M()}for(n.method=o,n.arg=i;;){var u=n.delegate;if(u){var a=k(u,n);if(a){if(a===v)continue;return a}}if("next"===n.method)n.sent=n._sent=n.arg;else if("throw"===n.method){if(r===p)throw r=y,n.arg;n.dispatchException(n.arg)}else"return"===n.method&&n.abrupt("return",n.arg);r=d;var s=_(t,e,n);if("normal"===s.type){if(r=n.done?y:h,s.arg===v)continue;return{value:s.arg,done:n.done}}"throw"===s.type&&(r=y,n.method="throw",n.arg=s.arg)}}}(t,n,u),i}function _(t,e,n){try{return{type:"normal",arg:t.call(e,n)}}catch(t){return{type:"throw",arg:t}}}function O(){}function S(){}function j(){}function E(t){["next","throw","return"].forEach(function(e){t[e]=function(t){return this._invoke(e,t)}})}function C(t){var n;this._invoke=function(r,o){function u(){return new Promise(function(n,u){!function n(r,o,u,a){var s=_(t[r],t,o);if("throw"!==s.type){var c=s.arg,f=c.value;return f&&"object"===e(f)&&i.call(f,"__await")?Promise.resolve(f.__await).then(function(t){n("next",t,u,a)},function(t){n("throw",t,u,a)}):Promise.resolve(f).then(function(t){c.value=t,u(c)},function(t){return n("throw",t,u,a)})}a(s.arg)}(r,o,n,u)})}return n=n?n.then(u,u):u()}}function k(t,e){var n=t.iterator[e.method];if(n===r){if(e.delegate=null,"throw"===e.method){if(t.iterator.return&&(e.method="return",e.arg=r,k(t,e),"throw"===e.method))return v;e.method="throw",e.arg=new TypeError("The iterator does not provide a 'throw' method")}return v}var o=_(n,t.iterator,e.arg);if("throw"===o.type)return e.method="throw",e.arg=o.arg,e.delegate=null,v;var i=o.arg;return i?i.done?(e[t.resultName]=i.value,e.next=t.nextLoc,"return"!==e.method&&(e.method="next",e.arg=r),e.delegate=null,v):i:(e.method="throw",e.arg=new TypeError("iterator result is not an object"),e.delegate=null,v)}function A(t){var e={tryLoc:t[0]};1 in t&&(e.catchLoc=t[1]),2 in t&&(e.finallyLoc=t[2],e.afterLoc=t[3]),this.tryEntries.push(e)}function R(t){var e=t.completion||{};e.type="normal",delete e.arg,t.completion=e}function P(t){this.tryEntries=[{tryLoc:"root"}],t.forEach(A,this),this.reset(!0)}function F(t){if(t){var e=t[a];if(e)return e.call(t);if("function"==typeof t.next)return t;if(!isNaN(t.length)){var n=-1,o=function e(){for(;++n<t.length;)if(i.call(t,n))return e.value=t[n],e.done=!1,e;return e.value=r,e.done=!0,e};return o.next=o}}return{next:M}}function M(){return{value:r,done:!0}}}(function(){return this||"object"===("undefined"==typeof self?"undefined":e(self))&&self}()||Function("return this")())}).call(this,n(0)(t))},function(t,e,n){"use strict";n.r(e),function(t){n(6);var e=n(10);t.exports=function(t,n){if(!e(t))return t;var r,o;if(n&&"function"==typeof(r=t.toString)&&!e(o=r.call(t)))return o;if("function"==typeof(r=t.valueOf)&&!e(o=r.call(t)))return o;if(!n&&"function"==typeof(r=t.toString)&&!e(o=r.call(t)))return o;throw TypeError("Can't convert object to primitive value")}}.call(this,n(0)(t))},function(t,e,n){var r=n(12).f,o=n(24),i=n(3)("toStringTag");t.exports=function(t,e,n){t&&!o(t=n?t:t.prototype,i)&&r(t,i,{configurable:!0,value:e})}},function(t,e,n){"use strict";n(14);var r=n(8),o=n(16),i=n(61),u=n(46);n(52)("match",1,function(t,e,n,a){return[function(n){var r=t(this),o=null==n?void 0:n[e];return void 0!==o?o.call(n,r):new RegExp(n)[e](String(r))},function(t){var e=a(n,t,this);if(e.done)return e.value;var s=r(t),c=String(this);if(!s.global)return u(s,c);var f=s.unicode;s.lastIndex=0;for(var l,p=[],h=0;null!==(l=u(s,c));){var d=String(l[0]);p[h]=d,""===d&&(s.lastIndex=i(c,o(s.lastIndex),f)),h++}return 0===h?null:p}]})},function(t,e,n){"use strict";var r=n(8);t.exports=function(){var t=r(this),e="";return t.global&&(e+="g"),t.ignoreCase&&(e+="i"),t.multiline&&(e+="m"),t.unicode&&(e+="u"),t.sticky&&(e+="y"),e}},function(t,e){t.exports=function(t){if("function"!=typeof t)throw TypeError(t+" is not a function!");return t}},function(t,e,n){"use strict";n.r(e),function(t){n(1),n(2),n(14);function e(t){return(e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}var r=n(51),o=RegExp.prototype.exec;t.exports=function(t,n){var i=t.exec;if("function"==typeof i){var u=i.call(t,n);if("object"!==e(u))throw new TypeError("RegExp exec method returned something other than an Object or null");return u}if("RegExp"!==r(t))throw new TypeError("RegExp#exec called on incompatible receiver");return o.call(t,n)}}.call(this,n(0)(t))},function(t,e,n){var r=n(8),o=n(125),i=n(64),u=n(65)("IE_PROTO"),a=function(){},s=function(){var t,e=n(58)("iframe"),r=i.length;for(e.style.display="none",n(90).appendChild(e),e.src="javascript:",(t=e.contentWindow.document).open(),t.write("<script>document.F=Object<\/script>"),t.close(),s=t.F;r--;)delete s.prototype[i[r]];return s()};t.exports=Object.create||function(t,e){var n;return null!==t?(a.prototype=r(t),n=new a,a.prototype=null,n[u]=t):n=s(),void 0===e?n:o(n,e)}},function(t,e,n){var r=n(31),o=Math.max,i=Math.min;t.exports=function(t,e){return(t=r(t))<0?o(t+e,0):i(t,e)}},function(t,e){e.f={}.propertyIsEnumerable},function(t,e,n){var r=n(49),o=n(33),i=n(37),u=n(41),a=n(24),s=n(86),c=Object.getOwnPropertyDescriptor;e.f=n(11)?c:function(t,e){if(t=i(t),e=u(e,!0),s)try{return c(t,e)}catch(t){}if(a(t,e))return o(!r.f.call(t,e),t[e])}},function(t,e,n){var r=n(30),o=n(3)("toStringTag"),i="Arguments"==r(function(){return arguments}());t.exports=function(t){var e,n,u;return void 0===t?"Undefined":null===t?"Null":"string"==typeof(n=function(t,e){try{return t[e]}catch(t){}}(e=Object(t),o))?n:i?r(e):"Object"==(u=r(e))&&"function"==typeof e.callee?"Arguments":u}},function(t,e,n){"use strict";n.r(e),function(t){n(14),n(13),n(17);n(127);var e=n(23),r=n(22),o=n(15),i=n(32),u=n(3),a=n(68),s=u("species"),c=!o(function(){var t=/./;return t.exec=function(){var t=[];return t.groups={a:"7"},t},"7"!=="".replace(t,"$<a>")}),f=function(){var t=/(?:)/,e=t.exec;t.exec=function(){return e.apply(this,arguments)};var n="ab".split(t);return 2===n.length&&"a"===n[0]&&"b"===n[1]}();t.exports=function(t,n,l){var p=u(t),h=!o(function(){var e={};return e[p]=function(){return 7},7!=""[t](e)}),d=h?!o(function(){var e=!1,n=/a/;return n.exec=function(){return e=!0,null},"split"===t&&(n.constructor={},n.constructor[s]=function(){return n}),n[p](""),!e}):void 0;if(!h||!d||"replace"===t&&!c||"split"===t&&!f){var y=/./[p],v=l(i,p,""[t],function(t,e,n,r,o){return e.exec===a?h&&!o?{done:!0,value:y.call(e,n,r)}:{done:!0,value:t.call(n,e,r)}:{done:!1}}),m=v[0],g=v[1];e(String.prototype,t,m),r(RegExp.prototype,p,2==n?function(t,e){return g.call(t,this,e)}:function(t){return g.call(t,this)})}}}.call(this,n(0)(t))},function(t,e,n){"use strict";n(53);var r=n(7),o=n(16),i=n(98),u="".startsWith;r(r.P+r.F*n(99)("startsWith"),"String",{startsWith:function(t){var e=i(this,t,"startsWith"),n=o(Math.min(arguments.length>1?arguments[1]:void 0,e.length)),r=String(t);return u?u.call(e,r,n):e.slice(n,n+r.length)===r}})},function(t,e,n){"use strict";n(1),n(2);function r(t){return(r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}var o="object"==("undefined"==typeof global?"undefined":r(global))&&global&&global.Object===Object&&global;e.a=o},function(t,e,n){"use strict";(function(t){n(1),n(2);var r=n(20),o=n(117);function i(t){return(i="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}var u="object"==("undefined"==typeof exports?"undefined":i(exports))&&exports&&!exports.nodeType&&exports,a=u&&"object"==i(t)&&t&&!t.nodeType&&t,s=a&&a.exports===u?r.a.Buffer:void 0,c=(s?s.isBuffer:void 0)||o.a;e.a=c}).call(this,n(0)(t))},function(t,e,n){var r=n(27),o=n(5),i=o["__core-js_shared__"]||(o["__core-js_shared__"]={});(t.exports=function(t,e){return i[t]||(i[t]=void 0!==e?e:{})})("versions",[]).push({version:r.version,mode:n(28)?"pure":"global",copyright:"© 2018 Denis Pushkarev (zloirock.ru)"})},function(t,e,n){"use strict";n.r(e);n(14),n(57);n(11)&&"g"!=/./g.flags&&n(12).f(RegExp.prototype,"flags",{configurable:!0,get:n(44)})},function(t,e,n){var r=n(10),o=n(5).document,i=r(o)&&r(o.createElement);t.exports=function(t){return i?o.createElement(t):{}}},function(t,e,n){var r=n(10),o=n(30),i=n(3)("match");t.exports=function(t){var e;return r(t)&&(void 0!==(e=t[i])?!!e:"RegExp"==o(t))}},function(t,e,n){var r=n(8),o=n(45),i=n(3)("species");t.exports=function(t,e){var n,u=r(t).constructor;return void 0===u||null==(n=r(u)[i])?e:o(n)}},function(t,e,n){"use strict";var r=n(87)(!0);t.exports=function(t,e,n){return e+(n?r(t,e).length:1)}},function(t,e,n){var r=n(7),o=n(27),i=n(15);t.exports=function(t,e){var n=(o.Object||{})[t]||Object[t],u={};u[t]=e(n),r(r.S+r.F*i(function(){n(1)}),"Object",u)}},function(t,e,n){"use strict";n.r(e),function(t){n(13);var e=n(30);t.exports=Object("z").propertyIsEnumerable(0)?Object:function(t){return"String"==e(t)?t.split(""):Object(t)}}.call(this,n(0)(t))},function(t,e,n){"use strict";n.r(e),function(t){n(13);t.exports="constructor,hasOwnProperty,isPrototypeOf,propertyIsEnumerable,toLocaleString,toString,valueOf".split(",")}.call(this,n(0)(t))},function(t,e,n){var r=n(56)("keys"),o=n(29);t.exports=function(t){return r[t]||(r[t]=o(t))}},function(t,e,n){var r=n(37),o=n(16),i=n(48);t.exports=function(t){return function(e,n,u){var a,s=r(e),c=o(s.length),f=i(u,c);if(t&&n!=n){for(;c>f;)if((a=s[f++])!=a)return!0}else for(;c>f;f++)if((t||f in s)&&s[f]===n)return t||f||0;return!t&&-1}}},function(t,e){e.f=Object.getOwnPropertySymbols},function(t,e,n){"use strict";n.r(e),function(t){n(17),n(14);var e,r,o=n(44),i=RegExp.prototype.exec,u=String.prototype.replace,a=i,s=(e=/a/,r=/b*/g,i.call(e,"a"),i.call(r,"a"),0!==e.lastIndex||0!==r.lastIndex),c=void 0!==/()??/.exec("")[1];(s||c)&&(a=function(t){var e,n,r,a,f=this;return c&&(n=new RegExp("^"+f.source+"$(?!\\s)",o.call(f))),s&&(e=f.lastIndex),r=i.call(f,t),s&&r&&(f.lastIndex=f.global?r.index+r[0].length:e),c&&r&&r.length>1&&u.call(r[0],n,function(){for(a=1;a<arguments.length-2;a++)void 0===arguments[a]&&(r[a]=void 0)}),r}),t.exports=a}.call(this,n(0)(t))},function(t,e,n){"use strict";var r=n(5),o=n(12),i=n(11),u=n(3)("species");t.exports=function(t){var e=r[t];i&&e&&!e[u]&&o.f(e,u,{configurable:!0,get:function(){return this}})}},function(t,e,n){var r=n(26),o=n(63),i=n(25),u=n(16),a=n(129);t.exports=function(t,e){var n=1==t,s=2==t,c=3==t,f=4==t,l=6==t,p=5==t||l,h=e||a;return function(e,a,d){for(var y,v,m=i(e),g=o(m),b=r(a,d,3),w=u(g.length),x=0,_=n?h(e,w):s?h(e,0):void 0;w>x;x++)if((p||x in g)&&(v=b(y=g[x],x,m),t))if(n)_[x]=v;else if(v)switch(t){case 3:return!0;case 5:return y;case 6:return x;case 2:_.push(y)}else if(f)return!1;return l?-1:c||f?f:_}}},function(t,e){t.exports=function(t,e,n,r){if(!(t instanceof e)||void 0!==r&&r in t)throw TypeError(n+": incorrect invocation!");return t}},function(t,e,n){var r=n(36),o=n(3)("iterator"),i=Array.prototype;t.exports=function(t){return void 0!==t&&(r.Array===t||i[o]===t)}},function(t,e,n){var r=n(51),o=n(3)("iterator"),i=n(36);t.exports=n(27).getIteratorMethod=function(t){if(null!=t)return t[o]||t["@@iterator"]||i[r(t)]}},function(t,e,n){var r=n(23);t.exports=function(t,e,n){for(var o in e)r(t,o,e[o],n);return t}},function(t,e,n){"use strict";n.r(e),function(t){n(76),n(97);var e=n(3)("iterator"),r=!1;try{var o=[7][e]();o.return=function(){r=!0},Array.from(o,function(){throw 2})}catch(t){}t.exports=function(t,n){if(!n&&!r)return!1;var o=!1;try{var i=[7],u=i[e]();u.next=function(){return{done:o=!0}},i[e]=function(){return u},t(i)}catch(t){}return o}}.call(this,n(0)(t))},function(t,e,n){"use strict";var r=n(87)(!0);n(89)(String,"String",function(t){this._t=String(t),this._i=0},function(){var t,e=this._t,n=this._i;return n>=e.length?{value:void 0,done:!0}:(t=r(e,n),this._i+=t.length,{value:t,done:!1})})},function(t,e,n){"use strict";var r=n(25),o=n(48),i=n(16);t.exports=function(t){for(var e=r(this),n=i(e.length),u=arguments.length,a=o(u>1?arguments[1]:void 0,n),s=u>2?arguments[2]:void 0,c=void 0===s?n:o(s,n);c>a;)e[a++]=t;return e}},function(t,e,n){var r=n(7);r(r.S+r.F,"Object",{assign:n(139)})},function(t,e,n){"use strict";n.r(e),function(t){n(4),n(6);var e=n(18),r=n(145),o={"Content-Type":"application/x-www-form-urlencoded"};function i(t,n){!e.isUndefined(t)&&e.isUndefined(t["Content-Type"])&&(t["Content-Type"]=n)}var u,a={adapter:("undefined"!=typeof XMLHttpRequest?u=n(146):"undefined"!=typeof process&&(u=n(152)),u),transformRequest:[function(t,n){return r(n,"Content-Type"),e.isFormData(t)||e.isArrayBuffer(t)||e.isBuffer(t)||e.isStream(t)||e.isFile(t)||e.isBlob(t)?t:e.isArrayBufferView(t)?t.buffer:e.isURLSearchParams(t)?(i(n,"application/x-www-form-urlencoded;charset=utf-8"),t.toString()):e.isObject(t)?(i(n,"application/json;charset=utf-8"),JSON.stringify(t)):t}],transformResponse:[function(t){if("string"==typeof t)try{t=JSON.parse(t)}catch(t){}return t}],timeout:0,xsrfCookieName:"XSRF-TOKEN",xsrfHeaderName:"X-XSRF-TOKEN",maxContentLength:-1,validateStatus:function(t){return t>=200&&t<300}};a.headers={common:{Accept:"application/json, text/plain, */*"}},e.forEach(["delete","get","head"],function(t){a.headers[t]={}}),e.forEach(["post","put","patch"],function(t){a.headers[t]=e.merge(o)}),t.exports=a}.call(this,n(0)(t))},function(t,e,n){"use strict";var r=n(102);t.exports=function(t,e,n,o,i){var u=new Error(t);return r(u,e,n,o,i)}},function(t,e,n){"use strict";n(13);var r=n(5),o=n(24),i=n(30),u=n(83),a=n(41),s=n(15),c=n(39).f,f=n(50).f,l=n(12).f,p=n(157).trim,h=r.Number,d=h,y=h.prototype,v="Number"==i(n(47)(y)),m="trim"in String.prototype,g=function(t){var e=a(t,!1);if("string"==typeof e&&e.length>2){var n,r,o,i=(e=m?e.trim():p(e,3)).charCodeAt(0);if(43===i||45===i){if(88===(n=e.charCodeAt(2))||120===n)return NaN}else if(48===i){switch(e.charCodeAt(1)){case 66:case 98:r=2,o=49;break;case 79:case 111:r=8,o=55;break;default:return+e}for(var u,s=e.slice(2),c=0,f=s.length;c<f;c++)if((u=s.charCodeAt(c))<48||u>o)return NaN;return parseInt(s,r)}}return+e};if(!h(" 0o1")||!h("0b1")||h("+0x1")){h=function(t){var e=arguments.length<1?0:t,n=this;return n instanceof h&&(v?s(function(){y.valueOf.call(n)}):"Number"!=i(n))?u(new d(g(e)),n,h):g(e)};for(var b,w=n(11)?c(d):"MAX_VALUE,MIN_VALUE,NaN,NEGATIVE_INFINITY,POSITIVE_INFINITY,EPSILON,isFinite,isInteger,isNaN,isSafeInteger,MAX_SAFE_INTEGER,MIN_SAFE_INTEGER,parseFloat,parseInt,isInteger".split(","),x=0;w.length>x;x++)o(d,b=w[x])&&!o(h,b)&&l(h,b,f(d,b));h.prototype=y,y.constructor=h,n(23)(r,"Number",h)}},function(t,e,n){"use strict";(function(t){n(1),n(2);var r=n(54);function o(t){return(o="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}var i="object"==("undefined"==typeof exports?"undefined":o(exports))&&exports&&!exports.nodeType&&exports,u=i&&"object"==o(t)&&t&&!t.nodeType&&t,a=u&&u.exports===i&&r.a.process,s=function(){try{var t=u&&u.require&&u.require("util").types;return t||a&&a.binding&&a.binding("util")}catch(t){}}();e.a=s}).call(this,n(0)(t))},function(t,e,n){var r=n(10),o=n(128).set;t.exports=function(t,e,n){var i,u=e.constructor;return u!==n&&"function"==typeof u&&(i=u.prototype)!==n.prototype&&r(i)&&o&&o(t,i),t}},function(t,e,n){var r=n(5),o=n(27),i=n(28),u=n(85),a=n(12).f;t.exports=function(t){var e=o.Symbol||(o.Symbol=i?{}:r.Symbol||{});"_"==t.charAt(0)||t in e||a(e,t,{value:u.f(t)})}},function(t,e,n){e.f=n(3)},function(t,e,n){t.exports=!n(11)&&!n(15)(function(){return 7!=Object.defineProperty(n(58)("div"),"a",{get:function(){return 7}}).a})},function(t,e,n){var r=n(31),o=n(32);t.exports=function(t){return function(e,n){var i,u,a=String(o(e)),s=r(n),c=a.length;return s<0||s>=c?t?"":void 0:(i=a.charCodeAt(s))<55296||i>56319||s+1===c||(u=a.charCodeAt(s+1))<56320||u>57343?t?a.charAt(s):i:t?a.slice(s,s+2):u-56320+(i-55296<<10)+65536}}},function(t,e,n){"use strict";n.r(e),function(t){n(1),n(2),n(120),n(121);function e(t){return(e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}var r=n(29)("meta"),o=n(10),i=n(24),u=n(12).f,a=0,s=Object.isExtensible||function(){return!0},c=!n(15)(function(){return s(Object.preventExtensions({}))}),f=function(t){u(t,r,{value:{i:"O"+ ++a,w:{}}})},l=t.exports={KEY:r,NEED:!1,fastKey:function(t,n){if(!o(t))return"symbol"==e(t)?t:("string"==typeof t?"S":"P")+t;if(!i(t,r)){if(!s(t))return"F";if(!n)return"E";f(t)}return t[r].i},getWeak:function(t,e){if(!i(t,r)){if(!s(t))return!0;if(!e)return!1;f(t)}return t[r].w},onFreeze:function(t){return c&&l.NEED&&s(t)&&!i(t,r)&&f(t),t}}}.call(this,n(0)(t))},function(t,e,n){"use strict";n.r(e),function(t){n(21),n(4),n(19);var e=n(28),r=n(7),o=n(23),i=n(22),u=n(36),a=n(124),s=n(42),c=n(91),f=n(3)("iterator"),l=!([].keys&&"next"in[].keys()),p=function(){return this};t.exports=function(t,n,h,d,y,v,m){a(h,n,d);var g,b,w,x=function(t){if(!l&&t in j)return j[t];switch(t){case"keys":case"values":return function(){return new h(this,t)}}return function(){return new h(this,t)}},_=n+" Iterator",O="values"==y,S=!1,j=t.prototype,E=j[f]||j["@@iterator"]||y&&j[y],C=E||x(y),k=y?O?x("entries"):C:void 0,A="Array"==n&&j.entries||E;if(A&&(w=c(A.call(new t)))!==Object.prototype&&w.next&&(s(w,_,!0),e||"function"==typeof w[f]||i(w,f,p)),O&&E&&"values"!==E.name&&(S=!0,C=function(){return E.call(this)}),e&&!m||!l&&!S&&j[f]||i(j,f,C),u[n]=C,u[_]=p,y)if(g={values:O?C:x("values"),keys:v?C:x("keys"),entries:k},m)for(b in g)b in j||o(j,b,g[b]);else r(r.P+r.F*(l||S),n,g);return g}}.call(this,n(0)(t))},function(t,e,n){var r=n(5).document;t.exports=r&&r.documentElement},function(t,e,n){var r=n(24),o=n(25),i=n(65)("IE_PROTO"),u=Object.prototype;t.exports=Object.getPrototypeOf||function(t){return t=o(t),r(t,i)?t[i]:"function"==typeof t.constructor&&t instanceof t.constructor?t.constructor.prototype:t instanceof Object?u:null}},function(t,e,n){var r=n(24),o=n(37),i=n(66)(!1),u=n(65)("IE_PROTO");t.exports=function(t,e){var n,a=o(t),s=0,c=[];for(n in a)n!=u&&r(a,n)&&c.push(n);for(;e.length>s;)r(a,n=e[s++])&&(~i(c,n)||c.push(n));return c}},function(t,e,n){var r=n(30);t.exports=Array.isArray||function(t){return"Array"==r(t)}},function(t,e,n){var r=n(8);t.exports=function(t,e,n,o){try{return o?e(r(n)[0],n[1]):e(n)}catch(e){var i=t.return;throw void 0!==i&&r(i.call(t)),e}}},function(t,e,n){var r,o,i,u=n(26),a=n(132),s=n(90),c=n(58),f=n(5),l=f.process,p=f.setImmediate,h=f.clearImmediate,d=f.MessageChannel,y=f.Dispatch,v=0,m={},g=function(){var t=+this;if(m.hasOwnProperty(t)){var e=m[t];delete m[t],e()}},b=function(t){g.call(t.data)};p&&h||(p=function(t){for(var e=[],n=1;arguments.length>n;)e.push(arguments[n++]);return m[++v]=function(){a("function"==typeof t?t:Function(t),e)},r(v),v},h=function(t){delete m[t]},"process"==n(30)(l)?r=function(t){l.nextTick(u(g,t,1))}:y&&y.now?r=function(t){y.now(u(g,t,1))}:d?(i=(o=new d).port2,o.port1.onmessage=b,r=u(i.postMessage,i,1)):f.addEventListener&&"function"==typeof postMessage&&!f.importScripts?(r=function(t){f.postMessage(t+"","*")},f.addEventListener("message",b,!1)):r="onreadystatechange"in c("script")?function(t){s.appendChild(c("script")).onreadystatechange=function(){s.removeChild(this),g.call(t)}}:function(t){setTimeout(u(g,t,1),0)}),t.exports={set:p,clear:h}},function(t,e,n){"use strict";var r=n(45);function o(t){var e,n;this.promise=new t(function(t,r){if(void 0!==e||void 0!==n)throw TypeError("Bad Promise constructor");e=t,n=r}),this.resolve=r(e),this.reject=r(n)}t.exports.f=function(t){return new o(t)}},function(t,e,n){"use strict";n(76),n(97);var r=n(26),o=n(7),i=n(25),u=n(94),a=n(72),s=n(16),c=n(137),f=n(73);o(o.S+o.F*!n(75)(function(t){Array.from(t)}),"Array",{from:function(t){var e,n,o,l,p=i(t),h="function"==typeof this?this:Array,d=arguments.length,y=d>1?arguments[1]:void 0,v=void 0!==y,m=0,g=f(p);if(v&&(y=r(y,d>2?arguments[2]:void 0,2)),null==g||h==Array&&a(g))for(n=new h(e=s(p.length));e>m;m++)c(n,m,v?y(p[m],m):p[m]);else for(l=g.call(p),n=new h;!(o=l.next()).done;m++)c(n,m,v?u(l,y,[o.value,m],!0):o.value);return n.length=m,n}})},function(t,e,n){var r=n(59),o=n(32);t.exports=function(t,e,n){if(r(e))throw TypeError("String#"+n+" doesn't accept regex!");return String(o(t))}},function(t,e,n){var r=n(3)("match");t.exports=function(t){var e=/./;try{"/./"[t](e)}catch(n){try{return e[r]=!1,!"/./"[t](e)}catch(t){}}return!0}},function(t,e,n){"use strict";t.exports=function(t,e){return function(){for(var n=new Array(arguments.length),r=0;r<n.length;r++)n[r]=arguments[r];return t.apply(e,n)}}},function(t,e,n){"use strict";var r=n(80);t.exports=function(t,e,n){var o=n.config.validateStatus;n.status&&o&&!o(n.status)?e(r("Request failed with status code "+n.status,n.config,null,n.request,n)):t(n)}},function(t,e,n){"use strict";t.exports=function(t,e,n,r,o){return t.config=e,n&&(t.code=n),t.request=r,t.response=o,t}},function(t,e,n){"use strict";n.r(e),function(t){n(4),n(6),n(17);var e=n(18);function r(t){return encodeURIComponent(t).replace(/%40/gi,"@").replace(/%3A/gi,":").replace(/%24/g,"$").replace(/%2C/gi,",").replace(/%20/g,"+").replace(/%5B/gi,"[").replace(/%5D/gi,"]")}t.exports=function(t,n,o){if(!n)return t;var i;if(o)i=o(n);else if(e.isURLSearchParams(n))i=n.toString();else{var u=[];e.forEach(n,function(t,n){null!=t&&(e.isArray(t)?n+="[]":t=[t],e.forEach(t,function(t){e.isDate(t)?t=t.toISOString():e.isObject(t)&&(t=JSON.stringify(t)),u.push(r(n)+"="+r(t))}))}),i=u.join("&")}return i&&(t+=(-1===t.indexOf("?")?"?":"&")+i),t}}.call(this,n(0)(t))},function(t,e,n){"use strict";n(14);var r=n(8),o=n(105),i=n(46);n(52)("search",1,function(t,e,n,u){return[function(n){var r=t(this),o=null==n?void 0:n[e];return void 0!==o?o.call(n,r):new RegExp(n)[e](String(r))},function(t){var e=u(n,t,this);if(e.done)return e.value;var a=r(t),s=String(this),c=a.lastIndex;o(c,0)||(a.lastIndex=0);var f=i(a,s);return o(a.lastIndex,c)||(a.lastIndex=c),null===f?-1:f.index}]})},function(t,e,n){"use strict";n.r(e),function(t){n(149);t.exports=Object.is||function(t,e){return t===e?0!==t||1/t==1/e:t!=t&&e!=e}}.call(this,n(0)(t))},function(t,e,n){"use strict";n.r(e),function(t){n(1),n(2),n(21),n(154),n(6),n(4),n(19);function e(t){return(e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}if(n(11)){var r=n(28),o=n(5),i=n(15),u=n(7),a=n(107),s=n(155),c=n(26),f=n(71),l=n(33),p=n(22),h=n(74),d=n(31),y=n(16),v=n(108),m=n(48),g=n(41),b=n(24),w=n(51),x=n(10),_=n(25),O=n(72),S=n(47),j=n(91),E=n(39).f,C=n(73),k=n(29),A=n(3),R=n(70),P=n(66),F=n(60),M=n(19),I=n(36),T=n(75),$=n(69),L=n(77),U=n(109),K=n(12),B=n(50),N=K.f,q=B.f,z=o.RangeError,D=o.TypeError,H=o.Uint8Array,W=Array.prototype,V=s.ArrayBuffer,G=s.DataView,Y=R(0),J=R(2),Q=R(3),X=R(4),Z=R(5),tt=R(6),et=P(!0),nt=P(!1),rt=M.values,ot=M.keys,it=M.entries,ut=W.lastIndexOf,at=W.reduce,st=W.reduceRight,ct=W.join,ft=W.sort,lt=W.slice,pt=W.toString,ht=W.toLocaleString,dt=A("iterator"),yt=A("toStringTag"),vt=k("typed_constructor"),mt=k("def_constructor"),gt=a.CONSTR,bt=a.TYPED,wt=a.VIEW,xt=R(1,function(t,e){return Et(F(t,t[mt]),e)}),_t=i(function(){return 1===new H(new Uint16Array([1]).buffer)[0]}),Ot=!!H&&!!H.prototype.set&&i(function(){new H(1).set({})}),St=function(t,e){var n=d(t);if(n<0||n%e)throw z("Wrong offset!");return n},jt=function(t){if(x(t)&&bt in t)return t;throw D(t+" is not a typed array!")},Et=function(t,e){if(!(x(t)&&vt in t))throw D("It is not a typed array constructor!");return new t(e)},Ct=function(t,e){return kt(F(t,t[mt]),e)},kt=function(t,e){for(var n=0,r=e.length,o=Et(t,r);r>n;)o[n]=e[n++];return o},At=function(t,e,n){N(t,e,{get:function(){return this._d[n]}})},Rt=function(t){var e,n,r,o,i,u,a=_(t),s=arguments.length,f=s>1?arguments[1]:void 0,l=void 0!==f,p=C(a);if(null!=p&&!O(p)){for(u=p.call(a),r=[],e=0;!(i=u.next()).done;e++)r.push(i.value);a=r}for(l&&s>2&&(f=c(f,arguments[2],2)),e=0,n=y(a.length),o=Et(this,n);n>e;e++)o[e]=l?f(a[e],e):a[e];return o},Pt=function(){for(var t=0,e=arguments.length,n=Et(this,e);e>t;)n[t]=arguments[t++];return n},Ft=!!H&&i(function(){ht.call(new H(1))}),Mt=function(){return ht.apply(Ft?lt.call(jt(this)):jt(this),arguments)},It={copyWithin:function(t,e){return U.call(jt(this),t,e,arguments.length>2?arguments[2]:void 0)},every:function(t){return X(jt(this),t,arguments.length>1?arguments[1]:void 0)},fill:function(t){return L.apply(jt(this),arguments)},filter:function(t){return Ct(this,J(jt(this),t,arguments.length>1?arguments[1]:void 0))},find:function(t){return Z(jt(this),t,arguments.length>1?arguments[1]:void 0)},findIndex:function(t){return tt(jt(this),t,arguments.length>1?arguments[1]:void 0)},forEach:function(t){Y(jt(this),t,arguments.length>1?arguments[1]:void 0)},indexOf:function(t){return nt(jt(this),t,arguments.length>1?arguments[1]:void 0)},includes:function(t){return et(jt(this),t,arguments.length>1?arguments[1]:void 0)},join:function(t){return ct.apply(jt(this),arguments)},lastIndexOf:function(t){return ut.apply(jt(this),arguments)},map:function(t){return xt(jt(this),t,arguments.length>1?arguments[1]:void 0)},reduce:function(t){return at.apply(jt(this),arguments)},reduceRight:function(t){return st.apply(jt(this),arguments)},reverse:function(){for(var t,e=jt(this).length,n=Math.floor(e/2),r=0;r<n;)t=this[r],this[r++]=this[--e],this[e]=t;return this},some:function(t){return Q(jt(this),t,arguments.length>1?arguments[1]:void 0)},sort:function(t){return ft.call(jt(this),t)},subarray:function(t,e){var n=jt(this),r=n.length,o=m(t,r);return new(F(n,n[mt]))(n.buffer,n.byteOffset+o*n.BYTES_PER_ELEMENT,y((void 0===e?r:m(e,r))-o))}},Tt=function(t,e){return Ct(this,lt.call(jt(this),t,e))},$t=function(t){jt(this);var e=St(arguments[1],1),n=this.length,r=_(t),o=y(r.length),i=0;if(o+e>n)throw z("Wrong length!");for(;i<o;)this[e+i]=r[i++]},Lt={entries:function(){return it.call(jt(this))},keys:function(){return ot.call(jt(this))},values:function(){return rt.call(jt(this))}},Ut=function(t,n){return x(t)&&t[bt]&&"symbol"!=e(n)&&n in t&&String(+n)==String(n)},Kt=function(t,e){return Ut(t,e=g(e,!0))?l(2,t[e]):q(t,e)},Bt=function(t,e,n){return!(Ut(t,e=g(e,!0))&&x(n)&&b(n,"value"))||b(n,"get")||b(n,"set")||n.configurable||b(n,"writable")&&!n.writable||b(n,"enumerable")&&!n.enumerable?N(t,e,n):(t[e]=n.value,t)};gt||(B.f=Kt,K.f=Bt),u(u.S+u.F*!gt,"Object",{getOwnPropertyDescriptor:Kt,defineProperty:Bt}),i(function(){pt.call({})})&&(pt=ht=function(){return ct.call(this)});var Nt=h({},It);h(Nt,Lt),p(Nt,dt,Lt.values),h(Nt,{slice:Tt,set:$t,constructor:function(){},toString:pt,toLocaleString:Mt}),At(Nt,"buffer","b"),At(Nt,"byteOffset","o"),At(Nt,"byteLength","l"),At(Nt,"length","e"),N(Nt,yt,{get:function(){return this[bt]}}),t.exports=function(t,e,n,s){var c=t+((s=!!s)?"Clamped":"")+"Array",l="get"+t,h="set"+t,d=o[c],m=d||{},g=d&&j(d),b=!d||!a.ABV,_={},O=d&&d.prototype,C=function(t,n){N(t,n,{get:function(){return function(t,n){var r=t._d;return r.v[l](n*e+r.o,_t)}(this,n)},set:function(t){return function(t,n,r){var o=t._d;s&&(r=(r=Math.round(r))<0?0:r>255?255:255&r),o.v[h](n*e+o.o,r,_t)}(this,n,t)},enumerable:!0})};b?(d=n(function(t,n,r,o){f(t,d,c,"_d");var i,u,a,s,l=0,h=0;if(x(n)){if(!(n instanceof V||"ArrayBuffer"==(s=w(n))||"SharedArrayBuffer"==s))return bt in n?kt(d,n):Rt.call(d,n);i=n,h=St(r,e);var m=n.byteLength;if(void 0===o){if(m%e)throw z("Wrong length!");if((u=m-h)<0)throw z("Wrong length!")}else if((u=y(o)*e)+h>m)throw z("Wrong length!");a=u/e}else a=v(n),i=new V(u=a*e);for(p(t,"_d",{b:i,o:h,l:u,e:a,v:new G(i)});l<a;)C(t,l++)}),O=d.prototype=S(Nt),p(O,"constructor",d)):i(function(){d(1)})&&i(function(){new d(-1)})&&T(function(t){new d,new d(null),new d(1.5),new d(t)},!0)||(d=n(function(t,n,r,o){var i;return f(t,d,c),x(n)?n instanceof V||"ArrayBuffer"==(i=w(n))||"SharedArrayBuffer"==i?void 0!==o?new m(n,St(r,e),o):void 0!==r?new m(n,St(r,e)):new m(n):bt in n?kt(d,n):Rt.call(d,n):new m(v(n))}),Y(g!==Function.prototype?E(m).concat(E(g)):E(m),function(t){t in d||p(d,t,m[t])}),d.prototype=O,r||(O.constructor=d));var k=O[dt],A=!!k&&("values"==k.name||null==k.name),R=Lt.values;p(d,vt,!0),p(O,bt,c),p(O,wt,!0),p(O,mt,d),(s?new d(1)[yt]==c:yt in O)||N(O,yt,{get:function(){return c}}),_[c]=d,u(u.G+u.W+u.F*(d!=m),_),u(u.S,c,{BYTES_PER_ELEMENT:e}),u(u.S+u.F*i(function(){m.of.call(d,1)}),c,{from:Rt,of:Pt}),"BYTES_PER_ELEMENT"in O||p(O,"BYTES_PER_ELEMENT",e),u(u.P,c,It),$(c),u(u.P+u.F*Ot,c,{set:$t}),u(u.P+u.F*!A,c,Lt),r||O.toString==pt||(O.toString=pt),u(u.P+u.F*i(function(){new d(1).slice()}),c,{slice:Tt}),u(u.P+u.F*(i(function(){return[1,2].toLocaleString()!=new d([1,2]).toLocaleString()})||!i(function(){O.toLocaleString.call([1,2])})),c,{toLocaleString:Mt}),I[c]=A?k:R,r||A||p(O,dt,R)}}else t.exports=function(){}}.call(this,n(0)(t))},function(t,e,n){"use strict";n.r(e),function(t){n(13);for(var e,r=n(5),o=n(22),i=n(29),u=i("typed_array"),a=i("view"),s=!(!r.ArrayBuffer||!r.DataView),c=s,f=0,l="Int8Array,Uint8Array,Uint8ClampedArray,Int16Array,Uint16Array,Int32Array,Uint32Array,Float32Array,Float64Array".split(",");f<9;)(e=r[l[f++]])?(o(e.prototype,u,!0),o(e.prototype,a,!0)):c=!1;t.exports={ABV:s,CONSTR:c,TYPED:u,VIEW:a}}.call(this,n(0)(t))},function(t,e,n){var r=n(31),o=n(16);t.exports=function(t){if(void 0===t)return 0;var e=r(t),n=o(e);if(e!==n)throw RangeError("Wrong length!");return n}},function(t,e,n){"use strict";n.r(e),function(t){n(156);var e=n(25),r=n(48),o=n(16);t.exports=[].copyWithin||function(t,n){var i=e(this),u=o(i.length),a=r(t,u),s=r(n,u),c=arguments.length>2?arguments[2]:void 0,f=Math.min((void 0===c?u:r(c,u))-s,u-a),l=1;for(s<a&&a<s+f&&(l=-1,s+=f-1,a+=f-1);f-- >0;)s in i?i[a]=i[s]:delete i[a],a+=l,s+=l;return i}}.call(this,n(0)(t))},function(t,e){t.exports=require("http")},function(t,e){t.exports=require("https")},function(t,e,n){"use strict";n.r(e),function(t){n(1),n(2),n(81),n(104),n(53),n(19),n(38),n(78),n(21),n(4);function e(t){return(e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}var r=n(113),o=r.URL,i=n(110),u=n(111),a=n(159),s=n(160).Writable,c=n(161)("follow-redirects"),f={GET:!0,HEAD:!0,OPTIONS:!0,TRACE:!0},l=Object.create(null);function p(t,e){s.call(this),t.headers=t.headers||{},this._options=t,this._ended=!1,this._ending=!1,this._redirectCount=0,this._redirects=[],this._requestBodyLength=0,this._requestBodyBuffers=[],t.host&&(t.hostname||(t.hostname=t.host),delete t.host),e&&this.on("response",e);var n=this;if(this._onNativeResponse=function(t){n._processResponse(t)},!t.pathname&&t.path){var r=t.path.indexOf("?");r<0?t.pathname=t.path:(t.pathname=t.path.substring(0,r),t.search=t.path.substring(r))}this._performRequest()}function h(t){var e={maxRedirects:21,maxBodyLength:10485760},n={};return Object.keys(t).forEach(function(i){var u=i+":",s=n[u]=t[i],f=e[i]=Object.create(s);f.request=function(t,i,s){if("string"==typeof t){var f=t;try{t=y(new o(f))}catch(e){t=r.parse(f)}}else o&&t instanceof o?t=y(t):(s=i,i=t,t={protocol:u});return"function"==typeof i&&(s=i,i=null),(i=Object.assign({maxRedirects:e.maxRedirects,maxBodyLength:e.maxBodyLength},t,i)).nativeProtocols=n,a.equal(i.protocol,u,"protocol mismatch"),c("options",i),new p(i,s)},f.get=function(t,e,n){var r=f.request(t,e,n);return r.end(),r}}),e}function d(){}function y(t){var e={protocol:t.protocol,hostname:t.hostname.startsWith("[")?t.hostname.slice(1,-1):t.hostname,hash:t.hash,search:t.search,pathname:t.pathname,path:"".concat(t.pathname).concat(t.search),href:t.href};return""!==t.port&&(e.port=Number(t.port)),e}["abort","aborted","error","socket","timeout"].forEach(function(t){l[t]=function(e){this._redirectable.emit(t,e)}}),p.prototype=Object.create(s.prototype),p.prototype.write=function(t,n,r){if(this._ending)throw new Error("write after end");if(!("string"==typeof t||"object"===e(t)&&"length"in t))throw new Error("data should be a string, Buffer or Uint8Array");"function"==typeof n&&(r=n,n=null),0!==t.length?this._requestBodyLength+t.length<=this._options.maxBodyLength?(this._requestBodyLength+=t.length,this._requestBodyBuffers.push({data:t,encoding:n}),this._currentRequest.write(t,n,r)):(this.emit("error",new Error("Request body larger than maxBodyLength limit")),this.abort()):r&&r()},p.prototype.end=function(t,e,n){if("function"==typeof t?(n=t,t=e=null):"function"==typeof e&&(n=e,e=null),t){var r=this,o=this._currentRequest;this.write(t,e,function(){r._ended=!0,o.end(null,null,n)}),this._ending=!0}else this._ended=this._ending=!0,this._currentRequest.end(null,null,n)},p.prototype.setHeader=function(t,e){this._options.headers[t]=e,this._currentRequest.setHeader(t,e)},p.prototype.removeHeader=function(t){delete this._options.headers[t],this._currentRequest.removeHeader(t)},["abort","flushHeaders","getHeader","setNoDelay","setSocketKeepAlive","setTimeout"].forEach(function(t){p.prototype[t]=function(e,n){return this._currentRequest[t](e,n)}}),["aborted","connection","socket"].forEach(function(t){Object.defineProperty(p.prototype,t,{get:function(){return this._currentRequest[t]}})}),p.prototype._performRequest=function(){var t=this._options.protocol,e=this._options.nativeProtocols[t];if(e){if(this._options.agents){var n=t.substr(0,t.length-1);this._options.agent=this._options.agents[n]}var o=this._currentRequest=e.request(this._options,this._onNativeResponse);for(var i in this._currentUrl=r.format(this._options),o._redirectable=this,l)i&&o.on(i,l[i]);if(this._isRedirect){var u=0,a=this,s=this._requestBodyBuffers;!function t(e){if(o===a._currentRequest)if(e)a.emit("error",e);else if(u<s.length){var n=s[u++];o.finished||o.write(n.data,n.encoding,t)}else a._ended&&o.end()}()}}else this.emit("error",new Error("Unsupported protocol "+t))},p.prototype._processResponse=function(t){this._options.trackRedirects&&this._redirects.push({url:this._currentUrl,headers:t.headers,statusCode:t.statusCode});var e=t.headers.location;if(e&&!1!==this._options.followRedirects&&t.statusCode>=300&&t.statusCode<400){if(this._currentRequest.removeAllListeners(),this._currentRequest.on("error",d),this._currentRequest.abort(),++this._redirectCount>this._options.maxRedirects)return void this.emit("error",new Error("Max redirects exceeded."));var n,o=this._options.headers;if(307!==t.statusCode&&!(this._options.method in f))for(n in this._options.method="GET",this._requestBodyBuffers=[],o)/^content-/i.test(n)&&delete o[n];if(!this._isRedirect)for(n in o)/^host$/i.test(n)&&delete o[n];var i=r.resolve(this._currentUrl,e);c("redirecting to",i),Object.assign(this._options,r.parse(i)),this._isRedirect=!0,this._performRequest(),t.destroy()}else t.responseUrl=this._currentUrl,t.redirects=this._redirects,this.emit("response",t),this._requestBodyBuffers=[]},t.exports=h({http:i,https:u}),t.exports.wrap=h}.call(this,n(0)(t))},function(t,e){t.exports=require("url")},function(t,e,n){"use strict";n.r(e),function(t){n(14),n(13),n(17);function e(t){var e;function n(){if(n.enabled){var t=n,r=+new Date,o=r-(e||r);t.diff=o,t.prev=e,t.curr=r,e=r;for(var i=new Array(arguments.length),u=0;u<i.length;u++)i[u]=arguments[u];i[0]=exports.coerce(i[0]),"string"!=typeof i[0]&&i.unshift("%O");var a=0;i[0]=i[0].replace(/%([a-zA-Z%])/g,function(e,n){if("%%"===e)return e;a++;var r=exports.formatters[n];if("function"==typeof r){var o=i[a];e=r.call(t,o),i.splice(a,1),a--}return e}),exports.formatArgs.call(t,i),(n.log||exports.log||console.log.bind(console)).apply(t,i)}}return n.namespace=t,n.enabled=exports.enabled(t),n.useColors=exports.useColors(),n.color=function(t){var e,n=0;for(e in t)n=(n<<5)-n+t.charCodeAt(e),n|=0;return exports.colors[Math.abs(n)%exports.colors.length]}(t),n.destroy=r,"function"==typeof exports.init&&exports.init(n),exports.instances.push(n),n}function r(){var t=exports.instances.indexOf(this);return-1!==t&&(exports.instances.splice(t,1),!0)}exports=t.exports=e.debug=e.default=e,exports.coerce=function(t){return t instanceof Error?t.stack||t.message:t},exports.disable=function(){exports.enable("")},exports.enable=function(t){var e;exports.save(t),exports.names=[],exports.skips=[];var n=("string"==typeof t?t:"").split(/[\s,]+/),r=n.length;for(e=0;e<r;e++)n[e]&&("-"===(t=n[e].replace(/\*/g,".*?"))[0]?exports.skips.push(new RegExp("^"+t.substr(1)+"$")):exports.names.push(new RegExp("^"+t+"$")));for(e=0;e<exports.instances.length;e++){var o=exports.instances[e];o.enabled=exports.enabled(o.namespace)}},exports.enabled=function(t){if("*"===t[t.length-1])return!0;var e,n;for(e=0,n=exports.skips.length;e<n;e++)if(exports.skips[e].test(t))return!1;for(e=0,n=exports.names.length;e<n;e++)if(exports.names[e].test(t))return!0;return!1},exports.humanize=n(163),exports.instances=[],exports.names=[],exports.skips=[],exports.formatters={}}.call(this,n(0)(t))},function(t,e,n){"use strict";t.exports=function(t){return!(!t||!t.__CANCEL__)}},function(t,e,n){"use strict";function r(t){this.message=t}r.prototype.toString=function(){return"Cancel"+(this.message?": "+this.message:"")},r.prototype.__CANCEL__=!0,t.exports=r},function(t,e,n){"use strict";e.a=function(){return!1}},function(t,e,n){"use strict";(function(t){n(1),n(2);var r=n(20);function o(t){return(o="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}var i="object"==("undefined"==typeof exports?"undefined":o(exports))&&exports&&!exports.nodeType&&exports,u=i&&"object"==o(t)&&t&&!t.nodeType&&t,a=u&&u.exports===i?r.a.Buffer:void 0,s=a?a.allocUnsafe:void 0;e.a=function(t,e){if(e)return t.slice();var n=t.length,r=s?s(n):new t.constructor(n);return t.copy(r),r}}).call(this,n(0)(t))},function(t,e,n){t.exports=n(142)},function(t,e,n){var r=n(10),o=n(88).onFreeze;n(62)("preventExtensions",function(t){return function(e){return t&&r(e)?t(o(e)):e}})},function(t,e,n){var r=n(10);n(62)("isExtensible",function(t){return function(e){return!!r(e)&&(!t||t(e))}})},function(t,e,n){var r=n(34),o=n(67),i=n(49);t.exports=function(t){var e=r(t),n=o.f;if(n)for(var u,a=n(t),s=i.f,c=0;a.length>c;)s.call(t,u=a[c++])&&e.push(u);return e}},function(t,e){t.exports=function(t,e){return{value:e,done:!!t}}},function(t,e,n){"use strict";var r=n(47),o=n(33),i=n(42),u={};n(22)(u,n(3)("iterator"),function(){return this}),t.exports=function(t,e,n){t.prototype=r(u,{next:o(1,n)}),i(t,e+" Iterator")}},function(t,e,n){var r=n(12),o=n(8),i=n(34);t.exports=n(11)?Object.defineProperties:function(t,e){o(t);for(var n,u=i(e),a=u.length,s=0;a>s;)r.f(t,n=u[s++],e[n]);return t}},function(t,e,n){"use strict";n.r(e),function(t){n(1),n(2),n(6);function e(t){return(e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}var r=n(37),o=n(39).f,i={}.toString,u="object"==("undefined"==typeof window?"undefined":e(window))&&window&&Object.getOwnPropertyNames?Object.getOwnPropertyNames(window):[];t.exports.f=function(t){return u&&"[object Window]"==i.call(t)?function(t){try{return o(t)}catch(t){return u.slice()}}(t):o(r(t))}}.call(this,n(0)(t))},function(t,e,n){"use strict";var r=n(68);n(7)({target:"RegExp",proto:!0,forced:r!==/./.exec},{exec:r})},function(t,e,n){var r=n(10),o=n(8),i=function(t,e){if(o(t),!r(e)&&null!==e)throw TypeError(e+": can't set as prototype!")};t.exports={set:Object.setPrototypeOf||("__proto__"in{}?function(t,e,r){try{(r=n(26)(Function.call,n(50).f(Object.prototype,"__proto__").set,2))(t,[]),e=!(t instanceof Array)}catch(t){e=!0}return function(t,n){return i(t,n),e?t.__proto__=n:r(t,n),t}}({},!1):void 0),check:i}},function(t,e,n){var r=n(130);t.exports=function(t,e){return new(r(t))(e)}},function(t,e,n){var r=n(10),o=n(93),i=n(3)("species");t.exports=function(t){var e;return o(t)&&("function"!=typeof(e=t.constructor)||e!==Array&&!o(e.prototype)||(e=void 0),r(e)&&null===(e=e[i])&&(e=void 0)),void 0===e?Array:e}},function(t,e,n){var r=n(26),o=n(94),i=n(72),u=n(8),a=n(16),s=n(73),c={},f={};(e=t.exports=function(t,e,n,l,p){var h,d,y,v,m=p?function(){return t}:s(t),g=r(n,l,e?2:1),b=0;if("function"!=typeof m)throw TypeError(t+" is not iterable!");if(i(m)){for(h=a(t.length);h>b;b++)if((v=e?g(u(d=t[b])[0],d[1]):g(t[b]))===c||v===f)return v}else for(y=m.call(t);!(d=y.next()).done;)if((v=o(y,g,d.value,e))===c||v===f)return v}).BREAK=c,e.RETURN=f},function(t,e){t.exports=function(t,e,n){var r=void 0===n;switch(e.length){case 0:return r?t():t.call(n);case 1:return r?t(e[0]):t.call(n,e[0]);case 2:return r?t(e[0],e[1]):t.call(n,e[0],e[1]);case 3:return r?t(e[0],e[1],e[2]):t.call(n,e[0],e[1],e[2]);case 4:return r?t(e[0],e[1],e[2],e[3]):t.call(n,e[0],e[1],e[2],e[3])}return t.apply(n,e)}},function(t,e,n){var r=n(5),o=n(95).set,i=r.MutationObserver||r.WebKitMutationObserver,u=r.process,a=r.Promise,s="process"==n(30)(u);t.exports=function(){var t,e,n,c=function(){var r,o;for(s&&(r=u.domain)&&r.exit();t;){o=t.fn,t=t.next;try{o()}catch(r){throw t?n():e=void 0,r}}e=void 0,r&&r.enter()};if(s)n=function(){u.nextTick(c)};else if(!i||r.navigator&&r.navigator.standalone)if(a&&a.resolve){var f=a.resolve(void 0);n=function(){f.then(c)}}else n=function(){o.call(r,c)};else{var l=!0,p=document.createTextNode("");new i(c).observe(p,{characterData:!0}),n=function(){p.data=l=!l}}return function(r){var o={fn:r,next:void 0};e&&(e.next=o),t||(t=o,n()),e=o}}},function(t,e){t.exports=function(t){try{return{e:!1,v:t()}}catch(t){return{e:!0,v:t}}}},function(t,e,n){var r=n(5).navigator;t.exports=r&&r.userAgent||""},function(t,e,n){var r=n(8),o=n(10),i=n(96);t.exports=function(t,e){if(r(t),o(e)&&e.constructor===t)return e;var n=i.f(t);return(0,n.resolve)(e),n.promise}},function(t,e,n){"use strict";var r=n(12),o=n(33);t.exports=function(t,e,n){e in t?r.f(t,e,o(0,n)):t[e]=n}},function(t,e,n){var r=n(7);r(r.P,"Array",{fill:n(77)}),n(35)("fill")},function(t,e,n){"use strict";n.r(e),function(t){n(19),n(38),n(4),n(1),n(2),n(78);var e=n(34),r=n(67),o=n(49),i=n(25),u=n(63),a=Object.assign;t.exports=!a||n(15)(function(){var t={},e={},n=Symbol(),r="abcdefghijklmnopqrst";return t[n]=7,r.split("").forEach(function(t){e[t]=t}),7!=a({},t)[n]||Object.keys(a({},e)).join("")!=r})?function(t,n){for(var a=i(t),s=arguments.length,c=1,f=r.f,l=o.f;s>c;)for(var p,h=u(arguments[c++]),d=f?e(h).concat(f(h)):e(h),y=d.length,v=0;y>v;)l.call(h,p=d[v++])&&(a[p]=h[p]);return a}:a}.call(this,n(0)(t))},function(t,e,n){"use strict";var r=n(7),o=n(66)(!0);r(r.P,"Array",{includes:function(t){return o(this,t,arguments.length>1?arguments[1]:void 0)}}),n(35)("includes")},function(t,e,n){"use strict";var r=n(7),o=n(98);r(r.P+r.F*n(99)("includes"),"String",{includes:function(t){return!!~o(this,t,"includes").indexOf(t,arguments.length>1?arguments[1]:void 0)}})},function(t,e,n){"use strict";n.r(e),function(t){n(9),n(4),n(19),n(76);var e=n(18),r=n(100),o=n(144),i=n(79);function u(t){var n=new o(t),i=r(o.prototype.request,n);return e.extend(i,o.prototype,n),e.extend(i,n),i}var a=u(i);a.Axios=o,a.create=function(t){return u(e.merge(i,t))},a.Cancel=n(116),a.CancelToken=n(177),a.isCancel=n(115),a.all=function(t){return Promise.all(t)},a.spread=n(178),t.exports=a,t.exports.default=a}.call(this,n(0)(t))},function(t,e){function n(t){return!!t.constructor&&"function"==typeof t.constructor.isBuffer&&t.constructor.isBuffer(t)}
-/*!
- * Determine if an object is a Buffer
+var vuexOrmAxios =
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 21);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var _babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+
+
+function _typeof2(obj) {
+  if (typeof Symbol === "function" && Object(_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__["default"])(Symbol.iterator) === "symbol") {
+    _typeof2 = function _typeof2(obj) {
+      return Object(_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__["default"])(obj);
+    };
+  } else {
+    _typeof2 = function _typeof2(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : Object(_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__["default"])(obj);
+    };
+  }
+
+  return _typeof2(obj);
+}
+
+function _typeof(obj) {
+  if (typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol") {
+    module.exports = _typeof = function _typeof(obj) {
+      return _typeof2(obj);
+    };
+  } else {
+    module.exports = _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof2(obj);
+    };
+  }
+
+  return _typeof(obj);
+}
+
+module.exports = _typeof;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(9)(module)))
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(17);
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+module.exports = _classCallCheck;
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports) {
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+module.exports = _createClass;
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports) {
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
+  try {
+    var info = gen[key](arg);
+    var value = info.value;
+  } catch (error) {
+    reject(error);
+    return;
+  }
+
+  if (info.done) {
+    resolve(value);
+  } else {
+    Promise.resolve(value).then(_next, _throw);
+  }
+}
+
+function _asyncToGenerator(fn) {
+  return function () {
+    var self = this,
+        args = arguments;
+    return new Promise(function (resolve, reject) {
+      var gen = fn.apply(self, args);
+
+      function _next(value) {
+        asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);
+      }
+
+      function _throw(err) {
+        asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);
+      }
+
+      _next(undefined);
+    });
+  };
+}
+
+module.exports = _asyncToGenerator;
+
+/***/ }),
+/* 5 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var _freeGlobal_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(10);
+
+
+/** Detect free variable `self`. */
+
+var freeSelf = (typeof self === "undefined" ? "undefined" : Object(_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__["default"])(self)) == 'object' && self && self.Object === Object && self;
+/** Used as a reference to the global object. */
+
+var root = _freeGlobal_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"] || freeSelf || Function('return this')();
+/* harmony default export */ __webpack_exports__["a"] = (root);
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _typeof = __webpack_require__(0);
+
+var assertThisInitialized = __webpack_require__(19);
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return assertThisInitialized(self);
+}
+
+module.exports = _possibleConstructorReturn;
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports) {
+
+function _getPrototypeOf(o) {
+  module.exports = _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+module.exports = _getPrototypeOf;
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var setPrototypeOf = __webpack_require__(20);
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) setPrototypeOf(subClass, superClass);
+}
+
+module.exports = _inherits;
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports) {
+
+module.exports = function (originalModule) {
+  if (!originalModule.webpackPolyfill) {
+    var module = Object.create(originalModule); // module.parent = undefined by default
+
+    if (!module.children) module.children = [];
+    Object.defineProperty(module, "loaded", {
+      enumerable: true,
+      get: function get() {
+        return module.l;
+      }
+    });
+    Object.defineProperty(module, "id", {
+      enumerable: true,
+      get: function get() {
+        return module.i;
+      }
+    });
+    Object.defineProperty(module, "exports", {
+      enumerable: true
+    });
+    module.webpackPolyfill = 1;
+  }
+
+  return module;
+};
+
+/***/ }),
+/* 10 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var _babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+
+
+/** Detect free variable `global` from Node.js. */
+var freeGlobal = (typeof global === "undefined" ? "undefined" : Object(_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__["default"])(global)) == 'object' && global && global.Object === Object && global;
+/* harmony default export */ __webpack_exports__["a"] = (freeGlobal);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(16)))
+
+/***/ }),
+/* 11 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var _babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var _root_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5);
+/* harmony import */ var _stubFalse_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(13);
+
+
+
+/** Detect free variable `exports`. */
+
+var freeExports = (typeof exports === "undefined" ? "undefined" : Object(_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__["default"])(exports)) == 'object' && exports && !exports.nodeType && exports;
+/** Detect free variable `module`. */
+
+var freeModule = freeExports && ( false ? undefined : Object(_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__["default"])(module)) == 'object' && module && !module.nodeType && module;
+/** Detect the popular CommonJS extension `module.exports`. */
+
+var moduleExports = freeModule && freeModule.exports === freeExports;
+/** Built-in value references. */
+
+var Buffer = moduleExports ? _root_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"].Buffer : undefined;
+/* Built-in method references for those with the same name as other `lodash` methods. */
+
+var nativeIsBuffer = Buffer ? Buffer.isBuffer : undefined;
+/**
+ * Checks if `value` is a buffer.
  *
- * @author   Feross Aboukhadijeh <https://feross.org>
- * @license  MIT
+ * @static
+ * @memberOf _
+ * @since 4.3.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a buffer, else `false`.
+ * @example
+ *
+ * _.isBuffer(new Buffer(2));
+ * // => true
+ *
+ * _.isBuffer(new Uint8Array(2));
+ * // => false
  */
-t.exports=function(t){return null!=t&&(n(t)||function(t){return"function"==typeof t.readFloatLE&&"function"==typeof t.slice&&n(t.slice(0,0))}(t)||!!t._isBuffer)}},function(t,e,n){"use strict";n.r(e),function(t){n(4),n(9);var e=n(79),r=n(18),o=n(172),i=n(173);function u(t){this.defaults=t,this.interceptors={request:new o,response:new o}}u.prototype.request=function(t){"string"==typeof t&&(t=r.merge({url:arguments[0]},arguments[1])),(t=r.merge(e,{method:"get"},this.defaults,t)).method=t.method.toLowerCase();var n=[i,void 0],o=Promise.resolve(t);for(this.interceptors.request.forEach(function(t){n.unshift(t.fulfilled,t.rejected)}),this.interceptors.response.forEach(function(t){n.push(t.fulfilled,t.rejected)});n.length;)o=o.then(n.shift(),n.shift());return o},r.forEach(["delete","get","head","options"],function(t){u.prototype[t]=function(e,n){return this.request(r.merge(n||{},{method:t,url:e}))}}),r.forEach(["post","put","patch"],function(t){u.prototype[t]=function(e,n,o){return this.request(r.merge(o||{},{method:t,url:e,data:n}))}}),t.exports=u}.call(this,n(0)(t))},function(t,e,n){"use strict";n.r(e),function(t){n(21),n(4);var e=n(18);t.exports=function(t,n){e.forEach(t,function(e,r){r!==n&&r.toUpperCase()===n.toUpperCase()&&(t[n]=e,delete t[r])})}}.call(this,n(0)(t))},function(t,e,n){"use strict";n.r(e),function(t){n(4),n(9);var e=n(18),r=n(101),o=n(103),i=n(147),u=n(148),a=n(80),s="undefined"!=typeof window&&window.btoa&&window.btoa.bind(window)||n(150);t.exports=function(t){return new Promise(function(c,f){var l=t.data,p=t.headers;e.isFormData(l)&&delete p["Content-Type"];var h=new XMLHttpRequest,d="onreadystatechange",y=!1;if("undefined"==typeof window||!window.XDomainRequest||"withCredentials"in h||u(t.url)||(h=new window.XDomainRequest,d="onload",y=!0,h.onprogress=function(){},h.ontimeout=function(){}),t.auth){var v=t.auth.username||"",m=t.auth.password||"";p.Authorization="Basic "+s(v+":"+m)}if(h.open(t.method.toUpperCase(),o(t.url,t.params,t.paramsSerializer),!0),h.timeout=t.timeout,h[d]=function(){if(h&&(4===h.readyState||y)&&(0!==h.status||h.responseURL&&0===h.responseURL.indexOf("file:"))){var e="getAllResponseHeaders"in h?i(h.getAllResponseHeaders()):null,n={data:t.responseType&&"text"!==t.responseType?h.response:h.responseText,status:1223===h.status?204:h.status,statusText:1223===h.status?"No Content":h.statusText,headers:e,config:t,request:h};r(c,f,n),h=null}},h.onerror=function(){f(a("Network Error",t,null,h)),h=null},h.ontimeout=function(){f(a("timeout of "+t.timeout+"ms exceeded",t,"ECONNABORTED",h)),h=null},e.isStandardBrowserEnv()){var g=n(151),b=(t.withCredentials||u(t.url))&&t.xsrfCookieName?g.read(t.xsrfCookieName):void 0;b&&(p[t.xsrfHeaderName]=b)}if("setRequestHeader"in h&&e.forEach(p,function(t,e){void 0===l&&"content-type"===e.toLowerCase()?delete p[e]:h.setRequestHeader(e,t)}),t.withCredentials&&(h.withCredentials=!0),t.responseType)try{h.responseType=t.responseType}catch(e){if("json"!==t.responseType)throw e}"function"==typeof t.onDownloadProgress&&h.addEventListener("progress",t.onDownloadProgress),"function"==typeof t.onUploadProgress&&h.upload&&h.upload.addEventListener("progress",t.onUploadProgress),t.cancelToken&&t.cancelToken.promise.then(function(t){h&&(h.abort(),f(t),h=null)}),void 0===l&&(l=null),h.send(l)})}}.call(this,n(0)(t))},function(t,e,n){"use strict";n.r(e),function(t){n(13),n(4);var e=n(18),r=["age","authorization","content-length","content-type","etag","expires","from","host","if-modified-since","if-unmodified-since","last-modified","location","max-forwards","proxy-authorization","referer","retry-after","user-agent"];t.exports=function(t){var n,o,i,u={};return t?(e.forEach(t.split("\n"),function(t){if(i=t.indexOf(":"),n=e.trim(t.substr(0,i)).toLowerCase(),o=e.trim(t.substr(i+1)),n){if(u[n]&&r.indexOf(n)>=0)return;u[n]="set-cookie"===n?(u[n]?u[n]:[]).concat([o]):u[n]?u[n]+", "+o:o}}),u):u}}.call(this,n(0)(t))},function(t,e,n){"use strict";n.r(e),function(t){n(104),n(17);var e=n(18);t.exports=e.isStandardBrowserEnv()?function(){var t,n=/(msie|trident)/i.test(navigator.userAgent),r=document.createElement("a");function o(t){var e=t;return n&&(r.setAttribute("href",e),e=r.href),r.setAttribute("href",e),{href:r.href,protocol:r.protocol?r.protocol.replace(/:$/,""):"",host:r.host,search:r.search?r.search.replace(/^\?/,""):"",hash:r.hash?r.hash.replace(/^#/,""):"",hostname:r.hostname,port:r.port,pathname:"/"===r.pathname.charAt(0)?r.pathname:"/"+r.pathname}}return t=o(window.location.href),function(n){var r=e.isString(n)?o(n):n;return r.protocol===t.protocol&&r.host===t.host}}():function(){return!0}}.call(this,n(0)(t))},function(t,e,n){var r=n(7);r(r.S,"Object",{is:n(105)})},function(t,e,n){"use strict";var r="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";function o(){this.message="String contains an invalid character"}o.prototype=new Error,o.prototype.code=5,o.prototype.name="InvalidCharacterError",t.exports=function(t){for(var e,n,i=String(t),u="",a=0,s=r;i.charAt(0|a)||(s="=",a%1);u+=s.charAt(63&e>>8-a%1*8)){if((n=i.charCodeAt(a+=.75))>255)throw new o;e=e<<8|n}return u}},function(t,e,n){"use strict";n.r(e),function(t){n(14),n(43);var e=n(18);t.exports=e.isStandardBrowserEnv()?{write:function(t,n,r,o,i,u){var a=[];a.push(t+"="+encodeURIComponent(n)),e.isNumber(r)&&a.push("expires="+new Date(r).toGMTString()),e.isString(o)&&a.push("path="+o),e.isString(i)&&a.push("domain="+i),!0===u&&a.push("secure"),document.cookie=a.join("; ")},read:function(t){var e=document.cookie.match(new RegExp("(^|;\\s*)("+t+")=([^;]*)"));return e?decodeURIComponent(e[3]):null},remove:function(t){this.write(t,"",Date.now()-864e5)}}:{write:function(){},read:function(){return null},remove:function(){}}}.call(this,n(0)(t))},function(t,e,n){"use strict";n.r(e),function(t){n(6),n(17),n(13),n(153),n(9);var e=n(18),r=n(101),o=n(103),i=n(110),u=n(111),a=n(112).http,s=n(112).https,c=n(113),f=n(170),l=n(171),p=n(80),h=n(102);t.exports=function(t){return new Promise(function(n,d){var y,v=t.data,m=t.headers;if(m["User-Agent"]||m["user-agent"]||(m["User-Agent"]="axios/"+l.version),v&&!e.isStream(v)){if(Buffer.isBuffer(v));else if(e.isArrayBuffer(v))v=new Buffer(new Uint8Array(v));else{if(!e.isString(v))return d(p("Data after transformation must be a string, an ArrayBuffer, a Buffer, or a Stream",t));v=new Buffer(v,"utf-8")}m["Content-Length"]=v.length}var g=void 0;t.auth&&(g=(t.auth.username||"")+":"+(t.auth.password||""));var b=c.parse(t.url),w=b.protocol||"http:";if(!g&&b.auth){var x=b.auth.split(":");g=(x[0]||"")+":"+(x[1]||"")}g&&delete m.Authorization;var _="https:"===w,O=_?t.httpsAgent:t.httpAgent,S={path:o(b.path,t.params,t.paramsSerializer).replace(/^\?/,""),method:t.method,headers:m,agent:O,auth:g};t.socketPath?S.socketPath=t.socketPath:(S.hostname=b.hostname,S.port=b.port);var j,E=t.proxy;if(!E&&!1!==E){var C=w.slice(0,-1)+"_proxy",k=process.env[C]||process.env[C.toUpperCase()];if(k){var A=c.parse(k);if(E={host:A.hostname,port:A.port},A.auth){var R=A.auth.split(":");E.auth={username:R[0],password:R[1]}}}}if(E&&(S.hostname=E.host,S.host=E.host,S.headers.host=b.hostname+(b.port?":"+b.port:""),S.port=E.port,S.path=w+"//"+b.hostname+(b.port?":"+b.port:"")+S.path,E.auth)){var P=new Buffer(E.auth.username+":"+E.auth.password,"utf8").toString("base64");S.headers["Proxy-Authorization"]="Basic "+P}t.transport?j=t.transport:0===t.maxRedirects?j=_?u:i:(t.maxRedirects&&(S.maxRedirects=t.maxRedirects),j=_?s:a),t.maxContentLength&&t.maxContentLength>-1&&(S.maxBodyLength=t.maxContentLength);var F=j.request(S,function(e){if(!F.aborted){clearTimeout(y),y=null;var o=e;switch(e.headers["content-encoding"]){case"gzip":case"compress":case"deflate":o=o.pipe(f.createUnzip()),delete e.headers["content-encoding"]}var i=e.req||F,u={status:e.statusCode,statusText:e.statusMessage,headers:e.headers,config:t,request:i};if("stream"===t.responseType)u.data=o,r(n,d,u);else{var a=[];o.on("data",function(e){a.push(e),t.maxContentLength>-1&&Buffer.concat(a).length>t.maxContentLength&&d(p("maxContentLength size of "+t.maxContentLength+" exceeded",t,null,i))}),o.on("error",function(e){F.aborted||d(h(e,t,null,i))}),o.on("end",function(){var e=Buffer.concat(a);"arraybuffer"!==t.responseType&&(e=e.toString("utf8")),u.data=e,r(n,d,u)})}}});F.on("error",function(e){F.aborted||d(h(e,t,null,F))}),t.timeout&&!y&&(y=setTimeout(function(){F.abort(),d(p("timeout of "+t.timeout+"ms exceeded",t,"ECONNABORTED",F))},t.timeout)),t.cancelToken&&t.cancelToken.promise.then(function(t){F.aborted||(F.abort(),d(t))}),e.isStream(v)?v.pipe(F):F.end(v)})}}.call(this,n(0)(t))},function(t,e,n){n(106)("Uint8",1,function(t){return function(e,n,r){return t(this,e,n,r)}})},function(t,e,n){n(106)("Uint16",2,function(t){return function(e,n,r){return t(this,e,n,r)}})},function(t,e,n){"use strict";n.r(e);n(21);var r=n(5),o=n(11),i=n(28),u=n(107),a=n(22),s=n(74),c=n(15),f=n(71),l=n(31),p=n(16),h=n(108),d=n(39).f,y=n(12).f,v=n(77),m=n(42),g="prototype",b="Wrong index!",w=r.ArrayBuffer,x=r.DataView,_=r.Math,O=r.RangeError,S=r.Infinity,j=w,E=_.abs,C=_.pow,k=_.floor,A=_.log,R=_.LN2,P=o?"_b":"buffer",F=o?"_l":"byteLength",M=o?"_o":"byteOffset";function I(t,e,n){var r,o,i,u=new Array(n),a=8*n-e-1,s=(1<<a)-1,c=s>>1,f=23===e?C(2,-24)-C(2,-77):0,l=0,p=t<0||0===t&&1/t<0?1:0;for((t=E(t))!=t||t===S?(o=t!=t?1:0,r=s):(r=k(A(t)/R),t*(i=C(2,-r))<1&&(r--,i*=2),(t+=r+c>=1?f/i:f*C(2,1-c))*i>=2&&(r++,i/=2),r+c>=s?(o=0,r=s):r+c>=1?(o=(t*i-1)*C(2,e),r+=c):(o=t*C(2,c-1)*C(2,e),r=0));e>=8;u[l++]=255&o,o/=256,e-=8);for(r=r<<e|o,a+=e;a>0;u[l++]=255&r,r/=256,a-=8);return u[--l]|=128*p,u}function T(t,e,n){var r,o=8*n-e-1,i=(1<<o)-1,u=i>>1,a=o-7,s=n-1,c=t[s--],f=127&c;for(c>>=7;a>0;f=256*f+t[s],s--,a-=8);for(r=f&(1<<-a)-1,f>>=-a,a+=e;a>0;r=256*r+t[s],s--,a-=8);if(0===f)f=1-u;else{if(f===i)return r?NaN:c?-S:S;r+=C(2,e),f-=u}return(c?-1:1)*r*C(2,f-e)}function $(t){return t[3]<<24|t[2]<<16|t[1]<<8|t[0]}function L(t){return[255&t]}function U(t){return[255&t,t>>8&255]}function K(t){return[255&t,t>>8&255,t>>16&255,t>>24&255]}function B(t){return I(t,52,8)}function N(t){return I(t,23,4)}function q(t,e,n){y(t[g],e,{get:function(){return this[n]}})}function z(t,e,n,r){var o=h(+n);if(o+e>t[F])throw O(b);var i=t[P]._b,u=o+t[M],a=i.slice(u,u+e);return r?a:a.reverse()}function D(t,e,n,r,o,i){var u=h(+n);if(u+e>t[F])throw O(b);for(var a=t[P]._b,s=u+t[M],c=r(+o),f=0;f<e;f++)a[s+f]=c[i?f:e-f-1]}if(u.ABV){if(!c(function(){w(1)})||!c(function(){new w(-1)})||c(function(){return new w,new w(1.5),new w(NaN),"ArrayBuffer"!=w.name})){for(var H,W=(w=function(t){return f(this,w),new j(h(t))})[g]=j[g],V=d(j),G=0;V.length>G;)(H=V[G++])in w||a(w,H,j[H]);i||(W.constructor=w)}var Y=new x(new w(2)),J=x[g].setInt8;Y.setInt8(0,2147483648),Y.setInt8(1,2147483649),!Y.getInt8(0)&&Y.getInt8(1)||s(x[g],{setInt8:function(t,e){J.call(this,t,e<<24>>24)},setUint8:function(t,e){J.call(this,t,e<<24>>24)}},!0)}else w=function(t){f(this,w,"ArrayBuffer");var e=h(t);this._b=v.call(new Array(e),0),this[F]=e},x=function(t,e,n){f(this,x,"DataView"),f(t,w,"DataView");var r=t[F],o=l(e);if(o<0||o>r)throw O("Wrong offset!");if(o+(n=void 0===n?r-o:p(n))>r)throw O("Wrong length!");this[P]=t,this[M]=o,this[F]=n},o&&(q(w,"byteLength","_l"),q(x,"buffer","_b"),q(x,"byteLength","_l"),q(x,"byteOffset","_o")),s(x[g],{getInt8:function(t){return z(this,1,t)[0]<<24>>24},getUint8:function(t){return z(this,1,t)[0]},getInt16:function(t){var e=z(this,2,t,arguments[1]);return(e[1]<<8|e[0])<<16>>16},getUint16:function(t){var e=z(this,2,t,arguments[1]);return e[1]<<8|e[0]},getInt32:function(t){return $(z(this,4,t,arguments[1]))},getUint32:function(t){return $(z(this,4,t,arguments[1]))>>>0},getFloat32:function(t){return T(z(this,4,t,arguments[1]),23,4)},getFloat64:function(t){return T(z(this,8,t,arguments[1]),52,8)},setInt8:function(t,e){D(this,1,t,L,e)},setUint8:function(t,e){D(this,1,t,L,e)},setInt16:function(t,e){D(this,2,t,U,e,arguments[2])},setUint16:function(t,e){D(this,2,t,U,e,arguments[2])},setInt32:function(t,e){D(this,4,t,K,e,arguments[2])},setUint32:function(t,e){D(this,4,t,K,e,arguments[2])},setFloat32:function(t,e){D(this,4,t,N,e,arguments[2])},setFloat64:function(t,e){D(this,8,t,B,e,arguments[2])}});m(w,"ArrayBuffer"),m(x,"DataView"),a(x[g],u.VIEW,!0),exports.ArrayBuffer=w,exports.DataView=x},function(t,e,n){var r=n(7);r(r.P,"Array",{copyWithin:n(109)}),n(35)("copyWithin")},function(t,e,n){"use strict";n.r(e),function(t){n(17),n(14);var e=n(7),r=n(32),o=n(15),i=n(158),u="["+i+"]",a=RegExp("^"+u+u+"*"),s=RegExp(u+u+"*$"),c=function(t,n,r){var u={},a=o(function(){return!!i[t]()||"​"!="​"[t]()}),s=u[t]=a?n(f):i[t];r&&(u[r]=s),e(e.P+e.F*a,"String",u)},f=c.trim=function(t,e){return t=String(r(t)),1&e&&(t=t.replace(a,"")),2&e&&(t=t.replace(s,"")),t};t.exports=c}.call(this,n(0)(t))},function(t,e){t.exports="\t\n\v\f\r   ᠎             　\u2028\u2029\ufeff"},function(t,e){t.exports=require("assert")},function(t,e){t.exports=require("stream")},function(t,e,n){"undefined"==typeof process||"renderer"===process.type?t.exports=n(162):t.exports=n(164)},function(t,e,n){"use strict";n.r(e),function(t){n(1),n(2),n(17),n(14),n(43);function e(t){return(e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}function r(){var t;try{t=exports.storage.debug}catch(t){}return!t&&"undefined"!=typeof process&&"env"in process&&(t=process.env.DEBUG),t}exports=t.exports=n(114),exports.log=function(){return"object"===("undefined"==typeof console?"undefined":e(console))&&console.log&&Function.prototype.apply.call(console.log,console,arguments)},exports.formatArgs=function(t){var e=this.useColors;if(t[0]=(e?"%c":"")+this.namespace+(e?" %c":" ")+t[0]+(e?"%c ":" ")+"+"+exports.humanize(this.diff),!e)return;var n="color: "+this.color;t.splice(1,0,n,"color: inherit");var r=0,o=0;t[0].replace(/%[a-zA-Z%]/g,function(t){"%%"!==t&&(r++,"%c"===t&&(o=r))}),t.splice(o,0,n)},exports.save=function(t){try{null==t?exports.storage.removeItem("debug"):exports.storage.debug=t}catch(t){}},exports.load=r,exports.useColors=function(){if("undefined"!=typeof window&&window.process&&"renderer"===window.process.type)return!0;if("undefined"!=typeof navigator&&navigator.userAgent&&navigator.userAgent.toLowerCase().match(/(edge|trident)\/(\d+)/))return!1;return"undefined"!=typeof document&&document.documentElement&&document.documentElement.style&&document.documentElement.style.WebkitAppearance||"undefined"!=typeof window&&window.console&&(window.console.firebug||window.console.exception&&window.console.table)||"undefined"!=typeof navigator&&navigator.userAgent&&navigator.userAgent.toLowerCase().match(/firefox\/(\d+)/)&&parseInt(RegExp.$1,10)>=31||"undefined"!=typeof navigator&&navigator.userAgent&&navigator.userAgent.toLowerCase().match(/applewebkit\/(\d+)/)},exports.storage="undefined"!=typeof chrome&&void 0!==chrome.storage?chrome.storage.local:function(){try{return window.localStorage}catch(t){}}(),exports.colors=["#0000CC","#0000FF","#0033CC","#0033FF","#0066CC","#0066FF","#0099CC","#0099FF","#00CC00","#00CC33","#00CC66","#00CC99","#00CCCC","#00CCFF","#3300CC","#3300FF","#3333CC","#3333FF","#3366CC","#3366FF","#3399CC","#3399FF","#33CC00","#33CC33","#33CC66","#33CC99","#33CCCC","#33CCFF","#6600CC","#6600FF","#6633CC","#6633FF","#66CC00","#66CC33","#9900CC","#9900FF","#9933CC","#9933FF","#99CC00","#99CC33","#CC0000","#CC0033","#CC0066","#CC0099","#CC00CC","#CC00FF","#CC3300","#CC3333","#CC3366","#CC3399","#CC33CC","#CC33FF","#CC6600","#CC6633","#CC9900","#CC9933","#CCCC00","#CCCC33","#FF0000","#FF0033","#FF0066","#FF0099","#FF00CC","#FF00FF","#FF3300","#FF3333","#FF3366","#FF3399","#FF33CC","#FF33FF","#FF6600","#FF6633","#FF9900","#FF9933","#FFCC00","#FFCC33"],exports.formatters.j=function(t){try{return JSON.stringify(t)}catch(t){return"[UnexpectedJSONParseError]: "+t.message}},exports.enable(r())}.call(this,n(0)(t))},function(t,e,n){"use strict";n.r(e),function(t){n(1),n(2);function e(t){return(e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}var r=1e3,o=60*r,i=60*o,u=24*i,a=365.25*u;function s(t,e,n){if(!(t<e))return t<1.5*e?Math.floor(t/e)+" "+n:Math.ceil(t/e)+" "+n+"s"}t.exports=function(t,n){n=n||{};var c,f=e(t);if("string"===f&&t.length>0)return function(t){if((t=String(t)).length>100)return;var e=/^((?:\d+)?\.?\d+) *(milliseconds?|msecs?|ms|seconds?|secs?|s|minutes?|mins?|m|hours?|hrs?|h|days?|d|years?|yrs?|y)?$/i.exec(t);if(!e)return;var n=parseFloat(e[1]);switch((e[2]||"ms").toLowerCase()){case"years":case"year":case"yrs":case"yr":case"y":return n*a;case"days":case"day":case"d":return n*u;case"hours":case"hour":case"hrs":case"hr":case"h":return n*i;case"minutes":case"minute":case"mins":case"min":case"m":return n*o;case"seconds":case"second":case"secs":case"sec":case"s":return n*r;case"milliseconds":case"millisecond":case"msecs":case"msec":case"ms":return n;default:return}}(t);if("number"===f&&!1===isNaN(t))return n.long?s(c=t,u,"day")||s(c,i,"hour")||s(c,o,"minute")||s(c,r,"second")||c+" ms":function(t){if(t>=u)return Math.round(t/u)+"d";if(t>=i)return Math.round(t/i)+"h";if(t>=o)return Math.round(t/o)+"m";if(t>=r)return Math.round(t/r)+"s";return t+"ms"}(t);throw new Error("val is not a non-empty string or a valid number. val="+JSON.stringify(t))}}.call(this,n(0)(t))},function(t,e,n){"use strict";n.r(e),function(t){n(13),n(81),n(17),n(4),n(19),n(38);var e=n(165),r=n(166);exports=t.exports=n(114),exports.init=function(t){t.inspectOpts={};for(var e=Object.keys(exports.inspectOpts),n=0;n<e.length;n++)t.inspectOpts[e[n]]=exports.inspectOpts[e[n]]},exports.log=function(){return process.stderr.write(r.format.apply(r,arguments)+"\n")},exports.formatArgs=function(t){var e=this.namespace;if(this.useColors){var n=this.color,r="[3"+(n<8?n:"8;5;"+n),o="  "+r+";1m"+e+" [0m";t[0]=o+t[0].split("\n").join("\n"+o),t.push(r+"m+"+exports.humanize(this.diff)+"[0m")}else t[0]=(exports.inspectOpts.hideDate?"":(new Date).toISOString()+" ")+e+" "+t[0]},exports.save=function(t){null==t?delete process.env.DEBUG:process.env.DEBUG=t},exports.load=i,exports.useColors=function(){return"colors"in exports.inspectOpts?Boolean(exports.inspectOpts.colors):e.isatty(process.stderr.fd)},exports.colors=[6,2,3,4,5,1];try{var o=n(167);o&&o.level>=2&&(exports.colors=[20,21,26,27,32,33,38,39,40,41,42,43,44,45,56,57,62,63,68,69,74,75,76,77,78,79,80,81,92,93,98,99,112,113,128,129,134,135,148,149,160,161,162,163,164,165,166,167,168,169,170,171,172,173,178,179,184,185,196,197,198,199,200,201,202,203,204,205,206,207,208,209,214,215,220,221])}catch(t){}function i(){return process.env.DEBUG}exports.inspectOpts=Object.keys(process.env).filter(function(t){return/^debug_/i.test(t)}).reduce(function(t,e){var n=e.substring(6).toLowerCase().replace(/_([a-z])/g,function(t,e){return e.toUpperCase()}),r=process.env[e];return r=!!/^(yes|on|true|enabled)$/i.test(r)||!/^(no|off|false|disabled)$/i.test(r)&&("null"===r?null:Number(r)),t[n]=r,t},{}),exports.formatters.o=function(t){return this.inspectOpts.colors=this.useColors,r.inspect(t,this.inspectOpts).split("\n").map(function(t){return t.trim()}).join(" ")},exports.formatters.O=function(t){return this.inspectOpts.colors=this.useColors,r.inspect(t,this.inspectOpts)},exports.enable(i())}.call(this,n(0)(t))},function(t,e){t.exports=require("tty")},function(t,e){t.exports=require("util")},function(t,e,n){"use strict";n.r(e),function(t){n(81),n(13);var e,r=n(168),o=n(169),i=process.env;function u(t){return function(t){return 0!==t&&{level:t,hasBasic:!0,has256:t>=2,has16m:t>=3}}(function(t){if(!1===e)return 0;if(o("color=16m")||o("color=full")||o("color=truecolor"))return 3;if(o("color=256"))return 2;if(t&&!t.isTTY&&!0!==e)return 0;var n=e?1:0;if("win32"===process.platform){var u=r.release().split(".");return Number(process.versions.node.split(".")[0])>=8&&Number(u[0])>=10&&Number(u[2])>=10586?Number(u[2])>=14931?3:2:1}if("CI"in i)return["TRAVIS","CIRCLECI","APPVEYOR","GITLAB_CI"].some(function(t){return t in i})||"codeship"===i.CI_NAME?1:n;if("TEAMCITY_VERSION"in i)return/^(9\.(0*[1-9]\d*)\.|\d{2,}\.)/.test(i.TEAMCITY_VERSION)?1:0;if("truecolor"===i.COLORTERM)return 3;if("TERM_PROGRAM"in i){var a=parseInt((i.TERM_PROGRAM_VERSION||"").split(".")[0],10);switch(i.TERM_PROGRAM){case"iTerm.app":return a>=3?3:2;case"Apple_Terminal":return 2}}return/-256(color)?$/i.test(i.TERM)?2:/^screen|^xterm|^vt100|^vt220|^rxvt|color|ansi|cygwin|linux/i.test(i.TERM)?1:"COLORTERM"in i?1:(i.TERM,n)}(t))}o("no-color")||o("no-colors")||o("color=false")?e=!1:(o("color")||o("colors")||o("color=true")||o("color=always"))&&(e=!0),"FORCE_COLOR"in i&&(e=0===i.FORCE_COLOR.length||0!==parseInt(i.FORCE_COLOR,10)),t.exports={supportsColor:u,stdout:u(process.stdout),stderr:u(process.stderr)}}.call(this,n(0)(t))},function(t,e){t.exports=require("os")},function(t,e,n){"use strict";n.r(e),function(t){n(53);t.exports=function(t,e){e=e||process.argv;var n=t.startsWith("-")?"":1===t.length?"-":"--",r=e.indexOf(n+t),o=e.indexOf("--");return-1!==r&&(-1===o||r<o)}}.call(this,n(0)(t))},function(t,e){t.exports=require("zlib")},function(t){t.exports={_args:[["axios@0.18.0","/Users/seb/PycharmProjects/plugin-axios"]],_from:"axios@0.18.0",_id:"axios@0.18.0",_inBundle:!1,_integrity:"sha1-MtU+SFHv3AoRmTts0AB4nXDAUQI=",_location:"/axios",_phantomChildren:{},_requested:{type:"version",registry:!0,raw:"axios@0.18.0",name:"axios",escapedName:"axios",rawSpec:"0.18.0",saveSpec:null,fetchSpec:"0.18.0"},_requiredBy:["/"],_resolved:"http://registry.npmjs.org/axios/-/axios-0.18.0.tgz",_spec:"0.18.0",_where:"/Users/seb/PycharmProjects/plugin-axios",author:{name:"Matt Zabriskie"},browser:{"./lib/adapters/http.js":"./lib/adapters/xhr.js"},bugs:{url:"https://github.com/axios/axios/issues"},bundlesize:[{path:"./dist/axios.min.js",threshold:"5kB"}],dependencies:{"follow-redirects":"^1.3.0","is-buffer":"^1.1.5"},description:"Promise based HTTP client for the browser and node.js",devDependencies:{bundlesize:"^0.5.7",coveralls:"^2.11.9","es6-promise":"^4.0.5",grunt:"^1.0.1","grunt-banner":"^0.6.0","grunt-cli":"^1.2.0","grunt-contrib-clean":"^1.0.0","grunt-contrib-nodeunit":"^1.0.0","grunt-contrib-watch":"^1.0.0","grunt-eslint":"^19.0.0","grunt-karma":"^2.0.0","grunt-ts":"^6.0.0-beta.3","grunt-webpack":"^1.0.18","istanbul-instrumenter-loader":"^1.0.0","jasmine-core":"^2.4.1",karma:"^1.3.0","karma-chrome-launcher":"^2.0.0","karma-coverage":"^1.0.0","karma-firefox-launcher":"^1.0.0","karma-jasmine":"^1.0.2","karma-jasmine-ajax":"^0.1.13","karma-opera-launcher":"^1.0.0","karma-safari-launcher":"^1.0.0","karma-sauce-launcher":"^1.1.0","karma-sinon":"^1.0.5","karma-sourcemap-loader":"^0.3.7","karma-webpack":"^1.7.0","load-grunt-tasks":"^3.5.2",minimist:"^1.2.0",sinon:"^1.17.4",typescript:"^2.0.3","url-search-params":"^0.6.1",webpack:"^1.13.1","webpack-dev-server":"^1.14.1"},homepage:"https://github.com/axios/axios",keywords:["xhr","http","ajax","promise","node"],license:"MIT",main:"index.js",name:"axios",repository:{type:"git",url:"git+https://github.com/axios/axios.git"},scripts:{build:"NODE_ENV=production grunt build",coveralls:"cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",examples:"node ./examples/server.js",postversion:"git push && git push --tags",preversion:"npm test",start:"node ./sandbox/server.js",test:"grunt test && bundlesize",version:"npm run build && grunt version && git add -A dist && git add CHANGELOG.md bower.json package.json"},typings:"./index.d.ts",version:"0.18.0"}},function(t,e,n){"use strict";n.r(e),function(t){n(4);var e=n(18);function r(){this.handlers=[]}r.prototype.use=function(t,e){return this.handlers.push({fulfilled:t,rejected:e}),this.handlers.length-1},r.prototype.eject=function(t){this.handlers[t]&&(this.handlers[t]=null)},r.prototype.forEach=function(t){e.forEach(this.handlers,function(e){null!==e&&t(e)})},t.exports=r}.call(this,n(0)(t))},function(t,e,n){"use strict";n.r(e),function(t){n(9),n(4);var e=n(18),r=n(174),o=n(115),i=n(79),u=n(175),a=n(176);function s(t){t.cancelToken&&t.cancelToken.throwIfRequested()}t.exports=function(t){return s(t),t.baseURL&&!u(t.url)&&(t.url=a(t.baseURL,t.url)),t.headers=t.headers||{},t.data=r(t.data,t.headers,t.transformRequest),t.headers=e.merge(t.headers.common||{},t.headers[t.method]||{},t.headers||{}),e.forEach(["delete","get","head","post","put","patch","common"],function(e){delete t.headers[e]}),(t.adapter||i.adapter)(t).then(function(e){return s(t),e.data=r(e.data,e.headers,t.transformResponse),e},function(e){return o(e)||(s(t),e&&e.response&&(e.response.data=r(e.response.data,e.response.headers,t.transformResponse))),Promise.reject(e)})}}.call(this,n(0)(t))},function(t,e,n){"use strict";n.r(e),function(t){n(4);var e=n(18);t.exports=function(t,n,r){return e.forEach(r,function(e){t=e(t,n)}),t}}.call(this,n(0)(t))},function(t,e,n){"use strict";t.exports=function(t){return/^([a-z][a-z\d\+\-\.]*:)?\/\//i.test(t)}},function(t,e,n){"use strict";n.r(e),function(t){n(17);t.exports=function(t,e){return e?t.replace(/\/+$/,"")+"/"+e.replace(/^\/+/,""):t}}.call(this,n(0)(t))},function(t,e,n){"use strict";n.r(e),function(t){n(9);var e=n(116);function r(t){if("function"!=typeof t)throw new TypeError("executor must be a function.");var n;this.promise=new Promise(function(t){n=t});var r=this;t(function(t){r.reason||(r.reason=new e(t),n(r.reason))})}r.prototype.throwIfRequested=function(){if(this.reason)throw this.reason},r.source=function(){var t;return{token:new r(function(e){t=e}),cancel:t}},t.exports=r}.call(this,n(0)(t))},function(t,e,n){"use strict";t.exports=function(t){return function(e){return t.apply(null,e)}}},function(t,e,n){"use strict";n.r(e);n(21);var r=n(7),o=n(70)(5),i=!0;"find"in[]&&Array(1).find(function(){i=!1}),r(r.P+r.F*i,"Array",{find:function(t){return o(this,t,arguments.length>1?arguments[1]:void 0)}}),n(35)("find");var u=function(){this.__data__=[],this.size=0};var a=function(t,e){return t===e||t!=t&&e!=e};var s=function(t,e){for(var n=t.length;n--;)if(a(t[n][0],e))return n;return-1},c=Array.prototype.splice;var f=function(t){var e=this.__data__,n=s(e,t);return!(n<0||(n==e.length-1?e.pop():c.call(e,n,1),--this.size,0))};var l=function(t){var e=this.__data__,n=s(e,t);return n<0?void 0:e[n][1]};var p=function(t){return s(this.__data__,t)>-1};var h=function(t,e){var n=this.__data__,r=s(n,t);return r<0?(++this.size,n.push([t,e])):n[r][1]=e,this};function d(t){var e=-1,n=null==t?0:t.length;for(this.clear();++e<n;){var r=t[e];this.set(r[0],r[1])}}d.prototype.clear=u,d.prototype.delete=f,d.prototype.get=l,d.prototype.has=p,d.prototype.set=h;var y=d;var v=function(){this.__data__=new y,this.size=0};var m=function(t){var e=this.__data__,n=e.delete(t);return this.size=e.size,n};var g=function(t){return this.__data__.get(t)};var b=function(t){return this.__data__.has(t)},w=(n(17),n(14),n(6),n(20)),x=w.a.Symbol,_=Object.prototype,O=_.hasOwnProperty,S=_.toString,j=x?x.toStringTag:void 0;var E=function(t){var e=O.call(t,j),n=t[j];try{t[j]=void 0;var r=!0}catch(t){}var o=S.call(t);return r&&(e?t[j]=n:delete t[j]),o},C=Object.prototype.toString;var k=function(t){return C.call(t)},A="[object Null]",R="[object Undefined]",P=x?x.toStringTag:void 0;var F=function(t){return null==t?void 0===t?R:A:P&&P in Object(t)?E(t):k(t)};n(1),n(2);function M(t){return(M="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}var I=function(t){var e=M(t);return null!=t&&("object"==e||"function"==e)},T="[object AsyncFunction]",$="[object Function]",L="[object GeneratorFunction]",U="[object Proxy]";var K,B=function(t){if(!I(t))return!1;var e=F(t);return e==$||e==L||e==T||e==U},N=(n(4),n(19),w.a["__core-js_shared__"]),q=(K=/[^.]+$/.exec(N&&N.keys&&N.keys.IE_PROTO||""))?"Symbol(src)_1."+K:"";var z=function(t){return!!q&&q in t},D=Function.prototype.toString;var H=function(t){if(null!=t){try{return D.call(t)}catch(t){}try{return t+""}catch(t){}}return""},W=/^\[object .+?Constructor\]$/,V=Function.prototype,G=Object.prototype,Y=V.toString,J=G.hasOwnProperty,Q=RegExp("^"+Y.call(J).replace(/[\\^$.*+?()[\]{}|]/g,"\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g,"$1.*?")+"$");var X=function(t){return!(!I(t)||z(t))&&(B(t)?Q:W).test(H(t))};var Z=function(t,e){return null==t?void 0:t[e]};var tt=function(t,e){var n=Z(t,e);return X(n)?n:void 0},et=tt(w.a,"Map"),nt=tt(Object,"create");var rt=function(){this.__data__=nt?nt(null):{},this.size=0};var ot=function(t){var e=this.has(t)&&delete this.__data__[t];return this.size-=e?1:0,e},it="__lodash_hash_undefined__",ut=Object.prototype.hasOwnProperty;var at=function(t){var e=this.__data__;if(nt){var n=e[t];return n===it?void 0:n}return ut.call(e,t)?e[t]:void 0},st=Object.prototype.hasOwnProperty;var ct=function(t){var e=this.__data__;return nt?void 0!==e[t]:st.call(e,t)},ft="__lodash_hash_undefined__";var lt=function(t,e){var n=this.__data__;return this.size+=this.has(t)?0:1,n[t]=nt&&void 0===e?ft:e,this};function pt(t){var e=-1,n=null==t?0:t.length;for(this.clear();++e<n;){var r=t[e];this.set(r[0],r[1])}}pt.prototype.clear=rt,pt.prototype.delete=ot,pt.prototype.get=at,pt.prototype.has=ct,pt.prototype.set=lt;var ht=pt;var dt=function(){this.size=0,this.__data__={hash:new ht,map:new(et||y),string:new ht}};function yt(t){return(yt="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}var vt=function(t){var e=yt(t);return"string"==e||"number"==e||"symbol"==e||"boolean"==e?"__proto__"!==t:null===t};var mt=function(t,e){var n=t.__data__;return vt(e)?n["string"==typeof e?"string":"hash"]:n.map};var gt=function(t){var e=mt(this,t).delete(t);return this.size-=e?1:0,e};var bt=function(t){return mt(this,t).get(t)};var wt=function(t){return mt(this,t).has(t)};var xt=function(t,e){var n=mt(this,t),r=n.size;return n.set(t,e),this.size+=n.size==r?0:1,this};function _t(t){var e=-1,n=null==t?0:t.length;for(this.clear();++e<n;){var r=t[e];this.set(r[0],r[1])}}_t.prototype.clear=dt,_t.prototype.delete=gt,_t.prototype.get=bt,_t.prototype.has=wt,_t.prototype.set=xt;var Ot=_t,St=200;var jt=function(t,e){var n=this.__data__;if(n instanceof y){var r=n.__data__;if(!et||r.length<St-1)return r.push([t,e]),this.size=++n.size,this;n=this.__data__=new Ot(r)}return n.set(t,e),this.size=n.size,this};function Et(t){var e=this.__data__=new y(t);this.size=e.size}Et.prototype.clear=v,Et.prototype.delete=m,Et.prototype.get=g,Et.prototype.has=b,Et.prototype.set=jt;var Ct=Et,kt=function(){try{var t=tt(Object,"defineProperty");return t({},"",{}),t}catch(t){}}();var At=function(t,e,n){"__proto__"==e&&kt?kt(t,e,{configurable:!0,enumerable:!0,value:n,writable:!0}):t[e]=n};var Rt=function(t,e,n){(void 0===n||a(t[e],n))&&(void 0!==n||e in t)||At(t,e,n)};var Pt=function(t){return function(e,n,r){for(var o=-1,i=Object(e),u=r(e),a=u.length;a--;){var s=u[t?a:++o];if(!1===n(i[s],s,i))break}return e}}(),Ft=n(118),Mt=w.a.Uint8Array;var It=function(t){var e=new t.constructor(t.byteLength);return new Mt(e).set(new Mt(t)),e};var Tt=function(t,e){var n=e?It(t.buffer):t.buffer;return new t.constructor(n,t.byteOffset,t.length)};var $t=function(t,e){var n=-1,r=t.length;for(e||(e=Array(r));++n<r;)e[n]=t[n];return e},Lt=Object.create,Ut=function(){function t(){}return function(e){if(!I(e))return{};if(Lt)return Lt(e);t.prototype=e;var n=new t;return t.prototype=void 0,n}}();var Kt=function(t,e){return function(n){return t(e(n))}}(Object.getPrototypeOf,Object),Bt=Object.prototype;var Nt=function(t){var e=t&&t.constructor;return t===("function"==typeof e&&e.prototype||Bt)};var qt=function(t){return"function"!=typeof t.constructor||Nt(t)?{}:Ut(Kt(t))};function zt(t){return(zt="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}var Dt=function(t){return null!=t&&"object"==zt(t)},Ht="[object Arguments]";var Wt=function(t){return Dt(t)&&F(t)==Ht},Vt=Object.prototype,Gt=Vt.hasOwnProperty,Yt=Vt.propertyIsEnumerable,Jt=Wt(function(){return arguments}())?Wt:function(t){return Dt(t)&&Gt.call(t,"callee")&&!Yt.call(t,"callee")},Qt=Array.isArray,Xt=9007199254740991;var Zt=function(t){return"number"==typeof t&&t>-1&&t%1==0&&t<=Xt};var te=function(t){return null!=t&&Zt(t.length)&&!B(t)};var ee=function(t){return Dt(t)&&te(t)},ne=n(55),re="[object Object]",oe=Function.prototype,ie=Object.prototype,ue=oe.toString,ae=ie.hasOwnProperty,se=ue.call(Object);var ce=function(t){if(!Dt(t)||F(t)!=re)return!1;var e=Kt(t);if(null===e)return!0;var n=ae.call(e,"constructor")&&e.constructor;return"function"==typeof n&&n instanceof n&&ue.call(n)==se},fe={};fe["[object Float32Array]"]=fe["[object Float64Array]"]=fe["[object Int8Array]"]=fe["[object Int16Array]"]=fe["[object Int32Array]"]=fe["[object Uint8Array]"]=fe["[object Uint8ClampedArray]"]=fe["[object Uint16Array]"]=fe["[object Uint32Array]"]=!0,fe["[object Arguments]"]=fe["[object Array]"]=fe["[object ArrayBuffer]"]=fe["[object Boolean]"]=fe["[object DataView]"]=fe["[object Date]"]=fe["[object Error]"]=fe["[object Function]"]=fe["[object Map]"]=fe["[object Number]"]=fe["[object Object]"]=fe["[object RegExp]"]=fe["[object Set]"]=fe["[object String]"]=fe["[object WeakMap]"]=!1;var le=function(t){return Dt(t)&&Zt(t.length)&&!!fe[F(t)]};var pe=function(t){return function(e){return t(e)}},he=n(82),de=he.a&&he.a.isTypedArray,ye=de?pe(de):le;var ve=function(t,e){if("__proto__"!=e)return t[e]},me=Object.prototype.hasOwnProperty;var ge=function(t,e,n){var r=t[e];me.call(t,e)&&a(r,n)&&(void 0!==n||e in t)||At(t,e,n)};var be=function(t,e,n,r){var o=!n;n||(n={});for(var i=-1,u=e.length;++i<u;){var a=e[i],s=r?r(n[a],t[a],a,n,t):void 0;void 0===s&&(s=t[a]),o?At(n,a,s):ge(n,a,s)}return n};var we=function(t,e){for(var n=-1,r=Array(t);++n<t;)r[n]=e(n);return r};function xe(t){return(xe="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}var _e=9007199254740991,Oe=/^(?:0|[1-9]\d*)$/;var Se=function(t,e){var n=xe(t);return!!(e=null==e?_e:e)&&("number"==n||"symbol"!=n&&Oe.test(t))&&t>-1&&t%1==0&&t<e},je=Object.prototype.hasOwnProperty;var Ee=function(t,e){var n=Qt(t),r=!n&&Jt(t),o=!n&&!r&&Object(ne.a)(t),i=!n&&!r&&!o&&ye(t),u=n||r||o||i,a=u?we(t.length,String):[],s=a.length;for(var c in t)!e&&!je.call(t,c)||u&&("length"==c||o&&("offset"==c||"parent"==c)||i&&("buffer"==c||"byteLength"==c||"byteOffset"==c)||Se(c,s))||a.push(c);return a};var Ce=function(t){var e=[];if(null!=t)for(var n in Object(t))e.push(n);return e},ke=Object.prototype.hasOwnProperty;var Ae=function(t){if(!I(t))return Ce(t);var e=Nt(t),n=[];for(var r in t)("constructor"!=r||!e&&ke.call(t,r))&&n.push(r);return n};var Re=function(t){return te(t)?Ee(t,!0):Ae(t)};var Pe=function(t){return be(t,Re(t))};var Fe=function(t,e,n,r,o,i,u){var a=ve(t,n),s=ve(e,n),c=u.get(s);if(c)Rt(t,n,c);else{var f=i?i(a,s,n+"",t,e,u):void 0,l=void 0===f;if(l){var p=Qt(s),h=!p&&Object(ne.a)(s),d=!p&&!h&&ye(s);f=s,p||h||d?Qt(a)?f=a:ee(a)?f=$t(a):h?(l=!1,f=Object(Ft.a)(s,!0)):d?(l=!1,f=Tt(s,!0)):f=[]:ce(s)||Jt(s)?(f=a,Jt(a)?f=Pe(a):I(a)&&!B(a)||(f=qt(s))):l=!1}l&&(u.set(s,f),o(f,s,r,i,u),u.delete(s)),Rt(t,n,f)}};var Me=function t(e,n,r,o,i){e!==n&&Pt(n,function(u,a){if(I(u))i||(i=new Ct),Fe(e,n,a,r,t,o,i);else{var s=o?o(ve(e,a),u,a+"",e,n,i):void 0;void 0===s&&(s=u),Rt(e,a,s)}},Re)};var Ie=function(t){return t};var Te=function(t,e,n){switch(n.length){case 0:return t.call(e);case 1:return t.call(e,n[0]);case 2:return t.call(e,n[0],n[1]);case 3:return t.call(e,n[0],n[1],n[2])}return t.apply(e,n)},$e=Math.max;var Le=function(t,e,n){return e=$e(void 0===e?t.length-1:e,0),function(){for(var r=arguments,o=-1,i=$e(r.length-e,0),u=Array(i);++o<i;)u[o]=r[e+o];o=-1;for(var a=Array(e+1);++o<e;)a[o]=r[o];return a[e]=n(u),Te(t,this,a)}};var Ue=function(t){return function(){return t}},Ke=kt?function(t,e){return kt(t,"toString",{configurable:!0,enumerable:!1,value:Ue(e),writable:!0})}:Ie,Be=800,Ne=16,qe=Date.now;var ze=function(t){var e=0,n=0;return function(){var r=qe(),o=Ne-(r-n);if(n=r,o>0){if(++e>=Be)return arguments[0]}else e=0;return t.apply(void 0,arguments)}}(Ke);var De=function(t,e){return ze(Le(t,e,Ie),t+"")};function He(t){return(He="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}var We=function(t,e,n){if(!I(n))return!1;var r=He(e);return!!("number"==r?te(n)&&Se(e,n.length):"string"==r&&e in n)&&a(n[e],t)};var Ve=function(t){return De(function(e,n){var r=-1,o=n.length,i=o>1?n[o-1]:void 0,u=o>2?n[2]:void 0;for(i=t.length>3&&"function"==typeof i?(o--,i):void 0,u&&We(n[0],n[1],u)&&(i=o<3?void 0:i,o=1),e=Object(e);++r<o;){var a=n[r];a&&t(e,a,r,i)}return e})}(function(t,e,n){Me(t,e,n)}),Ge=(n(9),n(7)),Ye=n(70)(6),Je=!0;"findIndex"in[]&&Array(1).findIndex(function(){Je=!1}),Ge(Ge.P+Ge.F*Je,"Array",{findIndex:function(t){return Ye(this,t,arguments.length>1?arguments[1]:void 0)}}),n(35)("findIndex");n(13),n(138),n(38),n(78),n(140),n(141),n(53);function Qe(t){return(Qe="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}String.prototype.startsWith||(String.prototype.startsWith=function(t,e){return this.substr(!e||e<0?0:+e,t.length)===t}),Array.prototype.includes||(Array.prototype.includes=function(t){for(var e=[],n=1;n<arguments.length;n++)e[n-1]=arguments[n];var r=Object(this),o=parseInt(r.length,10)||0;if(0===o)return!1;var i,u,a=e[1]||0;for(a>=0?i=a:(i=o+a)<0&&(i=0);i<o;){if(t===(u=r[i])||t!=t&&u!=u)return!0;i++}return!1});var Xe=function(){function t(){}return t.register=function(t){this.database=t},t}(),Ze=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var n in e)e.hasOwnProperty(n)&&(t[n]=e[n])};function tn(t,e){function n(){this.constructor=t}Ze(t,e),t.prototype=null===e?Object.create(e):(n.prototype=e.prototype,new n)}var en=Object.assign||function(t){for(var e,n=1,r=arguments.length;n<r;n++)for(var o in e=arguments[n])Object.prototype.hasOwnProperty.call(e,o)&&(t[o]=e[o]);return t};function nn(t,e,n,r){return new(n||(n=Promise))(function(o,i){function u(t){try{s(r.next(t))}catch(t){i(t)}}function a(t){try{s(r.throw(t))}catch(t){i(t)}}function s(t){t.done?o(t.value):new n(function(e){e(t.value)}).then(u,a)}s((r=r.apply(t,e||[])).next())})}function rn(t,e){var n,r,o,i,u={label:0,sent:function(){if(1&o[0])throw o[1];return o[1]},trys:[],ops:[]};return i={next:a(0),throw:a(1),return:a(2)},"function"==typeof Symbol&&(i[Symbol.iterator]=function(){return this}),i;function a(i){return function(a){return function(i){if(n)throw new TypeError("Generator is already executing.");for(;u;)try{if(n=1,r&&(o=r[2&i[0]?"return":i[0]?"throw":"next"])&&!(o=o.call(r,i[1])).done)return o;switch(r=0,o&&(i=[0,o.value]),i[0]){case 0:case 1:o=i;break;case 4:return u.label++,{value:i[1],done:!1};case 5:u.label++,r=i[1],i=[0];continue;case 7:i=u.ops.pop(),u.trys.pop();continue;default:if(!(o=(o=u.trys).length>0&&o[o.length-1])&&(6===i[0]||2===i[0])){u=0;continue}if(3===i[0]&&(!o||i[1]>o[0]&&i[1]<o[3])){u.label=i[1];break}if(6===i[0]&&u.label<o[1]){u.label=o[1],o=i;break}if(o&&u.label<o[2]){u.label=o[2],u.ops.push(i);break}o[2]&&u.ops.pop(),u.trys.pop();continue}i=e.call(t,u)}catch(t){i=[6,t],r=0}finally{n=o=0}if(5&i[0])throw i[1];return{value:i[0]?i[1]:void 0,done:!0}}([i,a])}}}function on(t,e){if(t!==e){if(t>e)return 1;if(t<e)return-1}return 0}var un={isEmpty:function(t){return Array.isArray(t)?0===t.length:0===Object.keys(t).length},forOwn:function(t,e){Object.keys(t).forEach(function(n){return e(t[n],n,t)})},groupBy:function(t,e){return t.reduce(function(t,n){var r=e(n);return void 0===t[r]&&(t[r]=[]),t[r].push(n),t},{})},map:function(t,e){return Object.keys(t).map(function(n){return e(t[n],n,t)})},mapValues:function(t,e){var n=Object.assign({},t);return Object.keys(t).reduce(function(n,r){return n[r]=e(t[r],r,t),n},n)},orderBy:function(t,e,n){var r=-1;return function(t,e){var n=t.length;for(t.sort(e);n--;)t[n]=t[n].value;return t}(t.map(function(t){return{criteria:e.map(function(e){return t[e]}),index:++r,value:t}}),function(t,e){return function(t,e,n){for(var r=t.criteria,o=e.criteria,i=r.length,u=n.length,a=-1;++a<i;){var s=on(r[a],o[a]);if(s){if(a>=u)return s;var c=n[a];return s*("desc"===c?-1:1)}}return t.index-e.index}(t,e,n)})},pickBy:function(t,e){return Object.keys(t).reduce(function(n,r){var o=t[r];return e(o,r)&&(n[r]=o),n},{})}},an=function(){return function(t){this.model=t}}(),sn=function(t){function e(e,n){var r=t.call(this,e)||this;return r.mutator=n,r}return tn(e,t),e.prototype.mutate=function(t,e){var n=this.mutator||this.model.mutators()[e];return n?n(t):t},e}(an),cn=function(t){function e(e,n,r){var o=t.call(this,e,r)||this;return o.value=n,o}return tn(e,t),e.prototype.fill=function(t){return void 0!==t?t:this.value},e.prototype.make=function(t,e,n,r){return this.mutate(this.fill(t),n)},e}(sn),fn=function(t){function e(e){var n=t.call(this,e)||this;return n.value=1,n}return tn(e,t),e.prototype.fill=function(t){return t},e.prototype.make=function(t,e,n,r){return"number"==typeof t?t:null},e}(sn),ln=function(t){function e(e,n,r){var o=t.call(this,e,r)||this;return o.value=n,o}return tn(e,t),e.prototype.fill=function(t){return void 0===t?this.value:"string"==typeof t?t:t+""},e.prototype.make=function(t,e,n,r){return this.mutate(this.fill(t),n)},e}(sn),pn=function(t){function e(e,n,r){var o=t.call(this,e,r)||this;return o.value=n,o}return tn(e,t),e.prototype.fill=function(t){return void 0===t?this.value:"number"==typeof t?t:"string"==typeof t?parseFloat(t):"boolean"==typeof t&&t?1:0},e.prototype.make=function(t,e,n,r){return this.mutate(this.fill(t),n)},e}(sn),hn=function(t){function e(e,n,r){var o=t.call(this,e,r)||this;return o.value=n,o}return tn(e,t),e.prototype.fill=function(t){if(void 0===t)return this.value;if("boolean"==typeof t)return t;if("string"==typeof t){if(0===t.length)return!1;var e=parseInt(t,0);return!!isNaN(e)||!!e}return"number"==typeof t&&!!t},e.prototype.make=function(t,e,n,r){return this.mutate(this.fill(t),n)},e}(sn),dn=function(t){function e(){return null!==t&&t.apply(this,arguments)||this}return tn(e,t),e.prototype.fillOne=function(t){return void 0===t?null:"object"===Qe(t)?null:t},e.prototype.fillMany=function(t){return Array.isArray(t)?t:[]},e.prototype.getRelation=function(t,e){var n=t.newPlainQuery(e);return this.addEagerConstraint(t,n),n},e.prototype.getKeys=function(t,e){return t.map(function(t){return t[e]})},e.prototype.addEagerConstraint=function(t,e){for(var n in t.load)t.load[n].forEach(function(t){t(e)})},e.prototype.mapSingleRelations=function(t,e){return t.reduce(function(t,n){return t[n[e]]=n,t},{})},e.prototype.mapManyRelations=function(t,e){return t.reduce(function(t,n){var r=n[e];return t[r]||(t[r]=[]),t[r].push(n),t},{})},e.prototype.isOneRelation=function(t){return!Array.isArray(t)&&null!==t&&"object"===Qe(t)},e}(an),yn=function(t){function e(e,n,r,o){var i=t.call(this,e)||this;return i.related=i.model.relation(n),i.foreignKey=r,i.localKey=o,i}return tn(e,t),e.prototype.define=function(t){return t.one(this.related)},e.prototype.attach=function(t,e,n){var r=n[this.related.entity];r&&r[t]&&void 0===r[t][this.foreignKey]&&(e[this.localKey]||(e[this.localKey]=e.$id),r[t][this.foreignKey]=e[this.localKey])},e.prototype.fill=function(t){return this.fillOne(t)},e.prototype.make=function(t,e,n,r){return void 0===r&&(r=!1),this.isOneRelation(t)?this.related.make(t,r):null},e.prototype.load=function(t,e,n){var r=this,o=this.getRelation(t,this.related.entity);o.where(this.foreignKey,this.getKeys(e,this.localKey));var i=this.mapSingleRelations(o.get(),this.foreignKey);e.forEach(function(t){var e=i[t[r.localKey]];t[n]=e||null})},e}(dn),vn=function(t){function e(e,n,r,o){var i=t.call(this,e)||this;return i.parent=i.model.relation(n),i.foreignKey=r,i.ownerKey=o,i}return tn(e,t),e.prototype.define=function(t){return t.one(this.parent)},e.prototype.attach=function(t,e,n){void 0===e[this.foreignKey]&&(e[this.foreignKey]=t)},e.prototype.fill=function(t){return this.fillOne(t)},e.prototype.make=function(t,e,n,r){return void 0===r&&(r=!1),this.isOneRelation(t)?this.parent.make(t,r):null},e.prototype.load=function(t,e,n){var r=this,o=this.getRelation(t,this.parent.entity);t.where(this.ownerKey,this.getKeys(e,this.foreignKey));var i=this.mapSingleRelations(o.get(),this.ownerKey);e.forEach(function(t){var e=i[t[r.foreignKey]];t[n]=e||null})},e}(dn),mn=function(t){function e(e,n,r,o){var i=t.call(this,e)||this;return i.related=i.model.relation(n),i.foreignKey=r,i.localKey=o,i}return tn(e,t),e.prototype.define=function(t){return t.many(this.related)},e.prototype.attach=function(t,e,n){var r=this;Array.isArray(t)&&t.forEach(function(t){var o=n[r.related.entity];o&&o[t]&&void 0===o[t][r.foreignKey]&&(o[t][r.foreignKey]=e.$id)})},e.prototype.fill=function(t){return this.fillMany(t)},e.prototype.make=function(t,e,n,r){var o=this;return void 0===r&&(r=!1),null===t?[]:void 0===t?[]:Array.isArray(t)?0===t.length?[]:t.filter(function(t){return t&&"object"===Qe(t)}).map(function(t){return o.related.make(t,r)}):[]},e.prototype.load=function(t,e,n){var r=this,o=this.getRelation(t,this.related.entity);o.where(this.foreignKey,this.getKeys(e,this.localKey));var i=this.mapManyRelations(o.get(),this.foreignKey);e.forEach(function(t){var e=i[t[r.localKey]];t[n]=e||[]})},e}(dn),gn=function(t){function e(e,n,r,o){var i=t.call(this,e)||this;return i.parent=i.model.relation(n),i.foreignKey=r,i.ownerKey=o,i}return tn(e,t),e.prototype.define=function(t){return t.many(this.parent)},e.prototype.attach=function(t,e,n){0!==t.length&&void 0===e[this.foreignKey]&&(e[this.foreignKey]=t)},e.prototype.fill=function(t){return this.fillMany(t)},e.prototype.make=function(t,e,n,r){var o=this;return void 0===r&&(r=!1),null===t?[]:void 0===t?[]:Array.isArray(t)?0===t.length?[]:t.filter(function(t){return t&&"object"===Qe(t)}).map(function(t){return o.parent.make(t,r)}):[]},e.prototype.load=function(t,e,n){var r=this,o=this.getRelation(t,this.parent.entity);this.addConstraintForHasManyBy(o,e);var i=this.mapSingleRelations(o.get(),this.ownerKey);e.forEach(function(t){var e=r.getRelatedRecords(i,t[r.foreignKey]);t[n]=e})},e.prototype.addConstraintForHasManyBy=function(t,e){var n=this,r=e.reduce(function(t,e){return t.concat(e[n.foreignKey])},[]);t.where(this.ownerKey,r)},e.prototype.getRelatedRecords=function(t,e){return e.reduce(function(e,n){var r=t[n];return r&&e.push(r),e},[])},e}(dn),bn=function(t){function e(e,n,r,o,i,u,a){var s=t.call(this,e)||this;return s.related=s.model.relation(n),s.through=s.model.relation(r),s.firstKey=o,s.secondKey=i,s.localKey=u,s.secondLocalKey=a,s}return tn(e,t),e.prototype.define=function(t){return t.many(this.related)},e.prototype.attach=function(t,e,n){},e.prototype.fill=function(t){return this.fillMany(t)},e.prototype.make=function(t,e,n,r){var o=this;return void 0===r&&(r=!1),null===t?[]:void 0===t?[]:Array.isArray(t)?0===t.length?[]:t.filter(function(t){return t&&"object"===Qe(t)}).map(function(t){return o.related.make(t,r)}):[]},e.prototype.load=function(t,e,n){var r=this,o=this.getRelation(t,this.related.entity),i=t.newPlainQuery(this.through.entity);this.addEagerConstraintForThrough(i,e);var u=i.get();this.addEagerConstraintForRelated(o,u);var a=this.mapThroughRelations(u,o);e.forEach(function(t){var e=a[t[r.localKey]];t[n]=e})},e.prototype.addEagerConstraintForThrough=function(t,e){t.where(this.firstKey,this.getKeys(e,this.localKey))},e.prototype.addEagerConstraintForRelated=function(t,e){t.where(this.secondKey,this.getKeys(e,this.secondLocalKey))},e.prototype.mapThroughRelations=function(t,e){var n=this,r=this.mapManyRelations(e.get(),this.secondKey);return t.reduce(function(t,e){var o=e[n.firstKey];t[o]||(t[o]=[]);var i=r[e[n.secondLocalKey]];return i&&(t[o]=t[o].concat(i)),t},{})},e}(dn),wn=function(t){function e(e,n,r,o,i,u,a){var s=t.call(this,e)||this;return s.related=s.model.relation(n),s.pivot=s.model.relation(r),s.foreignPivotKey=o,s.relatedPivotKey=i,s.parentKey=u,s.relatedKey=a,s}return tn(e,t),e.prototype.define=function(t){return t.many(this.related)},e.prototype.attach=function(t,e,n){},e.prototype.fill=function(t){return this.fillMany(t)},e.prototype.make=function(t,e,n,r){var o=this;return void 0===r&&(r=!1),null===t?[]:void 0===t?[]:Array.isArray(t)?0===t.length?[]:t.filter(function(t){return t&&"object"===Qe(t)}).map(function(t){return o.related.make(t,r)}):[]},e.prototype.load=function(t,e,n){var r=this,o=this.getRelation(t,this.related.entity),i=t.newPlainQuery(this.pivot.entity);this.addEagerConstraintForPivot(i,e);var u=i.get();this.addEagerConstraintForRelated(o,u);var a=this.mapPivotRelations(u,o);e.forEach(function(t){var e=a[t[r.parentKey]];t[n]=e})},e.prototype.addEagerConstraintForPivot=function(t,e){t.where(this.foreignPivotKey,this.getKeys(e,this.parentKey))},e.prototype.addEagerConstraintForRelated=function(t,e){t.where(this.relatedPivotKey,this.getKeys(e,this.relatedKey))},e.prototype.mapPivotRelations=function(t,e){var n=this,r=this.mapManyRelations(e.get(),this.relatedKey);return t.reduce(function(t,e){var o=e[n.foreignPivotKey];t[o]||(t[o]=[]);var i=r[e[n.relatedPivotKey]];return i&&(t[o]=t[o].concat(i)),t},{})},e.prototype.createPivots=function(t,e,n){var r=this;return this.pivot.primaryKey instanceof Array==!1?e:(un.forOwn(e[t.entity],function(t){var o=t[n];void 0!==o&&0!==o.length&&r.createPivotRecord(e,t,o)}),e)},e.prototype.createPivotRecord=function(t,e,n){var r=this;n.forEach(function(n){var o,i,u=e[r.parentKey]+"_"+n;t[r.pivot.entity]=en({},t[r.pivot.entity],((o={})[u]=((i={$id:u})[r.foreignPivotKey]=e[r.parentKey],i[r.relatedPivotKey]=n,i),o))})},e}(dn),xn=function(t){function e(e,n,r){var o=t.call(this,e)||this;return o.id=n,o.type=r,o}return tn(e,t),e.prototype.define=function(t){var e=this;return t.union(function(t,n){return n[e.type]})},e.prototype.attach=function(t,e,n){},e.prototype.fill=function(t){return this.fillOne(t)},e.prototype.make=function(t,e,n,r){if(void 0===r&&(r=!1),!this.isOneRelation(t))return null;var o=e[this.type],i=this.model.relation(o);return i?i.make(t,r):null},e.prototype.load=function(t,e,n){var r=this,o=this.getTypes(e).reduce(function(e,n){var o=r.getRelation(t,n);return e[n]=r.mapSingleRelations(o.get(),"$id"),e},{});e.forEach(function(t){var e=t[r.id],i=t[r.type],u=o[i][e];t[n]=u||null})},e.prototype.getTypes=function(t){var e=this;return t.reduce(function(t,n){var r=n[e.type];return!t.includes(r)&&t.push(r),t},[])},e}(dn),_n=function(t){function e(e,n,r,o,i){var u=t.call(this,e)||this;return u.related=u.model.relation(n),u.id=r,u.type=o,u.localKey=i,u}return tn(e,t),e.prototype.define=function(t){return t.one(this.related)},e.prototype.attach=function(t,e,n){var r=n[this.related.entity]&&n[this.related.entity][t];r&&(r[this.id]=r[this.id]||e.$id,r[this.type]=r[this.type]||this.model.entity)},e.prototype.fill=function(t){return this.fillOne(t)},e.prototype.make=function(t,e,n,r){return void 0===r&&(r=!1),this.isOneRelation(t)?this.related.make(t,r):null},e.prototype.load=function(t,e,n){var r=this,o=this.getRelation(t,this.related.entity);this.addEagerConstraintForMorphOne(o,e,t.entity);var i=this.mapSingleRelations(o.get(),this.id);e.forEach(function(t){var e=i[t[r.localKey]];t[n]=e||null})},e.prototype.addEagerConstraintForMorphOne=function(t,e,n){t.where(this.type,n).where(this.id,this.getKeys(e,this.localKey))},e}(dn),On=function(t){function e(e,n,r,o,i){var u=t.call(this,e)||this;return u.related=u.model.relation(n),u.id=r,u.type=o,u.localKey=i,u}return tn(e,t),e.prototype.define=function(t){return t.many(this.related)},e.prototype.attach=function(t,e,n){var r=this;if(Array.isArray(t)){var o=n[this.related.entity];t.forEach(function(t){var n=o[t];n[r.id]=n[r.id]||e.$id,n[r.type]=n[r.type]||r.model.entity})}},e.prototype.fill=function(t){return this.fillMany(t)},e.prototype.make=function(t,e,n,r){var o=this;return void 0===r&&(r=!1),null===t?[]:void 0===t?[]:Array.isArray(t)?0===t.length?[]:t.filter(function(t){return t&&"object"===Qe(t)}).map(function(t){return o.related.make(t,r)}):[]},e.prototype.load=function(t,e,n){var r=this,o=this.getRelation(t,this.related.entity);this.addEagerConstraintForMorphMany(o,e,t.entity);var i=this.mapManyRelations(o.get(),this.id);e.forEach(function(t){var e=i[t[r.localKey]];t[n]=e})},e.prototype.addEagerConstraintForMorphMany=function(t,e,n){t.where(this.type,n).where(this.id,this.getKeys(e,this.localKey))},e}(dn),Sn=function(t){function e(e,n,r,o,i,u,a,s){var c=t.call(this,e)||this;return c.related=c.model.relation(n),c.pivot=c.model.relation(r),c.relatedId=o,c.id=i,c.type=u,c.parentKey=a,c.relatedKey=s,c}return tn(e,t),e.prototype.define=function(t){return t.many(this.related)},e.prototype.attach=function(t,e,n){},e.prototype.fill=function(t){return this.fillMany(t)},e.prototype.make=function(t,e,n,r){var o=this;return void 0===r&&(r=!1),null===t?[]:void 0===t?[]:Array.isArray(t)?0===t.length?[]:t.filter(function(t){return t&&"object"===Qe(t)}).map(function(t){return o.related.make(t,r)}):[]},e.prototype.load=function(t,e,n){var r=this,o=this.getRelation(t,this.related.entity),i=t.newPlainQuery(this.pivot.entity);this.addEagerConstraintForPivot(i,e,t.entity);var u=i.get();this.addEagerConstraintForRelated(o,u);var a=this.mapPivotRelations(u,o);e.forEach(function(t){var e=a[t[r.parentKey]];t[n]=e})},e.prototype.addEagerConstraintForPivot=function(t,e,n){t.where(this.type,n).where(this.id,this.getKeys(e,this.parentKey))},e.prototype.addEagerConstraintForRelated=function(t,e){t.where(this.relatedKey,this.getKeys(e,this.relatedId))},e.prototype.mapPivotRelations=function(t,e){var n=this,r=this.mapManyRelations(e.get(),this.relatedKey);return t.reduce(function(t,e){var o=e[n.id];t[o]||(t[o]=[]);var i=r[e[n.relatedId]];return i&&(t[o]=t[o].concat(i)),t},{})},e.prototype.createPivots=function(t,e,n){var r=this;return un.forOwn(e[t.entity],function(o){var i=o[n];Array.isArray(i)&&0!==i.length&&r.createPivotRecord(t,e,o,i)}),e},e.prototype.createPivotRecord=function(t,e,n,r){var o=this;r.forEach(function(r){var i,u,a=n[o.parentKey],s=a+"_"+r+"_"+t.entity;e[o.pivot.entity]=en({},e[o.pivot.entity],((i={})[s]=((u={$id:s})[o.relatedId]=r,u[o.id]=a,u[o.type]=t.entity,u),i))})},e}(dn),jn=function(t){function e(e,n,r,o,i,u,a,s){var c=t.call(this,e)||this;return c.related=c.model.relation(n),c.pivot=c.model.relation(r),c.relatedId=o,c.id=i,c.type=u,c.parentKey=a,c.relatedKey=s,c}return tn(e,t),e.prototype.define=function(t){return t.many(this.related)},e.prototype.attach=function(t,e,n){},e.prototype.fill=function(t){return this.fillMany(t)},e.prototype.make=function(t,e,n,r){var o=this;return void 0===r&&(r=!1),null===t?[]:void 0===t?[]:Array.isArray(t)?0===t.length?[]:t.filter(function(t){return t&&"object"===Qe(t)}).map(function(t){return o.related.make(t,r)}):[]},e.prototype.load=function(t,e,n){var r=this,o=this.getRelation(t,this.related.entity),i=t.newPlainQuery(this.pivot.entity);this.addEagerConstraintForPivot(i,e,this.related.entity);var u=i.get();this.addEagerConstraintForRelated(o,u);var a=this.mapPivotRelations(u,o);e.forEach(function(t){var e=a[t[r.parentKey]];t[n]=e})},e.prototype.addEagerConstraintForPivot=function(t,e,n){t.where(this.type,n).where(this.relatedId,this.getKeys(e,this.parentKey))},e.prototype.addEagerConstraintForRelated=function(t,e){t.where(this.relatedKey,this.getKeys(e,this.id))},e.prototype.mapPivotRelations=function(t,e){var n=this,r=this.mapManyRelations(e.get(),this.relatedKey);return t.reduce(function(t,e){var o=e[n.relatedId];t[o]||(t[o]=[]);var i=r[e[n.id]];return i&&(t[o]=t[o].concat(i)),t},{})},e.prototype.createPivots=function(t,e,n){var r=this;return un.forOwn(e[t.entity],function(t){var o=t[n];0!==o.length&&r.createPivotRecord(e,t,o)}),e},e.prototype.createPivotRecord=function(t,e,n){var r=this;n.forEach(function(n){var o,i,u=e[r.parentKey],a=n+"_"+u+"_"+r.related.entity;t[r.pivot.entity]=en({},t[r.pivot.entity],((o={})[a]=((i={$id:a})[r.relatedId]=u,i[r.id]=n,i[r.type]=r.related.entity,i),o))})},e}(dn);!function(){function t(t){this.$fill(t)}t.fields=function(){return{}},t.getFields=function(){return this.cachedFields?this.cachedFields:(this.cachedFields=en({$id:this.attr(void 0)},this.fields()),this.cachedFields)},t.attr=function(t,e){return new cn(this,t,e)},t.string=function(t,e){return new ln(this,t,e)},t.number=function(t,e){return new pn(this,t,e)},t.boolean=function(t,e){return new hn(this,t,e)},t.increment=function(){return new fn(this)},t.hasOne=function(t,e,n){return new yn(this,t,e,this.localKey(n))},t.belongsTo=function(t,e,n){return new vn(this,t,e,this.relation(t).localKey(n))},t.hasMany=function(t,e,n){return new mn(this,t,e,this.localKey(n))},t.hasManyBy=function(t,e,n){return new gn(this,t,e,this.relation(t).localKey(n))},t.hasManyThrough=function(t,e,n,r,o,i){return new bn(this,t,e,n,r,this.localKey(o),this.relation(e).localKey(i))},t.belongsToMany=function(t,e,n,r,o,i){return new wn(this,t,e,n,r,this.localKey(o),this.relation(t).localKey(i))},t.morphTo=function(t,e){return new xn(this,t,e)},t.morphOne=function(t,e,n,r){return new _n(this,t,e,n,this.localKey(r))},t.morphMany=function(t,e,n,r){return new On(this,t,e,n,this.localKey(r))},t.morphToMany=function(t,e,n,r,o,i,u){return new Sn(this,t,e,n,r,o,this.localKey(i),this.relation(t).localKey(u))},t.morphedByMany=function(t,e,n,r,o,i,u){return new jn(this,t,e,n,r,o,this.localKey(i),this.relation(t).localKey(u))},t.mutators=function(){return{}},t.database=function(){return Xe.database},t.store=function(){return this.database().store},t.namespace=function(t){return this.database().namespace+"/"+this.entity+"/"+t},t.dispatch=function(t,e){return this.store().dispatch(this.namespace(t),e)},t.getters=function(t){return this.store().getters[this.namespace(t)]},t.create=function(t){return nn(this,void 0,void 0,function(){return rn(this,function(e){return[2,this.dispatch("create",t)]})})},t.insert=function(t){return nn(this,void 0,void 0,function(){return rn(this,function(e){return[2,this.dispatch("insert",t)]})})},t.update=function(t){return nn(this,void 0,void 0,function(){return rn(this,function(e){return[2,this.dispatch("update",t)]})})},t.insertOrUpdate=function(t){return nn(this,void 0,void 0,function(){return rn(this,function(e){return[2,this.dispatch("insertOrUpdate",t)]})})},t.all=function(){return this.getters("all")()},t.find=function(t){return this.getters("find")(t)},t.query=function(){return this.getters("query")()},t.delete=function(t){return nn(this,void 0,void 0,function(){return rn(this,function(e){return[2,this.dispatch("delete",t)]})})},t.id=function(t){var e=this.primaryKey;return"string"==typeof e?t[e]:e.map(function(e){return t[e]}).join("_")},t.localKey=function(t){return t||("string"==typeof this.primaryKey?this.primaryKey:"id")},t.relation=function(t){return"string"!=typeof t?t:this.database().model(t)},t.getAttributeClass=function(t){switch(t){case"increment":return fn;default:throw Error('The attribute name "'+t+"\" doesn't exists.")}},t.getFieldsByAttribute=function(t){var e=this.getAttributeClass(t),n=this.fields();return Object.keys(n).reduce(function(t,r){var o=n[r];return o instanceof e&&(t[r]=o),t},{})},t.getIncrementFields=function(){return this.getFieldsByAttribute("increment")},t.hasIncrementFields=function(){return Object.keys(this.getIncrementFields()).length>0},t.pivotFields=function(){var t=[];return un.forOwn(this.fields(),function(e,n){var r;(e instanceof wn||e instanceof Sn||e instanceof jn)&&t.push(((r={})[n]=e,r))}),t},t.hasPivotFields=function(){return this.pivotFields().length>0},t.make=function(t,e){return void 0===e&&(e=!1),e?this.fill({},t,!0):new this(t)},t.makePlain=function(t){return this.make(t,!0)},t.fix=function(t,e){void 0===e&&(e=["$id"]);var n=this.getFields();return Object.keys(t).reduce(function(r,o){var i=t[o],u=n[o];return e.includes(o)?(r[o]=i,r):u?(r[o]=u.fill(i),r):r},{})},t.fixMany=function(t,e){var n=this;return Object.keys(t).reduce(function(r,o){return r[o]=n.fix(t[o],e),r},{})},t.hydrate=function(t,e){void 0===e&&(e=["$id"]);var n=this.getFields(),r=Object.keys(n).reduce(function(e,r){var o=n[r],i=t[r];return e[r]=o.fill(i),e},{});return Object.keys(t).reduce(function(n,r){return e.includes(r)&&void 0!==t[r]&&(n[r]=t[r]),n},r)},t.hydrateMany=function(t,e){var n=this;return Object.keys(t).reduce(function(r,o){return r[o]=n.hydrate(t[o],e),r},{})},t.fill=function(t,e,n){void 0===t&&(t={}),void 0===e&&(e={}),void 0===n&&(n=!1);var r=this.getFields();return Object.keys(r).reduce(function(t,o){var i=r[o],u=e[o];return t[o]=i.make(u,e,o,n),t},t)},t.prototype.$self=function(){return this.constructor},t.prototype.$fields=function(){return this.$self().fields()},t.prototype.$store=function(){return this.$self().store()},t.prototype.$namespace=function(t){return this.$self().namespace(t)},t.prototype.$dispatch=function(t,e){return this.$self().dispatch(t,e)},t.prototype.$getters=function(t){return this.$self().getters(t)},t.prototype.$create=function(t){return nn(this,void 0,void 0,function(){return rn(this,function(e){return[2,this.$dispatch("create",t)]})})},t.prototype.$insert=function(t){return nn(this,void 0,void 0,function(){return rn(this,function(e){return[2,this.$dispatch("insert",t)]})})},t.prototype.$update=function(t){return nn(this,void 0,void 0,function(){return rn(this,function(e){return Array.isArray(t)?[2,this.$dispatch("update",t)]:void 0!==t.where?[2,this.$dispatch("update",t)]:void 0===this.$self().id(t)?[2,this.$dispatch("update",{where:this.$id,data:t})]:[2,this.$dispatch("update",t)]})})},t.prototype.$insertOrUpdate=function(t){return nn(this,void 0,void 0,function(){return rn(this,function(e){return[2,this.$dispatch("insertOrUpdate",t)]})})},t.prototype.$all=function(){return this.$getters("all")()},t.prototype.$find=function(t){return this.$getters("find")(t)},t.prototype.$query=function(){return this.$getters("query")()},t.prototype.$delete=function(t){return nn(this,void 0,void 0,function(){return rn(this,function(e){return t=void 0===t?this.$id:t,[2,this.$dispatch("delete",t)]})})},t.prototype.$fill=function(t){this.$self().fill(this,t)},t.prototype.$toJson=function(){return this.$self().makePlain(this)},t.primaryKey="id"}();function En(t){return t&&t.__esModule&&Object.prototype.hasOwnProperty.call(t,"default")?t.default:t}function Cn(t,e){return t(e={exports:{}},e.exports),e.exports}var kn=Cn(function(t,e){Object.defineProperty(e,"__esModule",{value:!0}),e.isImmutable=function(t){return!(!t||"function"!=typeof t.hasOwnProperty||!(t.hasOwnProperty("__ownerID")||t._map&&t._map.hasOwnProperty("__ownerID")))},e.denormalizeImmutable=function(t,e,n){return Object.keys(t).reduce(function(e,r){var o=""+r;return e.has(o)?e.set(o,n(e.get(o),t[o])):e},e)}});En(kn);kn.isImmutable,kn.denormalizeImmutable;var An=Cn(function(t,e){Object.defineProperty(e,"__esModule",{value:!0});var n="function"==typeof Symbol&&"symbol"===Qe(Symbol.iterator)?function(t){return Qe(t)}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":Qe(t)},r=Object.assign||function(t){for(var e=1;e<arguments.length;e++){var n=arguments[e];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(t[r]=n[r])}return t},o=function(){function t(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,r.key,r)}}return function(e,n,r){return n&&t(e.prototype,n),r&&t(e,r),e}}(),i=function(t){if(t&&t.__esModule)return t;var e={};if(null!=t)for(var n in t)Object.prototype.hasOwnProperty.call(t,n)&&(e[n]=t[n]);return e.default=t,e}(kn);var u=function(t){return function(e){return i.isImmutable(e)?e.get(t):e[t]}},a=function(){function t(e){var n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},o=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{};if(function(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}(this,t),!e||"string"!=typeof e)throw new Error("Expected a string key for Entity, but found "+e+".");var i=o.idAttribute,a=void 0===i?"id":i,s=o.mergeStrategy,c=void 0===s?function(t,e){return r({},t,e)}:s,f=o.processStrategy,l=void 0===f?function(t){return r({},t)}:f;this._key=e,this._getId="function"==typeof a?a:u(a),this._idAttribute=a,this._mergeStrategy=c,this._processStrategy=l,this.define(n)}return o(t,[{key:"define",value:function(t){this.schema=Object.keys(t).reduce(function(e,n){var o=t[n];return r({},e,function(t,e,n){return e in t?Object.defineProperty(t,e,{value:n,enumerable:!0,configurable:!0,writable:!0}):t[e]=n,t}({},n,o))},this.schema||{})}},{key:"getId",value:function(t,e,n){return this._getId(t,e,n)}},{key:"merge",value:function(t,e){return this._mergeStrategy(t,e)}},{key:"normalize",value:function(t,e,r,o,i){var u=this,a=this._processStrategy(t,e,r);return Object.keys(this.schema).forEach(function(t){if(a.hasOwnProperty(t)&&"object"===n(a[t])){var e=u.schema[t];a[t]=o(a[t],a,t,e,i)}}),i(this,a,t,e,r),this.getId(t,e,r)}},{key:"denormalize",value:function(t,e){var n=this;return i.isImmutable(t)?i.denormalizeImmutable(this.schema,t,e):(Object.keys(this.schema).forEach(function(r){if(t.hasOwnProperty(r)){var o=n.schema[r];t[r]=e(t[r],o)}}),t)}},{key:"key",get:function(){return this._key}},{key:"idAttribute",get:function(){return this._idAttribute}}]),t}();e.default=a});En(An);var Rn=Cn(function(t,e){Object.defineProperty(e,"__esModule",{value:!0});var n=function(){function t(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,r.key,r)}}return function(e,n,r){return n&&t(e.prototype,n),r&&t(e,r),e}}();var r=function(){function t(e,n){!function(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}(this,t),n&&(this._schemaAttribute="string"==typeof n?function(t){return t[n]}:n),this.define(e)}return n(t,[{key:"define",value:function(t){this.schema=t}},{key:"getSchemaAttribute",value:function(t,e,n){return!this.isSingleSchema&&this._schemaAttribute(t,e,n)}},{key:"inferSchema",value:function(t,e,n){if(this.isSingleSchema)return this.schema;var r=this.getSchemaAttribute(t,e,n);return this.schema[r]}},{key:"normalizeValue",value:function(t,e,n,r,o){var i=this.inferSchema(t,e,n);if(!i)return t;var u=r(t,e,n,i,o);return this.isSingleSchema||null==u?u:{id:u,schema:this.getSchemaAttribute(t,e,n)}}},{key:"denormalizeValue",value:function(t,e){var n=(0,kn.isImmutable)(t)?t.get("schema"):t.schema;return this.isSingleSchema||n?e(((0,kn.isImmutable)(t)?t.get("id"):t.id)||t,this.isSingleSchema?this.schema:this.schema[n]):t}},{key:"isSingleSchema",get:function(){return!this._schemaAttribute}}]),t}();e.default=r});En(Rn);var Pn=Cn(function(t,e){Object.defineProperty(e,"__esModule",{value:!0});var n,r=function(){function t(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,r.key,r)}}return function(e,n,r){return n&&t(e.prototype,n),r&&t(e,r),e}}(),o=(n=Rn)&&n.__esModule?n:{default:n};var i=function(t){function e(t,n){if(function(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}(this,e),!n)throw new Error('Expected option "schemaAttribute" not found on UnionSchema.');return function(t,e){if(!t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!e||"object"!==Qe(e)&&"function"!=typeof e?t:e}(this,(e.__proto__||Object.getPrototypeOf(e)).call(this,t,n))}return function(t,e){if("function"!=typeof e&&null!==e)throw new TypeError("Super expression must either be null or a function, not "+Qe(e));t.prototype=Object.create(e&&e.prototype,{constructor:{value:t,enumerable:!1,writable:!0,configurable:!0}}),e&&(Object.setPrototypeOf?Object.setPrototypeOf(t,e):t.__proto__=e)}(e,o.default),r(e,[{key:"normalize",value:function(t,e,n,r,o){return this.normalizeValue(t,e,n,r,o)}},{key:"denormalize",value:function(t,e){return this.denormalizeValue(t,e)}}]),e}();e.default=i});En(Pn);var Fn=Cn(function(t,e){Object.defineProperty(e,"__esModule",{value:!0});var n,r=Object.assign||function(t){for(var e=1;e<arguments.length;e++){var n=arguments[e];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(t[r]=n[r])}return t},o=function(){function t(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,r.key,r)}}return function(e,n,r){return n&&t(e.prototype,n),r&&t(e,r),e}}(),i=(n=Rn)&&n.__esModule?n:{default:n};function u(t,e,n){return e in t?Object.defineProperty(t,e,{value:n,enumerable:!0,configurable:!0,writable:!0}):t[e]=n,t}var a=function(t){function e(){return function(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}(this,e),function(t,e){if(!t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!e||"object"!==Qe(e)&&"function"!=typeof e?t:e}(this,(e.__proto__||Object.getPrototypeOf(e)).apply(this,arguments))}return function(t,e){if("function"!=typeof e&&null!==e)throw new TypeError("Super expression must either be null or a function, not "+Qe(e));t.prototype=Object.create(e&&e.prototype,{constructor:{value:t,enumerable:!1,writable:!0,configurable:!0}}),e&&(Object.setPrototypeOf?Object.setPrototypeOf(t,e):t.__proto__=e)}(e,i.default),o(e,[{key:"normalize",value:function(t,e,n,o,i){var a=this;return Object.keys(t).reduce(function(e,n,s){var c=t[n];return null!=c?r({},e,u({},n,a.normalizeValue(c,t,n,o,i))):e},{})}},{key:"denormalize",value:function(t,e){var n=this;return Object.keys(t).reduce(function(o,i){var a=t[i];return r({},o,u({},i,n.denormalizeValue(a,e)))},{})}}]),e}();e.default=a});En(Fn);var Mn=Cn(function(t,e){Object.defineProperty(e,"__esModule",{value:!0}),e.denormalize=e.normalize=void 0;var n,r=function(){function t(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,r.key,r)}}return function(e,n,r){return n&&t(e.prototype,n),r&&t(e,r),e}}(),o=(n=Rn)&&n.__esModule?n:{default:n};var i=function(t){if(Array.isArray(t)&&t.length>1)throw new Error("Expected schema definition to be a single schema, but found "+t.length+".");return t[0]},u=function(t){return Array.isArray(t)?t:Object.keys(t).map(function(e){return t[e]})},a=(e.normalize=function(t,e,n,r,o,a){return t=i(t),u(e).map(function(e,i){return o(e,n,r,t,a)})},e.denormalize=function(t,e,n){return t=i(t),e&&e.map?e.map(function(e){return n(e,t)}):e},function(t){function e(){return function(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}(this,e),function(t,e){if(!t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!e||"object"!==Qe(e)&&"function"!=typeof e?t:e}(this,(e.__proto__||Object.getPrototypeOf(e)).apply(this,arguments))}return function(t,e){if("function"!=typeof e&&null!==e)throw new TypeError("Super expression must either be null or a function, not "+Qe(e));t.prototype=Object.create(e&&e.prototype,{constructor:{value:t,enumerable:!1,writable:!0,configurable:!0}}),e&&(Object.setPrototypeOf?Object.setPrototypeOf(t,e):t.__proto__=e)}(e,o.default),r(e,[{key:"normalize",value:function(t,e,n,r,o){var i=this;return u(t).map(function(t,u){return i.normalizeValue(t,e,n,r,o)}).filter(function(t){return null!=t})}},{key:"denormalize",value:function(t,e){var n=this;return t&&t.map?t.map(function(t){return n.denormalizeValue(t,e)}):t}}]),e}());e.default=a});En(Mn);Mn.denormalize,Mn.normalize;var In=Cn(function(t,e){Object.defineProperty(e,"__esModule",{value:!0}),e.denormalize=e.normalize=void 0;var n=function(){function t(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,r.key,r)}}return function(e,n,r){return n&&t(e.prototype,n),r&&t(e,r),e}}(),r=Object.assign||function(t){for(var e=1;e<arguments.length;e++){var n=arguments[e];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(t[r]=n[r])}return t},o=function(t){if(t&&t.__esModule)return t;var e={};if(null!=t)for(var n in t)Object.prototype.hasOwnProperty.call(t,n)&&(e[n]=t[n]);return e.default=t,e}(kn);var i=function(t,e,n,o,i,u){var a=r({},e);return Object.keys(t).forEach(function(n){var r=t[n],o=i(e[n],e,n,r,u);null==o?delete a[n]:a[n]=o}),a};e.normalize=i;var u=function(t,e,n){if(o.isImmutable(e))return o.denormalizeImmutable(t,e,n);var i=r({},e);return Object.keys(t).forEach(function(e){i[e]&&(i[e]=n(i[e],t[e]))}),i};e.denormalize=u;var a=function(){function t(e){!function(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}(this,t),this.define(e)}return n(t,[{key:"define",value:function(t){this.schema=Object.keys(t).reduce(function(e,n){var o=t[n];return r({},e,function(t,e,n){return e in t?Object.defineProperty(t,e,{value:n,enumerable:!0,configurable:!0,writable:!0}):t[e]=n,t}({},n,o))},this.schema||{})}},{key:"normalize",value:function(){for(var t=arguments.length,e=Array(t),n=0;n<t;n++)e[n]=arguments[n];return i.apply(void 0,[this.schema].concat(e))}},{key:"denormalize",value:function(){for(var t=arguments.length,e=Array(t),n=0;n<t;n++)e[n]=arguments[n];return u.apply(void 0,[this.schema].concat(e))}}]),t}();e.default=a});En(In);In.denormalize,In.normalize;var Tn=Cn(function(t,e){Object.defineProperty(e,"__esModule",{value:!0}),e.denormalize=e.normalize=e.schema=void 0;var n=Object.assign||function(t){for(var e=1;e<arguments.length;e++){var n=arguments[e];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(t[r]=n[r])}return t},r="function"==typeof Symbol&&"symbol"===Qe(Symbol.iterator)?function(t){return Qe(t)}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":Qe(t)},o=l(An),i=l(Pn),u=l(Fn),a=f(Mn),s=f(In),c=f(kn);function f(t){if(t&&t.__esModule)return t;var e={};if(null!=t)for(var n in t)Object.prototype.hasOwnProperty.call(t,n)&&(e[n]=t[n]);return e.default=t,e}function l(t){return t&&t.__esModule?t:{default:t}}e.schema={Array:a.default,Entity:o.default,Object:s.default,Union:i.default,Values:u.default},e.normalize=function(t,e){if(!t||"object"!==(void 0===t?"undefined":r(t)))throw new Error('Unexpected input given to normalize. Expected type to be "object", found "'+(void 0===t?"undefined":r(t))+'".');var n={},o=function(t){return function(e,n,r,o,i){var u=e.key,a=e.getId(r,o,i);u in t||(t[u]={});var s=t[u][a];t[u][a]=s?e.merge(s,n):n}}(n);return{entities:n,result:function t(e,n,o,i,u){return"object"===(void 0===e?"undefined":r(e))&&e?"object"!==(void 0===i?"undefined":r(i))||i.normalize&&"function"==typeof i.normalize?i.normalize(e,n,o,t,u):(Array.isArray(i)?a.normalize:s.normalize)(i,e,n,o,t,u):e}(t,t,null,e,o)}};var p=function(t){var e={},i=h(t);return function t(u,f){return"object"!==(void 0===f?"undefined":r(f))||f.denormalize&&"function"==typeof f.denormalize?null==u?u:f instanceof o.default?function(t,e,o,i,u){var a=i(t,e);if("object"!==(void 0===a?"undefined":r(a))||null===a)return a;if(u[e.key]||(u[e.key]={}),!u[e.key][t]){var s=c.isImmutable(a)?a:n({},a);u[e.key][t]=s,u[e.key][t]=e.denormalize(s,o)}return u[e.key][t]}(u,f,t,i,e):f.denormalize(u,t):(Array.isArray(f)?a.denormalize:s.denormalize)(f,u,t)}},h=function(t){var e=c.isImmutable(t);return function(n,o){var i=o.key;return"object"===(void 0===n?"undefined":r(n))?n:e?t.getIn([i,n.toString()]):t[i][n]}};e.denormalize=function(t,e,n){if(void 0!==t)return p(n)(t,e)}});En(Tn);Tn.denormalize;var $n=Tn.normalize,Ln=Tn.schema,Un=function(){function t(){}return t.process=function(t,e){if(un.isEmpty(e))return{};var n=t.database().schemas[t.model.entity],r=Array.isArray(e)?[n]:n;return $n(e,r).entities},t}(),Kn=function(){function t(){}return t.process=function(t,e){return Object.keys(e).forEach(function(n){var r=t.getModel(n);r.hasPivotFields()&&un.forOwn(r.pivotFields(),function(t){un.forOwn(t,function(t,n){t.createPivots(r,e,n)})})}),e},t}(),Bn=function(){function t(){}return t.process=function(t,e){var n=this;return un.mapValues(e,function(e,r){var o=t.newPlainQuery(r);return o.model.hasIncrementFields()?(n.processRecordsByFields(e,o),e):e})},t.processRecordsByFields=function(t,e){var n=this,r=e.model.getIncrementFields();un.forOwn(r,function(r,o){n.processRecords(t,e,o)})},t.processRecords=function(t,e,n){var r=this.max(t,e,n);un.forOwn(t,function(t){"number"!=typeof t[n]&&(t[n]=++r)})},t.max=function(t,e,n){var r=e.max(n),o=Math.max.apply(Math,un.map(t,function(t){var e=t[n];return"number"==typeof e?e:0}));return Math.max(o,r)},t}(),Nn=function(){function t(){}return t.process=function(t,e){return un.forOwn(e,function(n,r){var o=t.getModel(r).fields();un.forOwn(n,function(t){un.forOwn(t,function(n,r){var i=o[r];i instanceof dn&&i.attach(n,t,e)})})}),e},t}(),qn=function(){function t(){}return t.process=function(t,e){var n=this;return un.mapValues(e,function(e,r){var o=t.newPlainQuery(r);return n.processRecords(e,o)})},t.processRecords=function(t,e){return Object.keys(t).reduce(function(n,r){var o=t[r],i=e.model.id(o),u=isNaN(i)?i:i.toString();return void 0===i||r===u?(n[r]=o,n):(n[u]=en({},o,{$id:i}),n)},{})},t}(),zn=function(){function t(){}return t.normalize=function(t,e){var n=Un.process(t,e);return n=Kn.process(t,n),n=Bn.process(t,n),n=Nn.process(t,n),n=qn.process(t,n)},t}(),Dn=function(){function t(){}return t.filter=function(t,e){var n=this;return 0===t.wheres.length?e:e.filter(function(e){return n.check(t,e)})},t.check=function(t,e){var n=un.groupBy(t.wheres,function(t){return t.boolean}),r=this.getComparator(t,e),o=[];return n.and&&o.push(n.and.every(r)),n.or&&o.push(n.or.some(r)),-1!==o.indexOf(!0)},t.getComparator=function(t,e){var n=this;return function(r){if("function"==typeof r.field){var o=new Jn(t.rootState,t.entity),i=n.executeWhereClosure(o,e,r.field);if("boolean"==typeof i)return i;var u=o.get();return!un.isEmpty(u.filter(function(t){return t.$id===e.$id}))}return"function"==typeof r.value?r.value(e[r.field]):Array.isArray(r.value)?-1!==r.value.indexOf(e[r.field]):e[r.field]===r.value}},t.executeWhereClosure=function(t,e,n){if(3!==n.length)return n(e,t);var r=new t.model(e);return n(e,t,r)},t}(),Hn=function(){function t(){}return t.filter=function(t,e){if(0===t.orders.length)return e;var n=t.orders.map(function(t){return t.field}),r=t.orders.map(function(t){return t.direction});return un.orderBy(e,n,r)},t}(),Wn=function(){function t(){}return t.filter=function(t,e){return e.slice(t._offset,t._offset+t._limit)},t}(),Vn=function(){function t(){}return t.where=function(t,e){return Dn.filter(t,e)},t.orderBy=function(t,e){return Hn.filter(t,e)},t.limit=function(t,e){return Wn.filter(t,e)},t}(),Gn=function(){function t(){}return t.setEagerLoad=function(t,e,n){void 0===n&&(n=null),t.load[e]||(t.load[e]=[]),n&&t.load[e].push(n)},t.with=function(t,e,n){"*"!==e?this.parseWithRelations(t,e.split("."),n):this.withAll(t)},t.withAll=function(t,e){void 0===e&&(e=function(){return null});var n=t.model.getFields();for(var r in t.model.getFields())n[r]instanceof dn&&this.with(t,r,e)},t.withAllRecursive=function(t,e){this.withAll(t,function(t){e>0&&t.withAllRecursive(e-1)})},t.parseWithRelations=function(t,e,n){var r=this,o=e[0];o.split("|").forEach(function(e){r.setEagerLoad(t,e)}),1!==e.length?(e.shift(),this.addNestedWiths(t,e,n)):this.setEagerLoad(t,o,n)},t.addNestedWiths=function(t,e,n){var r=e.join(".");this.setEagerLoad(t,r,function(t){t.with(r,n)})},t.eagerLoadRelations=function(t,e){var n=t.model.getFields();for(var r in t.load){var o=n[r];o instanceof dn&&o.load(t,e,r)}},t}(),Yn=function(){function t(t){this.query=t}return t.on=function(t,e,n){void 0===n&&(n=!1);var r=this.lastHookId+1;return this.lastHookId=r,this.hooks[t]||(this.hooks[t]=[]),this.hooks[t].push({callback:e,once:n,uid:r}),r},t.off=function(t){var e=this,n=!1;return Object.keys(this.hooks).some(function(r){var o=e.hooks[r],i=o.findIndex(function(e){return e.uid===t});return-1!==i&&(o.splice(i,1),n=!0),n}),n},t.prototype.self=function(){return this.constructor},t.prototype.getActionHook=function(t){return this.query.actionContext&&this.query.module.actions&&this.query.module.actions[t]||null},t.prototype.getGlobalHook=function(t){return this.self().hooks[t]?this.self().hooks[t]:null},t.prototype.has=function(t){return!!this.getActionHook(t)||!!this.getGlobalHook(t)},t.prototype.execute=function(t,e){return this.has(t)?(e=this.executeActionHook(t,e),e=this.executeGlobalHook(t,e)):e},t.prototype.executeActionHook=function(t,e){if(!this.query.actionContext)return e;var n=this.getActionHook(t);if(!n)return e;var r=n(this.query.actionContext,e);return!1!==r&&(r||e)},t.prototype.executeGlobalHook=function(t,e){var n=this;if(!1===e)return!1;var r=this.getGlobalHook(t);if(!r)return e;var o=[];return r.forEach(function(t,r){var i=t.callback,u=t.once;e=i.call(n.query,e,n.query.entity),u&&o.push(r)}),o.reverse().forEach(function(t){r.splice(t,1)}),e},t.prototype.executeOnRecords=function(t,e){var n=this;return this.has(t)?Object.keys(e).reduce(function(r,o){var i=e[o],u=n.execute(t,i);return!1===u?r:(r[o]=u,r)},{}):e},t.prototype.executeOnCollection=function(t,e){var n=this;return this.has(t)?(e.map(function(e){n.execute(t,e)}),e):e},t.hooks={},t.lastHookId=0,t}(),Jn=function(){function t(t,e,n){void 0===n&&(n=!0),this.wheres=[],this.orders=[],this._offset=0,this._limit=Math.pow(2,53)-1,this.load={},this.actionContext=null,this.rootState=t,this.state=t[e],this.entity=e,this.model=this.getModel(e),this.module=this.getModule(e),this.hook=new Yn(this),this.wrap=n}return t.query=function(t,e,n){return new this(t,e,n)},t.database=function(){return Xe.database},t.getModel=function(t){return this.database().model(t)},t.getModels=function(){return this.database().models()},t.getModule=function(t){return this.database().module(t)},t.getModules=function(){return this.database().modules()},t.create=function(t,e,n,r){return new this(t,e).create(n,r)},t.commitCreate=function(t,e,n){new this(t,e).commitCreate(n)},t.insert=function(t,e,n,r){return new this(t,e).insert(n,r)},t.commitInsert=function(t,e,n){new this(t,e).commitInsert(n)},t.update=function(t,e,n,r,o){return new this(t,e).update(n,r,o)},t.commitUpdate=function(t,e,n){new this(t,e).commitUpdate(n)},t.insertOrUpdate=function(t,e,n,r){return new this(t,e).insertOrUpdate(n,r)},t.all=function(t,e,n){return new this(t,e,n).get()},t.find=function(t,e,n,r){return new this(t,e,r).find(n)},t.count=function(t,e,n){return new this(t,e,n).count()},t.max=function(t,e,n,r){return new this(t,e,r).max(n)},t.min=function(t,e,n,r){return new this(t,e,r).min(n)},t.sum=function(t,e,n,r){return new this(t,e,r).sum(n)},t.delete=function(t,e,n){return new this(t,e).delete(n)},t.deleteAll=function(t,e){var n=this;if(e)return new this(t,e).deleteAll();var r=this.getModels();un.forOwn(r,function(e,r){t[r]&&new n(t,r).deleteAll()})},t.commitDelete=function(e,n,r){new t(e,n).commitDelete(r)},t.on=function(t,e,n){return Yn.on(t,e,n)},t.off=function(t){return Yn.off(t)},t.prototype.self=function(){return this.constructor},t.prototype.newQuery=function(e){return new t(this.rootState,e).setActionContext(this.actionContext)},t.prototype.newPlainQuery=function(e){return e=e||this.entity,new t(this.rootState,e).plain()},t.prototype.database=function(){return this.self().database()},t.prototype.getModel=function(t){var e=t||this.entity;return this.self().getModel(e)},t.prototype.getModels=function(){return this.self().getModels()},t.prototype.getModule=function(t){var e=t||this.entity;return this.self().getModule(e)},t.prototype.getModules=function(){return this.self().getModules()},t.prototype.commit=function(t,e,n){this.actionContext?(e=en({entity:this.entity},e),this.actionContext.commit(this.rootState.$name+"/"+t,e,{root:!0})):n()},t.prototype.plain=function(){return this.wrap=!1,this},t.prototype.setActionContext=function(t){return this.actionContext=t,this},t.prototype.create=function(t,e){return this.persist(t,"create",e)},t.prototype.createMany=function(t){t=this.model.hydrateMany(t),t=this.hook.executeOnRecords("beforeCreate",t),this.commitCreate(t);var e=this.collect(this.records(t));return this.hook.executeOnCollection("afterCreate",e)},t.prototype.commitCreate=function(t){var e=this;this.commit("commitCreate",{data:t},function(){e.state.data=t})},t.prototype.insert=function(t,e){return this.persist(t,"insert",e)},t.prototype.insertMany=function(t){t=this.model.hydrateMany(t),t=this.hook.executeOnRecords("beforeCreate",t),this.commitInsert(t);var e=this.collect(this.records(t));return this.hook.executeOnCollection("afterCreate",e)},t.prototype.commitInsert=function(t){var e=this;this.commit("commitInsert",{data:t},function(){e.state.data=en({},e.state.data,t)})},t.prototype.update=function(t,e,n){if(Array.isArray(t))return this.persist(t,"update",n);if("function"==typeof t){if(!e)throw new Error("You must specify `where` to update records by specifying `data` as a closure.");return"function"==typeof e?this.updateByCondition(t,e):this.updateById(t,e)}if("function"==typeof e)return this.updateByCondition(t,e);if(!e)return this.persist(t,"update",n);if(Array.isArray(this.model.primaryKey))throw new Error("You can not specify `where` value when you have a composite key defined in your model. Please include composite keys to the `data` fields.");return t[this.model.primaryKey]=e,this.persist(t,"update",n)},t.prototype.updateMany=function(t){var e=this,n={};t=this.model.fixMany(t,[]),un.forOwn(t,function(t,r){var o=e.state.data[r];if(o){var i=JSON.parse(JSON.stringify(o));e.merge(t,i),n[r]=i}}),n=this.hook.executeOnRecords("beforeUpdate",n),this.commitUpdate(n);var r=this.collect(this.records(n));return this.hook.executeOnCollection("afterUpdate",r),r},t.prototype.updateById=function(t,e){var n;e="number"==typeof e?e.toString():e;var r=this.state.data[e];if(!r)return null;var o=JSON.parse(JSON.stringify(r));"function"==typeof t?t(o):this.merge(this.model.fix(t),o);var i=this.hook.execute("beforeUpdate",o);if(!1===i)return null;this.commitUpdate(((n={})[e]=i,n));var u=this.item(i);return this.hook.execute("afterUpdate",u),u},t.prototype.updateByCondition=function(t,e){var n=this,r={};un.forOwn(this.state.data,function(o,i){if(e(o)){var u=JSON.parse(JSON.stringify(o));"function"==typeof t?t(u):n.merge(n.model.fix(t),u),r[i]=u}}),r=this.hook.executeOnRecords("beforeUpdate",r),this.commitUpdate(r);var o=this.collect(this.records(r));return this.hook.executeOnCollection("afterUpdate",o),o},t.prototype.commitUpdate=function(t){var e=this;this.commit("commitUpdate",{data:t},function(){e.state.data=en({},e.state.data,t)})},t.prototype.insertOrUpdate=function(t,e){return this.persist(t,"insertOrUpdate",e)},t.prototype.insertOrUpdateMany=function(t){var e=this,n={},r={};return un.forOwn(t,function(t,o){e.state.data[o]?r[o]=t:n[o]=t}),this.collect(this.insertMany(n).concat(this.updateMany(r)))},t.prototype.persist=function(t,e,n){var r=this;return void 0===n&&(n={}),t=this.normalize(t),un.isEmpty(t)?("create"===e&&this.commitCreate({}),{}):Object.keys(t).reduce(function(o,i){var u=r.newQuery(i)[r.getPersistMethod(i,e,n)+"Many"](t[i]);return u.length>0&&(o[i]=u),o},{})},t.prototype.getPersistMethod=function(t,e,n){return n.create&&n.create.includes(t)?"create":n.insert&&n.insert.includes(t)?"insert":n.update&&n.update.includes(t)?"update":n.insertOrUpdate&&n.insertOrUpdate.includes(t)?"insertOrUpdate":e},t.prototype.normalize=function(t){return zn.normalize(this,t)},t.prototype.merge=function(t,e,n){var r=this,o=n||this.model.getFields();un.forOwn(t,function(t,n){var i=o[n];i instanceof an?e[n]=t:r.merge(t,e[n],i)})},t.prototype.all=function(){return this.get()},t.prototype.find=function(t){var e=this.state.data[t];return e?this.item(en({},e)):null},t.prototype.get=function(){var t=this.process();return this.collect(t)},t.prototype.first=function(){var t=this.process();return this.item(t[0])},t.prototype.last=function(){var t=this.process(),e=t.length-1;return this.item(t[e])},t.prototype.records=function(t){var e=t||this.state.data;return Object.keys(e).map(function(t){return en({},e[t])})},t.prototype.where=function(t,e){return this.wheres.push({field:t,value:e,boolean:"and"}),this},t.prototype.orWhere=function(t,e){return this.wheres.push({field:t,value:e,boolean:"or"}),this},t.prototype.orderBy=function(t,e){return void 0===e&&(e="asc"),this.orders.push({field:t,direction:e}),this},t.prototype.offset=function(t){return this._offset=t,this},t.prototype.limit=function(t){return this._limit=t,this},t.prototype.with=function(t,e){return void 0===e&&(e=null),Gn.with(this,t,e),this},t.prototype.withAll=function(t){return void 0===t&&(t=function(){return null}),Gn.withAll(this,t),this},t.prototype.withAllRecursive=function(t){return void 0===t&&(t=3),Gn.withAllRecursive(this,t),this},t.prototype.has=function(t,e,n){return this.addHasConstraint(t,e,n,!0)},t.prototype.hasNot=function(t,e,n){return this.addHasConstraint(t,e,n,!1)},t.prototype.addHasConstraint=function(t,e,n,r){var o=this.matchesHasRelation(t,e,n,r);return this.where("$id",function(t){return o.includes(t)}),this},t.prototype.whereHas=function(t,e){return this.addWhereHasConstraint(t,e,!0)},t.prototype.whereHasNot=function(t,e){return this.addWhereHasConstraint(t,e,!1)},t.prototype.addWhereHasConstraint=function(t,e,n){var r=this.matchesWhereHasRelation(t,e,n);return this.where("$id",function(t){return r.includes(t)}),this},t.prototype.process=function(){var t=this.records();return t=this.hook.execute("beforeProcess",t),t=this.filterWhere(t),t=this.hook.execute("afterWhere",t),t=this.filterOrderBy(t),t=this.hook.execute("afterOrderBy",t),t=this.filterLimit(t),t=this.hook.execute("afterLimit",t)},t.prototype.filterWhere=function(t){return Vn.where(this,t)},t.prototype.filterOrderBy=function(t){return Vn.orderBy(this,t)},t.prototype.filterLimit=function(t){return Vn.limit(this,t)},t.prototype.count=function(){return this.plain().get().length},t.prototype.max=function(t){var e=this.plain().get().reduce(function(e,n){return"number"==typeof n[t]&&e.push(n[t]),e},[]);return 0===e.length?0:Math.max.apply(Math,e)},t.prototype.min=function(t){var e=this.plain().get().reduce(function(e,n){return"number"==typeof n[t]&&e.push(n[t]),e},[]);return 0===e.length?0:Math.min.apply(Math,e)},t.prototype.sum=function(t){return this.plain().get().reduce(function(e,n){return"number"==typeof n[t]&&(e+=n[t]),e},0)},t.prototype.item=function(t){return t?(Gn.eagerLoadRelations(this,[t]),this.model.make(t,!this.wrap)):null},t.prototype.collect=function(t){var e=this;return un.isEmpty(t)?[]:(Gn.eagerLoadRelations(this,t),t.map(function(t){return e.model.make(t,!e.wrap)}))},t.prototype.matchesHasRelation=function(e,n,r,o){var i;void 0===o&&(o=!0),void 0===n?i=function(t){return t.length>=1}:"number"==typeof n?i=function(t){return t.length>=n}:"="===n&&"number"==typeof r?i=function(t){return t.length===r}:">"===n&&"number"==typeof r?i=function(t){return t.length>r}:">="===n&&"number"==typeof r?i=function(t){return t.length>=r}:"<"===n&&"number"==typeof r?i=function(t){return t.length<r}:"<="===n&&"number"==typeof r&&(i=function(t){return t.length<=r});var u=new t(this.rootState,this.entity,!1).with(e).get(),a=[];return u.forEach(function(t){var n=t[e],r=!1;n?Array.isArray(n)&&n.length<1?r=!1:Array.isArray(n)?r=i(n):n&&(r=i([n])):r=!1,r===o&&a.push(t.$id)}),a},t.prototype.matchesWhereHasRelation=function(t,e,n){void 0===n&&(n=!0);var r=this.newPlainQuery().with(t,e).get(),o=[];return r.forEach(function(e){var r=e[t];(Array.isArray(r)?!!r.length:!!r)===n&&o.push(e.$id)}),o},t.prototype.delete=function(t){return"function"==typeof t?this.deleteByCondition(t):this.deleteById(t)},t.prototype.deleteById=function(t){t="number"==typeof t?t.toString():t;var e=this.state.data[t];if(!e)return null;var n=this.hook.execute("beforeDelete",e);if(!1===n)return null;this.commitDelete([t]);var r=this.item(n);return this.hook.execute("afterDelete",r),r},t.prototype.deleteByCondition=function(t){var e={};un.forOwn(this.state.data,function(n,r){t(n)&&(e[r]=n)}),e=this.hook.executeOnRecords("beforeDelete",e),this.commitDelete(Object.keys(e));var n=this.collect(this.records(e));return this.hook.executeOnCollection("afterDelete",n),n},t.prototype.deleteAll=function(){var t=this.state.data;t=this.hook.executeOnRecords("beforeDelete",t),this.commitDelete(Object.keys(t));var e=this.collect(this.records(t));return this.hook.executeOnCollection("afterDelete",e),e},t.prototype.commitDelete=function(t){var e=this;this.commit("commitDelete",{ids:t},function(){e.state.data=Object.keys(e.state.data).reduce(function(n,r){return t.includes(r)||(n[r]=e.state.data[r]),n},{})})},t}(),Qn={query:function(t,e,n,r){return function(e){return r[t.$connection+"/query"](t.$name,e)}},all:function(t,e,n,r){return function(e){return r[t.$connection+"/all"](t.$name,e)}},find:function(t,e,n,r){return function(e,n){return r[t.$connection+"/find"](t.$name,e,n)}}},Xn={create:function(t,e){return nn(this,void 0,void 0,function(){var n,r;return rn(this,function(o){return n=t.state,r=n.$name,[2,t.dispatch(n.$connection+"/create",en({entity:r},e),{root:!0})]})})},insert:function(t,e){return nn(this,void 0,void 0,function(){var n,r;return rn(this,function(o){return n=t.state,r=n.$name,[2,t.dispatch(n.$connection+"/insert",en({entity:r},e),{root:!0})]})})},update:function(t,e){return nn(this,void 0,void 0,function(){var n,r;return rn(this,function(o){return n=t.state,r=n.$name,Array.isArray(e)?[2,t.dispatch(n.$connection+"/update",{entity:r,data:e},{root:!0})]:void 0===e.data?[2,t.dispatch(n.$connection+"/update",{entity:r,data:e},{root:!0})]:[2,t.dispatch(n.$connection+"/update",en({entity:r},e),{root:!0})]})})},insertOrUpdate:function(t,e){return nn(this,void 0,void 0,function(){var n,r;return rn(this,function(o){return n=t.state,r=n.$name,[2,t.dispatch(n.$connection+"/insertOrUpdate",en({entity:r},e),{root:!0})]})})},delete:function(t,e){return nn(this,void 0,void 0,function(){var n,r,o;return rn(this,function(i){return n=t.state,r=n.$name,o="object"===Qe(e)?e.where:e,[2,t.dispatch(n.$connection+"/delete",{entity:r,where:o},{root:!0})]})})},deleteAll:function(t){return nn(this,void 0,void 0,function(){var e,n;return rn(this,function(r){return e=t.state,n=e.$name,[2,t.dispatch(e.$connection+"/deleteAll",{entity:n},{root:!0})]})})}},Zn={query:function(t){return function(e,n){return Jn.query(t,e,n)}},all:function(t){return function(e,n){return Jn.all(t,e,n)}},find:function(t){return function(e,n,r){return Jn.find(t,e,n,r)}}},tr=function(){function t(){}return t.createPersistOptions=function(t){return{create:t.create,insert:t.insert,update:t.update,insertOrUpdate:t.insertOrUpdate}},t}(),er={create:function(t,e){return nn(this,void 0,void 0,function(){var n,r,o,i;return rn(this,function(u){return n=t.state,r=e.entity,o=e.data,i=tr.createPersistOptions(e),[2,new Jn(n,r).setActionContext(t).create(o,i)]})})},insert:function(t,e){return nn(this,void 0,void 0,function(){var n,r,o,i;return rn(this,function(u){return n=t.state,r=e.entity,o=e.data,i=tr.createPersistOptions(e),[2,new Jn(n,r).setActionContext(t).insert(o,i)]})})},update:function(t,e){return nn(this,void 0,void 0,function(){var n,r,o,i,u;return rn(this,function(a){return n=t.state,r=e.entity,o=e.data,i=e.where,u=tr.createPersistOptions(e),[2,new Jn(n,r).setActionContext(t).update(o,i,u)]})})},insertOrUpdate:function(t,e){return nn(this,void 0,void 0,function(){var n,r,o,i;return rn(this,function(u){return n=t.state,r=e.entity,o=e.data,i=tr.createPersistOptions(e),[2,new Jn(n,r).setActionContext(t).insertOrUpdate(o,i)]})})},delete:function(t,e){return nn(this,void 0,void 0,function(){var n,r,o;return rn(this,function(i){return n=t.state,r=e.entity,o=e.where,[2,new Jn(n,r).setActionContext(t).delete(o)]})})},deleteAll:function(t,e){return nn(this,void 0,void 0,function(){var n;return rn(this,function(r){return n=e?e.entity:void 0,[2,t.commit("deleteAll",{entity:n})]})})}},nr={create:function(t,e){var n=e.entity,r=e.data,o=e.create,i=e.insert,u=e.update,a=e.insertOrUpdate;Jn.create(t,n,r,{create:o,insert:i,update:u,insertOrUpdate:a})},commitCreate:function(t,e){var n=e.entity,r=e.data;Jn.commitCreate(t,n,r)},insert:function(t,e){var n=e.entity,r=e.data,o=e.create,i=e.insert,u=e.update,a=e.insertOrUpdate;Jn.insert(t,n,r,{create:o,insert:i,update:u,insertOrUpdate:a})},commitInsert:function(t,e){var n=e.entity,r=e.data;Jn.commitInsert(t,n,r)},update:function(t,e){var n=e.entity,r=e.data,o=e.where,i=e.create,u=e.insert,a=e.update,s=e.insertOrUpdate;Jn.update(t,n,r,o,{create:i,insert:u,update:a,insertOrUpdate:s})},commitUpdate:function(t,e){var n=e.entity,r=e.data;Jn.commitUpdate(t,n,r)},insertOrUpdate:function(t,e){var n=e.entity,r=e.data,o=e.create;Jn.insertOrUpdate(t,n,r,o)},delete:function(t,e){var n=e.entity,r=e.where;Jn.delete(t,n,r)},deleteAll:function(t,e){e&&e.entity?Jn.deleteAll(t,e.entity):Jn.deleteAll(t)},commitDelete:function(t,e){var n=e.entity,r=e.ids;Jn.commitDelete(t,n,r)}};var rr=function(){function t(){}return t.set=function(){this.value=""+this.prefix+this.count},t.get=function(){return this.value},t.increment=function(){return this.count++,this.set(),this.get()},t.count=0,t.prefix="_no_key_",t.value="",t}(),or=function(){function t(){}return t.create=function(t){return function(e,n,r){var o=t.id(e);return null==o||""===o?rr.get():o}},t}(),ir=function(){function t(){}return t.create=function(t){var e=this;return function(n,r,o){var i=e.getId(t,n);return en({},n,{$id:i})}},t.getId=function(t,e){var n=t.id(e);return null==n||""===n?rr.increment():n},t}(),ur=function(){function t(t){var e=this;this.schemas={},this.model=t;var n=t.database().models();Object.keys(n).forEach(function(t){e.one(n[t])})}return t.create=function(t){return new this(t).one()},t.prototype.one=function(t){if(t=t||this.model,this.schemas[t.entity])return this.schemas[t.entity];var e=new Ln.Entity(t.entity,{},{idAttribute:or.create(t),processStrategy:ir.create(t)});this.schemas[t.entity]=e;var n=this.definition(t);return e.define(n),e},t.prototype.many=function(t){return new Ln.Array(this.one(t))},t.prototype.union=function(t){return new Ln.Union(this.schemas,t)},t.prototype.definition=function(t){var e=this,n=t.fields();return Object.keys(n).reduce(function(t,r){var o=n[r];return o instanceof dn&&(t[r]=o.define(e)),t},{})},t}(),ar=function(){function t(){}return t.create=function(t,e){var n={namespaced:!0,state:{$name:t},getters:Zn,actions:er,mutations:nr,modules:{}};return this.createModules(n,t,e)},t.createModules=function(t,e,n){var r=this;return Object.keys(n).forEach(function(o){var i=n[o];t.modules[o]={namespaced:!0},t.modules[o].state=r.createState(e,o,i),t.getters[o]=function(t,e,n,r){return function(){return e.query(o)}},t.modules[o].getters=en({},Qn,i.getters),t.modules[o].actions=en({},Xn,i.actions),t.modules[o].mutations=i.mutations||{}}),t},t.createState=function(t,e,n){var r="function"==typeof n.state?n.state():n.state;return en({},r,{$connection:t,$name:e,data:{}})},t}(),sr=function(){function t(){this.entities=[],this.schemas={}}return t.prototype.start=function(t,e){this.store=t,this.namespace=e,this.registerModules(),this.createSchema()},t.prototype.register=function(t,e){this.entities.push({name:t.entity,model:t,module:e})},t.prototype.model=function(t){return this.models()[t]},t.prototype.models=function(){return this.entities.reduce(function(t,e){return t[e.name]=e.model,t},{})},t.prototype.module=function(t){return this.modules()[t]},t.prototype.modules=function(){return this.entities.reduce(function(t,e){return t[e.name]=e.module,t},{})},t.prototype.registerModules=function(){var t=ar.create(this.namespace,this.modules());this.store.registerModule(this.namespace,t)},t.prototype.createSchema=function(){var t=this;this.entities.forEach(function(e){t.schemas[e.name]=ur.create(e.model)})},t}(),cr={baseURL:"http://localhost:3000",url:"/",method:"get",access_token:"",headers:{"Content-Type":"application/json",Accept:"application/json"},data:{},timeout:0,withCredentials:!1,responseType:"json",responseEncoding:"utf8",validateStatus:function(t){return t>=200&&t<300},maxRedirects:5,socketPath:null,proxy:{},onResponse:function(t){return t.data},onRequest:function(t){return t},onUnauthorised:function(t){},onNotFound:function(t){},onServerError:function(t){},onGenericError:function(t){},onValidationError:function(t){},onError:function(t){switch(t.response.status){case 401:this.onUnauthorised(t);break;case 404:this.onNotFound(t);break;case 422:this.onValidationError(t);break;case 500:this.onServerError(t);break;default:this.onGenericError(t)}return Promise.reject(t)}},fr={database:new sr,http:cr},lr={getters:{loading:function(t){return t.loading},errors:function(t){return t.errors}},mutations:{onRequest:function(t){t.loading=!0,t.errors=[]},onError:function(t,e){t.loading=!1,t.errors=e.data},onSuccess:function(t){t.loading=!1,t.errors=[]}},state:{loading:!1,errors:[]}},pr={http:cr,methods:{$fetch:{name:"fetch",http:{url:"",method:"get"}},$get:{name:"get",http:{url:"/:id",method:"get"}},$create:{name:"create",alias:["insert"],http:{url:"",method:"post"}},$update:{name:"update",http:{url:"/:id",method:"put"}},$delete:{name:"delete",http:{url:"/:id",method:"delete"}}}};function hr(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,r.key,r)}}var dr=function(){function t(e,n){if(function(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}(this,t),this.components=e,this.options=Ve({},fr,n),this.database=n.database,!n.database)throw new Error("database option is required to initialise!")}var e,n,r;return e=t,r=[{key:"setup",value:function(e,n){return this.instance=new t(e,n),this.instance}},{key:"getInstance",value:function(){return this.instance}}],(n=[{key:"getModelFromState",value:function(t){return this.database.entities.find(function(e){return e.name==t.$name}).model}}])&&hr(e.prototype,n),r&&hr(e,r),t}();n(43);function yr(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,r.key,r)}}var vr=function(){function t(){!function(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}(this,t)}var e,n,r;return e=t,r=[{key:"transformModule",value:function(t){return Ve({},lr,t)}},{key:"transformModel",value:function(t){var e=dr.getInstance();return pr.http=Ve({},pr.http,e.options.http),t.methodConf=Ve({},pr,t.methodConf),t.methodConf.http.url="/"===t.methodConf.http.url?"/".concat(t.entity):t.methodConf.http.url,t.getFields=function(){return t.cachedFields||(t.cachedFields=Ve({},{$id:t.attr(void 0),$isUpdating:t.boolean(!1),$updateErrors:t.attr([]),$isDeleting:t.boolean(!1),$deleteErrors:t.attr([])},t.fields())),t.cachedFields},t}},{key:"transformParams",value:function(t,e){var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{},r="".concat(e.methodConf.http.url).concat(e.methodConf.methods[t].http.url);(r.match(/(\/?)(:)([A-z]*)/gm)||[]).map(function(t){return t.replace("/","")}).forEach(function(t){var e=t.replace(":",""),o=e in n.params?n.params[e]:"";r=r.replace(t,o).replace("//","/")});var o=dr.getInstance().options.http.suffix;return o&&(r+=o),n.query&&(r+="?".concat(Object.keys(n.query).map(function(t){return"".concat(encodeURIComponent(t),"=").concat(encodeURIComponent(n.query[t]))}).join("&"))),r}}],(n=null)&&yr(e.prototype,n),r&&yr(e,r),t}(),mr=(n(40),n(119)),gr=n.n(mr);function br(t,e,n,r,o,i,u){try{var a=t[i](u),s=a.value}catch(t){return void n(t)}a.done?e(s):Promise.resolve(s).then(r,o)}function wr(t){return function(){var e=this,n=arguments;return new Promise(function(r,o){var i=t.apply(e,n);function u(t){br(i,r,o,u,a,"next",t)}function a(t){br(i,r,o,u,a,"throw",t)}u(void 0)})}}function xr(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,r.key,r)}}var _r=function(){function t(e){return function(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}(this,t),this.instance=gr.a.create(e),this.setAuthentication(e.access_token),this.instance.interceptors.request.use(function(t){return e.onRequest(t)},function(t){return e.onError(t)}),this.instance.interceptors.request.use(function(t){return e.onRequest(t)},function(t){return e.onError(t)}),this.instance}var e,n,r;return e=t,(n=[{key:"setAuthentication",value:function(t){if(t){var e="function"==typeof t?t():t;this.instance.defaults.headers.common.Authorization="Bearer ".concat(e)}}},{key:"head",value:function(){var t=wr(regeneratorRuntime.mark(function t(e){var n,r=arguments;return regeneratorRuntime.wrap(function(t){for(;;)switch(t.prev=t.next){case 0:return n=r.length>1&&void 0!==r[1]?r[1]:{},t.abrupt("return",this.instance.head(e,n));case 2:case"end":return t.stop()}},t,this)}));return function(e){return t.apply(this,arguments)}}()},{key:"get",value:function(){var t=wr(regeneratorRuntime.mark(function t(e){var n,r=arguments;return regeneratorRuntime.wrap(function(t){for(;;)switch(t.prev=t.next){case 0:return n=r.length>1&&void 0!==r[1]?r[1]:{},t.abrupt("return",this.instance.get(e,n));case 2:case"end":return t.stop()}},t,this)}));return function(e){return t.apply(this,arguments)}}()},{key:"post",value:function(){var t=wr(regeneratorRuntime.mark(function t(e){var n,r,o=arguments;return regeneratorRuntime.wrap(function(t){for(;;)switch(t.prev=t.next){case 0:return n=o.length>1&&void 0!==o[1]?o[1]:{},r=o.length>2&&void 0!==o[2]?o[2]:{},t.abrupt("return",this.instance.post(e,n,r));case 3:case"end":return t.stop()}},t,this)}));return function(e){return t.apply(this,arguments)}}()},{key:"patch",value:function(){var t=wr(regeneratorRuntime.mark(function t(e){var n,r,o=arguments;return regeneratorRuntime.wrap(function(t){for(;;)switch(t.prev=t.next){case 0:return n=o.length>1&&void 0!==o[1]?o[1]:{},r=o.length>2&&void 0!==o[2]?o[2]:{},t.abrupt("return",this.instance.patch(e,n,r));case 3:case"end":return t.stop()}},t,this)}));return function(e){return t.apply(this,arguments)}}()},{key:"put",value:function(){var t=wr(regeneratorRuntime.mark(function t(e){var n,r,o=arguments;return regeneratorRuntime.wrap(function(t){for(;;)switch(t.prev=t.next){case 0:return n=o.length>1&&void 0!==o[1]?o[1]:{},r=o.length>2&&void 0!==o[2]?o[2]:{},t.abrupt("return",this.instance.put(e,n,r));case 3:case"end":return t.stop()}},t,this)}));return function(e){return t.apply(this,arguments)}}()},{key:"delete",value:function(){var t=wr(regeneratorRuntime.mark(function t(e){var n,r=arguments;return regeneratorRuntime.wrap(function(t){for(;;)switch(t.prev=t.next){case 0:return n=r.length>1&&void 0!==r[1]?r[1]:{},t.abrupt("return",this.instance.delete(e,n));case 2:case"end":return t.stop()}},t,this)}));return function(e){return t.apply(this,arguments)}}()}])&&xr(e.prototype,n),r&&xr(e,r),t}();function Or(t){return(Or="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}function Sr(t,e,n,r,o,i,u){try{var a=t[i](u),s=a.value}catch(t){return void n(t)}a.done?e(s):Promise.resolve(s).then(r,o)}function jr(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,r.key,r)}}function Er(t,e){return!e||"object"!==Or(e)&&"function"!=typeof e?function(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return t}(t):e}function Cr(t){return(Cr=Object.setPrototypeOf?Object.getPrototypeOf:function(t){return t.__proto__||Object.getPrototypeOf(t)})(t)}function kr(t,e){return(kr=Object.setPrototypeOf||function(t,e){return t.__proto__=e,t})(t,e)}var Ar=function(t){function e(){return function(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}(this,e),Er(this,Cr(e).apply(this,arguments))}var n,r,o;return function(t,e){if("function"!=typeof e&&null!==e)throw new TypeError("Super expression must either be null or a function");t.prototype=Object.create(e&&e.prototype,{constructor:{value:t,writable:!0,configurable:!0}}),e&&kr(t,e)}(e,vr),n=e,r=null,o=[{key:"call",value:function(){var t,e=(t=regeneratorRuntime.mark(function t(e){var n,r,o,i,u,a,s,c,f=this,l=arguments;return regeneratorRuntime.wrap(function(t){for(;;)switch(t.prev=t.next){case 0:return n=e.state,r=e.commit,o=l.length>1&&void 0!==l[1]?l[1]:{},i=dr.getInstance(),u=i.getModelFromState(n),a=vr.transformParams("$fetch",u,o),s=new _r(u.methodConf.http),c=s.get(a),this.onRequest(r),c.then(function(t){return f.onSuccess(r,u,t)}).catch(function(t){return f.onError(r,t)}),t.abrupt("return",c);case 10:case"end":return t.stop()}},t,this)}),function(){var e=this,n=arguments;return new Promise(function(r,o){var i=t.apply(e,n);function u(t){Sr(i,r,o,u,a,"next",t)}function a(t){Sr(i,r,o,u,a,"throw",t)}u(void 0)})});return function(t){return e.apply(this,arguments)}}()},{key:"onRequest",value:function(t){t("onRequest")}},{key:"onSuccess",value:function(t,e,n){t("onSuccess"),e.insertOrUpdate({data:n})}},{key:"onError",value:function(t,e){t("onError",e)}}],r&&jr(n.prototype,r),o&&jr(n,o),e}();function Rr(t){return(Rr="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}function Pr(t,e,n,r,o,i,u){try{var a=t[i](u),s=a.value}catch(t){return void n(t)}a.done?e(s):Promise.resolve(s).then(r,o)}function Fr(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,r.key,r)}}function Mr(t,e){return!e||"object"!==Rr(e)&&"function"!=typeof e?function(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return t}(t):e}function Ir(t){return(Ir=Object.setPrototypeOf?Object.getPrototypeOf:function(t){return t.__proto__||Object.getPrototypeOf(t)})(t)}function Tr(t,e){return(Tr=Object.setPrototypeOf||function(t,e){return t.__proto__=e,t})(t,e)}var $r=function(t){function e(){return function(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}(this,e),Mr(this,Ir(e).apply(this,arguments))}var n,r,o;return function(t,e){if("function"!=typeof e&&null!==e)throw new TypeError("Super expression must either be null or a function");t.prototype=Object.create(e&&e.prototype,{constructor:{value:t,writable:!0,configurable:!0}}),e&&Tr(t,e)}(e,vr),n=e,r=null,o=[{key:"call",value:function(){var t,e=(t=regeneratorRuntime.mark(function t(e){var n,r,o,i,u,a,s,c,f=this,l=arguments;return regeneratorRuntime.wrap(function(t){for(;;)switch(t.prev=t.next){case 0:return n=e.state,r=e.commit,o=l.length>1&&void 0!==l[1]?l[1]:{},i=dr.getInstance(),u=i.getModelFromState(n),a=vr.transformParams("$get",u,o),s=new _r(u.methodConf.http),c=s.get(a),this.onRequest(r),c.then(function(t){return f.onSuccess(r,u,t)}).catch(function(t){return f.onError(r,t)}),t.abrupt("return",c);case 10:case"end":return t.stop()}},t,this)}),function(){var e=this,n=arguments;return new Promise(function(r,o){var i=t.apply(e,n);function u(t){Pr(i,r,o,u,a,"next",t)}function a(t){Pr(i,r,o,u,a,"throw",t)}u(void 0)})});return function(t){return e.apply(this,arguments)}}()},{key:"onRequest",value:function(t){t("onRequest")}},{key:"onSuccess",value:function(t,e,n){t("onSuccess"),e.insertOrUpdate({data:n})}},{key:"onError",value:function(t,e){t("onError",e)}}],r&&Fr(n.prototype,r),o&&Fr(n,o),e}();function Lr(t){return(Lr="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}function Ur(t,e,n,r,o,i,u){try{var a=t[i](u),s=a.value}catch(t){return void n(t)}a.done?e(s):Promise.resolve(s).then(r,o)}function Kr(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,r.key,r)}}function Br(t,e){return!e||"object"!==Lr(e)&&"function"!=typeof e?function(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return t}(t):e}function Nr(t){return(Nr=Object.setPrototypeOf?Object.getPrototypeOf:function(t){return t.__proto__||Object.getPrototypeOf(t)})(t)}function qr(t,e){return(qr=Object.setPrototypeOf||function(t,e){return t.__proto__=e,t})(t,e)}var zr=function(t){function e(){return function(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}(this,e),Br(this,Nr(e).apply(this,arguments))}var n,r,o;return function(t,e){if("function"!=typeof e&&null!==e)throw new TypeError("Super expression must either be null or a function");t.prototype=Object.create(e&&e.prototype,{constructor:{value:t,writable:!0,configurable:!0}}),e&&qr(t,e)}(e,vr),n=e,r=null,o=[{key:"call",value:function(){var t,e=(t=regeneratorRuntime.mark(function t(e){var n,r,o,i,u,a,s,c,f=this,l=arguments;return regeneratorRuntime.wrap(function(t){for(;;)switch(t.prev=t.next){case 0:if(n=e.state,r=e.commit,(o=l.length>1&&void 0!==l[1]?l[1]:{}).data&&"object"===Lr(o)){t.next=4;break}throw new TypeError("You must include a data object in the params to send a POST request",o);case 4:return i=dr.getInstance(),u=i.getModelFromState(n),a=vr.transformParams("$create",u,o),s=new _r(u.methodConf.http),c=s.post(a,o.data),this.onRequest(r),c.then(function(t){return f.onSuccess(r,u,t)}).catch(function(t){return f.onError(r,t)}),t.abrupt("return",c);case 12:case"end":return t.stop()}},t,this)}),function(){var e=this,n=arguments;return new Promise(function(r,o){var i=t.apply(e,n);function u(t){Ur(i,r,o,u,a,"next",t)}function a(t){Ur(i,r,o,u,a,"throw",t)}u(void 0)})});return function(t){return e.apply(this,arguments)}}()},{key:"onRequest",value:function(t){t("onRequest")}},{key:"onSuccess",value:function(t,e,n){t("onSuccess"),e.insertOrUpdate({data:n})}},{key:"onError",value:function(t,e){t("onError",e)}}],r&&Kr(n.prototype,r),o&&Kr(n,o),e}();function Dr(t){return(Dr="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}function Hr(t,e,n,r,o,i,u){try{var a=t[i](u),s=a.value}catch(t){return void n(t)}a.done?e(s):Promise.resolve(s).then(r,o)}function Wr(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,r.key,r)}}function Vr(t,e){return!e||"object"!==Dr(e)&&"function"!=typeof e?function(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return t}(t):e}function Gr(t){return(Gr=Object.setPrototypeOf?Object.getPrototypeOf:function(t){return t.__proto__||Object.getPrototypeOf(t)})(t)}function Yr(t,e){return(Yr=Object.setPrototypeOf||function(t,e){return t.__proto__=e,t})(t,e)}var Jr=function(t){function e(){return function(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}(this,e),Vr(this,Gr(e).apply(this,arguments))}var n,r,o;return function(t,e){if("function"!=typeof e&&null!==e)throw new TypeError("Super expression must either be null or a function");t.prototype=Object.create(e&&e.prototype,{constructor:{value:t,writable:!0,configurable:!0}}),e&&Yr(t,e)}(e,vr),n=e,r=null,o=[{key:"call",value:function(){var t,e=(t=regeneratorRuntime.mark(function t(e){var n,r,o,i,u,a,s,c=this,f=arguments;return regeneratorRuntime.wrap(function(t){for(;;)switch(t.prev=t.next){case 0:if(n=e.state,e.commit,(r=f.length>1&&void 0!==f[1]?f[1]:{save:!0}).data&&"object"===Dr(r)){t.next=4;break}throw new TypeError("You must include a data object in the params to send a POST request",r);case 4:return o=dr.getInstance(),i=o.getModelFromState(n),u=vr.transformParams("$update",i,r),a=new _r(i.methodConf.http),s=a.put(u,r.data),this.onRequest(i,r),s.then(function(t){return c.onSuccess(i,r,t,r.save)}).catch(function(t){return c.onError(i,r,t)}),t.abrupt("return",s);case 12:case"end":return t.stop()}},t,this)}),function(){var e=this,n=arguments;return new Promise(function(r,o){var i=t.apply(e,n);function u(t){Hr(i,r,o,u,a,"next",t)}function a(t){Hr(i,r,o,u,a,"throw",t)}u(void 0)})});return function(t){return e.apply(this,arguments)}}()},{key:"onRequest",value:function(t,e){t.update({where:e.params.id,data:{$isUpdating:!0,$updateErrors:[]}})}},{key:"onSuccess",value:function(t,e,n,r){!0===r&&t.update({where:e.params.id||n.id,data:Ve({},n,{$isUpdating:!1,$updateErrors:[]})})}},{key:"onError",value:function(t,e,n){t.update({where:e.params.id,data:{$isUpdating:!1,$updateErrors:n}})}}],r&&Wr(n.prototype,r),o&&Wr(n,o),e}();function Qr(t){return(Qr="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}function Xr(t,e,n,r,o,i,u){try{var a=t[i](u),s=a.value}catch(t){return void n(t)}a.done?e(s):Promise.resolve(s).then(r,o)}function Zr(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,r.key,r)}}function to(t,e){return!e||"object"!==Qr(e)&&"function"!=typeof e?function(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return t}(t):e}function eo(t){return(eo=Object.setPrototypeOf?Object.getPrototypeOf:function(t){return t.__proto__||Object.getPrototypeOf(t)})(t)}function no(t,e){return(no=Object.setPrototypeOf||function(t,e){return t.__proto__=e,t})(t,e)}var ro=function(t){function e(){return function(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}(this,e),to(this,eo(e).apply(this,arguments))}var n,r,o;return function(t,e){if("function"!=typeof e&&null!==e)throw new TypeError("Super expression must either be null or a function");t.prototype=Object.create(e&&e.prototype,{constructor:{value:t,writable:!0,configurable:!0}}),e&&no(t,e)}(e,vr),n=e,r=null,o=[{key:"call",value:function(){var t,e=(t=regeneratorRuntime.mark(function t(e){var n,r,o,i,u,a,s,c=this,f=arguments;return regeneratorRuntime.wrap(function(t){for(;;)switch(t.prev=t.next){case 0:return n=e.state,e.commit,r=f.length>1&&void 0!==f[1]?f[1]:{},o=dr.getInstance(),i=o.getModelFromState(n),u=vr.transformParams("$delete",i,r),a=new _r(i.methodConf.http),s=a.delete(u),this.onRequest(i,r),s.then(function(t){return c.onSuccess(i,r,t)}).catch(function(t){return c.onError(i,r,t)}),t.abrupt("return",s);case 10:case"end":return t.stop()}},t,this)}),function(){var e=this,n=arguments;return new Promise(function(r,o){var i=t.apply(e,n);function u(t){Xr(i,r,o,u,a,"next",t)}function a(t){Xr(i,r,o,u,a,"throw",t)}u(void 0)})});return function(t){return e.apply(this,arguments)}}()},{key:"onRequest",value:function(t,e){t.update({where:e.params.id,data:{$isDeleting:!0,$deleteErrors:[]}})}},{key:"onSuccess",value:function(t,e,n){t.delete({where:e.params.id||n.id})}},{key:"onError",value:function(t,e,n){t.update({where:e.params.id,data:{$isDeleting:!1,$deleteErrors:n}})}}],r&&Zr(n.prototype,r),o&&Zr(n,o),e}();function oo(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,r.key,r)}}var io=function(){function t(e,n){!function(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}(this,t),dr.setup(e,n),this.setupActions(),this.setupModels()}var e,n,r;return e=t,(n=[{key:"setupActions",value:function(){var t=dr.getInstance();t.components.Actions.$fetch=Ar.call.bind(Ar),t.components.Actions.$get=$r.call.bind($r),t.components.Actions.$create=zr.call.bind(zr),t.components.Actions.$update=Jr.call.bind(Jr),t.components.Actions.$delete=ro.call.bind(ro)}},{key:"setupModels",value:function(){var t=dr.getInstance();t.database.entities.map(function(t){return t.module=vr.transformModule(t.module),t.model=vr.transformModel(t.model),t}),t.components.Model.$fetch=function(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};return this.dispatch("$fetch",t)},t.components.Model.$get=function(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};return this.dispatch("$get",t)},t.components.Model.$create=function(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};return this.dispatch("$create",t)},t.components.Model.$update=function(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};return this.dispatch("$update",t)},t.components.Model.$delete=function(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};return this.dispatch("$delete",t)}}}])&&oo(e.prototype,n),r&&oo(e,r),t}();function uo(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,r.key,r)}}n.d(e,"default",function(){return ao});var ao=function(){function t(){!function(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}(this,t)}var e,n,r;return e=t,r=[{key:"install",value:function(t,e){return new io(t,e)}}],(n=null)&&uo(e.prototype,n),r&&uo(e,r),t}()}])});
+
+var isBuffer = nativeIsBuffer || _stubFalse_js__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"];
+/* harmony default export */ __webpack_exports__["a"] = (isBuffer);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(9)(module)))
+
+/***/ }),
+/* 12 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var _babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var _freeGlobal_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(10);
+
+
+/** Detect free variable `exports`. */
+
+var freeExports = (typeof exports === "undefined" ? "undefined" : Object(_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__["default"])(exports)) == 'object' && exports && !exports.nodeType && exports;
+/** Detect free variable `module`. */
+
+var freeModule = freeExports && ( false ? undefined : Object(_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__["default"])(module)) == 'object' && module && !module.nodeType && module;
+/** Detect the popular CommonJS extension `module.exports`. */
+
+var moduleExports = freeModule && freeModule.exports === freeExports;
+/** Detect free variable `process` from Node.js. */
+
+var freeProcess = moduleExports && _freeGlobal_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"].process;
+/** Used to access faster Node.js helpers. */
+
+var nodeUtil = function () {
+  try {
+    // Use `util.types` for Node.js 10+.
+    var types = freeModule && freeModule.require && freeModule.require('util').types;
+
+    if (types) {
+      return types;
+    } // Legacy `process.binding('util')` for Node.js < 10.
+
+
+    return freeProcess && freeProcess.binding && freeProcess.binding('util');
+  } catch (e) {}
+}();
+
+/* harmony default export */ __webpack_exports__["a"] = (nodeUtil);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(9)(module)))
+
+/***/ }),
+/* 13 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/**
+ * This method returns `false`.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.13.0
+ * @category Util
+ * @returns {boolean} Returns `false`.
+ * @example
+ *
+ * _.times(2, _.stubFalse);
+ * // => [false, false]
+ */
+function stubFalse() {
+  return false;
+}
+
+/* harmony default export */ __webpack_exports__["a"] = (stubFalse);
+
+/***/ }),
+/* 14 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var _babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var _root_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5);
+
+
+/** Detect free variable `exports`. */
+
+var freeExports = (typeof exports === "undefined" ? "undefined" : Object(_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__["default"])(exports)) == 'object' && exports && !exports.nodeType && exports;
+/** Detect free variable `module`. */
+
+var freeModule = freeExports && ( false ? undefined : Object(_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__["default"])(module)) == 'object' && module && !module.nodeType && module;
+/** Detect the popular CommonJS extension `module.exports`. */
+
+var moduleExports = freeModule && freeModule.exports === freeExports;
+/** Built-in value references. */
+
+var Buffer = moduleExports ? _root_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"].Buffer : undefined,
+    allocUnsafe = Buffer ? Buffer.allocUnsafe : undefined;
+/**
+ * Creates a clone of  `buffer`.
+ *
+ * @private
+ * @param {Buffer} buffer The buffer to clone.
+ * @param {boolean} [isDeep] Specify a deep clone.
+ * @returns {Buffer} Returns the cloned buffer.
+ */
+
+function cloneBuffer(buffer, isDeep) {
+  if (isDeep) {
+    return buffer.slice();
+  }
+
+  var length = buffer.length,
+      result = allocUnsafe ? allocUnsafe(length) : new buffer.constructor(length);
+  buffer.copy(result);
+  return result;
+}
+
+/* harmony default export */ __webpack_exports__["a"] = (cloneBuffer);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(9)(module)))
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports) {
+
+module.exports = axios;
+
+/***/ }),
+/* 16 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var _babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+
+var g; // This works in non-strict mode
+
+g = function () {
+  return this;
+}();
+
+try {
+  // This works if eval is allowed (see CSP)
+  g = g || new Function("return this")();
+} catch (e) {
+  // This works if the window reference is available
+  if ((typeof window === "undefined" ? "undefined" : Object(_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__["default"])(window)) === "object") g = window;
+} // g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+
+module.exports = g;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(9)(module)))
+
+/***/ }),
+/* 17 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var _babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+
+
+/**
+ * Copyright (c) 2014-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+// This method of obtaining a reference to the global object needs to be
+// kept identical to the way it is obtained in runtime.js
+var g = function () {
+  return this || (typeof self === "undefined" ? "undefined" : Object(_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__["default"])(self)) === "object" && self;
+}() || Function("return this")(); // Use `getOwnPropertyNames` because not all browsers support calling
+// `hasOwnProperty` on the global `self` object in a worker. See #183.
+
+
+var hadRuntime = g.regeneratorRuntime && Object.getOwnPropertyNames(g).indexOf("regeneratorRuntime") >= 0; // Save the old regeneratorRuntime in case it needs to be restored later.
+
+var oldRuntime = hadRuntime && g.regeneratorRuntime; // Force reevalutation of runtime.js.
+
+g.regeneratorRuntime = undefined;
+module.exports = __webpack_require__(18);
+
+if (hadRuntime) {
+  // Restore the original runtime.
+  g.regeneratorRuntime = oldRuntime;
+} else {
+  // Remove the global property added by runtime.js.
+  try {
+    delete g.regeneratorRuntime;
+  } catch (e) {
+    g.regeneratorRuntime = undefined;
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(9)(module)))
+
+/***/ }),
+/* 18 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var _babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+
+
+/**
+ * Copyright (c) 2014-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+!function (global) {
+  "use strict";
+
+  var Op = Object.prototype;
+  var hasOwn = Op.hasOwnProperty;
+  var undefined; // More compressible than void 0.
+
+  var $Symbol = typeof Symbol === "function" ? Symbol : {};
+  var iteratorSymbol = $Symbol.iterator || "@@iterator";
+  var asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator";
+  var toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag";
+  var inModule = ( false ? undefined : Object(_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__["default"])(module)) === "object";
+  var runtime = global.regeneratorRuntime;
+
+  if (runtime) {
+    if (inModule) {
+      // If regeneratorRuntime is defined globally and we're in a module,
+      // make the exports object identical to regeneratorRuntime.
+      module.exports = runtime;
+    } // Don't bother evaluating the rest of this file if the runtime was
+    // already defined globally.
+
+
+    return;
+  } // Define the runtime globally (as expected by generated code) as either
+  // module.exports (if we're in a module) or a new, empty object.
+
+
+  runtime = global.regeneratorRuntime = inModule ? module.exports : {};
+
+  function wrap(innerFn, outerFn, self, tryLocsList) {
+    // If outerFn provided and outerFn.prototype is a Generator, then outerFn.prototype instanceof Generator.
+    var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator;
+    var generator = Object.create(protoGenerator.prototype);
+    var context = new Context(tryLocsList || []); // The ._invoke method unifies the implementations of the .next,
+    // .throw, and .return methods.
+
+    generator._invoke = makeInvokeMethod(innerFn, self, context);
+    return generator;
+  }
+
+  runtime.wrap = wrap; // Try/catch helper to minimize deoptimizations. Returns a completion
+  // record like context.tryEntries[i].completion. This interface could
+  // have been (and was previously) designed to take a closure to be
+  // invoked without arguments, but in all the cases we care about we
+  // already have an existing method we want to call, so there's no need
+  // to create a new function object. We can even get away with assuming
+  // the method takes exactly one argument, since that happens to be true
+  // in every case, so we don't have to touch the arguments object. The
+  // only additional allocation required is the completion record, which
+  // has a stable shape and so hopefully should be cheap to allocate.
+
+  function tryCatch(fn, obj, arg) {
+    try {
+      return {
+        type: "normal",
+        arg: fn.call(obj, arg)
+      };
+    } catch (err) {
+      return {
+        type: "throw",
+        arg: err
+      };
+    }
+  }
+
+  var GenStateSuspendedStart = "suspendedStart";
+  var GenStateSuspendedYield = "suspendedYield";
+  var GenStateExecuting = "executing";
+  var GenStateCompleted = "completed"; // Returning this object from the innerFn has the same effect as
+  // breaking out of the dispatch switch statement.
+
+  var ContinueSentinel = {}; // Dummy constructor functions that we use as the .constructor and
+  // .constructor.prototype properties for functions that return Generator
+  // objects. For full spec compliance, you may wish to configure your
+  // minifier not to mangle the names of these two functions.
+
+  function Generator() {}
+
+  function GeneratorFunction() {}
+
+  function GeneratorFunctionPrototype() {} // This is a polyfill for %IteratorPrototype% for environments that
+  // don't natively support it.
+
+
+  var IteratorPrototype = {};
+
+  IteratorPrototype[iteratorSymbol] = function () {
+    return this;
+  };
+
+  var getProto = Object.getPrototypeOf;
+  var NativeIteratorPrototype = getProto && getProto(getProto(values([])));
+
+  if (NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol)) {
+    // This environment has a native %IteratorPrototype%; use it instead
+    // of the polyfill.
+    IteratorPrototype = NativeIteratorPrototype;
+  }
+
+  var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype);
+  GeneratorFunction.prototype = Gp.constructor = GeneratorFunctionPrototype;
+  GeneratorFunctionPrototype.constructor = GeneratorFunction;
+  GeneratorFunctionPrototype[toStringTagSymbol] = GeneratorFunction.displayName = "GeneratorFunction"; // Helper for defining the .next, .throw, and .return methods of the
+  // Iterator interface in terms of a single ._invoke method.
+
+  function defineIteratorMethods(prototype) {
+    ["next", "throw", "return"].forEach(function (method) {
+      prototype[method] = function (arg) {
+        return this._invoke(method, arg);
+      };
+    });
+  }
+
+  runtime.isGeneratorFunction = function (genFun) {
+    var ctor = typeof genFun === "function" && genFun.constructor;
+    return ctor ? ctor === GeneratorFunction || // For the native GeneratorFunction constructor, the best we can
+    // do is to check its .name property.
+    (ctor.displayName || ctor.name) === "GeneratorFunction" : false;
+  };
+
+  runtime.mark = function (genFun) {
+    if (Object.setPrototypeOf) {
+      Object.setPrototypeOf(genFun, GeneratorFunctionPrototype);
+    } else {
+      genFun.__proto__ = GeneratorFunctionPrototype;
+
+      if (!(toStringTagSymbol in genFun)) {
+        genFun[toStringTagSymbol] = "GeneratorFunction";
+      }
+    }
+
+    genFun.prototype = Object.create(Gp);
+    return genFun;
+  }; // Within the body of any async function, `await x` is transformed to
+  // `yield regeneratorRuntime.awrap(x)`, so that the runtime can test
+  // `hasOwn.call(value, "__await")` to determine if the yielded value is
+  // meant to be awaited.
+
+
+  runtime.awrap = function (arg) {
+    return {
+      __await: arg
+    };
+  };
+
+  function AsyncIterator(generator) {
+    function invoke(method, arg, resolve, reject) {
+      var record = tryCatch(generator[method], generator, arg);
+
+      if (record.type === "throw") {
+        reject(record.arg);
+      } else {
+        var result = record.arg;
+        var value = result.value;
+
+        if (value && Object(_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__["default"])(value) === "object" && hasOwn.call(value, "__await")) {
+          return Promise.resolve(value.__await).then(function (value) {
+            invoke("next", value, resolve, reject);
+          }, function (err) {
+            invoke("throw", err, resolve, reject);
+          });
+        }
+
+        return Promise.resolve(value).then(function (unwrapped) {
+          // When a yielded Promise is resolved, its final value becomes
+          // the .value of the Promise<{value,done}> result for the
+          // current iteration.
+          result.value = unwrapped;
+          resolve(result);
+        }, function (error) {
+          // If a rejected Promise was yielded, throw the rejection back
+          // into the async generator function so it can be handled there.
+          return invoke("throw", error, resolve, reject);
+        });
+      }
+    }
+
+    var previousPromise;
+
+    function enqueue(method, arg) {
+      function callInvokeWithMethodAndArg() {
+        return new Promise(function (resolve, reject) {
+          invoke(method, arg, resolve, reject);
+        });
+      }
+
+      return previousPromise = // If enqueue has been called before, then we want to wait until
+      // all previous Promises have been resolved before calling invoke,
+      // so that results are always delivered in the correct order. If
+      // enqueue has not been called before, then it is important to
+      // call invoke immediately, without waiting on a callback to fire,
+      // so that the async generator function has the opportunity to do
+      // any necessary setup in a predictable way. This predictability
+      // is why the Promise constructor synchronously invokes its
+      // executor callback, and why async functions synchronously
+      // execute code before the first await. Since we implement simple
+      // async functions in terms of async generators, it is especially
+      // important to get this right, even though it requires care.
+      previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, // Avoid propagating failures to Promises returned by later
+      // invocations of the iterator.
+      callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg();
+    } // Define the unified helper method that is used to implement .next,
+    // .throw, and .return (see defineIteratorMethods).
+
+
+    this._invoke = enqueue;
+  }
+
+  defineIteratorMethods(AsyncIterator.prototype);
+
+  AsyncIterator.prototype[asyncIteratorSymbol] = function () {
+    return this;
+  };
+
+  runtime.AsyncIterator = AsyncIterator; // Note that simple async functions are implemented on top of
+  // AsyncIterator objects; they just return a Promise for the value of
+  // the final result produced by the iterator.
+
+  runtime.async = function (innerFn, outerFn, self, tryLocsList) {
+    var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList));
+    return runtime.isGeneratorFunction(outerFn) ? iter // If outerFn is a generator, return the full iterator.
+    : iter.next().then(function (result) {
+      return result.done ? result.value : iter.next();
+    });
+  };
+
+  function makeInvokeMethod(innerFn, self, context) {
+    var state = GenStateSuspendedStart;
+    return function invoke(method, arg) {
+      if (state === GenStateExecuting) {
+        throw new Error("Generator is already running");
+      }
+
+      if (state === GenStateCompleted) {
+        if (method === "throw") {
+          throw arg;
+        } // Be forgiving, per 25.3.3.3.3 of the spec:
+        // https://people.mozilla.org/~jorendorff/es6-draft.html#sec-generatorresume
+
+
+        return doneResult();
+      }
+
+      context.method = method;
+      context.arg = arg;
+
+      while (true) {
+        var delegate = context.delegate;
+
+        if (delegate) {
+          var delegateResult = maybeInvokeDelegate(delegate, context);
+
+          if (delegateResult) {
+            if (delegateResult === ContinueSentinel) continue;
+            return delegateResult;
+          }
+        }
+
+        if (context.method === "next") {
+          // Setting context._sent for legacy support of Babel's
+          // function.sent implementation.
+          context.sent = context._sent = context.arg;
+        } else if (context.method === "throw") {
+          if (state === GenStateSuspendedStart) {
+            state = GenStateCompleted;
+            throw context.arg;
+          }
+
+          context.dispatchException(context.arg);
+        } else if (context.method === "return") {
+          context.abrupt("return", context.arg);
+        }
+
+        state = GenStateExecuting;
+        var record = tryCatch(innerFn, self, context);
+
+        if (record.type === "normal") {
+          // If an exception is thrown from innerFn, we leave state ===
+          // GenStateExecuting and loop back for another invocation.
+          state = context.done ? GenStateCompleted : GenStateSuspendedYield;
+
+          if (record.arg === ContinueSentinel) {
+            continue;
+          }
+
+          return {
+            value: record.arg,
+            done: context.done
+          };
+        } else if (record.type === "throw") {
+          state = GenStateCompleted; // Dispatch the exception by looping back around to the
+          // context.dispatchException(context.arg) call above.
+
+          context.method = "throw";
+          context.arg = record.arg;
+        }
+      }
+    };
+  } // Call delegate.iterator[context.method](context.arg) and handle the
+  // result, either by returning a { value, done } result from the
+  // delegate iterator, or by modifying context.method and context.arg,
+  // setting context.delegate to null, and returning the ContinueSentinel.
+
+
+  function maybeInvokeDelegate(delegate, context) {
+    var method = delegate.iterator[context.method];
+
+    if (method === undefined) {
+      // A .throw or .return when the delegate iterator has no .throw
+      // method always terminates the yield* loop.
+      context.delegate = null;
+
+      if (context.method === "throw") {
+        if (delegate.iterator.return) {
+          // If the delegate iterator has a return method, give it a
+          // chance to clean up.
+          context.method = "return";
+          context.arg = undefined;
+          maybeInvokeDelegate(delegate, context);
+
+          if (context.method === "throw") {
+            // If maybeInvokeDelegate(context) changed context.method from
+            // "return" to "throw", let that override the TypeError below.
+            return ContinueSentinel;
+          }
+        }
+
+        context.method = "throw";
+        context.arg = new TypeError("The iterator does not provide a 'throw' method");
+      }
+
+      return ContinueSentinel;
+    }
+
+    var record = tryCatch(method, delegate.iterator, context.arg);
+
+    if (record.type === "throw") {
+      context.method = "throw";
+      context.arg = record.arg;
+      context.delegate = null;
+      return ContinueSentinel;
+    }
+
+    var info = record.arg;
+
+    if (!info) {
+      context.method = "throw";
+      context.arg = new TypeError("iterator result is not an object");
+      context.delegate = null;
+      return ContinueSentinel;
+    }
+
+    if (info.done) {
+      // Assign the result of the finished delegate to the temporary
+      // variable specified by delegate.resultName (see delegateYield).
+      context[delegate.resultName] = info.value; // Resume execution at the desired location (see delegateYield).
+
+      context.next = delegate.nextLoc; // If context.method was "throw" but the delegate handled the
+      // exception, let the outer generator proceed normally. If
+      // context.method was "next", forget context.arg since it has been
+      // "consumed" by the delegate iterator. If context.method was
+      // "return", allow the original .return call to continue in the
+      // outer generator.
+
+      if (context.method !== "return") {
+        context.method = "next";
+        context.arg = undefined;
+      }
+    } else {
+      // Re-yield the result returned by the delegate method.
+      return info;
+    } // The delegate iterator is finished, so forget it and continue with
+    // the outer generator.
+
+
+    context.delegate = null;
+    return ContinueSentinel;
+  } // Define Generator.prototype.{next,throw,return} in terms of the
+  // unified ._invoke helper method.
+
+
+  defineIteratorMethods(Gp);
+  Gp[toStringTagSymbol] = "Generator"; // A Generator should always return itself as the iterator object when the
+  // @@iterator function is called on it. Some browsers' implementations of the
+  // iterator prototype chain incorrectly implement this, causing the Generator
+  // object to not be returned from this call. This ensures that doesn't happen.
+  // See https://github.com/facebook/regenerator/issues/274 for more details.
+
+  Gp[iteratorSymbol] = function () {
+    return this;
+  };
+
+  Gp.toString = function () {
+    return "[object Generator]";
+  };
+
+  function pushTryEntry(locs) {
+    var entry = {
+      tryLoc: locs[0]
+    };
+
+    if (1 in locs) {
+      entry.catchLoc = locs[1];
+    }
+
+    if (2 in locs) {
+      entry.finallyLoc = locs[2];
+      entry.afterLoc = locs[3];
+    }
+
+    this.tryEntries.push(entry);
+  }
+
+  function resetTryEntry(entry) {
+    var record = entry.completion || {};
+    record.type = "normal";
+    delete record.arg;
+    entry.completion = record;
+  }
+
+  function Context(tryLocsList) {
+    // The root entry object (effectively a try statement without a catch
+    // or a finally block) gives us a place to store values thrown from
+    // locations where there is no enclosing try statement.
+    this.tryEntries = [{
+      tryLoc: "root"
+    }];
+    tryLocsList.forEach(pushTryEntry, this);
+    this.reset(true);
+  }
+
+  runtime.keys = function (object) {
+    var keys = [];
+
+    for (var key in object) {
+      keys.push(key);
+    }
+
+    keys.reverse(); // Rather than returning an object with a next method, we keep
+    // things simple and return the next function itself.
+
+    return function next() {
+      while (keys.length) {
+        var key = keys.pop();
+
+        if (key in object) {
+          next.value = key;
+          next.done = false;
+          return next;
+        }
+      } // To avoid creating an additional object, we just hang the .value
+      // and .done properties off the next function object itself. This
+      // also ensures that the minifier will not anonymize the function.
+
+
+      next.done = true;
+      return next;
+    };
+  };
+
+  function values(iterable) {
+    if (iterable) {
+      var iteratorMethod = iterable[iteratorSymbol];
+
+      if (iteratorMethod) {
+        return iteratorMethod.call(iterable);
+      }
+
+      if (typeof iterable.next === "function") {
+        return iterable;
+      }
+
+      if (!isNaN(iterable.length)) {
+        var i = -1,
+            next = function next() {
+          while (++i < iterable.length) {
+            if (hasOwn.call(iterable, i)) {
+              next.value = iterable[i];
+              next.done = false;
+              return next;
+            }
+          }
+
+          next.value = undefined;
+          next.done = true;
+          return next;
+        };
+
+        return next.next = next;
+      }
+    } // Return an iterator with no values.
+
+
+    return {
+      next: doneResult
+    };
+  }
+
+  runtime.values = values;
+
+  function doneResult() {
+    return {
+      value: undefined,
+      done: true
+    };
+  }
+
+  Context.prototype = {
+    constructor: Context,
+    reset: function reset(skipTempReset) {
+      this.prev = 0;
+      this.next = 0; // Resetting context._sent for legacy support of Babel's
+      // function.sent implementation.
+
+      this.sent = this._sent = undefined;
+      this.done = false;
+      this.delegate = null;
+      this.method = "next";
+      this.arg = undefined;
+      this.tryEntries.forEach(resetTryEntry);
+
+      if (!skipTempReset) {
+        for (var name in this) {
+          // Not sure about the optimal order of these conditions:
+          if (name.charAt(0) === "t" && hasOwn.call(this, name) && !isNaN(+name.slice(1))) {
+            this[name] = undefined;
+          }
+        }
+      }
+    },
+    stop: function stop() {
+      this.done = true;
+      var rootEntry = this.tryEntries[0];
+      var rootRecord = rootEntry.completion;
+
+      if (rootRecord.type === "throw") {
+        throw rootRecord.arg;
+      }
+
+      return this.rval;
+    },
+    dispatchException: function dispatchException(exception) {
+      if (this.done) {
+        throw exception;
+      }
+
+      var context = this;
+
+      function handle(loc, caught) {
+        record.type = "throw";
+        record.arg = exception;
+        context.next = loc;
+
+        if (caught) {
+          // If the dispatched exception was caught by a catch block,
+          // then let that catch block handle the exception normally.
+          context.method = "next";
+          context.arg = undefined;
+        }
+
+        return !!caught;
+      }
+
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        var record = entry.completion;
+
+        if (entry.tryLoc === "root") {
+          // Exception thrown outside of any try block that could handle
+          // it, so set the completion value of the entire function to
+          // throw the exception.
+          return handle("end");
+        }
+
+        if (entry.tryLoc <= this.prev) {
+          var hasCatch = hasOwn.call(entry, "catchLoc");
+          var hasFinally = hasOwn.call(entry, "finallyLoc");
+
+          if (hasCatch && hasFinally) {
+            if (this.prev < entry.catchLoc) {
+              return handle(entry.catchLoc, true);
+            } else if (this.prev < entry.finallyLoc) {
+              return handle(entry.finallyLoc);
+            }
+          } else if (hasCatch) {
+            if (this.prev < entry.catchLoc) {
+              return handle(entry.catchLoc, true);
+            }
+          } else if (hasFinally) {
+            if (this.prev < entry.finallyLoc) {
+              return handle(entry.finallyLoc);
+            }
+          } else {
+            throw new Error("try statement without catch or finally");
+          }
+        }
+      }
+    },
+    abrupt: function abrupt(type, arg) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+
+        if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) {
+          var finallyEntry = entry;
+          break;
+        }
+      }
+
+      if (finallyEntry && (type === "break" || type === "continue") && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc) {
+        // Ignore the finally entry if control is not jumping to a
+        // location outside the try/catch block.
+        finallyEntry = null;
+      }
+
+      var record = finallyEntry ? finallyEntry.completion : {};
+      record.type = type;
+      record.arg = arg;
+
+      if (finallyEntry) {
+        this.method = "next";
+        this.next = finallyEntry.finallyLoc;
+        return ContinueSentinel;
+      }
+
+      return this.complete(record);
+    },
+    complete: function complete(record, afterLoc) {
+      if (record.type === "throw") {
+        throw record.arg;
+      }
+
+      if (record.type === "break" || record.type === "continue") {
+        this.next = record.arg;
+      } else if (record.type === "return") {
+        this.rval = this.arg = record.arg;
+        this.method = "return";
+        this.next = "end";
+      } else if (record.type === "normal" && afterLoc) {
+        this.next = afterLoc;
+      }
+
+      return ContinueSentinel;
+    },
+    finish: function finish(finallyLoc) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+
+        if (entry.finallyLoc === finallyLoc) {
+          this.complete(entry.completion, entry.afterLoc);
+          resetTryEntry(entry);
+          return ContinueSentinel;
+        }
+      }
+    },
+    "catch": function _catch(tryLoc) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+
+        if (entry.tryLoc === tryLoc) {
+          var record = entry.completion;
+
+          if (record.type === "throw") {
+            var thrown = record.arg;
+            resetTryEntry(entry);
+          }
+
+          return thrown;
+        }
+      } // The context.catch method must only be called with a location
+      // argument that corresponds to a known catch block.
+
+
+      throw new Error("illegal catch attempt");
+    },
+    delegateYield: function delegateYield(iterable, resultName, nextLoc) {
+      this.delegate = {
+        iterator: values(iterable),
+        resultName: resultName,
+        nextLoc: nextLoc
+      };
+
+      if (this.method === "next") {
+        // Deliberately forget the last sent value so that we don't
+        // accidentally pass it on to the delegate.
+        this.arg = undefined;
+      }
+
+      return ContinueSentinel;
+    }
+  };
+}( // In sloppy mode, unbound `this` refers to the global object, fallback to
+// Function constructor if we're in global strict mode. That is sadly a form
+// of indirect eval which violates Content Security Policy.
+function () {
+  return this || (typeof self === "undefined" ? "undefined" : Object(_babel_runtime_helpers_typeof__WEBPACK_IMPORTED_MODULE_0__["default"])(self)) === "object" && self;
+}() || Function("return this")());
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(9)(module)))
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports) {
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+module.exports = _assertThisInitialized;
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports) {
+
+function _setPrototypeOf(o, p) {
+  module.exports = _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+module.exports = _setPrototypeOf;
+
+/***/ }),
+/* 21 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/classCallCheck.js
+var classCallCheck = __webpack_require__(2);
+var classCallCheck_default = /*#__PURE__*/__webpack_require__.n(classCallCheck);
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/createClass.js
+var createClass = __webpack_require__(3);
+var createClass_default = /*#__PURE__*/__webpack_require__.n(createClass);
+
+// CONCATENATED MODULE: ./node_modules/lodash-es/_listCacheClear.js
+/**
+ * Removes all key-value entries from the list cache.
+ *
+ * @private
+ * @name clear
+ * @memberOf ListCache
+ */
+function listCacheClear() {
+  this.__data__ = [];
+  this.size = 0;
+}
+
+/* harmony default export */ var _listCacheClear = (listCacheClear);
+// CONCATENATED MODULE: ./node_modules/lodash-es/eq.js
+/**
+ * Performs a
+ * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+ * comparison between two values to determine if they are equivalent.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to compare.
+ * @param {*} other The other value to compare.
+ * @returns {boolean} Returns `true` if the values are equivalent, else `false`.
+ * @example
+ *
+ * var object = { 'a': 1 };
+ * var other = { 'a': 1 };
+ *
+ * _.eq(object, object);
+ * // => true
+ *
+ * _.eq(object, other);
+ * // => false
+ *
+ * _.eq('a', 'a');
+ * // => true
+ *
+ * _.eq('a', Object('a'));
+ * // => false
+ *
+ * _.eq(NaN, NaN);
+ * // => true
+ */
+function eq(value, other) {
+  return value === other || value !== value && other !== other;
+}
+
+/* harmony default export */ var lodash_es_eq = (eq);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_assocIndexOf.js
+
+/**
+ * Gets the index at which the `key` is found in `array` of key-value pairs.
+ *
+ * @private
+ * @param {Array} array The array to inspect.
+ * @param {*} key The key to search for.
+ * @returns {number} Returns the index of the matched value, else `-1`.
+ */
+
+function assocIndexOf(array, key) {
+  var length = array.length;
+
+  while (length--) {
+    if (lodash_es_eq(array[length][0], key)) {
+      return length;
+    }
+  }
+
+  return -1;
+}
+
+/* harmony default export */ var _assocIndexOf = (assocIndexOf);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_listCacheDelete.js
+
+/** Used for built-in method references. */
+
+var arrayProto = Array.prototype;
+/** Built-in value references. */
+
+var splice = arrayProto.splice;
+/**
+ * Removes `key` and its value from the list cache.
+ *
+ * @private
+ * @name delete
+ * @memberOf ListCache
+ * @param {string} key The key of the value to remove.
+ * @returns {boolean} Returns `true` if the entry was removed, else `false`.
+ */
+
+function listCacheDelete(key) {
+  var data = this.__data__,
+      index = _assocIndexOf(data, key);
+
+  if (index < 0) {
+    return false;
+  }
+
+  var lastIndex = data.length - 1;
+
+  if (index == lastIndex) {
+    data.pop();
+  } else {
+    splice.call(data, index, 1);
+  }
+
+  --this.size;
+  return true;
+}
+
+/* harmony default export */ var _listCacheDelete = (listCacheDelete);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_listCacheGet.js
+
+/**
+ * Gets the list cache value for `key`.
+ *
+ * @private
+ * @name get
+ * @memberOf ListCache
+ * @param {string} key The key of the value to get.
+ * @returns {*} Returns the entry value.
+ */
+
+function listCacheGet(key) {
+  var data = this.__data__,
+      index = _assocIndexOf(data, key);
+  return index < 0 ? undefined : data[index][1];
+}
+
+/* harmony default export */ var _listCacheGet = (listCacheGet);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_listCacheHas.js
+
+/**
+ * Checks if a list cache value for `key` exists.
+ *
+ * @private
+ * @name has
+ * @memberOf ListCache
+ * @param {string} key The key of the entry to check.
+ * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+ */
+
+function listCacheHas(key) {
+  return _assocIndexOf(this.__data__, key) > -1;
+}
+
+/* harmony default export */ var _listCacheHas = (listCacheHas);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_listCacheSet.js
+
+/**
+ * Sets the list cache `key` to `value`.
+ *
+ * @private
+ * @name set
+ * @memberOf ListCache
+ * @param {string} key The key of the value to set.
+ * @param {*} value The value to set.
+ * @returns {Object} Returns the list cache instance.
+ */
+
+function listCacheSet(key, value) {
+  var data = this.__data__,
+      index = _assocIndexOf(data, key);
+
+  if (index < 0) {
+    ++this.size;
+    data.push([key, value]);
+  } else {
+    data[index][1] = value;
+  }
+
+  return this;
+}
+
+/* harmony default export */ var _listCacheSet = (listCacheSet);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_ListCache.js
+
+
+
+
+
+/**
+ * Creates an list cache object.
+ *
+ * @private
+ * @constructor
+ * @param {Array} [entries] The key-value pairs to cache.
+ */
+
+function ListCache(entries) {
+  var index = -1,
+      length = entries == null ? 0 : entries.length;
+  this.clear();
+
+  while (++index < length) {
+    var entry = entries[index];
+    this.set(entry[0], entry[1]);
+  }
+} // Add methods to `ListCache`.
+
+
+ListCache.prototype.clear = _listCacheClear;
+ListCache.prototype['delete'] = _listCacheDelete;
+ListCache.prototype.get = _listCacheGet;
+ListCache.prototype.has = _listCacheHas;
+ListCache.prototype.set = _listCacheSet;
+/* harmony default export */ var _ListCache = (ListCache);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_stackClear.js
+
+/**
+ * Removes all key-value entries from the stack.
+ *
+ * @private
+ * @name clear
+ * @memberOf Stack
+ */
+
+function stackClear() {
+  this.__data__ = new _ListCache();
+  this.size = 0;
+}
+
+/* harmony default export */ var _stackClear = (stackClear);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_stackDelete.js
+/**
+ * Removes `key` and its value from the stack.
+ *
+ * @private
+ * @name delete
+ * @memberOf Stack
+ * @param {string} key The key of the value to remove.
+ * @returns {boolean} Returns `true` if the entry was removed, else `false`.
+ */
+function stackDelete(key) {
+  var data = this.__data__,
+      result = data['delete'](key);
+  this.size = data.size;
+  return result;
+}
+
+/* harmony default export */ var _stackDelete = (stackDelete);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_stackGet.js
+/**
+ * Gets the stack value for `key`.
+ *
+ * @private
+ * @name get
+ * @memberOf Stack
+ * @param {string} key The key of the value to get.
+ * @returns {*} Returns the entry value.
+ */
+function stackGet(key) {
+  return this.__data__.get(key);
+}
+
+/* harmony default export */ var _stackGet = (stackGet);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_stackHas.js
+/**
+ * Checks if a stack value for `key` exists.
+ *
+ * @private
+ * @name has
+ * @memberOf Stack
+ * @param {string} key The key of the entry to check.
+ * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+ */
+function stackHas(key) {
+  return this.__data__.has(key);
+}
+
+/* harmony default export */ var _stackHas = (stackHas);
+// EXTERNAL MODULE: ./node_modules/lodash-es/_root.js
+var _root = __webpack_require__(5);
+
+// CONCATENATED MODULE: ./node_modules/lodash-es/_Symbol.js
+
+/** Built-in value references. */
+
+var _Symbol = _root["a" /* default */].Symbol;
+/* harmony default export */ var lodash_es_Symbol = (_Symbol);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_getRawTag.js
+
+/** Used for built-in method references. */
+
+var objectProto = Object.prototype;
+/** Used to check objects for own properties. */
+
+var _getRawTag_hasOwnProperty = objectProto.hasOwnProperty;
+/**
+ * Used to resolve the
+ * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
+ * of values.
+ */
+
+var nativeObjectToString = objectProto.toString;
+/** Built-in value references. */
+
+var symToStringTag = lodash_es_Symbol ? lodash_es_Symbol.toStringTag : undefined;
+/**
+ * A specialized version of `baseGetTag` which ignores `Symbol.toStringTag` values.
+ *
+ * @private
+ * @param {*} value The value to query.
+ * @returns {string} Returns the raw `toStringTag`.
+ */
+
+function getRawTag(value) {
+  var isOwn = _getRawTag_hasOwnProperty.call(value, symToStringTag),
+      tag = value[symToStringTag];
+
+  try {
+    value[symToStringTag] = undefined;
+    var unmasked = true;
+  } catch (e) {}
+
+  var result = nativeObjectToString.call(value);
+
+  if (unmasked) {
+    if (isOwn) {
+      value[symToStringTag] = tag;
+    } else {
+      delete value[symToStringTag];
+    }
+  }
+
+  return result;
+}
+
+/* harmony default export */ var _getRawTag = (getRawTag);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_objectToString.js
+/** Used for built-in method references. */
+var _objectToString_objectProto = Object.prototype;
+/**
+ * Used to resolve the
+ * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
+ * of values.
+ */
+
+var _objectToString_nativeObjectToString = _objectToString_objectProto.toString;
+/**
+ * Converts `value` to a string using `Object.prototype.toString`.
+ *
+ * @private
+ * @param {*} value The value to convert.
+ * @returns {string} Returns the converted string.
+ */
+
+function objectToString(value) {
+  return _objectToString_nativeObjectToString.call(value);
+}
+
+/* harmony default export */ var _objectToString = (objectToString);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_baseGetTag.js
+
+
+
+/** `Object#toString` result references. */
+
+var nullTag = '[object Null]',
+    undefinedTag = '[object Undefined]';
+/** Built-in value references. */
+
+var _baseGetTag_symToStringTag = lodash_es_Symbol ? lodash_es_Symbol.toStringTag : undefined;
+/**
+ * The base implementation of `getTag` without fallbacks for buggy environments.
+ *
+ * @private
+ * @param {*} value The value to query.
+ * @returns {string} Returns the `toStringTag`.
+ */
+
+function baseGetTag(value) {
+  if (value == null) {
+    return value === undefined ? undefinedTag : nullTag;
+  }
+
+  return _baseGetTag_symToStringTag && _baseGetTag_symToStringTag in Object(value) ? _getRawTag(value) : _objectToString(value);
+}
+
+/* harmony default export */ var _baseGetTag = (baseGetTag);
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/typeof.js
+var helpers_typeof = __webpack_require__(0);
+
+// CONCATENATED MODULE: ./node_modules/lodash-es/isObject.js
+
+
+/**
+ * Checks if `value` is the
+ * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
+ * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an object, else `false`.
+ * @example
+ *
+ * _.isObject({});
+ * // => true
+ *
+ * _.isObject([1, 2, 3]);
+ * // => true
+ *
+ * _.isObject(_.noop);
+ * // => true
+ *
+ * _.isObject(null);
+ * // => false
+ */
+function isObject(value) {
+  var type = Object(helpers_typeof["default"])(value);
+
+  return value != null && (type == 'object' || type == 'function');
+}
+
+/* harmony default export */ var lodash_es_isObject = (isObject);
+// CONCATENATED MODULE: ./node_modules/lodash-es/isFunction.js
+
+
+/** `Object#toString` result references. */
+
+var asyncTag = '[object AsyncFunction]',
+    funcTag = '[object Function]',
+    genTag = '[object GeneratorFunction]',
+    proxyTag = '[object Proxy]';
+/**
+ * Checks if `value` is classified as a `Function` object.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a function, else `false`.
+ * @example
+ *
+ * _.isFunction(_);
+ * // => true
+ *
+ * _.isFunction(/abc/);
+ * // => false
+ */
+
+function isFunction(value) {
+  if (!lodash_es_isObject(value)) {
+    return false;
+  } // The use of `Object#toString` avoids issues with the `typeof` operator
+  // in Safari 9 which returns 'object' for typed arrays and other constructors.
+
+
+  var tag = _baseGetTag(value);
+  return tag == funcTag || tag == genTag || tag == asyncTag || tag == proxyTag;
+}
+
+/* harmony default export */ var lodash_es_isFunction = (isFunction);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_coreJsData.js
+
+/** Used to detect overreaching core-js shims. */
+
+var coreJsData = _root["a" /* default */]['__core-js_shared__'];
+/* harmony default export */ var _coreJsData = (coreJsData);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_isMasked.js
+
+/** Used to detect methods masquerading as native. */
+
+var maskSrcKey = function () {
+  var uid = /[^.]+$/.exec(_coreJsData && _coreJsData.keys && _coreJsData.keys.IE_PROTO || '');
+  return uid ? 'Symbol(src)_1.' + uid : '';
+}();
+/**
+ * Checks if `func` has its source masked.
+ *
+ * @private
+ * @param {Function} func The function to check.
+ * @returns {boolean} Returns `true` if `func` is masked, else `false`.
+ */
+
+
+function isMasked(func) {
+  return !!maskSrcKey && maskSrcKey in func;
+}
+
+/* harmony default export */ var _isMasked = (isMasked);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_toSource.js
+/** Used for built-in method references. */
+var funcProto = Function.prototype;
+/** Used to resolve the decompiled source of functions. */
+
+var funcToString = funcProto.toString;
+/**
+ * Converts `func` to its source code.
+ *
+ * @private
+ * @param {Function} func The function to convert.
+ * @returns {string} Returns the source code.
+ */
+
+function toSource(func) {
+  if (func != null) {
+    try {
+      return funcToString.call(func);
+    } catch (e) {}
+
+    try {
+      return func + '';
+    } catch (e) {}
+  }
+
+  return '';
+}
+
+/* harmony default export */ var _toSource = (toSource);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_baseIsNative.js
+
+
+
+
+/**
+ * Used to match `RegExp`
+ * [syntax characters](http://ecma-international.org/ecma-262/7.0/#sec-patterns).
+ */
+
+var reRegExpChar = /[\\^$.*+?()[\]{}|]/g;
+/** Used to detect host constructors (Safari). */
+
+var reIsHostCtor = /^\[object .+?Constructor\]$/;
+/** Used for built-in method references. */
+
+var _baseIsNative_funcProto = Function.prototype,
+    _baseIsNative_objectProto = Object.prototype;
+/** Used to resolve the decompiled source of functions. */
+
+var _baseIsNative_funcToString = _baseIsNative_funcProto.toString;
+/** Used to check objects for own properties. */
+
+var _baseIsNative_hasOwnProperty = _baseIsNative_objectProto.hasOwnProperty;
+/** Used to detect if a method is native. */
+
+var reIsNative = RegExp('^' + _baseIsNative_funcToString.call(_baseIsNative_hasOwnProperty).replace(reRegExpChar, '\\$&').replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, '$1.*?') + '$');
+/**
+ * The base implementation of `_.isNative` without bad shim checks.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a native function,
+ *  else `false`.
+ */
+
+function baseIsNative(value) {
+  if (!lodash_es_isObject(value) || _isMasked(value)) {
+    return false;
+  }
+
+  var pattern = lodash_es_isFunction(value) ? reIsNative : reIsHostCtor;
+  return pattern.test(_toSource(value));
+}
+
+/* harmony default export */ var _baseIsNative = (baseIsNative);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_getValue.js
+/**
+ * Gets the value at `key` of `object`.
+ *
+ * @private
+ * @param {Object} [object] The object to query.
+ * @param {string} key The key of the property to get.
+ * @returns {*} Returns the property value.
+ */
+function getValue(object, key) {
+  return object == null ? undefined : object[key];
+}
+
+/* harmony default export */ var _getValue = (getValue);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_getNative.js
+
+
+/**
+ * Gets the native function at `key` of `object`.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @param {string} key The key of the method to get.
+ * @returns {*} Returns the function if it's native, else `undefined`.
+ */
+
+function getNative(object, key) {
+  var value = _getValue(object, key);
+  return _baseIsNative(value) ? value : undefined;
+}
+
+/* harmony default export */ var _getNative = (getNative);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_Map.js
+
+
+/* Built-in method references that are verified to be native. */
+
+var Map = _getNative(_root["a" /* default */], 'Map');
+/* harmony default export */ var _Map = (Map);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_nativeCreate.js
+
+/* Built-in method references that are verified to be native. */
+
+var nativeCreate = _getNative(Object, 'create');
+/* harmony default export */ var _nativeCreate = (nativeCreate);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_hashClear.js
+
+/**
+ * Removes all key-value entries from the hash.
+ *
+ * @private
+ * @name clear
+ * @memberOf Hash
+ */
+
+function hashClear() {
+  this.__data__ = _nativeCreate ? _nativeCreate(null) : {};
+  this.size = 0;
+}
+
+/* harmony default export */ var _hashClear = (hashClear);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_hashDelete.js
+/**
+ * Removes `key` and its value from the hash.
+ *
+ * @private
+ * @name delete
+ * @memberOf Hash
+ * @param {Object} hash The hash to modify.
+ * @param {string} key The key of the value to remove.
+ * @returns {boolean} Returns `true` if the entry was removed, else `false`.
+ */
+function hashDelete(key) {
+  var result = this.has(key) && delete this.__data__[key];
+  this.size -= result ? 1 : 0;
+  return result;
+}
+
+/* harmony default export */ var _hashDelete = (hashDelete);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_hashGet.js
+
+/** Used to stand-in for `undefined` hash values. */
+
+var HASH_UNDEFINED = '__lodash_hash_undefined__';
+/** Used for built-in method references. */
+
+var _hashGet_objectProto = Object.prototype;
+/** Used to check objects for own properties. */
+
+var _hashGet_hasOwnProperty = _hashGet_objectProto.hasOwnProperty;
+/**
+ * Gets the hash value for `key`.
+ *
+ * @private
+ * @name get
+ * @memberOf Hash
+ * @param {string} key The key of the value to get.
+ * @returns {*} Returns the entry value.
+ */
+
+function hashGet(key) {
+  var data = this.__data__;
+
+  if (_nativeCreate) {
+    var result = data[key];
+    return result === HASH_UNDEFINED ? undefined : result;
+  }
+
+  return _hashGet_hasOwnProperty.call(data, key) ? data[key] : undefined;
+}
+
+/* harmony default export */ var _hashGet = (hashGet);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_hashHas.js
+
+/** Used for built-in method references. */
+
+var _hashHas_objectProto = Object.prototype;
+/** Used to check objects for own properties. */
+
+var _hashHas_hasOwnProperty = _hashHas_objectProto.hasOwnProperty;
+/**
+ * Checks if a hash value for `key` exists.
+ *
+ * @private
+ * @name has
+ * @memberOf Hash
+ * @param {string} key The key of the entry to check.
+ * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+ */
+
+function hashHas(key) {
+  var data = this.__data__;
+  return _nativeCreate ? data[key] !== undefined : _hashHas_hasOwnProperty.call(data, key);
+}
+
+/* harmony default export */ var _hashHas = (hashHas);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_hashSet.js
+
+/** Used to stand-in for `undefined` hash values. */
+
+var _hashSet_HASH_UNDEFINED = '__lodash_hash_undefined__';
+/**
+ * Sets the hash `key` to `value`.
+ *
+ * @private
+ * @name set
+ * @memberOf Hash
+ * @param {string} key The key of the value to set.
+ * @param {*} value The value to set.
+ * @returns {Object} Returns the hash instance.
+ */
+
+function hashSet(key, value) {
+  var data = this.__data__;
+  this.size += this.has(key) ? 0 : 1;
+  data[key] = _nativeCreate && value === undefined ? _hashSet_HASH_UNDEFINED : value;
+  return this;
+}
+
+/* harmony default export */ var _hashSet = (hashSet);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_Hash.js
+
+
+
+
+
+/**
+ * Creates a hash object.
+ *
+ * @private
+ * @constructor
+ * @param {Array} [entries] The key-value pairs to cache.
+ */
+
+function Hash(entries) {
+  var index = -1,
+      length = entries == null ? 0 : entries.length;
+  this.clear();
+
+  while (++index < length) {
+    var entry = entries[index];
+    this.set(entry[0], entry[1]);
+  }
+} // Add methods to `Hash`.
+
+
+Hash.prototype.clear = _hashClear;
+Hash.prototype['delete'] = _hashDelete;
+Hash.prototype.get = _hashGet;
+Hash.prototype.has = _hashHas;
+Hash.prototype.set = _hashSet;
+/* harmony default export */ var _Hash = (Hash);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_mapCacheClear.js
+
+
+
+/**
+ * Removes all key-value entries from the map.
+ *
+ * @private
+ * @name clear
+ * @memberOf MapCache
+ */
+
+function mapCacheClear() {
+  this.size = 0;
+  this.__data__ = {
+    'hash': new _Hash(),
+    'map': new (_Map || _ListCache)(),
+    'string': new _Hash()
+  };
+}
+
+/* harmony default export */ var _mapCacheClear = (mapCacheClear);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_isKeyable.js
+
+
+/**
+ * Checks if `value` is suitable for use as unique object key.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is suitable, else `false`.
+ */
+function isKeyable(value) {
+  var type = Object(helpers_typeof["default"])(value);
+
+  return type == 'string' || type == 'number' || type == 'symbol' || type == 'boolean' ? value !== '__proto__' : value === null;
+}
+
+/* harmony default export */ var _isKeyable = (isKeyable);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_getMapData.js
+
+/**
+ * Gets the data for `map`.
+ *
+ * @private
+ * @param {Object} map The map to query.
+ * @param {string} key The reference key.
+ * @returns {*} Returns the map data.
+ */
+
+function getMapData(map, key) {
+  var data = map.__data__;
+  return _isKeyable(key) ? data[typeof key == 'string' ? 'string' : 'hash'] : data.map;
+}
+
+/* harmony default export */ var _getMapData = (getMapData);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_mapCacheDelete.js
+
+/**
+ * Removes `key` and its value from the map.
+ *
+ * @private
+ * @name delete
+ * @memberOf MapCache
+ * @param {string} key The key of the value to remove.
+ * @returns {boolean} Returns `true` if the entry was removed, else `false`.
+ */
+
+function mapCacheDelete(key) {
+  var result = _getMapData(this, key)['delete'](key);
+  this.size -= result ? 1 : 0;
+  return result;
+}
+
+/* harmony default export */ var _mapCacheDelete = (mapCacheDelete);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_mapCacheGet.js
+
+/**
+ * Gets the map value for `key`.
+ *
+ * @private
+ * @name get
+ * @memberOf MapCache
+ * @param {string} key The key of the value to get.
+ * @returns {*} Returns the entry value.
+ */
+
+function mapCacheGet(key) {
+  return _getMapData(this, key).get(key);
+}
+
+/* harmony default export */ var _mapCacheGet = (mapCacheGet);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_mapCacheHas.js
+
+/**
+ * Checks if a map value for `key` exists.
+ *
+ * @private
+ * @name has
+ * @memberOf MapCache
+ * @param {string} key The key of the entry to check.
+ * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+ */
+
+function mapCacheHas(key) {
+  return _getMapData(this, key).has(key);
+}
+
+/* harmony default export */ var _mapCacheHas = (mapCacheHas);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_mapCacheSet.js
+
+/**
+ * Sets the map `key` to `value`.
+ *
+ * @private
+ * @name set
+ * @memberOf MapCache
+ * @param {string} key The key of the value to set.
+ * @param {*} value The value to set.
+ * @returns {Object} Returns the map cache instance.
+ */
+
+function mapCacheSet(key, value) {
+  var data = _getMapData(this, key),
+      size = data.size;
+  data.set(key, value);
+  this.size += data.size == size ? 0 : 1;
+  return this;
+}
+
+/* harmony default export */ var _mapCacheSet = (mapCacheSet);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_MapCache.js
+
+
+
+
+
+/**
+ * Creates a map cache object to store key-value pairs.
+ *
+ * @private
+ * @constructor
+ * @param {Array} [entries] The key-value pairs to cache.
+ */
+
+function MapCache(entries) {
+  var index = -1,
+      length = entries == null ? 0 : entries.length;
+  this.clear();
+
+  while (++index < length) {
+    var entry = entries[index];
+    this.set(entry[0], entry[1]);
+  }
+} // Add methods to `MapCache`.
+
+
+MapCache.prototype.clear = _mapCacheClear;
+MapCache.prototype['delete'] = _mapCacheDelete;
+MapCache.prototype.get = _mapCacheGet;
+MapCache.prototype.has = _mapCacheHas;
+MapCache.prototype.set = _mapCacheSet;
+/* harmony default export */ var _MapCache = (MapCache);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_stackSet.js
+
+
+
+/** Used as the size to enable large array optimizations. */
+
+var LARGE_ARRAY_SIZE = 200;
+/**
+ * Sets the stack `key` to `value`.
+ *
+ * @private
+ * @name set
+ * @memberOf Stack
+ * @param {string} key The key of the value to set.
+ * @param {*} value The value to set.
+ * @returns {Object} Returns the stack cache instance.
+ */
+
+function stackSet(key, value) {
+  var data = this.__data__;
+
+  if (data instanceof _ListCache) {
+    var pairs = data.__data__;
+
+    if (!_Map || pairs.length < LARGE_ARRAY_SIZE - 1) {
+      pairs.push([key, value]);
+      this.size = ++data.size;
+      return this;
+    }
+
+    data = this.__data__ = new _MapCache(pairs);
+  }
+
+  data.set(key, value);
+  this.size = data.size;
+  return this;
+}
+
+/* harmony default export */ var _stackSet = (stackSet);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_Stack.js
+
+
+
+
+
+
+/**
+ * Creates a stack cache object to store key-value pairs.
+ *
+ * @private
+ * @constructor
+ * @param {Array} [entries] The key-value pairs to cache.
+ */
+
+function Stack(entries) {
+  var data = this.__data__ = new _ListCache(entries);
+  this.size = data.size;
+} // Add methods to `Stack`.
+
+
+Stack.prototype.clear = _stackClear;
+Stack.prototype['delete'] = _stackDelete;
+Stack.prototype.get = _stackGet;
+Stack.prototype.has = _stackHas;
+Stack.prototype.set = _stackSet;
+/* harmony default export */ var _Stack = (Stack);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_defineProperty.js
+
+
+var defineProperty = function () {
+  try {
+    var func = _getNative(Object, 'defineProperty');
+    func({}, '', {});
+    return func;
+  } catch (e) {}
+}();
+
+/* harmony default export */ var lodash_es_defineProperty = (defineProperty);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_baseAssignValue.js
+
+/**
+ * The base implementation of `assignValue` and `assignMergeValue` without
+ * value checks.
+ *
+ * @private
+ * @param {Object} object The object to modify.
+ * @param {string} key The key of the property to assign.
+ * @param {*} value The value to assign.
+ */
+
+function baseAssignValue(object, key, value) {
+  if (key == '__proto__' && lodash_es_defineProperty) {
+    lodash_es_defineProperty(object, key, {
+      'configurable': true,
+      'enumerable': true,
+      'value': value,
+      'writable': true
+    });
+  } else {
+    object[key] = value;
+  }
+}
+
+/* harmony default export */ var _baseAssignValue = (baseAssignValue);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_assignMergeValue.js
+
+
+/**
+ * This function is like `assignValue` except that it doesn't assign
+ * `undefined` values.
+ *
+ * @private
+ * @param {Object} object The object to modify.
+ * @param {string} key The key of the property to assign.
+ * @param {*} value The value to assign.
+ */
+
+function assignMergeValue(object, key, value) {
+  if (value !== undefined && !lodash_es_eq(object[key], value) || value === undefined && !(key in object)) {
+    _baseAssignValue(object, key, value);
+  }
+}
+
+/* harmony default export */ var _assignMergeValue = (assignMergeValue);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_createBaseFor.js
+/**
+ * Creates a base function for methods like `_.forIn` and `_.forOwn`.
+ *
+ * @private
+ * @param {boolean} [fromRight] Specify iterating from right to left.
+ * @returns {Function} Returns the new base function.
+ */
+function createBaseFor(fromRight) {
+  return function (object, iteratee, keysFunc) {
+    var index = -1,
+        iterable = Object(object),
+        props = keysFunc(object),
+        length = props.length;
+
+    while (length--) {
+      var key = props[fromRight ? length : ++index];
+
+      if (iteratee(iterable[key], key, iterable) === false) {
+        break;
+      }
+    }
+
+    return object;
+  };
+}
+
+/* harmony default export */ var _createBaseFor = (createBaseFor);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_baseFor.js
+
+/**
+ * The base implementation of `baseForOwn` which iterates over `object`
+ * properties returned by `keysFunc` and invokes `iteratee` for each property.
+ * Iteratee functions may exit iteration early by explicitly returning `false`.
+ *
+ * @private
+ * @param {Object} object The object to iterate over.
+ * @param {Function} iteratee The function invoked per iteration.
+ * @param {Function} keysFunc The function to get the keys of `object`.
+ * @returns {Object} Returns `object`.
+ */
+
+var baseFor = _createBaseFor();
+/* harmony default export */ var _baseFor = (baseFor);
+// EXTERNAL MODULE: ./node_modules/lodash-es/_cloneBuffer.js
+var _cloneBuffer = __webpack_require__(14);
+
+// CONCATENATED MODULE: ./node_modules/lodash-es/_Uint8Array.js
+
+/** Built-in value references. */
+
+var Uint8Array = _root["a" /* default */].Uint8Array;
+/* harmony default export */ var _Uint8Array = (Uint8Array);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_cloneArrayBuffer.js
+
+/**
+ * Creates a clone of `arrayBuffer`.
+ *
+ * @private
+ * @param {ArrayBuffer} arrayBuffer The array buffer to clone.
+ * @returns {ArrayBuffer} Returns the cloned array buffer.
+ */
+
+function cloneArrayBuffer(arrayBuffer) {
+  var result = new arrayBuffer.constructor(arrayBuffer.byteLength);
+  new _Uint8Array(result).set(new _Uint8Array(arrayBuffer));
+  return result;
+}
+
+/* harmony default export */ var _cloneArrayBuffer = (cloneArrayBuffer);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_cloneTypedArray.js
+
+/**
+ * Creates a clone of `typedArray`.
+ *
+ * @private
+ * @param {Object} typedArray The typed array to clone.
+ * @param {boolean} [isDeep] Specify a deep clone.
+ * @returns {Object} Returns the cloned typed array.
+ */
+
+function cloneTypedArray(typedArray, isDeep) {
+  var buffer = isDeep ? _cloneArrayBuffer(typedArray.buffer) : typedArray.buffer;
+  return new typedArray.constructor(buffer, typedArray.byteOffset, typedArray.length);
+}
+
+/* harmony default export */ var _cloneTypedArray = (cloneTypedArray);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_copyArray.js
+/**
+ * Copies the values of `source` to `array`.
+ *
+ * @private
+ * @param {Array} source The array to copy values from.
+ * @param {Array} [array=[]] The array to copy values to.
+ * @returns {Array} Returns `array`.
+ */
+function copyArray(source, array) {
+  var index = -1,
+      length = source.length;
+  array || (array = Array(length));
+
+  while (++index < length) {
+    array[index] = source[index];
+  }
+
+  return array;
+}
+
+/* harmony default export */ var _copyArray = (copyArray);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_baseCreate.js
+
+/** Built-in value references. */
+
+var objectCreate = Object.create;
+/**
+ * The base implementation of `_.create` without support for assigning
+ * properties to the created object.
+ *
+ * @private
+ * @param {Object} proto The object to inherit from.
+ * @returns {Object} Returns the new object.
+ */
+
+var baseCreate = function () {
+  function object() {}
+
+  return function (proto) {
+    if (!lodash_es_isObject(proto)) {
+      return {};
+    }
+
+    if (objectCreate) {
+      return objectCreate(proto);
+    }
+
+    object.prototype = proto;
+    var result = new object();
+    object.prototype = undefined;
+    return result;
+  };
+}();
+
+/* harmony default export */ var _baseCreate = (baseCreate);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_overArg.js
+/**
+ * Creates a unary function that invokes `func` with its argument transformed.
+ *
+ * @private
+ * @param {Function} func The function to wrap.
+ * @param {Function} transform The argument transform.
+ * @returns {Function} Returns the new function.
+ */
+function overArg(func, transform) {
+  return function (arg) {
+    return func(transform(arg));
+  };
+}
+
+/* harmony default export */ var _overArg = (overArg);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_getPrototype.js
+
+/** Built-in value references. */
+
+var getPrototype = _overArg(Object.getPrototypeOf, Object);
+/* harmony default export */ var _getPrototype = (getPrototype);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_isPrototype.js
+/** Used for built-in method references. */
+var _isPrototype_objectProto = Object.prototype;
+/**
+ * Checks if `value` is likely a prototype object.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a prototype, else `false`.
+ */
+
+function isPrototype(value) {
+  var Ctor = value && value.constructor,
+      proto = typeof Ctor == 'function' && Ctor.prototype || _isPrototype_objectProto;
+  return value === proto;
+}
+
+/* harmony default export */ var _isPrototype = (isPrototype);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_initCloneObject.js
+
+
+
+/**
+ * Initializes an object clone.
+ *
+ * @private
+ * @param {Object} object The object to clone.
+ * @returns {Object} Returns the initialized clone.
+ */
+
+function initCloneObject(object) {
+  return typeof object.constructor == 'function' && !_isPrototype(object) ? _baseCreate(_getPrototype(object)) : {};
+}
+
+/* harmony default export */ var _initCloneObject = (initCloneObject);
+// CONCATENATED MODULE: ./node_modules/lodash-es/isObjectLike.js
+
+
+/**
+ * Checks if `value` is object-like. A value is object-like if it's not `null`
+ * and has a `typeof` result of "object".
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
+ * @example
+ *
+ * _.isObjectLike({});
+ * // => true
+ *
+ * _.isObjectLike([1, 2, 3]);
+ * // => true
+ *
+ * _.isObjectLike(_.noop);
+ * // => false
+ *
+ * _.isObjectLike(null);
+ * // => false
+ */
+function isObjectLike(value) {
+  return value != null && Object(helpers_typeof["default"])(value) == 'object';
+}
+
+/* harmony default export */ var lodash_es_isObjectLike = (isObjectLike);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_baseIsArguments.js
+
+
+/** `Object#toString` result references. */
+
+var argsTag = '[object Arguments]';
+/**
+ * The base implementation of `_.isArguments`.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an `arguments` object,
+ */
+
+function baseIsArguments(value) {
+  return lodash_es_isObjectLike(value) && _baseGetTag(value) == argsTag;
+}
+
+/* harmony default export */ var _baseIsArguments = (baseIsArguments);
+// CONCATENATED MODULE: ./node_modules/lodash-es/isArguments.js
+
+
+/** Used for built-in method references. */
+
+var isArguments_objectProto = Object.prototype;
+/** Used to check objects for own properties. */
+
+var isArguments_hasOwnProperty = isArguments_objectProto.hasOwnProperty;
+/** Built-in value references. */
+
+var propertyIsEnumerable = isArguments_objectProto.propertyIsEnumerable;
+/**
+ * Checks if `value` is likely an `arguments` object.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an `arguments` object,
+ *  else `false`.
+ * @example
+ *
+ * _.isArguments(function() { return arguments; }());
+ * // => true
+ *
+ * _.isArguments([1, 2, 3]);
+ * // => false
+ */
+
+var isArguments = _baseIsArguments(function () {
+  return arguments;
+}()) ? _baseIsArguments : function (value) {
+  return lodash_es_isObjectLike(value) && isArguments_hasOwnProperty.call(value, 'callee') && !propertyIsEnumerable.call(value, 'callee');
+};
+/* harmony default export */ var lodash_es_isArguments = (isArguments);
+// CONCATENATED MODULE: ./node_modules/lodash-es/isArray.js
+/**
+ * Checks if `value` is classified as an `Array` object.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an array, else `false`.
+ * @example
+ *
+ * _.isArray([1, 2, 3]);
+ * // => true
+ *
+ * _.isArray(document.body.children);
+ * // => false
+ *
+ * _.isArray('abc');
+ * // => false
+ *
+ * _.isArray(_.noop);
+ * // => false
+ */
+var isArray = Array.isArray;
+/* harmony default export */ var lodash_es_isArray = (isArray);
+// CONCATENATED MODULE: ./node_modules/lodash-es/isLength.js
+/** Used as references for various `Number` constants. */
+var MAX_SAFE_INTEGER = 9007199254740991;
+/**
+ * Checks if `value` is a valid array-like length.
+ *
+ * **Note:** This method is loosely based on
+ * [`ToLength`](http://ecma-international.org/ecma-262/7.0/#sec-tolength).
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a valid length, else `false`.
+ * @example
+ *
+ * _.isLength(3);
+ * // => true
+ *
+ * _.isLength(Number.MIN_VALUE);
+ * // => false
+ *
+ * _.isLength(Infinity);
+ * // => false
+ *
+ * _.isLength('3');
+ * // => false
+ */
+
+function isLength(value) {
+  return typeof value == 'number' && value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
+}
+
+/* harmony default export */ var lodash_es_isLength = (isLength);
+// CONCATENATED MODULE: ./node_modules/lodash-es/isArrayLike.js
+
+
+/**
+ * Checks if `value` is array-like. A value is considered array-like if it's
+ * not a function and has a `value.length` that's an integer greater than or
+ * equal to `0` and less than or equal to `Number.MAX_SAFE_INTEGER`.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is array-like, else `false`.
+ * @example
+ *
+ * _.isArrayLike([1, 2, 3]);
+ * // => true
+ *
+ * _.isArrayLike(document.body.children);
+ * // => true
+ *
+ * _.isArrayLike('abc');
+ * // => true
+ *
+ * _.isArrayLike(_.noop);
+ * // => false
+ */
+
+function isArrayLike(value) {
+  return value != null && lodash_es_isLength(value.length) && !lodash_es_isFunction(value);
+}
+
+/* harmony default export */ var lodash_es_isArrayLike = (isArrayLike);
+// CONCATENATED MODULE: ./node_modules/lodash-es/isArrayLikeObject.js
+
+
+/**
+ * This method is like `_.isArrayLike` except that it also checks if `value`
+ * is an object.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an array-like object,
+ *  else `false`.
+ * @example
+ *
+ * _.isArrayLikeObject([1, 2, 3]);
+ * // => true
+ *
+ * _.isArrayLikeObject(document.body.children);
+ * // => true
+ *
+ * _.isArrayLikeObject('abc');
+ * // => false
+ *
+ * _.isArrayLikeObject(_.noop);
+ * // => false
+ */
+
+function isArrayLikeObject(value) {
+  return lodash_es_isObjectLike(value) && lodash_es_isArrayLike(value);
+}
+
+/* harmony default export */ var lodash_es_isArrayLikeObject = (isArrayLikeObject);
+// EXTERNAL MODULE: ./node_modules/lodash-es/isBuffer.js
+var isBuffer = __webpack_require__(11);
+
+// CONCATENATED MODULE: ./node_modules/lodash-es/isPlainObject.js
+
+
+
+/** `Object#toString` result references. */
+
+var objectTag = '[object Object]';
+/** Used for built-in method references. */
+
+var isPlainObject_funcProto = Function.prototype,
+    isPlainObject_objectProto = Object.prototype;
+/** Used to resolve the decompiled source of functions. */
+
+var isPlainObject_funcToString = isPlainObject_funcProto.toString;
+/** Used to check objects for own properties. */
+
+var isPlainObject_hasOwnProperty = isPlainObject_objectProto.hasOwnProperty;
+/** Used to infer the `Object` constructor. */
+
+var objectCtorString = isPlainObject_funcToString.call(Object);
+/**
+ * Checks if `value` is a plain object, that is, an object created by the
+ * `Object` constructor or one with a `[[Prototype]]` of `null`.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.8.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a plain object, else `false`.
+ * @example
+ *
+ * function Foo() {
+ *   this.a = 1;
+ * }
+ *
+ * _.isPlainObject(new Foo);
+ * // => false
+ *
+ * _.isPlainObject([1, 2, 3]);
+ * // => false
+ *
+ * _.isPlainObject({ 'x': 0, 'y': 0 });
+ * // => true
+ *
+ * _.isPlainObject(Object.create(null));
+ * // => true
+ */
+
+function isPlainObject(value) {
+  if (!lodash_es_isObjectLike(value) || _baseGetTag(value) != objectTag) {
+    return false;
+  }
+
+  var proto = _getPrototype(value);
+
+  if (proto === null) {
+    return true;
+  }
+
+  var Ctor = isPlainObject_hasOwnProperty.call(proto, 'constructor') && proto.constructor;
+  return typeof Ctor == 'function' && Ctor instanceof Ctor && isPlainObject_funcToString.call(Ctor) == objectCtorString;
+}
+
+/* harmony default export */ var lodash_es_isPlainObject = (isPlainObject);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_baseIsTypedArray.js
+
+
+
+/** `Object#toString` result references. */
+
+var _baseIsTypedArray_argsTag = '[object Arguments]',
+    arrayTag = '[object Array]',
+    boolTag = '[object Boolean]',
+    dateTag = '[object Date]',
+    errorTag = '[object Error]',
+    _baseIsTypedArray_funcTag = '[object Function]',
+    mapTag = '[object Map]',
+    numberTag = '[object Number]',
+    _baseIsTypedArray_objectTag = '[object Object]',
+    regexpTag = '[object RegExp]',
+    setTag = '[object Set]',
+    stringTag = '[object String]',
+    weakMapTag = '[object WeakMap]';
+var arrayBufferTag = '[object ArrayBuffer]',
+    dataViewTag = '[object DataView]',
+    float32Tag = '[object Float32Array]',
+    float64Tag = '[object Float64Array]',
+    int8Tag = '[object Int8Array]',
+    int16Tag = '[object Int16Array]',
+    int32Tag = '[object Int32Array]',
+    uint8Tag = '[object Uint8Array]',
+    uint8ClampedTag = '[object Uint8ClampedArray]',
+    uint16Tag = '[object Uint16Array]',
+    uint32Tag = '[object Uint32Array]';
+/** Used to identify `toStringTag` values of typed arrays. */
+
+var typedArrayTags = {};
+typedArrayTags[float32Tag] = typedArrayTags[float64Tag] = typedArrayTags[int8Tag] = typedArrayTags[int16Tag] = typedArrayTags[int32Tag] = typedArrayTags[uint8Tag] = typedArrayTags[uint8ClampedTag] = typedArrayTags[uint16Tag] = typedArrayTags[uint32Tag] = true;
+typedArrayTags[_baseIsTypedArray_argsTag] = typedArrayTags[arrayTag] = typedArrayTags[arrayBufferTag] = typedArrayTags[boolTag] = typedArrayTags[dataViewTag] = typedArrayTags[dateTag] = typedArrayTags[errorTag] = typedArrayTags[_baseIsTypedArray_funcTag] = typedArrayTags[mapTag] = typedArrayTags[numberTag] = typedArrayTags[_baseIsTypedArray_objectTag] = typedArrayTags[regexpTag] = typedArrayTags[setTag] = typedArrayTags[stringTag] = typedArrayTags[weakMapTag] = false;
+/**
+ * The base implementation of `_.isTypedArray` without Node.js optimizations.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a typed array, else `false`.
+ */
+
+function baseIsTypedArray(value) {
+  return lodash_es_isObjectLike(value) && lodash_es_isLength(value.length) && !!typedArrayTags[_baseGetTag(value)];
+}
+
+/* harmony default export */ var _baseIsTypedArray = (baseIsTypedArray);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_baseUnary.js
+/**
+ * The base implementation of `_.unary` without support for storing metadata.
+ *
+ * @private
+ * @param {Function} func The function to cap arguments for.
+ * @returns {Function} Returns the new capped function.
+ */
+function baseUnary(func) {
+  return function (value) {
+    return func(value);
+  };
+}
+
+/* harmony default export */ var _baseUnary = (baseUnary);
+// EXTERNAL MODULE: ./node_modules/lodash-es/_nodeUtil.js
+var _nodeUtil = __webpack_require__(12);
+
+// CONCATENATED MODULE: ./node_modules/lodash-es/isTypedArray.js
+
+
+
+/* Node.js helper references. */
+
+var nodeIsTypedArray = _nodeUtil["a" /* default */] && _nodeUtil["a" /* default */].isTypedArray;
+/**
+ * Checks if `value` is classified as a typed array.
+ *
+ * @static
+ * @memberOf _
+ * @since 3.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a typed array, else `false`.
+ * @example
+ *
+ * _.isTypedArray(new Uint8Array);
+ * // => true
+ *
+ * _.isTypedArray([]);
+ * // => false
+ */
+
+var isTypedArray = nodeIsTypedArray ? _baseUnary(nodeIsTypedArray) : _baseIsTypedArray;
+/* harmony default export */ var lodash_es_isTypedArray = (isTypedArray);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_safeGet.js
+/**
+ * Gets the value at `key`, unless `key` is "__proto__".
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @param {string} key The key of the property to get.
+ * @returns {*} Returns the property value.
+ */
+function safeGet(object, key) {
+  if (key == '__proto__') {
+    return;
+  }
+
+  return object[key];
+}
+
+/* harmony default export */ var _safeGet = (safeGet);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_assignValue.js
+
+
+/** Used for built-in method references. */
+
+var _assignValue_objectProto = Object.prototype;
+/** Used to check objects for own properties. */
+
+var _assignValue_hasOwnProperty = _assignValue_objectProto.hasOwnProperty;
+/**
+ * Assigns `value` to `key` of `object` if the existing value is not equivalent
+ * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+ * for equality comparisons.
+ *
+ * @private
+ * @param {Object} object The object to modify.
+ * @param {string} key The key of the property to assign.
+ * @param {*} value The value to assign.
+ */
+
+function assignValue(object, key, value) {
+  var objValue = object[key];
+
+  if (!(_assignValue_hasOwnProperty.call(object, key) && lodash_es_eq(objValue, value)) || value === undefined && !(key in object)) {
+    _baseAssignValue(object, key, value);
+  }
+}
+
+/* harmony default export */ var _assignValue = (assignValue);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_copyObject.js
+
+
+/**
+ * Copies properties of `source` to `object`.
+ *
+ * @private
+ * @param {Object} source The object to copy properties from.
+ * @param {Array} props The property identifiers to copy.
+ * @param {Object} [object={}] The object to copy properties to.
+ * @param {Function} [customizer] The function to customize copied values.
+ * @returns {Object} Returns `object`.
+ */
+
+function copyObject(source, props, object, customizer) {
+  var isNew = !object;
+  object || (object = {});
+  var index = -1,
+      length = props.length;
+
+  while (++index < length) {
+    var key = props[index];
+    var newValue = customizer ? customizer(object[key], source[key], key, object, source) : undefined;
+
+    if (newValue === undefined) {
+      newValue = source[key];
+    }
+
+    if (isNew) {
+      _baseAssignValue(object, key, newValue);
+    } else {
+      _assignValue(object, key, newValue);
+    }
+  }
+
+  return object;
+}
+
+/* harmony default export */ var _copyObject = (copyObject);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_baseTimes.js
+/**
+ * The base implementation of `_.times` without support for iteratee shorthands
+ * or max array length checks.
+ *
+ * @private
+ * @param {number} n The number of times to invoke `iteratee`.
+ * @param {Function} iteratee The function invoked per iteration.
+ * @returns {Array} Returns the array of results.
+ */
+function baseTimes(n, iteratee) {
+  var index = -1,
+      result = Array(n);
+
+  while (++index < n) {
+    result[index] = iteratee(index);
+  }
+
+  return result;
+}
+
+/* harmony default export */ var _baseTimes = (baseTimes);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_isIndex.js
+
+
+/** Used as references for various `Number` constants. */
+var _isIndex_MAX_SAFE_INTEGER = 9007199254740991;
+/** Used to detect unsigned integer values. */
+
+var reIsUint = /^(?:0|[1-9]\d*)$/;
+/**
+ * Checks if `value` is a valid array-like index.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @param {number} [length=MAX_SAFE_INTEGER] The upper bounds of a valid index.
+ * @returns {boolean} Returns `true` if `value` is a valid index, else `false`.
+ */
+
+function isIndex(value, length) {
+  var type = Object(helpers_typeof["default"])(value);
+
+  length = length == null ? _isIndex_MAX_SAFE_INTEGER : length;
+  return !!length && (type == 'number' || type != 'symbol' && reIsUint.test(value)) && value > -1 && value % 1 == 0 && value < length;
+}
+
+/* harmony default export */ var _isIndex = (isIndex);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_arrayLikeKeys.js
+
+
+
+
+
+
+/** Used for built-in method references. */
+
+var _arrayLikeKeys_objectProto = Object.prototype;
+/** Used to check objects for own properties. */
+
+var _arrayLikeKeys_hasOwnProperty = _arrayLikeKeys_objectProto.hasOwnProperty;
+/**
+ * Creates an array of the enumerable property names of the array-like `value`.
+ *
+ * @private
+ * @param {*} value The value to query.
+ * @param {boolean} inherited Specify returning inherited property names.
+ * @returns {Array} Returns the array of property names.
+ */
+
+function arrayLikeKeys(value, inherited) {
+  var isArr = lodash_es_isArray(value),
+      isArg = !isArr && lodash_es_isArguments(value),
+      isBuff = !isArr && !isArg && Object(isBuffer["a" /* default */])(value),
+      isType = !isArr && !isArg && !isBuff && lodash_es_isTypedArray(value),
+      skipIndexes = isArr || isArg || isBuff || isType,
+      result = skipIndexes ? _baseTimes(value.length, String) : [],
+      length = result.length;
+
+  for (var key in value) {
+    if ((inherited || _arrayLikeKeys_hasOwnProperty.call(value, key)) && !(skipIndexes && ( // Safari 9 has enumerable `arguments.length` in strict mode.
+    key == 'length' || // Node.js 0.10 has enumerable non-index properties on buffers.
+    isBuff && (key == 'offset' || key == 'parent') || // PhantomJS 2 has enumerable non-index properties on typed arrays.
+    isType && (key == 'buffer' || key == 'byteLength' || key == 'byteOffset') || // Skip index properties.
+    _isIndex(key, length)))) {
+      result.push(key);
+    }
+  }
+
+  return result;
+}
+
+/* harmony default export */ var _arrayLikeKeys = (arrayLikeKeys);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_nativeKeysIn.js
+/**
+ * This function is like
+ * [`Object.keys`](http://ecma-international.org/ecma-262/7.0/#sec-object.keys)
+ * except that it includes inherited enumerable properties.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @returns {Array} Returns the array of property names.
+ */
+function nativeKeysIn(object) {
+  var result = [];
+
+  if (object != null) {
+    for (var key in Object(object)) {
+      result.push(key);
+    }
+  }
+
+  return result;
+}
+
+/* harmony default export */ var _nativeKeysIn = (nativeKeysIn);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_baseKeysIn.js
+
+
+
+/** Used for built-in method references. */
+
+var _baseKeysIn_objectProto = Object.prototype;
+/** Used to check objects for own properties. */
+
+var _baseKeysIn_hasOwnProperty = _baseKeysIn_objectProto.hasOwnProperty;
+/**
+ * The base implementation of `_.keysIn` which doesn't treat sparse arrays as dense.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @returns {Array} Returns the array of property names.
+ */
+
+function baseKeysIn(object) {
+  if (!lodash_es_isObject(object)) {
+    return _nativeKeysIn(object);
+  }
+
+  var isProto = _isPrototype(object),
+      result = [];
+
+  for (var key in object) {
+    if (!(key == 'constructor' && (isProto || !_baseKeysIn_hasOwnProperty.call(object, key)))) {
+      result.push(key);
+    }
+  }
+
+  return result;
+}
+
+/* harmony default export */ var _baseKeysIn = (baseKeysIn);
+// CONCATENATED MODULE: ./node_modules/lodash-es/keysIn.js
+
+
+
+/**
+ * Creates an array of the own and inherited enumerable property names of `object`.
+ *
+ * **Note:** Non-object values are coerced to objects.
+ *
+ * @static
+ * @memberOf _
+ * @since 3.0.0
+ * @category Object
+ * @param {Object} object The object to query.
+ * @returns {Array} Returns the array of property names.
+ * @example
+ *
+ * function Foo() {
+ *   this.a = 1;
+ *   this.b = 2;
+ * }
+ *
+ * Foo.prototype.c = 3;
+ *
+ * _.keysIn(new Foo);
+ * // => ['a', 'b', 'c'] (iteration order is not guaranteed)
+ */
+
+function keysIn(object) {
+  return lodash_es_isArrayLike(object) ? _arrayLikeKeys(object, true) : _baseKeysIn(object);
+}
+
+/* harmony default export */ var lodash_es_keysIn = (keysIn);
+// CONCATENATED MODULE: ./node_modules/lodash-es/toPlainObject.js
+
+
+/**
+ * Converts `value` to a plain object flattening inherited enumerable string
+ * keyed properties of `value` to own properties of the plain object.
+ *
+ * @static
+ * @memberOf _
+ * @since 3.0.0
+ * @category Lang
+ * @param {*} value The value to convert.
+ * @returns {Object} Returns the converted plain object.
+ * @example
+ *
+ * function Foo() {
+ *   this.b = 2;
+ * }
+ *
+ * Foo.prototype.c = 3;
+ *
+ * _.assign({ 'a': 1 }, new Foo);
+ * // => { 'a': 1, 'b': 2 }
+ *
+ * _.assign({ 'a': 1 }, _.toPlainObject(new Foo));
+ * // => { 'a': 1, 'b': 2, 'c': 3 }
+ */
+
+function toPlainObject(value) {
+  return _copyObject(value, lodash_es_keysIn(value));
+}
+
+/* harmony default export */ var lodash_es_toPlainObject = (toPlainObject);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_baseMergeDeep.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * A specialized version of `baseMerge` for arrays and objects which performs
+ * deep merges and tracks traversed objects enabling objects with circular
+ * references to be merged.
+ *
+ * @private
+ * @param {Object} object The destination object.
+ * @param {Object} source The source object.
+ * @param {string} key The key of the value to merge.
+ * @param {number} srcIndex The index of `source`.
+ * @param {Function} mergeFunc The function to merge values.
+ * @param {Function} [customizer] The function to customize assigned values.
+ * @param {Object} [stack] Tracks traversed source values and their merged
+ *  counterparts.
+ */
+
+function baseMergeDeep(object, source, key, srcIndex, mergeFunc, customizer, stack) {
+  var objValue = _safeGet(object, key),
+      srcValue = _safeGet(source, key),
+      stacked = stack.get(srcValue);
+
+  if (stacked) {
+    _assignMergeValue(object, key, stacked);
+    return;
+  }
+
+  var newValue = customizer ? customizer(objValue, srcValue, key + '', object, source, stack) : undefined;
+  var isCommon = newValue === undefined;
+
+  if (isCommon) {
+    var isArr = lodash_es_isArray(srcValue),
+        isBuff = !isArr && Object(isBuffer["a" /* default */])(srcValue),
+        isTyped = !isArr && !isBuff && lodash_es_isTypedArray(srcValue);
+    newValue = srcValue;
+
+    if (isArr || isBuff || isTyped) {
+      if (lodash_es_isArray(objValue)) {
+        newValue = objValue;
+      } else if (lodash_es_isArrayLikeObject(objValue)) {
+        newValue = _copyArray(objValue);
+      } else if (isBuff) {
+        isCommon = false;
+        newValue = Object(_cloneBuffer["a" /* default */])(srcValue, true);
+      } else if (isTyped) {
+        isCommon = false;
+        newValue = _cloneTypedArray(srcValue, true);
+      } else {
+        newValue = [];
+      }
+    } else if (lodash_es_isPlainObject(srcValue) || lodash_es_isArguments(srcValue)) {
+      newValue = objValue;
+
+      if (lodash_es_isArguments(objValue)) {
+        newValue = lodash_es_toPlainObject(objValue);
+      } else if (!lodash_es_isObject(objValue) || lodash_es_isFunction(objValue)) {
+        newValue = _initCloneObject(srcValue);
+      }
+    } else {
+      isCommon = false;
+    }
+  }
+
+  if (isCommon) {
+    // Recursively merge objects and arrays (susceptible to call stack limits).
+    stack.set(srcValue, newValue);
+    mergeFunc(newValue, srcValue, srcIndex, customizer, stack);
+    stack['delete'](srcValue);
+  }
+
+  _assignMergeValue(object, key, newValue);
+}
+
+/* harmony default export */ var _baseMergeDeep = (baseMergeDeep);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_baseMerge.js
+
+
+
+
+
+
+
+/**
+ * The base implementation of `_.merge` without support for multiple sources.
+ *
+ * @private
+ * @param {Object} object The destination object.
+ * @param {Object} source The source object.
+ * @param {number} srcIndex The index of `source`.
+ * @param {Function} [customizer] The function to customize merged values.
+ * @param {Object} [stack] Tracks traversed source values and their merged
+ *  counterparts.
+ */
+
+function baseMerge(object, source, srcIndex, customizer, stack) {
+  if (object === source) {
+    return;
+  }
+
+  _baseFor(source, function (srcValue, key) {
+    if (lodash_es_isObject(srcValue)) {
+      stack || (stack = new _Stack());
+      _baseMergeDeep(object, source, key, srcIndex, baseMerge, customizer, stack);
+    } else {
+      var newValue = customizer ? customizer(_safeGet(object, key), srcValue, key + '', object, source, stack) : undefined;
+
+      if (newValue === undefined) {
+        newValue = srcValue;
+      }
+
+      _assignMergeValue(object, key, newValue);
+    }
+  }, lodash_es_keysIn);
+}
+
+/* harmony default export */ var _baseMerge = (baseMerge);
+// CONCATENATED MODULE: ./node_modules/lodash-es/identity.js
+/**
+ * This method returns the first argument it receives.
+ *
+ * @static
+ * @since 0.1.0
+ * @memberOf _
+ * @category Util
+ * @param {*} value Any value.
+ * @returns {*} Returns `value`.
+ * @example
+ *
+ * var object = { 'a': 1 };
+ *
+ * console.log(_.identity(object) === object);
+ * // => true
+ */
+function identity(value) {
+  return value;
+}
+
+/* harmony default export */ var lodash_es_identity = (identity);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_apply.js
+/**
+ * A faster alternative to `Function#apply`, this function invokes `func`
+ * with the `this` binding of `thisArg` and the arguments of `args`.
+ *
+ * @private
+ * @param {Function} func The function to invoke.
+ * @param {*} thisArg The `this` binding of `func`.
+ * @param {Array} args The arguments to invoke `func` with.
+ * @returns {*} Returns the result of `func`.
+ */
+function apply(func, thisArg, args) {
+  switch (args.length) {
+    case 0:
+      return func.call(thisArg);
+
+    case 1:
+      return func.call(thisArg, args[0]);
+
+    case 2:
+      return func.call(thisArg, args[0], args[1]);
+
+    case 3:
+      return func.call(thisArg, args[0], args[1], args[2]);
+  }
+
+  return func.apply(thisArg, args);
+}
+
+/* harmony default export */ var _apply = (apply);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_overRest.js
+
+/* Built-in method references for those with the same name as other `lodash` methods. */
+
+var nativeMax = Math.max;
+/**
+ * A specialized version of `baseRest` which transforms the rest array.
+ *
+ * @private
+ * @param {Function} func The function to apply a rest parameter to.
+ * @param {number} [start=func.length-1] The start position of the rest parameter.
+ * @param {Function} transform The rest array transform.
+ * @returns {Function} Returns the new function.
+ */
+
+function overRest(func, start, transform) {
+  start = nativeMax(start === undefined ? func.length - 1 : start, 0);
+  return function () {
+    var args = arguments,
+        index = -1,
+        length = nativeMax(args.length - start, 0),
+        array = Array(length);
+
+    while (++index < length) {
+      array[index] = args[start + index];
+    }
+
+    index = -1;
+    var otherArgs = Array(start + 1);
+
+    while (++index < start) {
+      otherArgs[index] = args[index];
+    }
+
+    otherArgs[start] = transform(array);
+    return _apply(func, this, otherArgs);
+  };
+}
+
+/* harmony default export */ var _overRest = (overRest);
+// CONCATENATED MODULE: ./node_modules/lodash-es/constant.js
+/**
+ * Creates a function that returns `value`.
+ *
+ * @static
+ * @memberOf _
+ * @since 2.4.0
+ * @category Util
+ * @param {*} value The value to return from the new function.
+ * @returns {Function} Returns the new constant function.
+ * @example
+ *
+ * var objects = _.times(2, _.constant({ 'a': 1 }));
+ *
+ * console.log(objects);
+ * // => [{ 'a': 1 }, { 'a': 1 }]
+ *
+ * console.log(objects[0] === objects[1]);
+ * // => true
+ */
+function constant(value) {
+  return function () {
+    return value;
+  };
+}
+
+/* harmony default export */ var lodash_es_constant = (constant);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_baseSetToString.js
+
+
+
+/**
+ * The base implementation of `setToString` without support for hot loop shorting.
+ *
+ * @private
+ * @param {Function} func The function to modify.
+ * @param {Function} string The `toString` result.
+ * @returns {Function} Returns `func`.
+ */
+
+var baseSetToString = !lodash_es_defineProperty ? lodash_es_identity : function (func, string) {
+  return lodash_es_defineProperty(func, 'toString', {
+    'configurable': true,
+    'enumerable': false,
+    'value': lodash_es_constant(string),
+    'writable': true
+  });
+};
+/* harmony default export */ var _baseSetToString = (baseSetToString);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_shortOut.js
+/** Used to detect hot functions by number of calls within a span of milliseconds. */
+var HOT_COUNT = 800,
+    HOT_SPAN = 16;
+/* Built-in method references for those with the same name as other `lodash` methods. */
+
+var nativeNow = Date.now;
+/**
+ * Creates a function that'll short out and invoke `identity` instead
+ * of `func` when it's called `HOT_COUNT` or more times in `HOT_SPAN`
+ * milliseconds.
+ *
+ * @private
+ * @param {Function} func The function to restrict.
+ * @returns {Function} Returns the new shortable function.
+ */
+
+function shortOut(func) {
+  var count = 0,
+      lastCalled = 0;
+  return function () {
+    var stamp = nativeNow(),
+        remaining = HOT_SPAN - (stamp - lastCalled);
+    lastCalled = stamp;
+
+    if (remaining > 0) {
+      if (++count >= HOT_COUNT) {
+        return arguments[0];
+      }
+    } else {
+      count = 0;
+    }
+
+    return func.apply(undefined, arguments);
+  };
+}
+
+/* harmony default export */ var _shortOut = (shortOut);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_setToString.js
+
+
+/**
+ * Sets the `toString` method of `func` to return `string`.
+ *
+ * @private
+ * @param {Function} func The function to modify.
+ * @param {Function} string The `toString` result.
+ * @returns {Function} Returns `func`.
+ */
+
+var setToString = _shortOut(_baseSetToString);
+/* harmony default export */ var _setToString = (setToString);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_baseRest.js
+
+
+
+/**
+ * The base implementation of `_.rest` which doesn't validate or coerce arguments.
+ *
+ * @private
+ * @param {Function} func The function to apply a rest parameter to.
+ * @param {number} [start=func.length-1] The start position of the rest parameter.
+ * @returns {Function} Returns the new function.
+ */
+
+function baseRest(func, start) {
+  return _setToString(_overRest(func, start, lodash_es_identity), func + '');
+}
+
+/* harmony default export */ var _baseRest = (baseRest);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_isIterateeCall.js
+
+
+
+
+
+/**
+ * Checks if the given arguments are from an iteratee call.
+ *
+ * @private
+ * @param {*} value The potential iteratee value argument.
+ * @param {*} index The potential iteratee index or key argument.
+ * @param {*} object The potential iteratee object argument.
+ * @returns {boolean} Returns `true` if the arguments are from an iteratee call,
+ *  else `false`.
+ */
+
+function isIterateeCall(value, index, object) {
+  if (!lodash_es_isObject(object)) {
+    return false;
+  }
+
+  var type = Object(helpers_typeof["default"])(index);
+
+  if (type == 'number' ? lodash_es_isArrayLike(object) && _isIndex(index, object.length) : type == 'string' && index in object) {
+    return lodash_es_eq(object[index], value);
+  }
+
+  return false;
+}
+
+/* harmony default export */ var _isIterateeCall = (isIterateeCall);
+// CONCATENATED MODULE: ./node_modules/lodash-es/_createAssigner.js
+
+
+/**
+ * Creates a function like `_.assign`.
+ *
+ * @private
+ * @param {Function} assigner The function to assign values.
+ * @returns {Function} Returns the new assigner function.
+ */
+
+function createAssigner(assigner) {
+  return _baseRest(function (object, sources) {
+    var index = -1,
+        length = sources.length,
+        customizer = length > 1 ? sources[length - 1] : undefined,
+        guard = length > 2 ? sources[2] : undefined;
+    customizer = assigner.length > 3 && typeof customizer == 'function' ? (length--, customizer) : undefined;
+
+    if (guard && _isIterateeCall(sources[0], sources[1], guard)) {
+      customizer = length < 3 ? undefined : customizer;
+      length = 1;
+    }
+
+    object = Object(object);
+
+    while (++index < length) {
+      var source = sources[index];
+
+      if (source) {
+        assigner(object, source, index, customizer);
+      }
+    }
+
+    return object;
+  });
+}
+
+/* harmony default export */ var _createAssigner = (createAssigner);
+// CONCATENATED MODULE: ./node_modules/lodash-es/merge.js
+
+
+/**
+ * This method is like `_.assign` except that it recursively merges own and
+ * inherited enumerable string keyed properties of source objects into the
+ * destination object. Source properties that resolve to `undefined` are
+ * skipped if a destination value exists. Array and plain object properties
+ * are merged recursively. Other objects and value types are overridden by
+ * assignment. Source objects are applied from left to right. Subsequent
+ * sources overwrite property assignments of previous sources.
+ *
+ * **Note:** This method mutates `object`.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.5.0
+ * @category Object
+ * @param {Object} object The destination object.
+ * @param {...Object} [sources] The source objects.
+ * @returns {Object} Returns `object`.
+ * @example
+ *
+ * var object = {
+ *   'a': [{ 'b': 2 }, { 'd': 4 }]
+ * };
+ *
+ * var other = {
+ *   'a': [{ 'c': 3 }, { 'e': 5 }]
+ * };
+ *
+ * _.merge(object, other);
+ * // => { 'a': [{ 'b': 2, 'c': 3 }, { 'd': 4, 'e': 5 }] }
+ */
+
+var merge = _createAssigner(function (object, source, srcIndex) {
+  _baseMerge(object, source, srcIndex);
+});
+/* harmony default export */ var lodash_es_merge = (merge);
+// CONCATENATED MODULE: ./node_modules/@vuex-orm/core/dist/vuex-orm.esm.js
+
+
+if (!String.prototype.startsWith) {
+  String.prototype.startsWith = function (search, pos) {
+    return this.substr(!pos || pos < 0 ? 0 : +pos, search.length) === search;
+  };
+}
+
+if (!Array.prototype.includes) {
+  Array.prototype.includes = function (searchElement) {
+    var args = [];
+
+    for (var _i = 1; _i < arguments.length; _i++) {
+      args[_i - 1] = arguments[_i];
+    }
+
+    var O = Object(this);
+    var len = parseInt(O.length, 10) || 0;
+
+    if (len === 0) {
+      return false;
+    }
+
+    var n = args[1] || 0;
+    var k;
+
+    if (n >= 0) {
+      k = n;
+    } else {
+      k = len + n;
+
+      if (k < 0) {
+        k = 0;
+      }
+    }
+
+    var currentElement;
+
+    while (k < len) {
+      currentElement = O[k];
+
+      if (searchElement === currentElement || searchElement !== searchElement && currentElement !== currentElement) {
+        return true;
+      }
+
+      k++;
+    }
+
+    return false;
+  };
+}
+
+var Container =
+/** @class */
+function () {
+  function Container() {}
+  /**
+   * Register the database.
+   */
+
+
+  Container.register = function (database) {
+    this.database = database;
+  };
+
+  return Container;
+}();
+
+var vuex_orm_esm_install = function install(database, options) {
+  if (options === void 0) {
+    options = {};
+  }
+
+  var namespace = options.namespace || 'entities';
+  return function (store) {
+    Container.register(database);
+    database.start(store, namespace);
+  };
+};
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation. All rights reserved.
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use
+this file except in compliance with the License. You may obtain a copy of the
+License at http://www.apache.org/licenses/LICENSE-2.0
+
+THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED
+WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE,
+MERCHANTABLITY OR NON-INFRINGEMENT.
+
+See the Apache Version 2.0 License for specific language governing permissions
+and limitations under the License.
+***************************************************************************** */
+
+/* global Reflect, Promise */
+
+
+var extendStatics = Object.setPrototypeOf || {
+  __proto__: []
+} instanceof Array && function (d, b) {
+  d.__proto__ = b;
+} || function (d, b) {
+  for (var p in b) {
+    if (b.hasOwnProperty(p)) d[p] = b[p];
+  }
+};
+
+function __extends(d, b) {
+  extendStatics(d, b);
+
+  function __() {
+    this.constructor = d;
+  }
+
+  d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+}
+
+var __assign = Object.assign || function __assign(t) {
+  for (var s, i = 1, n = arguments.length; i < n; i++) {
+    s = arguments[i];
+
+    for (var p in s) {
+      if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+    }
+  }
+
+  return t;
+};
+
+function __awaiter(thisArg, _arguments, P, generator) {
+  return new (P || (P = Promise))(function (resolve, reject) {
+    function fulfilled(value) {
+      try {
+        step(generator.next(value));
+      } catch (e) {
+        reject(e);
+      }
+    }
+
+    function rejected(value) {
+      try {
+        step(generator["throw"](value));
+      } catch (e) {
+        reject(e);
+      }
+    }
+
+    function step(result) {
+      result.done ? resolve(result.value) : new P(function (resolve) {
+        resolve(result.value);
+      }).then(fulfilled, rejected);
+    }
+
+    step((generator = generator.apply(thisArg, _arguments || [])).next());
+  });
+}
+
+function __generator(thisArg, body) {
+  var _ = {
+    label: 0,
+    sent: function sent() {
+      if (t[0] & 1) throw t[1];
+      return t[1];
+    },
+    trys: [],
+    ops: []
+  },
+      f,
+      y,
+      t,
+      g;
+  return g = {
+    next: verb(0),
+    "throw": verb(1),
+    "return": verb(2)
+  }, typeof Symbol === "function" && (g[Symbol.iterator] = function () {
+    return this;
+  }), g;
+
+  function verb(n) {
+    return function (v) {
+      return step([n, v]);
+    };
+  }
+
+  function step(op) {
+    if (f) throw new TypeError("Generator is already executing.");
+
+    while (_) {
+      try {
+        if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
+        if (y = 0, t) op = [0, t.value];
+
+        switch (op[0]) {
+          case 0:
+          case 1:
+            t = op;
+            break;
+
+          case 4:
+            _.label++;
+            return {
+              value: op[1],
+              done: false
+            };
+
+          case 5:
+            _.label++;
+            y = op[1];
+            op = [0];
+            continue;
+
+          case 7:
+            op = _.ops.pop();
+
+            _.trys.pop();
+
+            continue;
+
+          default:
+            if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) {
+              _ = 0;
+              continue;
+            }
+
+            if (op[0] === 3 && (!t || op[1] > t[0] && op[1] < t[3])) {
+              _.label = op[1];
+              break;
+            }
+
+            if (op[0] === 6 && _.label < t[1]) {
+              _.label = t[1];
+              t = op;
+              break;
+            }
+
+            if (t && _.label < t[2]) {
+              _.label = t[2];
+
+              _.ops.push(op);
+
+              break;
+            }
+
+            if (t[2]) _.ops.pop();
+
+            _.trys.pop();
+
+            continue;
+        }
+
+        op = body.call(thisArg, _);
+      } catch (e) {
+        op = [6, e];
+        y = 0;
+      } finally {
+        f = t = 0;
+      }
+    }
+
+    if (op[0] & 5) throw op[1];
+    return {
+      value: op[0] ? op[1] : void 0,
+      done: true
+    };
+  }
+}
+/**
+ * Check if the given array or object is empty.
+ */
+
+
+function isEmpty(data) {
+  if (Array.isArray(data)) {
+    return data.length === 0;
+  }
+
+  return Object.keys(data).length === 0;
+}
+/**
+ * Iterates over own enumerable string keyed properties of an object and
+ * invokes `iteratee` for each property.
+ */
+
+
+function forOwn(object, iteratee) {
+  Object.keys(object).forEach(function (key) {
+    return iteratee(object[key], key, object);
+  });
+}
+/**
+ * Create an array from the object.
+ */
+
+
+function vuex_orm_esm_map(object, iteratee) {
+  return Object.keys(object).map(function (key) {
+    return iteratee(object[key], key, object);
+  });
+}
+/**
+ * Creates an object with the same keys as object and values generated by
+ * running each own enumerable string keyed property of object thru
+ * iteratee. The iteratee is invoked with three arguments:
+ * (value, key, object).
+ */
+
+
+function mapValues(object, iteratee) {
+  var newObject = Object.assign({}, object);
+  return Object.keys(object).reduce(function (records, key) {
+    records[key] = iteratee(object[key], key, object);
+    return records;
+  }, newObject);
+}
+/**
+ * Creates an object composed of the object properties predicate returns
+ * truthy for. The predicate is invoked with two arguments: (value, key).
+ */
+
+
+function pickBy(object, predicate) {
+  return Object.keys(object).reduce(function (records, key) {
+    var value = object[key];
+
+    if (predicate(value, key)) {
+      records[key] = value;
+    }
+
+    return records;
+  }, {});
+}
+/**
+ * Creates an array of elements, sorted in specified order by the results
+ * of running each element in a collection thru each iteratee.
+ */
+
+
+function orderBy(collection, keys, directions) {
+  var index = -1;
+  var result = collection.map(function (value) {
+    var criteria = keys.map(function (key) {
+      return value[key];
+    });
+    return {
+      criteria: criteria,
+      index: ++index,
+      value: value
+    };
+  });
+  return baseSortBy(result, function (object, other) {
+    return compareMultiple(object, other, directions);
+  });
+}
+/**
+ * Creates an object composed of keys generated from the results of running
+ * each element of collection thru iteratee.
+ */
+
+
+function groupBy(collection, iteratee) {
+  return collection.reduce(function (records, record) {
+    var key = iteratee(record);
+
+    if (records[key] === undefined) {
+      records[key] = [];
+    }
+
+    records[key].push(record);
+    return records;
+  }, {});
+}
+/**
+ * The base implementation of `_.sortBy` which uses `comparer` to define the
+ * sort order of `array` and replaces criteria objects with their
+ * corresponding values.
+ */
+
+
+function baseSortBy(array, comparer) {
+  var length = array.length;
+  array.sort(comparer);
+
+  while (length--) {
+    array[length] = array[length].value;
+  }
+
+  return array;
+}
+/**
+ * Used by `orderBy` to compare multiple properties of a value to another
+ * and stable sort them.
+ *
+ * If `orders` is unspecified, all values are sorted in ascending order.
+ * Otherwise, specify an order of "desc" for descending or "asc" for
+ * ascending sort order of corresponding values.
+ */
+
+
+function compareMultiple(object, other, orders) {
+  var objCriteria = object.criteria;
+  var othCriteria = other.criteria;
+  var length = objCriteria.length;
+  var ordersLength = orders.length;
+  var index = -1;
+
+  while (++index < length) {
+    var result = compareAscending(objCriteria[index], othCriteria[index]);
+
+    if (result) {
+      if (index >= ordersLength) {
+        return result;
+      }
+
+      var order = orders[index];
+      return result * (order === 'desc' ? -1 : 1);
+    }
+  }
+
+  return object.index - other.index;
+}
+/**
+ * Compares values to sort them in ascending order.
+ */
+
+
+function compareAscending(value, other) {
+  if (value !== other) {
+    if (value > other) {
+      return 1;
+    }
+
+    if (value < other) {
+      return -1;
+    }
+  }
+
+  return 0;
+}
+
+var Utils = {
+  isEmpty: isEmpty,
+  forOwn: forOwn,
+  groupBy: groupBy,
+  map: vuex_orm_esm_map,
+  mapValues: mapValues,
+  orderBy: orderBy,
+  pickBy: pickBy
+};
+
+var Attribute =
+/** @class */
+function () {
+  /**
+   * Create a new attribute instance.
+   */
+  function Attribute(model) {
+    this.model = model;
+  }
+
+  return Attribute;
+}();
+
+var Type =
+/** @class */
+function (_super) {
+  __extends(Type, _super);
+  /**
+   * Create a new type instance.
+   */
+
+
+  function Type(model, mutator) {
+    var _this = _super.call(this, model)
+    /* istanbul ignore next */
+    || this;
+
+    _this.mutator = mutator;
+    return _this;
+  }
+  /**
+   * Mutate the given value by mutator.
+   */
+
+
+  Type.prototype.mutate = function (value, key) {
+    var mutator = this.mutator || this.model.mutators()[key];
+    return mutator ? mutator(value) : value;
+  };
+
+  return Type;
+}(Attribute);
+
+var Attr =
+/** @class */
+function (_super) {
+  __extends(Attr, _super);
+  /**
+   * Create a new attr instance.
+   */
+
+
+  function Attr(model, value, mutator) {
+    var _this = _super.call(this, model, mutator)
+    /* istanbul ignore next */
+    || this;
+
+    _this.value = value;
+    return _this;
+  }
+  /**
+   * Transform given data to the appropriate value. This method will be called
+   * during data normalization to fix field that has an incorrect value,
+   * or add a missing field with the appropriate default value.
+   */
+
+
+  Attr.prototype.fill = function (value) {
+    return value !== undefined ? value : this.value;
+  };
+  /**
+   * Make value to be set to model property. This method is used when
+   * instantiating a model or creating a plain object from a model.
+   */
+
+
+  Attr.prototype.make = function (value, _parent, key, _plain) {
+    return this.mutate(this.fill(value), key);
+  };
+
+  return Attr;
+}(Type);
+
+var Increment =
+/** @class */
+function (_super) {
+  __extends(Increment, _super);
+  /**
+   * Create a new increment instance.
+   */
+
+
+  function Increment(model) {
+    var _this = _super.call(this, model)
+    /* istanbul ignore next */
+    || this;
+    /**
+     * The initial count to start incrementing.
+     */
+
+
+    _this.value = 1;
+    return _this;
+  }
+  /**
+   * Transform given data to the appropriate value. This method will be called
+   * during data normalization to fix field that has an incorrect value,
+   * or add a missing field with the appropriate default value.
+   */
+
+
+  Increment.prototype.fill = function (value) {
+    return value;
+  };
+  /**
+   * Make value to be set to model property. This method is used when
+   * instantiating a model or creating a plain object from a model.
+   */
+
+
+  Increment.prototype.make = function (value, _parent, _key, _plain) {
+    return typeof value === 'number' ? value : null;
+  };
+
+  return Increment;
+}(Type);
+
+var String$1 =
+/** @class */
+function (_super) {
+  __extends(String, _super);
+  /**
+   * Create a new string instance.
+   */
+
+
+  function String(model, value, mutator) {
+    var _this = _super.call(this, model, mutator)
+    /* istanbul ignore next */
+    || this;
+
+    _this.value = value;
+    return _this;
+  }
+  /**
+   * Transform given data to the appropriate value. This method will be called
+   * during data normalization to fix field that has an incorrect value,
+   * or add a missing field with the appropriate default value.
+   */
+
+
+  String.prototype.fill = function (value) {
+    if (value === undefined) {
+      return this.value;
+    }
+
+    if (typeof value === 'string') {
+      return value;
+    }
+
+    return value + '';
+  };
+  /**
+   * Make value to be set to model property. This method is used when
+   * instantiating a model or creating a plain object from a model.
+   */
+
+
+  String.prototype.make = function (value, _parent, key, _plain) {
+    return this.mutate(this.fill(value), key);
+  };
+
+  return String;
+}(Type);
+
+var vuex_orm_esm_Number =
+/** @class */
+function (_super) {
+  __extends(Number, _super);
+  /**
+   * Create a new number instance.
+   */
+
+
+  function Number(model, value, mutator) {
+    var _this = _super.call(this, model, mutator)
+    /* istanbul ignore next */
+    || this;
+
+    _this.value = value;
+    return _this;
+  }
+  /**
+   * Transform given data to the appropriate value. This method will be called
+   * during data normalization to fix field that has an incorrect value,
+   * or add a missing field with the appropriate default value.
+   */
+
+
+  Number.prototype.fill = function (value) {
+    if (value === undefined) {
+      return this.value;
+    }
+
+    if (typeof value === 'number') {
+      return value;
+    }
+
+    if (typeof value === 'string') {
+      return parseFloat(value);
+    }
+
+    if (typeof value === 'boolean') {
+      return value ? 1 : 0;
+    }
+
+    return 0;
+  };
+  /**
+   * Make value to be set to model property. This method is used when
+   * instantiating a model or creating a plain object from a model.
+   */
+
+
+  Number.prototype.make = function (value, _parent, key, _plain) {
+    return this.mutate(this.fill(value), key);
+  };
+
+  return Number;
+}(Type);
+
+var Boolean =
+/** @class */
+function (_super) {
+  __extends(Boolean, _super);
+  /**
+   * Create a new number instance.
+   */
+
+
+  function Boolean(model, value, mutator) {
+    var _this = _super.call(this, model, mutator)
+    /* istanbul ignore next */
+    || this;
+
+    _this.value = value;
+    return _this;
+  }
+  /**
+   * Transform given data to the appropriate value. This method will be called
+   * during data normalization to fix field that has an incorrect value,
+   * or add a missing field with the appropriate default value.
+   */
+
+
+  Boolean.prototype.fill = function (value) {
+    if (value === undefined) {
+      return this.value;
+    }
+
+    if (typeof value === 'boolean') {
+      return value;
+    }
+
+    if (typeof value === 'string') {
+      if (value.length === 0) {
+        return false;
+      }
+
+      var int = parseInt(value, 0);
+      return isNaN(int) ? true : !!int;
+    }
+
+    if (typeof value === 'number') {
+      return !!value;
+    }
+
+    return false;
+  };
+  /**
+   * Make value to be set to model property. This method is used when
+   * instantiating a model or creating a plain object from a model.
+   */
+
+
+  Boolean.prototype.make = function (value, _parent, key, _plain) {
+    return this.mutate(this.fill(value), key);
+  };
+
+  return Boolean;
+}(Type);
+
+var vuex_orm_esm_Relation =
+/** @class */
+function (_super) {
+  __extends(Relation, _super);
+
+  function Relation() {
+    return _super !== null && _super.apply(this, arguments) || this;
+  }
+  /**
+   * Fill given value for the single item relationship such as
+   * `hasOne` and `belongsTo`.
+   */
+
+
+  Relation.prototype.fillOne = function (value) {
+    if (value === undefined) {
+      return null;
+    }
+
+    if (Object(helpers_typeof["default"])(value) === 'object') {
+      return null;
+    }
+
+    return value;
+  };
+  /**
+   * Fill given value for the multi-item relationship such as
+   * `hasMany` and `belongsToMany`.
+   */
+
+
+  Relation.prototype.fillMany = function (value) {
+    return Array.isArray(value) ? value : [];
+  };
+  /**
+   * Get relation query instance with constraint attached.
+   */
+
+
+  Relation.prototype.getRelation = function (query, name) {
+    var relation = query.newPlainQuery(name);
+    this.addEagerConstraint(query, relation);
+    return relation;
+  };
+  /**
+   * Get specified keys from the given collection.
+   */
+
+
+  Relation.prototype.getKeys = function (collection, key) {
+    return collection.map(function (item) {
+      return item[key];
+    });
+  };
+  /**
+   * Add eager load constraint to the query.
+   */
+
+
+  Relation.prototype.addEagerConstraint = function (query, relation) {
+    for (var name_1 in query.load) {
+      query.load[name_1].forEach(function (constraint) {
+        constraint(relation);
+      });
+    }
+  };
+  /**
+   * Create a new indexed map for the single relation by specified key.
+   */
+
+
+  Relation.prototype.mapSingleRelations = function (collection, key) {
+    return collection.reduce(function (records, record) {
+      var id = record[key];
+      records[id] = record;
+      return records;
+    }, {});
+  };
+  /**
+   * Create a new indexed map for the many relation by specified key.
+   */
+
+
+  Relation.prototype.mapManyRelations = function (collection, key) {
+    return collection.reduce(function (records, record) {
+      var id = record[key];
+
+      if (!records[id]) {
+        records[id] = [];
+      }
+
+      records[id].push(record);
+      return records;
+    }, {});
+  };
+  /**
+   * Check if the given value is a single relation, which is the Object.
+   */
+
+
+  Relation.prototype.isOneRelation = function (record) {
+    if (!Array.isArray(record) && record !== null && Object(helpers_typeof["default"])(record) === 'object') {
+      return true;
+    }
+
+    return false;
+  };
+
+  return Relation;
+}(Attribute);
+
+var HasOne =
+/** @class */
+function (_super) {
+  __extends(HasOne, _super);
+  /**
+   * Create a new has one instance.
+   */
+
+
+  function HasOne(model, related, foreignKey, localKey) {
+    var _this = _super.call(this, model)
+    /* istanbul ignore next */
+    || this;
+
+    _this.related = _this.model.relation(related);
+    _this.foreignKey = foreignKey;
+    _this.localKey = localKey;
+    return _this;
+  }
+  /**
+   * Define the normalizr schema for the relationship.
+   */
+
+
+  HasOne.prototype.define = function (schema) {
+    return schema.one(this.related);
+  };
+  /**
+   * Attach the relational key to the related data. For example,
+   * when User has one Phone, it will attach value to the
+   * `user_id` field of Phone record.
+   */
+
+
+  HasOne.prototype.attach = function (key, record, data) {
+    // Get related record.
+    var related = data[this.related.entity]; // If there's no related record, there's nothing we can do so return here.
+
+    if (!related || !related[key]) {
+      return;
+    } // If there is a related record, check if the related record already has
+    // proper foreign key value. If it has, that means the user has provided
+    // the foreign key themselves so leave it alone and do nothing.
+
+
+    if (related[key][this.foreignKey] !== undefined) {
+      return;
+    } // Check if the record has local key set. If not, set the local key to be
+    // the id value. This happens if the user defines the custom local key
+    // and didn't include it in the data being normalized.
+
+
+    if (!record[this.localKey]) {
+      record[this.localKey] = record.$id;
+    } // Finally, set the foreign key of the related record to be the local
+    // key of this record.
+
+
+    related[key][this.foreignKey] = record[this.localKey];
+  };
+  /**
+   * Validate the given value to be a valid value for the relationship.
+   */
+
+
+  HasOne.prototype.fill = function (value) {
+    return this.fillOne(value);
+  };
+  /**
+   * Make value to be set to model property. This method is used when
+   * instantiating a model or creating a plain object from a model.
+   */
+
+
+  HasOne.prototype.make = function (value, _parent, _key, plain) {
+    if (plain === void 0) {
+      plain = false;
+    }
+
+    if (!this.isOneRelation(value)) {
+      return null;
+    }
+
+    return this.related.make(value, plain);
+  };
+  /**
+   * Load the has one relationship for the collection.
+   */
+
+
+  HasOne.prototype.load = function (query, collection, key) {
+    var _this = this;
+
+    var relation = this.getRelation(query, this.related.entity);
+    relation.where(this.foreignKey, this.getKeys(collection, this.localKey));
+    var relations = this.mapSingleRelations(relation.get(), this.foreignKey);
+    collection.forEach(function (item) {
+      var related = relations[item[_this.localKey]];
+      item[key] = related || null;
+    });
+  };
+
+  return HasOne;
+}(vuex_orm_esm_Relation);
+
+var BelongsTo =
+/** @class */
+function (_super) {
+  __extends(BelongsTo, _super);
+  /**
+   * Create a new belongs to instance.
+   */
+
+
+  function BelongsTo(model, parent, foreignKey, ownerKey) {
+    var _this = _super.call(this, model)
+    /* istanbul ignore next */
+    || this;
+
+    _this.parent = _this.model.relation(parent);
+    _this.foreignKey = foreignKey;
+    _this.ownerKey = ownerKey;
+    return _this;
+  }
+  /**
+   * Define the normalizr schema for the relationship.
+   */
+
+
+  BelongsTo.prototype.define = function (schema) {
+    return schema.one(this.parent);
+  };
+  /**
+   * Attach the relational key to the given data. For example,
+   * when Post belongs to User, it will attach value to the
+   * `user_id` field of Post record.
+   */
+
+
+  BelongsTo.prototype.attach = function (key, record, _data) {
+    // See if the record has the foreign key, if yes, it means the user has
+    // provided the key explicitly so do nothing and return.
+    if (record[this.foreignKey] !== undefined) {
+      return;
+    } // If there is no foreign key, let's set it here.
+
+
+    record[this.foreignKey] = key;
+  };
+  /**
+   * Validate the given value to be a valid value for the relationship.
+   */
+
+
+  BelongsTo.prototype.fill = function (value) {
+    return this.fillOne(value);
+  };
+  /**
+   * Make value to be set to model property. This method is used when
+   * instantiating a model or creating a plain object from a model.
+   */
+
+
+  BelongsTo.prototype.make = function (value, _parent, _key, plain) {
+    if (plain === void 0) {
+      plain = false;
+    }
+
+    if (!this.isOneRelation(value)) {
+      return null;
+    }
+
+    return this.parent.make(value, plain);
+  };
+  /**
+   * Load the belongs to relationship for the collection.
+   */
+
+
+  BelongsTo.prototype.load = function (query, collection, key) {
+    var _this = this;
+
+    var relatedQuery = this.getRelation(query, this.parent.entity);
+    query.where(this.ownerKey, this.getKeys(collection, this.foreignKey));
+    var relations = this.mapSingleRelations(relatedQuery.get(), this.ownerKey);
+    collection.forEach(function (item) {
+      var related = relations[item[_this.foreignKey]];
+      item[key] = related || null;
+    });
+  };
+
+  return BelongsTo;
+}(vuex_orm_esm_Relation);
+
+var vuex_orm_esm_HasMany =
+/** @class */
+function (_super) {
+  __extends(HasMany, _super);
+  /**
+   * Create a new has many instance.
+   */
+
+
+  function HasMany(model, related, foreignKey, localKey) {
+    var _this = _super.call(this, model)
+    /* istanbul ignore next */
+    || this;
+
+    _this.related = _this.model.relation(related);
+    _this.foreignKey = foreignKey;
+    _this.localKey = localKey;
+    return _this;
+  }
+  /**
+   * Define the normalizr schema for the relationship.
+   */
+
+
+  HasMany.prototype.define = function (schema) {
+    return schema.many(this.related);
+  };
+  /**
+   * Attach the relational key to the given data.
+   */
+
+
+  HasMany.prototype.attach = function (key, record, data) {
+    var _this = this;
+
+    if (!Array.isArray(key)) {
+      return;
+    }
+
+    key.forEach(function (index) {
+      var related = data[_this.related.entity];
+
+      if (!related || !related[index] || related[index][_this.foreignKey] !== undefined) {
+        return;
+      }
+
+      related[index][_this.foreignKey] = record.$id;
+    });
+  };
+  /**
+   * Validate the given value to be a valid value for the relationship.
+   */
+
+
+  HasMany.prototype.fill = function (value) {
+    return this.fillMany(value);
+  };
+  /**
+   * Make value to be set to model property. This method is used when
+   * instantiating a model or creating a plain object from a model.
+   */
+
+
+  HasMany.prototype.make = function (value, _parent, _key, plain) {
+    var _this = this;
+
+    if (plain === void 0) {
+      plain = false;
+    }
+
+    if (value === null) {
+      return [];
+    }
+
+    if (value === undefined) {
+      return [];
+    }
+
+    if (!Array.isArray(value)) {
+      return [];
+    }
+
+    if (value.length === 0) {
+      return [];
+    }
+
+    return value.filter(function (record) {
+      return record && Object(helpers_typeof["default"])(record) === 'object';
+    }).map(function (record) {
+      return _this.related.make(record, plain);
+    });
+  };
+  /**
+   * Load the has many relationship for the collection.
+   */
+
+
+  HasMany.prototype.load = function (query, collection, key) {
+    var _this = this;
+
+    var relatedQuery = this.getRelation(query, this.related.entity);
+    relatedQuery.where(this.foreignKey, this.getKeys(collection, this.localKey));
+    var relations = this.mapManyRelations(relatedQuery.get(), this.foreignKey);
+    collection.forEach(function (item) {
+      var related = relations[item[_this.localKey]];
+      item[key] = related || [];
+    });
+  };
+
+  return HasMany;
+}(vuex_orm_esm_Relation);
+
+var vuex_orm_esm_HasManyBy =
+/** @class */
+function (_super) {
+  __extends(HasManyBy, _super);
+  /**
+   * Create a new has many by instance.
+   */
+
+
+  function HasManyBy(model, parent, foreignKey, ownerKey) {
+    var _this = _super.call(this, model)
+    /* istanbul ignore next */
+    || this;
+
+    _this.parent = _this.model.relation(parent);
+    _this.foreignKey = foreignKey;
+    _this.ownerKey = ownerKey;
+    return _this;
+  }
+  /**
+   * Define the normalizr schema for the relationship.
+   */
+
+
+  HasManyBy.prototype.define = function (schema) {
+    return schema.many(this.parent);
+  };
+  /**
+   * Attach the relational key to the given data.
+   */
+
+
+  HasManyBy.prototype.attach = function (key, record, _data) {
+    if (key.length === 0) {
+      return;
+    }
+
+    if (record[this.foreignKey] !== undefined) {
+      return;
+    }
+
+    record[this.foreignKey] = key;
+  };
+  /**
+   * Validate the given value to be a valid value for the relationship.
+   */
+
+
+  HasManyBy.prototype.fill = function (value) {
+    return this.fillMany(value);
+  };
+  /**
+   * Make value to be set to model property. This method is used when
+   * instantiating a model or creating a plain object from a model.
+   */
+
+
+  HasManyBy.prototype.make = function (value, _parent, _key, plain) {
+    var _this = this;
+
+    if (plain === void 0) {
+      plain = false;
+    }
+
+    if (value === null) {
+      return [];
+    }
+
+    if (value === undefined) {
+      return [];
+    }
+
+    if (!Array.isArray(value)) {
+      return [];
+    }
+
+    if (value.length === 0) {
+      return [];
+    }
+
+    return value.filter(function (record) {
+      return record && Object(helpers_typeof["default"])(record) === 'object';
+    }).map(function (record) {
+      return _this.parent.make(record, plain);
+    });
+  };
+  /**
+   * Load the has many by relationship for the collection.
+   */
+
+
+  HasManyBy.prototype.load = function (query, collection, key) {
+    var _this = this;
+
+    var relatedQuery = this.getRelation(query, this.parent.entity);
+    this.addConstraintForHasManyBy(relatedQuery, collection);
+    var relations = this.mapSingleRelations(relatedQuery.get(), this.ownerKey);
+    collection.forEach(function (item) {
+      var related = _this.getRelatedRecords(relations, item[_this.foreignKey]);
+
+      item[key] = related;
+    });
+  };
+  /**
+   * Set the constraints for an eager load of the relation.
+   */
+
+
+  HasManyBy.prototype.addConstraintForHasManyBy = function (query, collection) {
+    var _this = this;
+
+    var keys = collection.reduce(function (keys, item) {
+      return keys.concat(item[_this.foreignKey]);
+    }, []);
+    query.where(this.ownerKey, keys);
+  };
+  /**
+   * Get related records.
+   */
+
+
+  HasManyBy.prototype.getRelatedRecords = function (records, keys) {
+    return keys.reduce(function (items, id) {
+      var related = records[id];
+      related && items.push(related);
+      return items;
+    }, []);
+  };
+
+  return HasManyBy;
+}(vuex_orm_esm_Relation);
+
+var vuex_orm_esm_HasManyThrough =
+/** @class */
+function (_super) {
+  __extends(HasManyThrough, _super);
+  /**
+   * Create a new has many through instance.
+   */
+
+
+  function HasManyThrough(model, related, through, firstKey, secondKey, localKey, secondLocalKey) {
+    var _this = _super.call(this, model)
+    /* istanbul ignore next */
+    || this;
+
+    _this.related = _this.model.relation(related);
+    _this.through = _this.model.relation(through);
+    _this.firstKey = firstKey;
+    _this.secondKey = secondKey;
+    _this.localKey = localKey;
+    _this.secondLocalKey = secondLocalKey;
+    return _this;
+  }
+  /**
+   * Define the normalizr schema for the relationship.
+   */
+
+
+  HasManyThrough.prototype.define = function (schema) {
+    return schema.many(this.related);
+  };
+  /**
+   * Attach the relational key to the given data. Since has many through
+   * relationship doesn't have any foreign key, it would do nothing.
+   */
+
+
+  HasManyThrough.prototype.attach = function (_key, _record, _data) {
+    return;
+  };
+  /**
+   * Validate the given value to be a valid value for the relationship.
+   */
+
+
+  HasManyThrough.prototype.fill = function (value) {
+    return this.fillMany(value);
+  };
+  /**
+   * Make value to be set to model property. This method is used when
+   * instantiating a model or creating a plain object from a model.
+   */
+
+
+  HasManyThrough.prototype.make = function (value, _parent, _key, plain) {
+    var _this = this;
+
+    if (plain === void 0) {
+      plain = false;
+    }
+
+    if (value === null) {
+      return [];
+    }
+
+    if (value === undefined) {
+      return [];
+    }
+
+    if (!Array.isArray(value)) {
+      return [];
+    }
+
+    if (value.length === 0) {
+      return [];
+    }
+
+    return value.filter(function (record) {
+      return record && Object(helpers_typeof["default"])(record) === 'object';
+    }).map(function (record) {
+      return _this.related.make(record, plain);
+    });
+  };
+  /**
+   * Load the has many through relationship for the collection.
+   */
+
+
+  HasManyThrough.prototype.load = function (query, collection, key) {
+    var _this = this;
+
+    var relatedQuery = this.getRelation(query, this.related.entity);
+    var throughQuery = query.newPlainQuery(this.through.entity);
+    this.addEagerConstraintForThrough(throughQuery, collection);
+    var throughs = throughQuery.get();
+    this.addEagerConstraintForRelated(relatedQuery, throughs);
+    var relateds = this.mapThroughRelations(throughs, relatedQuery);
+    collection.forEach(function (item) {
+      var related = relateds[item[_this.localKey]];
+      item[key] = related;
+    });
+  };
+  /**
+   * Set the constraints for the through relation.
+   */
+
+
+  HasManyThrough.prototype.addEagerConstraintForThrough = function (query, collection) {
+    query.where(this.firstKey, this.getKeys(collection, this.localKey));
+  };
+  /**
+   * Set the constraints for the related relation.
+   */
+
+
+  HasManyThrough.prototype.addEagerConstraintForRelated = function (query, collection) {
+    query.where(this.secondKey, this.getKeys(collection, this.secondLocalKey));
+  };
+  /**
+   * Create a new indexed map for the through relation.
+   */
+
+
+  HasManyThrough.prototype.mapThroughRelations = function (throughs, relatedQuery) {
+    var _this = this;
+
+    var relateds = this.mapManyRelations(relatedQuery.get(), this.secondKey);
+    return throughs.reduce(function (records, record) {
+      var id = record[_this.firstKey];
+
+      if (!records[id]) {
+        records[id] = [];
+      }
+
+      var related = relateds[record[_this.secondLocalKey]];
+
+      if (related) {
+        records[id] = records[id].concat(related);
+      }
+
+      return records;
+    }, {});
+  };
+
+  return HasManyThrough;
+}(vuex_orm_esm_Relation);
+
+var vuex_orm_esm_BelongsToMany =
+/** @class */
+function (_super) {
+  __extends(BelongsToMany, _super);
+  /**
+   * Create a new belongs to instance.
+   */
+
+
+  function BelongsToMany(model, related, pivot, foreignPivotKey, relatedPivotKey, parentKey, relatedKey) {
+    var _this = _super.call(this, model)
+    /* istanbul ignore next */
+    || this;
+
+    _this.related = _this.model.relation(related);
+    _this.pivot = _this.model.relation(pivot);
+    _this.foreignPivotKey = foreignPivotKey;
+    _this.relatedPivotKey = relatedPivotKey;
+    _this.parentKey = parentKey;
+    _this.relatedKey = relatedKey;
+    return _this;
+  }
+  /**
+   * Define the normalizr schema for the relationship.
+   */
+
+
+  BelongsToMany.prototype.define = function (schema) {
+    return schema.many(this.related);
+  };
+  /**
+   * Attach the relational key to the given data. Since belongs to many
+   * relationship doesn't have any foreign key, it would do nothing.
+   */
+
+
+  BelongsToMany.prototype.attach = function (_key, _record, _data) {
+    return;
+  };
+  /**
+   * Validate the given value to be a valid value for the relationship.
+   */
+
+
+  BelongsToMany.prototype.fill = function (value) {
+    return this.fillMany(value);
+  };
+  /**
+   * Make value to be set to model property. This method is used when
+   * instantiating a model or creating a plain object from a model.
+   */
+
+
+  BelongsToMany.prototype.make = function (value, _parent, _key, plain) {
+    var _this = this;
+
+    if (plain === void 0) {
+      plain = false;
+    }
+
+    if (value === null) {
+      return [];
+    }
+
+    if (value === undefined) {
+      return [];
+    }
+
+    if (!Array.isArray(value)) {
+      return [];
+    }
+
+    if (value.length === 0) {
+      return [];
+    }
+
+    return value.filter(function (record) {
+      return record && Object(helpers_typeof["default"])(record) === 'object';
+    }).map(function (record) {
+      return _this.related.make(record, plain);
+    });
+  };
+  /**
+   * Load the belongs to relationship for the record.
+   */
+
+
+  BelongsToMany.prototype.load = function (query, collection, key) {
+    var _this = this;
+
+    var relatedQuery = this.getRelation(query, this.related.entity);
+    var pivotQuery = query.newPlainQuery(this.pivot.entity);
+    this.addEagerConstraintForPivot(pivotQuery, collection);
+    var pivots = pivotQuery.get();
+    this.addEagerConstraintForRelated(relatedQuery, pivots);
+    var relateds = this.mapPivotRelations(pivots, relatedQuery);
+    collection.forEach(function (item) {
+      var related = relateds[item[_this.parentKey]];
+      item[key] = related;
+    });
+  };
+  /**
+   * Set the constraints for the pivot relation.
+   */
+
+
+  BelongsToMany.prototype.addEagerConstraintForPivot = function (query, collection) {
+    query.where(this.foreignPivotKey, this.getKeys(collection, this.parentKey));
+  };
+  /**
+   * Set the constraints for the related relation.
+   */
+
+
+  BelongsToMany.prototype.addEagerConstraintForRelated = function (query, collection) {
+    query.where(this.relatedPivotKey, this.getKeys(collection, this.relatedKey));
+  };
+  /**
+   * Create a new indexed map for the pivot relation.
+   */
+
+
+  BelongsToMany.prototype.mapPivotRelations = function (pivots, relatedQuery) {
+    var _this = this;
+
+    var relateds = this.mapManyRelations(relatedQuery.get(), this.relatedKey);
+    return pivots.reduce(function (records, record) {
+      var id = record[_this.foreignPivotKey];
+
+      if (!records[id]) {
+        records[id] = [];
+      }
+
+      var related = relateds[record[_this.relatedPivotKey]];
+
+      if (related) {
+        records[id] = records[id].concat(related);
+      }
+
+      return records;
+    }, {});
+  };
+  /**
+   * Create pivot records for the given records if needed.
+   */
+
+
+  BelongsToMany.prototype.createPivots = function (parent, data, key) {
+    var _this = this;
+
+    if (this.pivot.primaryKey instanceof Array === false) return data;
+    Utils.forOwn(data[parent.entity], function (record) {
+      var related = record[key];
+
+      if (related === undefined || related.length === 0) {
+        return;
+      }
+
+      _this.createPivotRecord(data, record, related);
+    });
+    return data;
+  };
+  /**
+   * Create a pivot record.
+   */
+
+
+  BelongsToMany.prototype.createPivotRecord = function (data, record, related) {
+    var _this = this;
+
+    related.forEach(function (id) {
+      var _a, _b;
+
+      var pivotKey = record[_this.parentKey] + "_" + id;
+      data[_this.pivot.entity] = __assign({}, data[_this.pivot.entity], (_a = {}, _a[pivotKey] = (_b = {
+        $id: pivotKey
+      }, _b[_this.foreignPivotKey] = record[_this.parentKey], _b[_this.relatedPivotKey] = id, _b), _a));
+    });
+  };
+
+  return BelongsToMany;
+}(vuex_orm_esm_Relation);
+
+var MorphTo =
+/** @class */
+function (_super) {
+  __extends(MorphTo, _super);
+  /**
+   * Create a new morph to instance.
+   */
+
+
+  function MorphTo(model, id, type) {
+    var _this = _super.call(this, model)
+    /* istanbul ignore next */
+    || this;
+
+    _this.id = id;
+    _this.type = type;
+    return _this;
+  }
+  /**
+   * Define the normalizr schema for the relationship.
+   */
+
+
+  MorphTo.prototype.define = function (schema) {
+    var _this = this;
+
+    return schema.union(function (_value, parentValue) {
+      return parentValue[_this.type];
+    });
+  };
+  /**
+   * Attach the relational key to the given record. Since morph to
+   * relationship doesn't have any foreign key, it would do nothing.
+   */
+
+
+  MorphTo.prototype.attach = function (_key, _record, _data) {
+    return;
+  };
+  /**
+   * Validate the given value to be a valid value for the relationship.
+   */
+
+
+  MorphTo.prototype.fill = function (value) {
+    return this.fillOne(value);
+  };
+  /**
+   * Make value to be set to model property. This method is used when
+   * instantiating a model or creating a plain object from a model.
+   */
+
+
+  MorphTo.prototype.make = function (value, parent, _key, plain) {
+    if (plain === void 0) {
+      plain = false;
+    }
+
+    if (!this.isOneRelation(value)) {
+      return null;
+    }
+
+    var related = parent[this.type];
+    var model = this.model.relation(related);
+    return model ? model.make(value, plain) : null;
+  };
+  /**
+   * Load the morph to relationship for the collection.
+   */
+
+
+  MorphTo.prototype.load = function (query, collection, key) {
+    var _this = this;
+
+    var types = this.getTypes(collection);
+    var relateds = types.reduce(function (relateds, type) {
+      var relatedQuery = _this.getRelation(query, type);
+
+      relateds[type] = _this.mapSingleRelations(relatedQuery.get(), '$id');
+      return relateds;
+    }, {});
+    collection.forEach(function (item) {
+      var id = item[_this.id];
+      var type = item[_this.type];
+      var related = relateds[type][id];
+      item[key] = related || null;
+    });
+  };
+  /**
+   * Get all types from the collection.
+   */
+
+
+  MorphTo.prototype.getTypes = function (collection) {
+    var _this = this;
+
+    return collection.reduce(function (types, item) {
+      var type = item[_this.type];
+      !types.includes(type) && types.push(type);
+      return types;
+    }, []);
+  };
+
+  return MorphTo;
+}(vuex_orm_esm_Relation);
+
+var MorphOne =
+/** @class */
+function (_super) {
+  __extends(MorphOne, _super);
+  /**
+   * Create a new belongs to instance.
+   */
+
+
+  function MorphOne(model, related, id, type, localKey) {
+    var _this = _super.call(this, model)
+    /* istanbul ignore next */
+    || this;
+
+    _this.related = _this.model.relation(related);
+    _this.id = id;
+    _this.type = type;
+    _this.localKey = localKey;
+    return _this;
+  }
+  /**
+   * Define the normalizr schema for the relationship.
+   */
+
+
+  MorphOne.prototype.define = function (schema) {
+    return schema.one(this.related);
+  };
+  /**
+   * Attach the relational key to the given data.
+   */
+
+
+  MorphOne.prototype.attach = function (key, record, data) {
+    var relatedItem = data[this.related.entity] && data[this.related.entity][key];
+
+    if (!relatedItem) {
+      return;
+    }
+
+    relatedItem[this.id] = relatedItem[this.id] || record.$id;
+    relatedItem[this.type] = relatedItem[this.type] || this.model.entity;
+  };
+  /**
+   * Validate the given value to be a valid value for the relationship.
+   */
+
+
+  MorphOne.prototype.fill = function (value) {
+    return this.fillOne(value);
+  };
+  /**
+   * Make value to be set to model property. This method is used when
+   * instantiating a model or creating a plain object from a model.
+   */
+
+
+  MorphOne.prototype.make = function (value, _parent, _key, plain) {
+    if (plain === void 0) {
+      plain = false;
+    }
+
+    if (!this.isOneRelation(value)) {
+      return null;
+    }
+
+    return this.related.make(value, plain);
+  };
+  /**
+   * Load the morph many relationship for the record.
+   */
+
+
+  MorphOne.prototype.load = function (query, collection, key) {
+    var _this = this;
+
+    var relatedQuery = this.getRelation(query, this.related.entity);
+    this.addEagerConstraintForMorphOne(relatedQuery, collection, query.entity);
+    var relations = this.mapSingleRelations(relatedQuery.get(), this.id);
+    collection.forEach(function (item) {
+      var related = relations[item[_this.localKey]];
+      item[key] = related || null;
+    });
+  };
+  /**
+   * Set the constraints for an eager load of the relation.
+   */
+
+
+  MorphOne.prototype.addEagerConstraintForMorphOne = function (query, collection, type) {
+    query.where(this.type, type).where(this.id, this.getKeys(collection, this.localKey));
+  };
+
+  return MorphOne;
+}(vuex_orm_esm_Relation);
+
+var vuex_orm_esm_MorphMany =
+/** @class */
+function (_super) {
+  __extends(MorphMany, _super);
+  /**
+   * Create a new belongs to instance.
+   */
+
+
+  function MorphMany(model, related, id, type, localKey) {
+    var _this = _super.call(this, model)
+    /* istanbul ignore next */
+    || this;
+
+    _this.related = _this.model.relation(related);
+    _this.id = id;
+    _this.type = type;
+    _this.localKey = localKey;
+    return _this;
+  }
+  /**
+   * Define the normalizr schema for the relationship.
+   */
+
+
+  MorphMany.prototype.define = function (schema) {
+    return schema.many(this.related);
+  };
+  /**
+   * Attach the relational key to the given data.
+   */
+
+
+  MorphMany.prototype.attach = function (key, record, data) {
+    var _this = this;
+
+    if (!Array.isArray(key)) {
+      return;
+    }
+
+    var relatedItems = data[this.related.entity];
+    key.forEach(function (id) {
+      var relatedItem = relatedItems[id];
+      relatedItem[_this.id] = relatedItem[_this.id] || record.$id;
+      relatedItem[_this.type] = relatedItem[_this.type] || _this.model.entity;
+    });
+  };
+  /**
+   * Validate the given value to be a valid value for the relationship.
+   */
+
+
+  MorphMany.prototype.fill = function (value) {
+    return this.fillMany(value);
+  };
+  /**
+   * Make value to be set to model property. This method is used when
+   * instantiating a model or creating a plain object from a model.
+   */
+
+
+  MorphMany.prototype.make = function (value, _parent, _key, plain) {
+    var _this = this;
+
+    if (plain === void 0) {
+      plain = false;
+    }
+
+    if (value === null) {
+      return [];
+    }
+
+    if (value === undefined) {
+      return [];
+    }
+
+    if (!Array.isArray(value)) {
+      return [];
+    }
+
+    if (value.length === 0) {
+      return [];
+    }
+
+    return value.filter(function (record) {
+      return record && Object(helpers_typeof["default"])(record) === 'object';
+    }).map(function (record) {
+      return _this.related.make(record, plain);
+    });
+  };
+  /**
+   * Load the morph many relationship for the record.
+   */
+
+
+  MorphMany.prototype.load = function (query, collection, key) {
+    var _this = this;
+
+    var relatedQuery = this.getRelation(query, this.related.entity);
+    this.addEagerConstraintForMorphMany(relatedQuery, collection, query.entity);
+    var relations = this.mapManyRelations(relatedQuery.get(), this.id);
+    collection.forEach(function (item) {
+      var related = relations[item[_this.localKey]];
+      item[key] = related;
+    });
+  };
+  /**
+   * Set the constraints for an eager load of the relation.
+   */
+
+
+  MorphMany.prototype.addEagerConstraintForMorphMany = function (query, collection, type) {
+    query.where(this.type, type).where(this.id, this.getKeys(collection, this.localKey));
+  };
+
+  return MorphMany;
+}(vuex_orm_esm_Relation);
+
+var vuex_orm_esm_MorphToMany =
+/** @class */
+function (_super) {
+  __extends(MorphToMany, _super);
+  /**
+   * Create a new belongs to instance.
+   */
+
+
+  function MorphToMany(model, related, pivot, relatedId, id, type, parentKey, relatedKey) {
+    var _this = _super.call(this, model)
+    /* istanbul ignore next */
+    || this;
+
+    _this.related = _this.model.relation(related);
+    _this.pivot = _this.model.relation(pivot);
+    _this.relatedId = relatedId;
+    _this.id = id;
+    _this.type = type;
+    _this.parentKey = parentKey;
+    _this.relatedKey = relatedKey;
+    return _this;
+  }
+  /**
+   * Define the normalizr schema for the relationship.
+   */
+
+
+  MorphToMany.prototype.define = function (schema) {
+    return schema.many(this.related);
+  };
+  /**
+   * Attach the relational key to the given record. Since morph to many
+   * relationship doesn't have any foreign key, it would do nothing.
+   */
+
+
+  MorphToMany.prototype.attach = function (_key, _record, _data) {
+    return;
+  };
+  /**
+   * Validate the given value to be a valid value for the relationship.
+   */
+
+
+  MorphToMany.prototype.fill = function (value) {
+    return this.fillMany(value);
+  };
+  /**
+   * Make value to be set to model property. This method is used when
+   * instantiating a model or creating a plain object from a model.
+   */
+
+
+  MorphToMany.prototype.make = function (value, _parent, _key, plain) {
+    var _this = this;
+
+    if (plain === void 0) {
+      plain = false;
+    }
+
+    if (value === null) {
+      return [];
+    }
+
+    if (value === undefined) {
+      return [];
+    }
+
+    if (!Array.isArray(value)) {
+      return [];
+    }
+
+    if (value.length === 0) {
+      return [];
+    }
+
+    return value.filter(function (record) {
+      return record && Object(helpers_typeof["default"])(record) === 'object';
+    }).map(function (record) {
+      return _this.related.make(record, plain);
+    });
+  };
+  /**
+   * Load the morph to many relationship for the collection.
+   */
+
+
+  MorphToMany.prototype.load = function (query, collection, key) {
+    var _this = this;
+
+    var relatedQuery = this.getRelation(query, this.related.entity);
+    var pivotQuery = query.newPlainQuery(this.pivot.entity);
+    this.addEagerConstraintForPivot(pivotQuery, collection, query.entity);
+    var pivots = pivotQuery.get();
+    this.addEagerConstraintForRelated(relatedQuery, pivots);
+    var relateds = this.mapPivotRelations(pivots, relatedQuery);
+    collection.forEach(function (item) {
+      var related = relateds[item[_this.parentKey]];
+      item[key] = related;
+    });
+  };
+  /**
+   * Set the constraints for the pivot relation.
+   */
+
+
+  MorphToMany.prototype.addEagerConstraintForPivot = function (query, collection, type) {
+    query.where(this.type, type).where(this.id, this.getKeys(collection, this.parentKey));
+  };
+  /**
+   * Set the constraints for the related relation.
+   */
+
+
+  MorphToMany.prototype.addEagerConstraintForRelated = function (query, collection) {
+    query.where(this.relatedKey, this.getKeys(collection, this.relatedId));
+  };
+  /**
+   * Create a new indexed map for the pivot relation.
+   */
+
+
+  MorphToMany.prototype.mapPivotRelations = function (pivots, relatedQuery) {
+    var _this = this;
+
+    var relateds = this.mapManyRelations(relatedQuery.get(), this.relatedKey);
+    return pivots.reduce(function (records, record) {
+      var id = record[_this.id];
+
+      if (!records[id]) {
+        records[id] = [];
+      }
+
+      var related = relateds[record[_this.relatedId]];
+
+      if (related) {
+        records[id] = records[id].concat(related);
+      }
+
+      return records;
+    }, {});
+  };
+  /**
+   * Create pivot records for the given records if needed.
+   */
+
+
+  MorphToMany.prototype.createPivots = function (parent, data, key) {
+    var _this = this;
+
+    Utils.forOwn(data[parent.entity], function (record) {
+      var related = record[key];
+
+      if (!Array.isArray(related) || related.length === 0) {
+        return;
+      }
+
+      _this.createPivotRecord(parent, data, record, related);
+    });
+    return data;
+  };
+  /**
+   * Create a pivot record.
+   */
+
+
+  MorphToMany.prototype.createPivotRecord = function (parent, data, record, related) {
+    var _this = this;
+
+    related.forEach(function (id) {
+      var _a, _b;
+
+      var parentId = record[_this.parentKey];
+      var pivotKey = parentId + "_" + id + "_" + parent.entity;
+      data[_this.pivot.entity] = __assign({}, data[_this.pivot.entity], (_a = {}, _a[pivotKey] = (_b = {
+        $id: pivotKey
+      }, _b[_this.relatedId] = id, _b[_this.id] = parentId, _b[_this.type] = parent.entity, _b), _a));
+    });
+  };
+
+  return MorphToMany;
+}(vuex_orm_esm_Relation);
+
+var vuex_orm_esm_MorphedByMany =
+/** @class */
+function (_super) {
+  __extends(MorphedByMany, _super);
+  /**
+   * Create a new belongs to instance.
+   */
+
+
+  function MorphedByMany(model, related, pivot, relatedId, id, type, parentKey, relatedKey) {
+    var _this = _super.call(this, model)
+    /* istanbul ignore next */
+    || this;
+
+    _this.related = _this.model.relation(related);
+    _this.pivot = _this.model.relation(pivot);
+    _this.relatedId = relatedId;
+    _this.id = id;
+    _this.type = type;
+    _this.parentKey = parentKey;
+    _this.relatedKey = relatedKey;
+    return _this;
+  }
+  /**
+   * Define the normalizr schema for the relationship.
+   */
+
+
+  MorphedByMany.prototype.define = function (schema) {
+    return schema.many(this.related);
+  };
+  /**
+   * Attach the relational key to the given data. Since morphed by many
+   * relationship doesn't have any foreign key, it would do nothing.
+   */
+
+
+  MorphedByMany.prototype.attach = function (_key, _record, _data) {
+    return;
+  };
+  /**
+   * Validate the given value to be a valid value for the relationship.
+   */
+
+
+  MorphedByMany.prototype.fill = function (value) {
+    return this.fillMany(value);
+  };
+  /**
+   * Make value to be set to model property. This method is used when
+   * instantiating a model or creating a plain object from a model.
+   */
+
+
+  MorphedByMany.prototype.make = function (value, _parent, _key, plain) {
+    var _this = this;
+
+    if (plain === void 0) {
+      plain = false;
+    }
+
+    if (value === null) {
+      return [];
+    }
+
+    if (value === undefined) {
+      return [];
+    }
+
+    if (!Array.isArray(value)) {
+      return [];
+    }
+
+    if (value.length === 0) {
+      return [];
+    }
+
+    return value.filter(function (record) {
+      return record && Object(helpers_typeof["default"])(record) === 'object';
+    }).map(function (record) {
+      return _this.related.make(record, plain);
+    });
+  };
+  /**
+   * Load the morph many relationship for the record.
+   */
+
+
+  MorphedByMany.prototype.load = function (query, collection, key) {
+    var _this = this;
+
+    var relatedQuery = this.getRelation(query, this.related.entity);
+    var pivotQuery = query.newPlainQuery(this.pivot.entity);
+    this.addEagerConstraintForPivot(pivotQuery, collection, this.related.entity);
+    var pivots = pivotQuery.get();
+    this.addEagerConstraintForRelated(relatedQuery, pivots);
+    var relateds = this.mapPivotRelations(pivots, relatedQuery);
+    collection.forEach(function (item) {
+      var related = relateds[item[_this.parentKey]];
+      item[key] = related;
+    });
+  };
+  /**
+   * Set the constraints for the pivot relation.
+   */
+
+
+  MorphedByMany.prototype.addEagerConstraintForPivot = function (query, collection, type) {
+    query.where(this.type, type).where(this.relatedId, this.getKeys(collection, this.parentKey));
+  };
+  /**
+   * Set the constraints for the related relation.
+   */
+
+
+  MorphedByMany.prototype.addEagerConstraintForRelated = function (query, collection) {
+    query.where(this.relatedKey, this.getKeys(collection, this.id));
+  };
+  /**
+   * Create a new indexed map for the pivot relation.
+   */
+
+
+  MorphedByMany.prototype.mapPivotRelations = function (pivots, relatedQuery) {
+    var _this = this;
+
+    var relateds = this.mapManyRelations(relatedQuery.get(), this.relatedKey);
+    return pivots.reduce(function (records, record) {
+      var id = record[_this.relatedId];
+
+      if (!records[id]) {
+        records[id] = [];
+      }
+
+      var related = relateds[record[_this.id]];
+
+      if (related) {
+        records[id] = records[id].concat(related);
+      }
+
+      return records;
+    }, {});
+  };
+  /**
+   * Create pivot records for the given records if needed.
+   */
+
+
+  MorphedByMany.prototype.createPivots = function (parent, data, key) {
+    var _this = this;
+
+    Utils.forOwn(data[parent.entity], function (record) {
+      var related = record[key];
+
+      if (related.length === 0) {
+        return;
+      }
+
+      _this.createPivotRecord(data, record, related);
+    });
+    return data;
+  };
+  /**
+   * Create a pivot record.
+   */
+
+
+  MorphedByMany.prototype.createPivotRecord = function (data, record, related) {
+    var _this = this;
+
+    related.forEach(function (id) {
+      var _a, _b;
+
+      var parentId = record[_this.parentKey];
+      var pivotKey = id + "_" + parentId + "_" + _this.related.entity;
+      data[_this.pivot.entity] = __assign({}, data[_this.pivot.entity], (_a = {}, _a[pivotKey] = (_b = {
+        $id: pivotKey
+      }, _b[_this.relatedId] = parentId, _b[_this.id] = id, _b[_this.type] = _this.related.entity, _b), _a));
+    });
+  };
+
+  return MorphedByMany;
+}(vuex_orm_esm_Relation);
+
+var Model =
+/** @class */
+function () {
+  /**
+   * Create a model instance.
+   */
+  function Model(record) {
+    this.$fill(record);
+  }
+  /**
+   * The definition of the fields of the model and its relations.
+   */
+
+
+  Model.fields = function () {
+    return {};
+  };
+  /**
+   * Get the model schema definition by adding additional default fields.
+   */
+
+
+  Model.getFields = function () {
+    if (this.cachedFields) {
+      return this.cachedFields;
+    }
+
+    this.cachedFields = __assign({
+      $id: this.attr(undefined)
+    }, this.fields());
+    return this.cachedFields;
+  };
+  /**
+   * Create an attr attribute. The given value will be used as a default
+   * value for the field.
+   */
+
+
+  Model.attr = function (value, mutator) {
+    return new Attr(this, value, mutator);
+  };
+  /**
+   * Create a string attribute.
+   */
+
+
+  Model.string = function (value, mutator) {
+    return new String$1(this, value, mutator);
+  };
+  /**
+   * Create a number attribute.
+   */
+
+
+  Model.number = function (value, mutator) {
+    return new vuex_orm_esm_Number(this, value, mutator);
+  };
+  /**
+   * Create a boolean attribute.
+   */
+
+
+  Model.boolean = function (value, mutator) {
+    return new Boolean(this, value, mutator);
+  };
+  /**
+   * Create an increment attribute. The field with this attribute will
+   * automatically increment its value when creating a new record.
+   */
+
+
+  Model.increment = function () {
+    return new Increment(this);
+  };
+  /**
+   * Create a has one relationship.
+   */
+
+
+  Model.hasOne = function (related, foreignKey, localKey) {
+    return new HasOne(this, related, foreignKey, this.localKey(localKey));
+  };
+  /**
+   * Create a belongs to relationship.
+   */
+
+
+  Model.belongsTo = function (parent, foreignKey, ownerKey) {
+    return new BelongsTo(this, parent, foreignKey, this.relation(parent).localKey(ownerKey));
+  };
+  /**
+   * Create a has many relationship.
+   */
+
+
+  Model.hasMany = function (related, foreignKey, localKey) {
+    return new vuex_orm_esm_HasMany(this, related, foreignKey, this.localKey(localKey));
+  };
+  /**
+   * Create a has many by relationship.
+   */
+
+
+  Model.hasManyBy = function (parent, foreignKey, ownerKey) {
+    return new vuex_orm_esm_HasManyBy(this, parent, foreignKey, this.relation(parent).localKey(ownerKey));
+  };
+  /**
+   * Create a has many through relationship.
+   */
+
+
+  Model.hasManyThrough = function (related, through, firstKey, secondKey, localKey, secondLocalKey) {
+    return new vuex_orm_esm_HasManyThrough(this, related, through, firstKey, secondKey, this.localKey(localKey), this.relation(through).localKey(secondLocalKey));
+  };
+  /**
+   * The belongs to many relationship.
+   */
+
+
+  Model.belongsToMany = function (related, pivot, foreignPivotKey, relatedPivotKey, parentKey, relatedKey) {
+    return new vuex_orm_esm_BelongsToMany(this, related, pivot, foreignPivotKey, relatedPivotKey, this.localKey(parentKey), this.relation(related).localKey(relatedKey));
+  };
+  /**
+   * Create a morph to relationship.
+   */
+
+
+  Model.morphTo = function (id, type) {
+    return new MorphTo(this, id, type);
+  };
+  /**
+   * Create a morph one relationship.
+   */
+
+
+  Model.morphOne = function (related, id, type, localKey) {
+    return new MorphOne(this, related, id, type, this.localKey(localKey));
+  };
+  /**
+   * Create a morph many relationship.
+   */
+
+
+  Model.morphMany = function (related, id, type, localKey) {
+    return new vuex_orm_esm_MorphMany(this, related, id, type, this.localKey(localKey));
+  };
+  /**
+   * Create a morph to many relationship.
+   */
+
+
+  Model.morphToMany = function (related, pivot, relatedId, id, type, parentKey, relatedKey) {
+    return new vuex_orm_esm_MorphToMany(this, related, pivot, relatedId, id, type, this.localKey(parentKey), this.relation(related).localKey(relatedKey));
+  };
+  /**
+   * Create a morphed by many relationship.
+   */
+
+
+  Model.morphedByMany = function (related, pivot, relatedId, id, type, parentKey, relatedKey) {
+    return new vuex_orm_esm_MorphedByMany(this, related, pivot, relatedId, id, type, this.localKey(parentKey), this.relation(related).localKey(relatedKey));
+  };
+  /**
+   * Mutators to mutate matching fields when instantiating the model.
+   */
+
+
+  Model.mutators = function () {
+    return {};
+  };
+  /**
+   * Get database out of the container.
+   */
+
+
+  Model.database = function () {
+    return Container.database;
+  };
+  /**
+   * Get Vuex Store instance out of connection.
+   */
+
+
+  Model.store = function () {
+    return this.database().store;
+  };
+  /**
+   * Get module namespaced path for the model.
+   */
+
+
+  Model.namespace = function (method) {
+    return this.database().namespace + "/" + this.entity + "/" + method;
+  };
+  /**
+   * Dispatch an action.
+   */
+
+
+  Model.dispatch = function (method, payload) {
+    return this.store().dispatch(this.namespace(method), payload);
+  };
+  /**
+   * Call getetrs.
+   */
+
+
+  Model.getters = function (method) {
+    return this.store().getters[this.namespace(method)];
+  };
+  /**
+   * Create records.
+   */
+
+
+  Model.create = function (payload) {
+    return __awaiter(this, void 0, void 0, function () {
+      return __generator(this, function (_a) {
+        return [2
+        /*return*/
+        , this.dispatch('create', payload)];
+      });
+    });
+  };
+  /**
+   * Insert records.
+   */
+
+
+  Model.insert = function (payload) {
+    return __awaiter(this, void 0, void 0, function () {
+      return __generator(this, function (_a) {
+        return [2
+        /*return*/
+        , this.dispatch('insert', payload)];
+      });
+    });
+  };
+  /**
+   * Update records.
+   */
+
+
+  Model.update = function (payload) {
+    return __awaiter(this, void 0, void 0, function () {
+      return __generator(this, function (_a) {
+        return [2
+        /*return*/
+        , this.dispatch('update', payload)];
+      });
+    });
+  };
+  /**
+   * Insert or update records.
+   */
+
+
+  Model.insertOrUpdate = function (payload) {
+    return __awaiter(this, void 0, void 0, function () {
+      return __generator(this, function (_a) {
+        return [2
+        /*return*/
+        , this.dispatch('insertOrUpdate', payload)];
+      });
+    });
+  };
+  /**
+   * Get all records.
+   */
+
+
+  Model.all = function () {
+    return this.getters('all')();
+  };
+  /**
+   * Find a record.
+   */
+
+
+  Model.find = function (id) {
+    return this.getters('find')(id);
+  };
+  /**
+   * Get query instance.
+   */
+
+
+  Model.query = function () {
+    return this.getters('query')();
+  };
+  /**
+   * Insert or update records.
+   */
+
+
+  Model.delete = function (condition) {
+    return __awaiter(this, void 0, void 0, function () {
+      return __generator(this, function (_a) {
+        return [2
+        /*return*/
+        , this.dispatch('delete', condition)];
+      });
+    });
+  };
+  /**
+   * Get the value of the primary key.
+   */
+
+
+  Model.id = function (record) {
+    var key = this.primaryKey;
+
+    if (typeof key === 'string') {
+      return record[key];
+    }
+
+    return key.map(function (k) {
+      return record[k];
+    }).join('_');
+  };
+  /**
+   * Get local key to pass to the attributes.
+   */
+
+
+  Model.localKey = function (key) {
+    if (key) {
+      return key;
+    }
+
+    return typeof this.primaryKey === 'string' ? this.primaryKey : 'id';
+  };
+  /**
+   * Get a model from the container.
+   */
+
+
+  Model.relation = function (model) {
+    if (typeof model !== 'string') {
+      return model;
+    }
+
+    return this.database().model(model);
+  };
+  /**
+   * Get the attribute class for the given attribute name.
+   */
+
+
+  Model.getAttributeClass = function (name) {
+    switch (name) {
+      case 'increment':
+        return Increment;
+
+      default:
+        throw Error("The attribute name \"" + name + "\" doesn't exists.");
+    }
+  };
+  /**
+   * Get all of the fields that matches the given attribute name.
+   */
+
+
+  Model.getFieldsByAttribute = function (name) {
+    var attr = this.getAttributeClass(name);
+    var fields = this.fields();
+    return Object.keys(fields).reduce(function (newFields, key) {
+      var field = fields[key];
+
+      if (field instanceof attr) {
+        newFields[key] = field;
+      }
+
+      return newFields;
+    }, {});
+  };
+  /**
+   * Get all `increment` fields from the schema.
+   */
+
+
+  Model.getIncrementFields = function () {
+    return this.getFieldsByAttribute('increment');
+  };
+  /**
+   * Check if fields contains the `increment` field type.
+   */
+
+
+  Model.hasIncrementFields = function () {
+    return Object.keys(this.getIncrementFields()).length > 0;
+  };
+  /**
+   * Get all `belongsToMany` fields from the schema.
+   */
+
+
+  Model.pivotFields = function () {
+    var fields = [];
+    Utils.forOwn(this.fields(), function (field, key) {
+      var _a;
+
+      if (field instanceof vuex_orm_esm_BelongsToMany || field instanceof vuex_orm_esm_MorphToMany || field instanceof vuex_orm_esm_MorphedByMany) {
+        fields.push((_a = {}, _a[key] = field, _a));
+      }
+    });
+    return fields;
+  };
+  /**
+   * Check if fields contains the `belongsToMany` field type.
+   */
+
+
+  Model.hasPivotFields = function () {
+    return this.pivotFields().length > 0;
+  };
+  /**
+   * Create a new model instance.
+   */
+
+
+  Model.make = function (data, plain) {
+    if (plain === void 0) {
+      plain = false;
+    }
+
+    if (!plain) {
+      return new this(data);
+    }
+
+    return this.fill({}, data, true);
+  };
+  /**
+   * Create a new plain model record.
+   */
+
+
+  Model.makePlain = function (data) {
+    return this.make(data, true);
+  };
+  /**
+   * Remove any fields not defined in the model schema. This method
+   * also fixes any incorrect values as well.
+   */
+
+
+  Model.fix = function (data, keep) {
+    if (keep === void 0) {
+      keep = ['$id'];
+    }
+
+    var fields = this.getFields();
+    return Object.keys(data).reduce(function (record, key) {
+      var value = data[key];
+      var field = fields[key];
+
+      if (keep.includes(key)) {
+        record[key] = value;
+        return record;
+      }
+
+      if (!field) {
+        return record;
+      }
+
+      record[key] = field.fill(value);
+      return record;
+    }, {});
+  };
+  /**
+   * Fix multiple records.
+   */
+
+
+  Model.fixMany = function (data, keep) {
+    var _this = this;
+
+    return Object.keys(data).reduce(function (records, id) {
+      records[id] = _this.fix(data[id], keep);
+      return records;
+    }, {});
+  };
+  /**
+   * Fill any missing fields in the given data with the default
+   * value defined in the model schema.
+   */
+
+
+  Model.hydrate = function (data, keep) {
+    if (keep === void 0) {
+      keep = ['$id'];
+    }
+
+    var fields = this.getFields();
+    var record = Object.keys(fields).reduce(function (record, key) {
+      var field = fields[key];
+      var value = data[key];
+      record[key] = field.fill(value);
+      return record;
+    }, {});
+    return Object.keys(data).reduce(function (record, key) {
+      if (keep.includes(key) && data[key] !== undefined) {
+        record[key] = data[key];
+      }
+
+      return record;
+    }, record);
+  };
+  /**
+   * Fill multiple records.
+   */
+
+
+  Model.hydrateMany = function (data, keep) {
+    var _this = this;
+
+    return Object.keys(data).reduce(function (records, id) {
+      records[id] = _this.hydrate(data[id], keep);
+      return records;
+    }, {});
+  };
+  /**
+   * Fill the given obejct with the given record. If no record were passed,
+   * or if the record has any missing fields, each value of the fields will
+   * be filled with its default value defined at model fields definition.
+   */
+
+
+  Model.fill = function (self, record, plain) {
+    if (self === void 0) {
+      self = {};
+    }
+
+    if (record === void 0) {
+      record = {};
+    }
+
+    if (plain === void 0) {
+      plain = false;
+    }
+
+    var fields = this.getFields();
+    return Object.keys(fields).reduce(function (target, key) {
+      var field = fields[key];
+      var value = record[key];
+      target[key] = field.make(value, record, key, plain);
+      return target;
+    }, self);
+  };
+  /**
+   * Get the static class of this model.
+   */
+
+
+  Model.prototype.$self = function () {
+    return this.constructor;
+  };
+  /**
+   * The definition of the fields of the model and its relations.
+   */
+
+
+  Model.prototype.$fields = function () {
+    return this.$self().fields();
+  };
+  /**
+   * Get Vuex Store insatnce out of connection.
+   */
+
+
+  Model.prototype.$store = function () {
+    return this.$self().store();
+  };
+  /**
+   * Get module namespaced path for the model.
+   */
+
+
+  Model.prototype.$namespace = function (method) {
+    return this.$self().namespace(method);
+  };
+  /**
+   * Dispatch an action.
+   */
+
+
+  Model.prototype.$dispatch = function (method, payload) {
+    return this.$self().dispatch(method, payload);
+  };
+  /**
+   * Call getetrs.
+   */
+
+
+  Model.prototype.$getters = function (method) {
+    return this.$self().getters(method);
+  };
+  /**
+   * Create records.
+   */
+
+
+  Model.prototype.$create = function (payload) {
+    return __awaiter(this, void 0, void 0, function () {
+      return __generator(this, function (_a) {
+        return [2
+        /*return*/
+        , this.$dispatch('create', payload)];
+      });
+    });
+  };
+  /**
+   * Create records.
+   */
+
+
+  Model.prototype.$insert = function (payload) {
+    return __awaiter(this, void 0, void 0, function () {
+      return __generator(this, function (_a) {
+        return [2
+        /*return*/
+        , this.$dispatch('insert', payload)];
+      });
+    });
+  };
+  /**
+   * Update records.
+   */
+
+
+  Model.prototype.$update = function (payload) {
+    return __awaiter(this, void 0, void 0, function () {
+      return __generator(this, function (_a) {
+        if (Array.isArray(payload)) {
+          return [2
+          /*return*/
+          , this.$dispatch('update', payload)];
+        }
+
+        if (payload.where !== undefined) {
+          return [2
+          /*return*/
+          , this.$dispatch('update', payload)];
+        }
+
+        if (this.$self().id(payload) === undefined) {
+          return [2
+          /*return*/
+          , this.$dispatch('update', {
+            where: this.$id,
+            data: payload
+          })];
+        }
+
+        return [2
+        /*return*/
+        , this.$dispatch('update', payload)];
+      });
+    });
+  };
+  /**
+   * Insert or update records.
+   */
+
+
+  Model.prototype.$insertOrUpdate = function (payload) {
+    return __awaiter(this, void 0, void 0, function () {
+      return __generator(this, function (_a) {
+        return [2
+        /*return*/
+        , this.$dispatch('insertOrUpdate', payload)];
+      });
+    });
+  };
+  /**
+   * Get all records.
+   */
+
+
+  Model.prototype.$all = function () {
+    return this.$getters('all')();
+  };
+  /**
+   * Find a record.
+   */
+
+
+  Model.prototype.$find = function (id) {
+    return this.$getters('find')(id);
+  };
+  /**
+   * Get query instance.
+   */
+
+
+  Model.prototype.$query = function () {
+    return this.$getters('query')();
+  };
+  /**
+   * Insert or update records.
+   */
+
+
+  Model.prototype.$delete = function (condition) {
+    return __awaiter(this, void 0, void 0, function () {
+      return __generator(this, function (_a) {
+        condition = condition === undefined ? this.$id : condition;
+        return [2
+        /*return*/
+        , this.$dispatch('delete', condition)];
+      });
+    });
+  };
+  /**
+   * Fill the model instance with the given record. If no record were passed,
+   * or if the record has any missing fields, each value of the fields will
+   * be filled with its default value defined at model fields definition.
+   */
+
+
+  Model.prototype.$fill = function (record) {
+    this.$self().fill(this, record);
+  };
+  /**
+   * Serialize field values into json.
+   */
+
+
+  Model.prototype.$toJson = function () {
+    return this.$self().makePlain(this);
+  };
+  /**
+   * The primary key to be used for the model.
+   */
+
+
+  Model.primaryKey = 'id';
+  return Model;
+}();
+
+function unwrapExports(x) {
+  return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
+}
+
+function createCommonjsModule(fn, module) {
+  return module = {
+    exports: {}
+  }, fn(module, module.exports), module.exports;
+}
+
+var ImmutableUtils = createCommonjsModule(function (module, exports) {
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.isImmutable = isImmutable;
+  exports.denormalizeImmutable = denormalizeImmutable;
+  /**
+   * Helpers to enable Immutable compatibility *without* bringing in
+   * the 'immutable' package as a dependency.
+   */
+
+  /**
+   * Check if an object is immutable by checking if it has a key specific
+   * to the immutable library.
+   *
+   * @param  {any} object
+   * @return {bool}
+   */
+
+  function isImmutable(object) {
+    return !!(object && typeof object.hasOwnProperty === 'function' && (object.hasOwnProperty('__ownerID') || // Immutable.Map
+    object._map && object._map.hasOwnProperty('__ownerID') // Immutable.Record
+    ));
+  }
+  /**
+   * Denormalize an immutable entity.
+   *
+   * @param  {Schema} schema
+   * @param  {Immutable.Map|Immutable.Record} input
+   * @param  {function} unvisit
+   * @param  {function} getDenormalizedEntity
+   * @return {Immutable.Map|Immutable.Record}
+   */
+
+
+  function denormalizeImmutable(schema, input, unvisit) {
+    return Object.keys(schema).reduce(function (object, key) {
+      // Immutable maps cast keys to strings on write so we need to ensure
+      // we're accessing them using string keys.
+      var stringKey = '' + key;
+
+      if (object.has(stringKey)) {
+        return object.set(stringKey, unvisit(object.get(stringKey), schema[stringKey]));
+      } else {
+        return object;
+      }
+    }, input);
+  }
+});
+unwrapExports(ImmutableUtils);
+var ImmutableUtils_1 = ImmutableUtils.isImmutable;
+var ImmutableUtils_2 = ImmutableUtils.denormalizeImmutable;
+var Entity = createCommonjsModule(function (module, exports) {
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+
+  var _typeof = typeof Symbol === "function" && Object(helpers_typeof["default"])(Symbol.iterator) === "symbol" ? function (obj) {
+    return Object(helpers_typeof["default"])(obj);
+  } : function (obj) {
+    return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : Object(helpers_typeof["default"])(obj);
+  };
+
+  var _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  var _createClass = function () {
+    function defineProperties(target, props) {
+      for (var i = 0; i < props.length; i++) {
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor) descriptor.writable = true;
+        Object.defineProperty(target, descriptor.key, descriptor);
+      }
+    }
+
+    return function (Constructor, protoProps, staticProps) {
+      if (protoProps) defineProperties(Constructor.prototype, protoProps);
+      if (staticProps) defineProperties(Constructor, staticProps);
+      return Constructor;
+    };
+  }();
+
+  var ImmutableUtils$$1 = _interopRequireWildcard(ImmutableUtils);
+
+  function _interopRequireWildcard(obj) {
+    if (obj && obj.__esModule) {
+      return obj;
+    } else {
+      var newObj = {};
+
+      if (obj != null) {
+        for (var key in obj) {
+          if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key];
+        }
+      }
+
+      newObj.default = obj;
+      return newObj;
+    }
+  }
+
+  function _defineProperty(obj, key, value) {
+    if (key in obj) {
+      Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      });
+    } else {
+      obj[key] = value;
+    }
+
+    return obj;
+  }
+
+  function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  }
+
+  var getDefaultGetId = function getDefaultGetId(idAttribute) {
+    return function (input) {
+      return ImmutableUtils$$1.isImmutable(input) ? input.get(idAttribute) : input[idAttribute];
+    };
+  };
+
+  var EntitySchema = function () {
+    function EntitySchema(key) {
+      var definition = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+      var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+
+      _classCallCheck(this, EntitySchema);
+
+      if (!key || typeof key !== 'string') {
+        throw new Error('Expected a string key for Entity, but found ' + key + '.');
+      }
+
+      var _options$idAttribute = options.idAttribute,
+          idAttribute = _options$idAttribute === undefined ? 'id' : _options$idAttribute,
+          _options$mergeStrateg = options.mergeStrategy,
+          mergeStrategy = _options$mergeStrateg === undefined ? function (entityA, entityB) {
+        return _extends({}, entityA, entityB);
+      } : _options$mergeStrateg,
+          _options$processStrat = options.processStrategy,
+          processStrategy = _options$processStrat === undefined ? function (input) {
+        return _extends({}, input);
+      } : _options$processStrat;
+      this._key = key;
+      this._getId = typeof idAttribute === 'function' ? idAttribute : getDefaultGetId(idAttribute);
+      this._idAttribute = idAttribute;
+      this._mergeStrategy = mergeStrategy;
+      this._processStrategy = processStrategy;
+      this.define(definition);
+    }
+
+    _createClass(EntitySchema, [{
+      key: 'define',
+      value: function define(definition) {
+        this.schema = Object.keys(definition).reduce(function (entitySchema, key) {
+          var schema = definition[key];
+          return _extends({}, entitySchema, _defineProperty({}, key, schema));
+        }, this.schema || {});
+      }
+    }, {
+      key: 'getId',
+      value: function getId(input, parent, key) {
+        return this._getId(input, parent, key);
+      }
+    }, {
+      key: 'merge',
+      value: function merge(entityA, entityB) {
+        return this._mergeStrategy(entityA, entityB);
+      }
+    }, {
+      key: 'normalize',
+      value: function normalize(input, parent, key, visit, addEntity) {
+        var _this = this;
+
+        var processedEntity = this._processStrategy(input, parent, key);
+
+        Object.keys(this.schema).forEach(function (key) {
+          if (processedEntity.hasOwnProperty(key) && _typeof(processedEntity[key]) === 'object') {
+            var schema = _this.schema[key];
+            processedEntity[key] = visit(processedEntity[key], processedEntity, key, schema, addEntity);
+          }
+        });
+        addEntity(this, processedEntity, input, parent, key);
+        return this.getId(input, parent, key);
+      }
+    }, {
+      key: 'denormalize',
+      value: function denormalize(entity, unvisit) {
+        var _this2 = this;
+
+        if (ImmutableUtils$$1.isImmutable(entity)) {
+          return ImmutableUtils$$1.denormalizeImmutable(this.schema, entity, unvisit);
+        }
+
+        Object.keys(this.schema).forEach(function (key) {
+          if (entity.hasOwnProperty(key)) {
+            var schema = _this2.schema[key];
+            entity[key] = unvisit(entity[key], schema);
+          }
+        });
+        return entity;
+      }
+    }, {
+      key: 'key',
+      get: function get() {
+        return this._key;
+      }
+    }, {
+      key: 'idAttribute',
+      get: function get() {
+        return this._idAttribute;
+      }
+    }]);
+
+    return EntitySchema;
+  }();
+
+  exports.default = EntitySchema;
+});
+unwrapExports(Entity);
+var Polymorphic = createCommonjsModule(function (module, exports) {
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+
+  var _createClass = function () {
+    function defineProperties(target, props) {
+      for (var i = 0; i < props.length; i++) {
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor) descriptor.writable = true;
+        Object.defineProperty(target, descriptor.key, descriptor);
+      }
+    }
+
+    return function (Constructor, protoProps, staticProps) {
+      if (protoProps) defineProperties(Constructor.prototype, protoProps);
+      if (staticProps) defineProperties(Constructor, staticProps);
+      return Constructor;
+    };
+  }();
+
+  function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  }
+
+  var PolymorphicSchema = function () {
+    function PolymorphicSchema(definition, schemaAttribute) {
+      _classCallCheck(this, PolymorphicSchema);
+
+      if (schemaAttribute) {
+        this._schemaAttribute = typeof schemaAttribute === 'string' ? function (input) {
+          return input[schemaAttribute];
+        } : schemaAttribute;
+      }
+
+      this.define(definition);
+    }
+
+    _createClass(PolymorphicSchema, [{
+      key: 'define',
+      value: function define(definition) {
+        this.schema = definition;
+      }
+    }, {
+      key: 'getSchemaAttribute',
+      value: function getSchemaAttribute(input, parent, key) {
+        return !this.isSingleSchema && this._schemaAttribute(input, parent, key);
+      }
+    }, {
+      key: 'inferSchema',
+      value: function inferSchema(input, parent, key) {
+        if (this.isSingleSchema) {
+          return this.schema;
+        }
+
+        var attr = this.getSchemaAttribute(input, parent, key);
+        return this.schema[attr];
+      }
+    }, {
+      key: 'normalizeValue',
+      value: function normalizeValue(value, parent, key, visit, addEntity) {
+        var schema = this.inferSchema(value, parent, key);
+
+        if (!schema) {
+          return value;
+        }
+
+        var normalizedValue = visit(value, parent, key, schema, addEntity);
+        return this.isSingleSchema || normalizedValue === undefined || normalizedValue === null ? normalizedValue : {
+          id: normalizedValue,
+          schema: this.getSchemaAttribute(value, parent, key)
+        };
+      }
+    }, {
+      key: 'denormalizeValue',
+      value: function denormalizeValue(value, unvisit) {
+        var schemaKey = (0, ImmutableUtils.isImmutable)(value) ? value.get('schema') : value.schema;
+
+        if (!this.isSingleSchema && !schemaKey) {
+          return value;
+        }
+
+        var id = (0, ImmutableUtils.isImmutable)(value) ? value.get('id') : value.id;
+        var schema = this.isSingleSchema ? this.schema : this.schema[schemaKey];
+        return unvisit(id || value, schema);
+      }
+    }, {
+      key: 'isSingleSchema',
+      get: function get() {
+        return !this._schemaAttribute;
+      }
+    }]);
+
+    return PolymorphicSchema;
+  }();
+
+  exports.default = PolymorphicSchema;
+});
+unwrapExports(Polymorphic);
+var Union = createCommonjsModule(function (module, exports) {
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+
+  var _createClass = function () {
+    function defineProperties(target, props) {
+      for (var i = 0; i < props.length; i++) {
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor) descriptor.writable = true;
+        Object.defineProperty(target, descriptor.key, descriptor);
+      }
+    }
+
+    return function (Constructor, protoProps, staticProps) {
+      if (protoProps) defineProperties(Constructor.prototype, protoProps);
+      if (staticProps) defineProperties(Constructor, staticProps);
+      return Constructor;
+    };
+  }();
+
+  var _Polymorphic2 = _interopRequireDefault(Polymorphic);
+
+  function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+      default: obj
+    };
+  }
+
+  function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  }
+
+  function _possibleConstructorReturn(self, call) {
+    if (!self) {
+      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    }
+
+    return call && (Object(helpers_typeof["default"])(call) === "object" || typeof call === "function") ? call : self;
+  }
+
+  function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) {
+      throw new TypeError("Super expression must either be null or a function, not " + Object(helpers_typeof["default"])(superClass));
+    }
+
+    subClass.prototype = Object.create(superClass && superClass.prototype, {
+      constructor: {
+        value: subClass,
+        enumerable: false,
+        writable: true,
+        configurable: true
+      }
+    });
+    if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+  }
+
+  var UnionSchema = function (_PolymorphicSchema) {
+    _inherits(UnionSchema, _PolymorphicSchema);
+
+    function UnionSchema(definition, schemaAttribute) {
+      _classCallCheck(this, UnionSchema);
+
+      if (!schemaAttribute) {
+        throw new Error('Expected option "schemaAttribute" not found on UnionSchema.');
+      }
+
+      return _possibleConstructorReturn(this, (UnionSchema.__proto__ || Object.getPrototypeOf(UnionSchema)).call(this, definition, schemaAttribute));
+    }
+
+    _createClass(UnionSchema, [{
+      key: 'normalize',
+      value: function normalize(input, parent, key, visit, addEntity) {
+        return this.normalizeValue(input, parent, key, visit, addEntity);
+      }
+    }, {
+      key: 'denormalize',
+      value: function denormalize(input, unvisit) {
+        return this.denormalizeValue(input, unvisit);
+      }
+    }]);
+
+    return UnionSchema;
+  }(_Polymorphic2.default);
+
+  exports.default = UnionSchema;
+});
+unwrapExports(Union);
+var Values = createCommonjsModule(function (module, exports) {
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+
+  var _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  var _createClass = function () {
+    function defineProperties(target, props) {
+      for (var i = 0; i < props.length; i++) {
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor) descriptor.writable = true;
+        Object.defineProperty(target, descriptor.key, descriptor);
+      }
+    }
+
+    return function (Constructor, protoProps, staticProps) {
+      if (protoProps) defineProperties(Constructor.prototype, protoProps);
+      if (staticProps) defineProperties(Constructor, staticProps);
+      return Constructor;
+    };
+  }();
+
+  var _Polymorphic2 = _interopRequireDefault(Polymorphic);
+
+  function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+      default: obj
+    };
+  }
+
+  function _defineProperty(obj, key, value) {
+    if (key in obj) {
+      Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      });
+    } else {
+      obj[key] = value;
+    }
+
+    return obj;
+  }
+
+  function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  }
+
+  function _possibleConstructorReturn(self, call) {
+    if (!self) {
+      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    }
+
+    return call && (Object(helpers_typeof["default"])(call) === "object" || typeof call === "function") ? call : self;
+  }
+
+  function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) {
+      throw new TypeError("Super expression must either be null or a function, not " + Object(helpers_typeof["default"])(superClass));
+    }
+
+    subClass.prototype = Object.create(superClass && superClass.prototype, {
+      constructor: {
+        value: subClass,
+        enumerable: false,
+        writable: true,
+        configurable: true
+      }
+    });
+    if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+  }
+
+  var ValuesSchema = function (_PolymorphicSchema) {
+    _inherits(ValuesSchema, _PolymorphicSchema);
+
+    function ValuesSchema() {
+      _classCallCheck(this, ValuesSchema);
+
+      return _possibleConstructorReturn(this, (ValuesSchema.__proto__ || Object.getPrototypeOf(ValuesSchema)).apply(this, arguments));
+    }
+
+    _createClass(ValuesSchema, [{
+      key: 'normalize',
+      value: function normalize(input, parent, key, visit, addEntity) {
+        var _this2 = this;
+
+        return Object.keys(input).reduce(function (output, key, index) {
+          var value = input[key];
+          return value !== undefined && value !== null ? _extends({}, output, _defineProperty({}, key, _this2.normalizeValue(value, input, key, visit, addEntity))) : output;
+        }, {});
+      }
+    }, {
+      key: 'denormalize',
+      value: function denormalize(input, unvisit) {
+        var _this3 = this;
+
+        return Object.keys(input).reduce(function (output, key) {
+          var entityOrId = input[key];
+          return _extends({}, output, _defineProperty({}, key, _this3.denormalizeValue(entityOrId, unvisit)));
+        }, {});
+      }
+    }]);
+
+    return ValuesSchema;
+  }(_Polymorphic2.default);
+
+  exports.default = ValuesSchema;
+});
+unwrapExports(Values);
+
+var _Array = createCommonjsModule(function (module, exports) {
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.denormalize = exports.normalize = undefined;
+
+  var _createClass = function () {
+    function defineProperties(target, props) {
+      for (var i = 0; i < props.length; i++) {
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor) descriptor.writable = true;
+        Object.defineProperty(target, descriptor.key, descriptor);
+      }
+    }
+
+    return function (Constructor, protoProps, staticProps) {
+      if (protoProps) defineProperties(Constructor.prototype, protoProps);
+      if (staticProps) defineProperties(Constructor, staticProps);
+      return Constructor;
+    };
+  }();
+
+  var _Polymorphic2 = _interopRequireDefault(Polymorphic);
+
+  function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+      default: obj
+    };
+  }
+
+  function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  }
+
+  function _possibleConstructorReturn(self, call) {
+    if (!self) {
+      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    }
+
+    return call && (Object(helpers_typeof["default"])(call) === "object" || typeof call === "function") ? call : self;
+  }
+
+  function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) {
+      throw new TypeError("Super expression must either be null or a function, not " + Object(helpers_typeof["default"])(superClass));
+    }
+
+    subClass.prototype = Object.create(superClass && superClass.prototype, {
+      constructor: {
+        value: subClass,
+        enumerable: false,
+        writable: true,
+        configurable: true
+      }
+    });
+    if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+  }
+
+  var validateSchema = function validateSchema(definition) {
+    var isArray = Array.isArray(definition);
+
+    if (isArray && definition.length > 1) {
+      throw new Error('Expected schema definition to be a single schema, but found ' + definition.length + '.');
+    }
+
+    return definition[0];
+  };
+
+  var getValues = function getValues(input) {
+    return Array.isArray(input) ? input : Object.keys(input).map(function (key) {
+      return input[key];
+    });
+  };
+
+  var normalize = exports.normalize = function normalize(schema, input, parent, key, visit, addEntity) {
+    schema = validateSchema(schema);
+    var values = getValues(input); // Special case: Arrays pass *their* parent on to their children, since there
+    // is not any special information that can be gathered from themselves directly
+
+    return values.map(function (value, index) {
+      return visit(value, parent, key, schema, addEntity);
+    });
+  };
+
+  var denormalize = exports.denormalize = function denormalize(schema, input, unvisit) {
+    schema = validateSchema(schema);
+    return input && input.map ? input.map(function (entityOrId) {
+      return unvisit(entityOrId, schema);
+    }) : input;
+  };
+
+  var ArraySchema = function (_PolymorphicSchema) {
+    _inherits(ArraySchema, _PolymorphicSchema);
+
+    function ArraySchema() {
+      _classCallCheck(this, ArraySchema);
+
+      return _possibleConstructorReturn(this, (ArraySchema.__proto__ || Object.getPrototypeOf(ArraySchema)).apply(this, arguments));
+    }
+
+    _createClass(ArraySchema, [{
+      key: 'normalize',
+      value: function normalize(input, parent, key, visit, addEntity) {
+        var _this2 = this;
+
+        var values = getValues(input);
+        return values.map(function (value, index) {
+          return _this2.normalizeValue(value, parent, key, visit, addEntity);
+        }).filter(function (value) {
+          return value !== undefined && value !== null;
+        });
+      }
+    }, {
+      key: 'denormalize',
+      value: function denormalize(input, unvisit) {
+        var _this3 = this;
+
+        return input && input.map ? input.map(function (value) {
+          return _this3.denormalizeValue(value, unvisit);
+        }) : input;
+      }
+    }]);
+
+    return ArraySchema;
+  }(_Polymorphic2.default);
+
+  exports.default = ArraySchema;
+});
+
+unwrapExports(_Array);
+var _Array_1 = _Array.denormalize;
+var _Array_2 = _Array.normalize;
+
+var _Object = createCommonjsModule(function (module, exports) {
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.denormalize = exports.normalize = undefined;
+
+  var _createClass = function () {
+    function defineProperties(target, props) {
+      for (var i = 0; i < props.length; i++) {
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor) descriptor.writable = true;
+        Object.defineProperty(target, descriptor.key, descriptor);
+      }
+    }
+
+    return function (Constructor, protoProps, staticProps) {
+      if (protoProps) defineProperties(Constructor.prototype, protoProps);
+      if (staticProps) defineProperties(Constructor, staticProps);
+      return Constructor;
+    };
+  }();
+
+  var _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  var ImmutableUtils$$1 = _interopRequireWildcard(ImmutableUtils);
+
+  function _interopRequireWildcard(obj) {
+    if (obj && obj.__esModule) {
+      return obj;
+    } else {
+      var newObj = {};
+
+      if (obj != null) {
+        for (var key in obj) {
+          if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key];
+        }
+      }
+
+      newObj.default = obj;
+      return newObj;
+    }
+  }
+
+  function _defineProperty(obj, key, value) {
+    if (key in obj) {
+      Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      });
+    } else {
+      obj[key] = value;
+    }
+
+    return obj;
+  }
+
+  function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  }
+
+  var _normalize = function _normalize(schema, input, parent, key, visit, addEntity) {
+    var object = _extends({}, input);
+
+    Object.keys(schema).forEach(function (key) {
+      var localSchema = schema[key];
+      var value = visit(input[key], input, key, localSchema, addEntity);
+
+      if (value === undefined || value === null) {
+        delete object[key];
+      } else {
+        object[key] = value;
+      }
+    });
+    return object;
+  };
+
+  exports.normalize = _normalize;
+
+  var _denormalize = function _denormalize(schema, input, unvisit) {
+    if (ImmutableUtils$$1.isImmutable(input)) {
+      return ImmutableUtils$$1.denormalizeImmutable(schema, input, unvisit);
+    }
+
+    var object = _extends({}, input);
+
+    Object.keys(schema).forEach(function (key) {
+      if (object[key]) {
+        object[key] = unvisit(object[key], schema[key]);
+      }
+    });
+    return object;
+  };
+
+  exports.denormalize = _denormalize;
+
+  var ObjectSchema = function () {
+    function ObjectSchema(definition) {
+      _classCallCheck(this, ObjectSchema);
+
+      this.define(definition);
+    }
+
+    _createClass(ObjectSchema, [{
+      key: 'define',
+      value: function define(definition) {
+        this.schema = Object.keys(definition).reduce(function (entitySchema, key) {
+          var schema = definition[key];
+          return _extends({}, entitySchema, _defineProperty({}, key, schema));
+        }, this.schema || {});
+      }
+    }, {
+      key: 'normalize',
+      value: function normalize() {
+        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+          args[_key] = arguments[_key];
+        }
+
+        return _normalize.apply(undefined, [this.schema].concat(args));
+      }
+    }, {
+      key: 'denormalize',
+      value: function denormalize() {
+        for (var _len2 = arguments.length, args = Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+          args[_key2] = arguments[_key2];
+        }
+
+        return _denormalize.apply(undefined, [this.schema].concat(args));
+      }
+    }]);
+
+    return ObjectSchema;
+  }();
+
+  exports.default = ObjectSchema;
+});
+
+unwrapExports(_Object);
+var _Object_1 = _Object.denormalize;
+var _Object_2 = _Object.normalize;
+var src = createCommonjsModule(function (module, exports) {
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.denormalize = exports.normalize = exports.schema = undefined;
+
+  var _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  var _typeof = typeof Symbol === "function" && Object(helpers_typeof["default"])(Symbol.iterator) === "symbol" ? function (obj) {
+    return Object(helpers_typeof["default"])(obj);
+  } : function (obj) {
+    return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : Object(helpers_typeof["default"])(obj);
+  };
+
+  var _Entity2 = _interopRequireDefault(Entity);
+
+  var _Union2 = _interopRequireDefault(Union);
+
+  var _Values2 = _interopRequireDefault(Values);
+
+  var ArrayUtils = _interopRequireWildcard(_Array);
+
+  var ObjectUtils = _interopRequireWildcard(_Object);
+
+  var ImmutableUtils$$1 = _interopRequireWildcard(ImmutableUtils);
+
+  function _interopRequireWildcard(obj) {
+    if (obj && obj.__esModule) {
+      return obj;
+    } else {
+      var newObj = {};
+
+      if (obj != null) {
+        for (var key in obj) {
+          if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key];
+        }
+      }
+
+      newObj.default = obj;
+      return newObj;
+    }
+  }
+
+  function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+      default: obj
+    };
+  }
+
+  var visit = function visit(value, parent, key, schema, addEntity) {
+    if ((typeof value === 'undefined' ? 'undefined' : _typeof(value)) !== 'object' || !value) {
+      return value;
+    }
+
+    if ((typeof schema === 'undefined' ? 'undefined' : _typeof(schema)) === 'object' && (!schema.normalize || typeof schema.normalize !== 'function')) {
+      var method = Array.isArray(schema) ? ArrayUtils.normalize : ObjectUtils.normalize;
+      return method(schema, value, parent, key, visit, addEntity);
+    }
+
+    return schema.normalize(value, parent, key, visit, addEntity);
+  };
+
+  var addEntities = function addEntities(entities) {
+    return function (schema, processedEntity, value, parent, key) {
+      var schemaKey = schema.key;
+      var id = schema.getId(value, parent, key);
+
+      if (!(schemaKey in entities)) {
+        entities[schemaKey] = {};
+      }
+
+      var existingEntity = entities[schemaKey][id];
+
+      if (existingEntity) {
+        entities[schemaKey][id] = schema.merge(existingEntity, processedEntity);
+      } else {
+        entities[schemaKey][id] = processedEntity;
+      }
+    };
+  };
+
+  var schema = exports.schema = {
+    Array: ArrayUtils.default,
+    Entity: _Entity2.default,
+    Object: ObjectUtils.default,
+    Union: _Union2.default,
+    Values: _Values2.default
+  };
+
+  var normalize = exports.normalize = function normalize(input, schema) {
+    if (!input || (typeof input === 'undefined' ? 'undefined' : _typeof(input)) !== 'object') {
+      throw new Error('Unexpected input given to normalize. Expected type to be "object", found "' + (typeof input === 'undefined' ? 'undefined' : _typeof(input)) + '".');
+    }
+
+    var entities = {};
+    var addEntity = addEntities(entities);
+    var result = visit(input, input, null, schema, addEntity);
+    return {
+      entities: entities,
+      result: result
+    };
+  };
+
+  var unvisitEntity = function unvisitEntity(id, schema, unvisit, getEntity, cache) {
+    var entity = getEntity(id, schema);
+
+    if ((typeof entity === 'undefined' ? 'undefined' : _typeof(entity)) !== 'object' || entity === null) {
+      return entity;
+    }
+
+    if (!cache[schema.key]) {
+      cache[schema.key] = {};
+    }
+
+    if (!cache[schema.key][id]) {
+      // Ensure we don't mutate it non-immutable objects
+      var entityCopy = ImmutableUtils$$1.isImmutable(entity) ? entity : _extends({}, entity); // Need to set this first so that if it is referenced further within the
+      // denormalization the reference will already exist.
+
+      cache[schema.key][id] = entityCopy;
+      cache[schema.key][id] = schema.denormalize(entityCopy, unvisit);
+    }
+
+    return cache[schema.key][id];
+  };
+
+  var getUnvisit = function getUnvisit(entities) {
+    var cache = {};
+    var getEntity = getEntities(entities);
+    return function unvisit(input, schema) {
+      if ((typeof schema === 'undefined' ? 'undefined' : _typeof(schema)) === 'object' && (!schema.denormalize || typeof schema.denormalize !== 'function')) {
+        var method = Array.isArray(schema) ? ArrayUtils.denormalize : ObjectUtils.denormalize;
+        return method(schema, input, unvisit);
+      }
+
+      if (input === undefined || input === null) {
+        return input;
+      }
+
+      if (schema instanceof _Entity2.default) {
+        return unvisitEntity(input, schema, unvisit, getEntity, cache);
+      }
+
+      return schema.denormalize(input, unvisit);
+    };
+  };
+
+  var getEntities = function getEntities(entities) {
+    var isImmutable = ImmutableUtils$$1.isImmutable(entities);
+    return function (entityOrId, schema) {
+      var schemaKey = schema.key;
+
+      if ((typeof entityOrId === 'undefined' ? 'undefined' : _typeof(entityOrId)) === 'object') {
+        return entityOrId;
+      }
+
+      return isImmutable ? entities.getIn([schemaKey, entityOrId.toString()]) : entities[schemaKey][entityOrId];
+    };
+  };
+
+  var denormalize = exports.denormalize = function denormalize(input, schema, entities) {
+    if (typeof input !== 'undefined') {
+      return getUnvisit(entities)(input, schema);
+    }
+  };
+});
+unwrapExports(src);
+var src_1 = src.denormalize;
+var src_2 = src.normalize;
+var src_3 = src.schema;
+
+var Normalizer =
+/** @class */
+function () {
+  function Normalizer() {}
+  /**
+   * Normalize the data given data.
+   */
+
+
+  Normalizer.process = function (query, record) {
+    if (Utils.isEmpty(record)) {
+      return {};
+    }
+
+    var entity = query.database().schemas[query.model.entity];
+    var schema = Array.isArray(record) ? [entity] : entity;
+    return src_2(record, schema).entities;
+  };
+
+  return Normalizer;
+}();
+
+var PivotCreator =
+/** @class */
+function () {
+  function PivotCreator() {}
+  /**
+   * Create an intermediate entity if the data contains any entities that
+   * require it for example `belongsTo` or `morphMany`.
+   */
+
+
+  PivotCreator.process = function (query, data) {
+    Object.keys(data).forEach(function (entity) {
+      var model = query.getModel(entity);
+
+      if (model.hasPivotFields()) {
+        Utils.forOwn(model.pivotFields(), function (field) {
+          Utils.forOwn(field, function (attr, key) {
+            attr.createPivots(model, data, key);
+          });
+        });
+      }
+    });
+    return data;
+  };
+
+  return PivotCreator;
+}();
+
+var Incrementer =
+/** @class */
+function () {
+  function Incrementer() {}
+  /**
+   * Increment all fields that have increment attribute.
+   */
+
+
+  Incrementer.process = function (query, data) {
+    var _this = this;
+
+    return Utils.mapValues(data, function (records, entity) {
+      var newQuery = query.newPlainQuery(entity); // If the entity doesn't have increment attribute, do nothing and
+      // just return immediately.
+
+      if (!newQuery.model.hasIncrementFields()) {
+        return records;
+      }
+
+      _this.processRecordsByFields(records, newQuery);
+
+      return records;
+    });
+  };
+  /**
+   * Process all of the increment fields.
+   */
+
+
+  Incrementer.processRecordsByFields = function (records, query) {
+    var _this = this;
+
+    var fields = query.model.getIncrementFields();
+    Utils.forOwn(fields, function (_attr, key) {
+      _this.processRecords(records, query, key);
+    });
+  };
+  /**
+   * Process all records and increment all field that is defined as increment.
+   */
+
+
+  Incrementer.processRecords = function (records, query, key) {
+    var max = this.max(records, query, key);
+    Utils.forOwn(records, function (record) {
+      if (typeof record[key] !== 'number') {
+        record[key] = ++max;
+      }
+    });
+  };
+  /**
+   * Get the max value of the specified field with given data combined
+   * with existing records.
+   */
+
+
+  Incrementer.max = function (records, query, field) {
+    var maxInState = query.max(field);
+    var maxInRecord = Math.max.apply(Math, Utils.map(records, function (record) {
+      var id = record[field];
+      return typeof id === 'number' ? id : 0;
+    }));
+    return Math.max(maxInRecord, maxInState);
+  };
+
+  return Incrementer;
+}();
+
+var Attacher =
+/** @class */
+function () {
+  function Attacher() {}
+  /**
+   * Attach missing relational key to the records.
+   */
+
+
+  Attacher.process = function (query, data) {
+    Utils.forOwn(data, function (entity, name) {
+      var fields = query.getModel(name).fields();
+      Utils.forOwn(entity, function (record) {
+        Utils.forOwn(record, function (value, key) {
+          var field = fields[key];
+
+          if (field instanceof vuex_orm_esm_Relation) {
+            field.attach(value, record, data);
+          }
+        });
+      });
+    });
+    return data;
+  };
+
+  return Attacher;
+}();
+
+var IdFixer =
+/** @class */
+function () {
+  function IdFixer() {}
+  /**
+   * Fix all of the "no key" records with appropriate id value if it can.
+   */
+
+
+  IdFixer.process = function (query, data) {
+    var _this = this;
+
+    return Utils.mapValues(data, function (records, entity) {
+      var newQuery = query.newPlainQuery(entity);
+      return _this.processRecords(records, newQuery);
+    });
+  };
+  /**
+   * Process records to Fix all of the "no key" records with
+   * appropriate id value if it can.
+   */
+
+
+  IdFixer.processRecords = function (records, query) {
+    return Object.keys(records).reduce(function (newRecords, id) {
+      var record = records[id];
+      var newId = query.model.id(record);
+      var newStringId = isNaN(newId) ? newId : newId.toString();
+
+      if (newId === undefined || id === newStringId) {
+        newRecords[id] = record;
+        return newRecords;
+      }
+
+      newRecords[newStringId] = __assign({}, record, {
+        $id: newId
+      });
+      return newRecords;
+    }, {});
+  };
+
+  return IdFixer;
+}();
+
+var Processor =
+/** @class */
+function () {
+  function Processor() {}
+  /**
+   * Normalize the given data.
+   */
+
+
+  Processor.normalize = function (query, record) {
+    var data = Normalizer.process(query, record);
+    data = PivotCreator.process(query, data);
+    data = Incrementer.process(query, data);
+    data = Attacher.process(query, data);
+    data = IdFixer.process(query, data);
+    return data;
+  };
+
+  return Processor;
+}();
+
+var WhereFilter =
+/** @class */
+function () {
+  function WhereFilter() {}
+  /**
+   * Filter the given data by registered where clause.
+   */
+
+
+  WhereFilter.filter = function (query, records) {
+    var _this = this;
+
+    if (query.wheres.length === 0) {
+      return records;
+    }
+
+    return records.filter(function (record) {
+      return _this.check(query, record);
+    });
+  };
+  /**
+   * Checks if given Record matches the registered where clause.
+   */
+
+
+  WhereFilter.check = function (query, record) {
+    var whereTypes = Utils.groupBy(query.wheres, function (where) {
+      return where.boolean;
+    });
+    var comparator = this.getComparator(query, record);
+    var results = [];
+    whereTypes.and && results.push(whereTypes.and.every(comparator));
+    whereTypes.or && results.push(whereTypes.or.some(comparator));
+    return results.indexOf(true) !== -1;
+  };
+  /**
+   * Get comparator for the where clause.
+   */
+
+
+  WhereFilter.getComparator = function (query, record) {
+    var _this = this;
+
+    return function (where) {
+      // Function with Record and Query as argument.
+      if (typeof where.field === 'function') {
+        var newQuery = new Query(query.rootState, query.entity);
+
+        var result = _this.executeWhereClosure(newQuery, record, where.field);
+
+        if (typeof result === 'boolean') {
+          return result;
+        } // If closure returns undefined, we need to execute the local query
+
+
+        var matchingRecords = newQuery.get(); // And check if current record is part of the resul
+
+        return !Utils.isEmpty(matchingRecords.filter(function (rec) {
+          return rec['$id'] === record['$id'];
+        }));
+      } // Function with Record value as argument.
+
+
+      if (typeof where.value === 'function') {
+        return where.value(record[where.field]);
+      } // Check if field value is in given where Array.
+
+
+      if (Array.isArray(where.value)) {
+        return where.value.indexOf(record[where.field]) !== -1;
+      } // Simple equal check.
+
+
+      return record[where.field] === where.value;
+    };
+  };
+  /**
+   * Execute where closure.
+   */
+
+
+  WhereFilter.executeWhereClosure = function (query, record, closure) {
+    if (closure.length !== 3) {
+      return closure(record, query);
+    }
+
+    var model = new query.model(record);
+    return closure(record, query, model);
+  };
+
+  return WhereFilter;
+}();
+
+var OrderByFilter =
+/** @class */
+function () {
+  function OrderByFilter() {}
+  /**
+   * Sort the given data by registered orders.
+   */
+
+
+  OrderByFilter.filter = function (query, records) {
+    if (query.orders.length === 0) {
+      return records;
+    }
+
+    var keys = query.orders.map(function (order) {
+      return order.field;
+    });
+    var directions = query.orders.map(function (order) {
+      return order.direction;
+    });
+    return Utils.orderBy(records, keys, directions);
+  };
+
+  return OrderByFilter;
+}();
+
+var LimitFilter =
+/** @class */
+function () {
+  function LimitFilter() {}
+  /**
+   * Limit the given records by the lmilt and offset.
+   */
+
+
+  LimitFilter.filter = function (query, records) {
+    return records.slice(query._offset, query._offset + query._limit);
+  };
+
+  return LimitFilter;
+}();
+
+var Filter =
+/** @class */
+function () {
+  function Filter() {}
+  /**
+   * Filter the given data by registered where clause.
+   */
+
+
+  Filter.where = function (query, records) {
+    return WhereFilter.filter(query, records);
+  };
+  /**
+   * Sort the given data by registered orders.
+   */
+
+
+  Filter.orderBy = function (query, records) {
+    return OrderByFilter.filter(query, records);
+  };
+  /**
+   * Limit the given records by the lmilt and offset.
+   */
+
+
+  Filter.limit = function (query, records) {
+    return LimitFilter.filter(query, records);
+  };
+
+  return Filter;
+}();
+
+var Loader =
+/** @class */
+function () {
+  function Loader() {}
+  /**
+   * Set eager load relation and constraint.
+   */
+
+
+  Loader.setEagerLoad = function (query, relation, constraint) {
+    if (constraint === void 0) {
+      constraint = null;
+    }
+
+    if (!query.load[relation]) {
+      query.load[relation] = [];
+    }
+
+    constraint && query.load[relation].push(constraint);
+  };
+  /**
+   * Set the relationships that should be loaded.
+   */
+
+
+  Loader.with = function (query, name, constraint) {
+    // If the name of the relation is `*`, we'll load all relationships.
+    if (name === '*') {
+      this.withAll(query);
+      return;
+    } // Else parse relations and set appropriate constraints.
+
+
+    this.parseWithRelations(query, name.split('.'), constraint);
+  };
+  /**
+   * Query all relations.
+   */
+
+
+  Loader.withAll = function (query, constraint) {
+    if (constraint === void 0) {
+      constraint = function constraint() {
+        return null;
+      };
+    }
+
+    var fields = query.model.getFields();
+
+    for (var field in query.model.getFields()) {
+      fields[field] instanceof vuex_orm_esm_Relation && this.with(query, field, constraint);
+    }
+  };
+  /**
+   * Query all relations recursively.
+   */
+
+
+  Loader.withAllRecursive = function (query, depth) {
+    this.withAll(query, function (relatedQuery) {
+      depth > 0 && relatedQuery.withAllRecursive(depth - 1);
+    });
+  };
+  /**
+   * Parse a list of relations into individuals.
+   */
+
+
+  Loader.parseWithRelations = function (query, relations, constraint) {
+    var _this = this;
+
+    var relation = relations[0];
+    relation.split('|').forEach(function (name) {
+      _this.setEagerLoad(query, name);
+    });
+
+    if (relations.length === 1) {
+      this.setEagerLoad(query, relation, constraint);
+      return;
+    }
+
+    relations.shift();
+    this.addNestedWiths(query, relations, constraint);
+  };
+  /**
+   * Parse the nested relationships in a relation.
+   */
+
+
+  Loader.addNestedWiths = function (query, relations, constraint) {
+    var relation = relations.join('.');
+    this.setEagerLoad(query, relation, function (nestedQuery) {
+      nestedQuery.with(relation, constraint);
+    });
+  };
+  /**
+   * Eager load the relationships for the given records.
+   */
+
+
+  Loader.eagerLoadRelations = function (query, records) {
+    var fields = query.model.getFields();
+
+    for (var name_1 in query.load) {
+      var relation = fields[name_1];
+
+      if (relation instanceof vuex_orm_esm_Relation) {
+        relation.load(query, records, name_1);
+      }
+    }
+  };
+
+  return Loader;
+}();
+
+var Hook =
+/** @class */
+function () {
+  /**
+   * Create a lidecycle hook instance.
+   */
+  function Hook(query) {
+    this.query = query;
+  }
+  /**
+   * Register a callback. It Returns unique ID for registered callback.
+   */
+
+
+  Hook.on = function (on, callback, once) {
+    if (once === void 0) {
+      once = false;
+    }
+
+    var uid = this.lastHookId + 1;
+    this.lastHookId = uid;
+
+    if (!this.hooks[on]) {
+      this.hooks[on] = [];
+    }
+
+    this.hooks[on].push({
+      callback: callback,
+      once: once,
+      uid: uid
+    });
+    return uid;
+  };
+  /**
+   * Remove hook registration.
+   */
+
+
+  Hook.off = function (uid) {
+    var _this = this;
+
+    var removed = false;
+    Object.keys(this.hooks).some(function (on) {
+      var hook = _this.hooks[on];
+      var index = hook.findIndex(function (h) {
+        return h.uid === uid;
+      });
+
+      if (index !== -1) {
+        hook.splice(index, 1);
+        removed = true;
+      }
+
+      return removed;
+    });
+    return removed;
+  };
+  /**
+   * Get the hook class.
+   */
+
+
+  Hook.prototype.self = function () {
+    return this.constructor;
+  };
+  /**
+   * Get the action hook.
+   */
+
+
+  Hook.prototype.getActionHook = function (name) {
+    if (!this.query.actionContext) {
+      return null;
+    }
+
+    var hook = this.query.module.actions && this.query.module.actions[name];
+    return hook || null;
+  };
+  /**
+   * Get the global hook.
+   */
+
+
+  Hook.prototype.getGlobalHook = function (name) {
+    if (!this.self().hooks[name]) {
+      return null;
+    }
+
+    return this.self().hooks[name];
+  };
+  /**
+   * Check if the given hook exist.
+   */
+
+
+  Hook.prototype.has = function (name) {
+    return !!this.getActionHook(name) || !!this.getGlobalHook(name);
+  };
+  /**
+   * Execute the callback of the given hook.
+   */
+
+
+  Hook.prototype.execute = function (on, data) {
+    if (!this.has(on)) {
+      return data;
+    }
+
+    data = this.executeActionHook(on, data);
+    data = this.executeGlobalHook(on, data);
+    return data;
+  };
+  /**
+   * Execute the action hook.
+   */
+
+
+  Hook.prototype.executeActionHook = function (on, data) {
+    if (!this.query.actionContext) {
+      return data;
+    }
+
+    var hook = this.getActionHook(on);
+
+    if (!hook) {
+      return data;
+    }
+
+    var result = hook(this.query.actionContext, data);
+
+    if (result === false) {
+      return false;
+    }
+
+    return result || data;
+  };
+  /**
+   * Execute the global callback of the given hook.
+   */
+
+
+  Hook.prototype.executeGlobalHook = function (on, data) {
+    var _this = this;
+
+    if (data === false) {
+      return false;
+    }
+
+    var hooks = this.getGlobalHook(on);
+
+    if (!hooks) {
+      return data;
+    } // Track indexes to delete.
+
+
+    var deleteHookIndexes = []; // Loop all hooks.
+
+    hooks.forEach(function (hook, hookIndex) {
+      var callback = hook.callback,
+          once = hook.once;
+      data = callback.call(_this.query, data, _this.query.entity); // Add hook index to delete.
+
+      once && deleteHookIndexes.push(hookIndex);
+    }); // Remove hooks to be deleted in reverse order.
+
+    deleteHookIndexes.reverse().forEach(function (hookIndex) {
+      hooks.splice(hookIndex, 1);
+    });
+    return data;
+  };
+  /**
+   * Execute the callback for all given records.
+   */
+
+
+  Hook.prototype.executeOnRecords = function (on, records) {
+    var _this = this;
+
+    if (!this.has(on)) {
+      return records;
+    }
+
+    return Object.keys(records).reduce(function (newRecords, id) {
+      var record = records[id];
+
+      var result = _this.execute(on, record);
+
+      if (result === false) {
+        return newRecords;
+      }
+
+      newRecords[id] = result;
+      return newRecords;
+    }, {});
+  };
+  /**
+   * Execute the callback for the given collection.
+   */
+
+
+  Hook.prototype.executeOnCollection = function (on, collection) {
+    var _this = this;
+
+    if (!this.has(on)) {
+      return collection;
+    }
+
+    collection.map(function (item) {
+      _this.execute(on, item);
+    });
+    return collection;
+  };
+  /**
+   * Global lifecycle hooks for the query.
+   */
+
+
+  Hook.hooks = {};
+  /**
+   * Hook UID counter.
+   */
+
+  Hook.lastHookId = 0;
+  return Hook;
+}();
+
+var Query =
+/** @class */
+function () {
+  /**
+   * Create a new Query instance.
+   */
+  function Query(state, entity, wrap) {
+    if (wrap === void 0) {
+      wrap = true;
+    }
+    /**
+     * The where constraints for the query.
+     */
+
+
+    this.wheres = [];
+    /**
+     * The orders of the query result.
+     */
+
+    this.orders = [];
+    /**
+     * Number of results to skip.
+     */
+
+    this._offset = 0;
+    /**
+     * Maximum number of records to return.
+     *
+     * We use polyfill of `Number.MAX_SAFE_INTEGER` for IE11 here.
+     */
+
+    this._limit = Math.pow(2, 53) - 1;
+    /**
+     * The relationships that should be eager loaded with the result.
+     */
+
+    this.load = {};
+    /**
+     * The Vuex Action context.
+     */
+
+    this.actionContext = null;
+    this.rootState = state;
+    this.state = state[entity];
+    this.entity = entity;
+    this.model = this.getModel(entity);
+    this.module = this.getModule(entity);
+    this.hook = new Hook(this);
+    this.wrap = wrap;
+  }
+  /**
+   * Create a new query instance
+   */
+
+
+  Query.query = function (state, name, wrap) {
+    return new this(state, name, wrap);
+  };
+  /**
+   * Get the database from the container.
+   */
+
+
+  Query.database = function () {
+    return Container.database;
+  };
+  /**
+   * Get model of given name from the container.
+   */
+
+
+  Query.getModel = function (name) {
+    return this.database().model(name);
+  };
+  /**
+   * Get all models from the container.
+   */
+
+
+  Query.getModels = function () {
+    return this.database().models();
+  };
+  /**
+   * Get module of given name from the container.
+   */
+
+
+  Query.getModule = function (name) {
+    return this.database().module(name);
+  };
+  /**
+   * Get all modules from the container.
+   */
+
+
+  Query.getModules = function () {
+    return this.database().modules();
+  };
+  /**
+   * Save new data to the state. It will remove all existing data in the
+   * state. If you want to keep existing data while saving new data,
+   * use `insert` instead.
+   */
+
+
+  Query.create = function (state, entity, data, options) {
+    return new this(state, entity).create(data, options);
+  };
+  /**
+   * Commit `create` to the state.
+   */
+
+
+  Query.commitCreate = function (state, entity, records) {
+    new this(state, entity).commitCreate(records);
+  };
+  /**
+   * Insert given data to the state. Unlike `create`, this method will not
+   * remove existing data within the state, but it will update the data
+   * with the same primary key.
+   */
+
+
+  Query.insert = function (state, entity, data, options) {
+    return new this(state, entity).insert(data, options);
+  };
+  /**
+   * Commit `insert` to the state.
+   */
+
+
+  Query.commitInsert = function (state, entity, data) {
+    new this(state, entity).commitInsert(data);
+  };
+  /**
+   * Update data in the state.
+   */
+
+
+  Query.update = function (state, entity, data, condition, options) {
+    return new this(state, entity).update(data, condition, options);
+  };
+  /**
+   * Commit `update` to the state.
+   */
+
+
+  Query.commitUpdate = function (state, entity, data) {
+    new this(state, entity).commitUpdate(data);
+  };
+  /**
+   * Insert or update given data to the state. Unlike `insert`, this method
+   * will not replace existing data within the state, but it will update only
+   * the submitted data with the same primary key.
+   */
+
+
+  Query.insertOrUpdate = function (state, entity, data, options) {
+    return new this(state, entity).insertOrUpdate(data, options);
+  };
+  /**
+   * Get all data of the given entity from the state.
+   */
+
+
+  Query.all = function (state, entity, wrap) {
+    return new this(state, entity, wrap).get();
+  };
+  /**
+   * Get the record of the given id.
+   */
+
+
+  Query.find = function (state, entity, id, wrap) {
+    return new this(state, entity, wrap).find(id);
+  };
+  /**
+   * Get the count of the retrieved data.
+   */
+
+
+  Query.count = function (state, entity, wrap) {
+    return new this(state, entity, wrap).count();
+  };
+  /**
+   * Get the max value of the specified filed.
+   */
+
+
+  Query.max = function (state, entity, field, wrap) {
+    return new this(state, entity, wrap).max(field);
+  };
+  /**
+   * Get the min value of the specified filed.
+   */
+
+
+  Query.min = function (state, entity, field, wrap) {
+    return new this(state, entity, wrap).min(field);
+  };
+  /**
+   * Get the sum value of the specified filed.
+   */
+
+
+  Query.sum = function (state, entity, field, wrap) {
+    return new this(state, entity, wrap).sum(field);
+  };
+  /**
+   * Delete a record from the state.
+   */
+
+
+  Query.delete = function (state, entity, condition) {
+    return new this(state, entity).delete(condition);
+  };
+  /**
+   * Delete all records from the state.
+   */
+
+
+  Query.deleteAll = function (state, entity) {
+    var _this = this;
+
+    if (entity) {
+      return new this(state, entity).deleteAll();
+    }
+
+    var models = this.getModels();
+    Utils.forOwn(models, function (_model, name) {
+      state[name] && new _this(state, name).deleteAll();
+    });
+  };
+  /**
+   * Commit `delete` to the state.
+   */
+
+
+  Query.commitDelete = function (state, entity, ids) {
+    new Query(state, entity).commitDelete(ids);
+  };
+  /**
+   * Register a callback. It Returns unique ID for registered callback.
+   */
+
+
+  Query.on = function (on, callback, once) {
+    return Hook.on(on, callback, once);
+  };
+  /**
+   * Remove hook registration.
+   */
+
+
+  Query.off = function (uid) {
+    return Hook.off(uid);
+  };
+  /**
+   * Get query class.
+   */
+
+
+  Query.prototype.self = function () {
+    return this.constructor;
+  };
+  /**
+   * Create a new query instance.
+   */
+
+
+  Query.prototype.newQuery = function (entity) {
+    return new Query(this.rootState, entity).setActionContext(this.actionContext);
+  };
+  /**
+   * Create a new query instance with wrap property set to false.
+   */
+
+
+  Query.prototype.newPlainQuery = function (entity) {
+    entity = entity || this.entity;
+    return new Query(this.rootState, entity).plain();
+  };
+  /**
+   * Get the database from the container.
+   */
+
+
+  Query.prototype.database = function () {
+    return this.self().database();
+  };
+  /**
+   * Get model of given name from the container.
+   */
+
+
+  Query.prototype.getModel = function (name) {
+    var entity = name || this.entity;
+    return this.self().getModel(entity);
+  };
+  /**
+   * Get all models from the container.
+   */
+
+
+  Query.prototype.getModels = function () {
+    return this.self().getModels();
+  };
+  /**
+   * Get module of given name from the container.
+   */
+
+
+  Query.prototype.getModule = function (name) {
+    var entity = name || this.entity;
+    return this.self().getModule(entity);
+  };
+  /**
+   * Get all modules from the container.
+   */
+
+
+  Query.prototype.getModules = function () {
+    return this.self().getModules();
+  };
+  /**
+   * Commit changes to the state. This method will call mutation name of
+   * `method` with `payload` if the method is called from an action to
+   * avoid mutating state change outside of mutation handler.
+   */
+
+
+  Query.prototype.commit = function (method, payload, callback) {
+    if (!this.actionContext) {
+      callback();
+      return;
+    }
+
+    payload = __assign({
+      entity: this.entity
+    }, payload);
+    this.actionContext.commit(this.rootState.$name + "/" + method, payload, {
+      root: true
+    });
+  };
+  /**
+   * Set wrap flag to false.
+   */
+
+
+  Query.prototype.plain = function () {
+    this.wrap = false;
+    return this;
+  };
+  /**
+   * Set Vuex Action Context to the query.
+   */
+
+
+  Query.prototype.setActionContext = function (context) {
+    this.actionContext = context;
+    return this;
+  };
+  /**
+   * Save new data to the state. It will remove all existing data in the
+   * state. If you want to keep existing data while saving new data,
+   * use `insert` instead.
+   */
+
+
+  Query.prototype.create = function (data, options) {
+    return this.persist(data, 'create', options);
+  };
+  /**
+   * Create records to the state.
+   */
+
+
+  Query.prototype.createMany = function (records) {
+    records = this.model.hydrateMany(records);
+    records = this.hook.executeOnRecords('beforeCreate', records);
+    this.commitCreate(records);
+    var collection = this.collect(this.records(records));
+    return this.hook.executeOnCollection('afterCreate', collection);
+  };
+  /**
+   * Commit `create` to the state.
+   */
+
+
+  Query.prototype.commitCreate = function (data) {
+    var _this = this;
+
+    this.commit('commitCreate', {
+      data: data
+    }, function () {
+      _this.state.data = data;
+    });
+  };
+  /**
+   * Insert given data to the state. Unlike `create`, this method will not
+   * remove existing data within the state, but it will update the data
+   * with the same primary key.
+   */
+
+
+  Query.prototype.insert = function (data, options) {
+    return this.persist(data, 'insert', options);
+  };
+  /**
+   * Insert list of records in the state.
+   */
+
+
+  Query.prototype.insertMany = function (records) {
+    records = this.model.hydrateMany(records);
+    records = this.hook.executeOnRecords('beforeCreate', records);
+    this.commitInsert(records);
+    var collection = this.collect(this.records(records));
+    return this.hook.executeOnCollection('afterCreate', collection);
+  };
+  /**
+   * Commit `insert` to the state.
+   */
+
+
+  Query.prototype.commitInsert = function (data) {
+    var _this = this;
+
+    this.commit('commitInsert', {
+      data: data
+    }, function () {
+      _this.state.data = __assign({}, _this.state.data, data);
+    });
+  };
+  /**
+   * Update data in the state.
+   */
+
+
+  Query.prototype.update = function (data, condition, options) {
+    // If the data is array, normalize the data and update them.
+    if (Array.isArray(data)) {
+      return this.persist(data, 'update', options);
+    } // Let's see what we can do if `data` is closure.
+
+
+    if (typeof data === 'function') {
+      // If the data is closure, but there's no condition, we will not know
+      // what record to update so raise an error an abort.
+      if (!condition) {
+        throw new Error('You must specify `where` to update records by specifying `data` as a closure.');
+      } // If the condition is closure, update records by the closure.
+
+
+      if (typeof condition === 'function') {
+        return this.updateByCondition(data, condition);
+      } // Else the condition is either String or Number, so let's
+      // update the record by ID.
+
+
+      return this.updateById(data, condition);
+    } // Now the data is not a closure, and it's not an array, so it should be an object.
+    // If the condition is closure, we can't normalize the data so let's update
+    // records using the closure.
+
+
+    if (typeof condition === 'function') {
+      return this.updateByCondition(data, condition);
+    } // If there's no condition, let's normalize the data and update them.
+
+
+    if (!condition) {
+      return this.persist(data, 'update', options);
+    } // Now since the condition is either String or Number, let's check if the
+    // model's primary key is not a composite key. If yes, we can't set the
+    // condition as ID value for the record so throw an error and abort.
+
+
+    if (Array.isArray(this.model.primaryKey)) {
+      throw new Error('You can not specify `where` value when you have a composite key defined in your model. Please include composite keys to the `data` fields.');
+    } // Finally,let's add condition as the primary key of the object and
+    // then normalize them to update the records.
+
+
+    data[this.model.primaryKey] = condition;
+    return this.persist(data, 'update', options);
+  };
+  /**
+   * Update all records.
+   */
+
+
+  Query.prototype.updateMany = function (records) {
+    var _this = this;
+
+    var toBeUpdated = {};
+    records = this.model.fixMany(records, []);
+    Utils.forOwn(records, function (record, id) {
+      var state = _this.state.data[id];
+
+      if (!state) {
+        return;
+      }
+
+      var newState = JSON.parse(JSON.stringify(state));
+
+      _this.merge(record, newState);
+
+      toBeUpdated[id] = newState;
+    });
+    toBeUpdated = this.hook.executeOnRecords('beforeUpdate', toBeUpdated);
+    this.commitUpdate(toBeUpdated);
+    var collection = this.collect(this.records(toBeUpdated));
+    this.hook.executeOnCollection('afterUpdate', collection);
+    return collection;
+  };
+  /**
+   * Update the state by id.
+   */
+
+
+  Query.prototype.updateById = function (data, id) {
+    var _a;
+
+    id = typeof id === 'number' ? id.toString() : id;
+    var state = this.state.data[id];
+
+    if (!state) {
+      return null;
+    }
+
+    var record = JSON.parse(JSON.stringify(state));
+    typeof data === 'function' ? data(record) : this.merge(this.model.fix(data), record);
+    var hookResult = this.hook.execute('beforeUpdate', record);
+
+    if (hookResult === false) {
+      return null;
+    }
+
+    this.commitUpdate((_a = {}, _a[id] = hookResult, _a));
+    var item = this.item(hookResult);
+    this.hook.execute('afterUpdate', item);
+    return item;
+  };
+  /**
+   * Update the state by condition.
+   */
+
+
+  Query.prototype.updateByCondition = function (data, condition) {
+    var _this = this;
+
+    var toBeUpdated = {};
+    Utils.forOwn(this.state.data, function (record, id) {
+      if (!condition(record)) {
+        return;
+      }
+
+      var state = JSON.parse(JSON.stringify(record));
+      typeof data === 'function' ? data(state) : _this.merge(_this.model.fix(data), state);
+      toBeUpdated[id] = state;
+    });
+    toBeUpdated = this.hook.executeOnRecords('beforeUpdate', toBeUpdated);
+    this.commitUpdate(toBeUpdated);
+    var collection = this.collect(this.records(toBeUpdated));
+    this.hook.executeOnCollection('afterUpdate', collection);
+    return collection;
+  };
+  /**
+   * Commit `update` to the state.
+   */
+
+
+  Query.prototype.commitUpdate = function (data) {
+    var _this = this;
+
+    this.commit('commitUpdate', {
+      data: data
+    }, function () {
+      _this.state.data = __assign({}, _this.state.data, data);
+    });
+  };
+  /**
+   * Insert or update given data to the state. Unlike `insert`, this method
+   * will not replace existing data within the state, but it will update only
+   * the submitted data with the same primary key.
+   */
+
+
+  Query.prototype.insertOrUpdate = function (data, options) {
+    return this.persist(data, 'insertOrUpdate', options);
+  };
+  /**
+   * Insert or update the records.
+   */
+
+
+  Query.prototype.insertOrUpdateMany = function (records) {
+    var _this = this;
+
+    var toBeInserted = {};
+    var toBeUpdated = {};
+    Utils.forOwn(records, function (record, id) {
+      if (_this.state.data[id]) {
+        toBeUpdated[id] = record;
+        return;
+      }
+
+      toBeInserted[id] = record;
+    });
+    return this.collect(this.insertMany(toBeInserted).concat(this.updateMany(toBeUpdated)));
+  };
+  /**
+   * Persist data into the state.
+   */
+
+
+  Query.prototype.persist = function (data, method, options) {
+    var _this = this;
+
+    if (options === void 0) {
+      options = {};
+    }
+
+    data = this.normalize(data);
+
+    if (Utils.isEmpty(data)) {
+      method === 'create' && this.commitCreate({});
+      return {};
+    }
+
+    return Object.keys(data).reduce(function (collection, entity) {
+      var query = _this.newQuery(entity);
+
+      var persistMethod = _this.getPersistMethod(entity, method, options);
+
+      var records = query[persistMethod + "Many"](data[entity]);
+
+      if (records.length > 0) {
+        collection[entity] = records;
+      }
+
+      return collection;
+    }, {});
+  };
+  /**
+   * Get method for the persist.
+   */
+
+
+  Query.prototype.getPersistMethod = function (entity, method, options) {
+    if (options.create && options.create.includes(entity)) {
+      return 'create';
+    }
+
+    if (options.insert && options.insert.includes(entity)) {
+      return 'insert';
+    }
+
+    if (options.update && options.update.includes(entity)) {
+      return 'update';
+    }
+
+    if (options.insertOrUpdate && options.insertOrUpdate.includes(entity)) {
+      return 'insertOrUpdate';
+    }
+
+    return method;
+  };
+  /**
+   * Normalize the given data.
+   */
+
+
+  Query.prototype.normalize = function (data) {
+    return Processor.normalize(this, data);
+  };
+  /**
+   * Update the state value by merging the given record and state.
+   */
+
+
+  Query.prototype.merge = function (data, state, fields) {
+    var _this = this;
+
+    var theFields = fields || this.model.getFields();
+    Utils.forOwn(data, function (value, key) {
+      var field = theFields[key];
+
+      if (field instanceof Attribute) {
+        state[key] = value;
+        return;
+      }
+
+      _this.merge(value, state[key], field);
+    });
+  };
+  /**
+   * Returns all record of the query chain result. This method is alias
+   * of the `get` method.
+   */
+
+
+  Query.prototype.all = function () {
+    return this.get();
+  };
+  /**
+   * Get the record of the given id.
+   */
+
+
+  Query.prototype.find = function (id) {
+    var record = this.state.data[id];
+
+    if (!record) {
+      return null;
+    }
+
+    return this.item(__assign({}, record));
+  };
+  /**
+   * Returns all record of the query chain result.
+   */
+
+
+  Query.prototype.get = function () {
+    var records = this.process();
+    return this.collect(records);
+  };
+  /**
+   * Returns the first record of the query chain result.
+   */
+
+
+  Query.prototype.first = function () {
+    var records = this.process();
+    return this.item(records[0]);
+  };
+  /**
+   * Returns the last single record of the query chain result.
+   */
+
+
+  Query.prototype.last = function () {
+    var records = this.process();
+    var last = records.length - 1;
+    return this.item(records[last]);
+  };
+  /**
+   * Get all the records from the state and convert them into the array.
+   * If you pass records, it will create an array out of that records
+   * instead of the store state.
+   */
+
+
+  Query.prototype.records = function (records) {
+    var theRecords = records || this.state.data;
+    return Object.keys(theRecords).map(function (id) {
+      return __assign({}, theRecords[id]);
+    });
+  };
+  /**
+   * Add a and where clause to the query.
+   */
+
+
+  Query.prototype.where = function (field, value) {
+    this.wheres.push({
+      field: field,
+      value: value,
+      boolean: 'and'
+    });
+    return this;
+  };
+  /**
+   * Add a or where clause to the query.
+   */
+
+
+  Query.prototype.orWhere = function (field, value) {
+    this.wheres.push({
+      field: field,
+      value: value,
+      boolean: 'or'
+    });
+    return this;
+  };
+  /**
+   * Add an order to the query.
+   */
+
+
+  Query.prototype.orderBy = function (field, direction) {
+    if (direction === void 0) {
+      direction = 'asc';
+    }
+
+    this.orders.push({
+      field: field,
+      direction: direction
+    });
+    return this;
+  };
+  /**
+   * Add an offset to the query.
+   */
+
+
+  Query.prototype.offset = function (offset) {
+    this._offset = offset;
+    return this;
+  };
+  /**
+   * Add limit to the query.
+   */
+
+
+  Query.prototype.limit = function (limit) {
+    this._limit = limit;
+    return this;
+  };
+  /**
+   * Set the relationships that should be loaded.
+   */
+
+
+  Query.prototype.with = function (name, constraint) {
+    if (constraint === void 0) {
+      constraint = null;
+    }
+
+    Loader.with(this, name, constraint);
+    return this;
+  };
+  /**
+   * Query all relations.
+   */
+
+
+  Query.prototype.withAll = function (constraint) {
+    if (constraint === void 0) {
+      constraint = function constraint() {
+        return null;
+      };
+    }
+
+    Loader.withAll(this, constraint);
+    return this;
+  };
+  /**
+   * Query all relations recursively.
+   */
+
+
+  Query.prototype.withAllRecursive = function (depth) {
+    if (depth === void 0) {
+      depth = 3;
+    }
+
+    Loader.withAllRecursive(this, depth);
+    return this;
+  };
+  /**
+   * Set where constraint based on relationship existence.
+   */
+
+
+  Query.prototype.has = function (name, constraint, count) {
+    return this.addHasConstraint(name, constraint, count, true);
+  };
+  /**
+   * Set where constraint based on relationship absence.
+   */
+
+
+  Query.prototype.hasNot = function (name, constraint, count) {
+    return this.addHasConstraint(name, constraint, count, false);
+  };
+  /**
+   * Add where constraints based on has or hasNot condition.
+   */
+
+
+  Query.prototype.addHasConstraint = function (name, constraint, count, existence) {
+    var ids = this.matchesHasRelation(name, constraint, count, existence);
+    this.where('$id', function (value) {
+      return ids.includes(value);
+    });
+    return this;
+  };
+  /**
+   * Add where has condition.
+   */
+
+
+  Query.prototype.whereHas = function (name, constraint) {
+    return this.addWhereHasConstraint(name, constraint, true);
+  };
+  /**
+   * Add where has not condition.
+   */
+
+
+  Query.prototype.whereHasNot = function (name, constraint) {
+    return this.addWhereHasConstraint(name, constraint, false);
+  };
+  /**
+   * Add where has constraints that only matches the relationship constraint.
+   */
+
+
+  Query.prototype.addWhereHasConstraint = function (name, constraint, existence) {
+    var ids = this.matchesWhereHasRelation(name, constraint, existence);
+    this.where('$id', function (value) {
+      return ids.includes(value);
+    });
+    return this;
+  };
+  /**
+   * Process the query and filter data.
+   */
+
+
+  Query.prototype.process = function () {
+    var records = this.records(); // Process `beforeProcess` hook.
+
+    records = this.hook.execute('beforeProcess', records); // Let's filter the records at first by the where clauses.
+
+    records = this.filterWhere(records); // Process `afterWhere` hook.
+
+    records = this.hook.execute('afterWhere', records); // Next, lets sort the data.
+
+    records = this.filterOrderBy(records); // Process `afterOrderBy` hook.
+
+    records = this.hook.execute('afterOrderBy', records); // Finally, slice the record by limit and offset.
+
+    records = this.filterLimit(records); // Process `afterLimit` hook.
+
+    records = this.hook.execute('afterLimit', records);
+    return records;
+  };
+  /**
+   * Filter the given data by registered where clause.
+   */
+
+
+  Query.prototype.filterWhere = function (records) {
+    return Filter.where(this, records);
+  };
+  /**
+   * Sort the given data by registered orders.
+   */
+
+
+  Query.prototype.filterOrderBy = function (records) {
+    return Filter.orderBy(this, records);
+  };
+  /**
+   * Limit the given records by the lmilt and offset.
+   */
+
+
+  Query.prototype.filterLimit = function (records) {
+    return Filter.limit(this, records);
+  };
+  /**
+   * Get the count of the retrieved data.
+   */
+
+
+  Query.prototype.count = function () {
+    return this.plain().get().length;
+  };
+  /**
+   * Get the max value of the specified filed.
+   */
+
+
+  Query.prototype.max = function (field) {
+    var numbers = this.plain().get().reduce(function (numbers, item) {
+      if (typeof item[field] === 'number') {
+        numbers.push(item[field]);
+      }
+
+      return numbers;
+    }, []);
+    return numbers.length === 0 ? 0 : Math.max.apply(Math, numbers);
+  };
+  /**
+   * Get the min value of the specified filed.
+   */
+
+
+  Query.prototype.min = function (field) {
+    var numbers = this.plain().get().reduce(function (numbers, item) {
+      if (typeof item[field] === 'number') {
+        numbers.push(item[field]);
+      }
+
+      return numbers;
+    }, []);
+    return numbers.length === 0 ? 0 : Math.min.apply(Math, numbers);
+  };
+  /**
+   * Get the sum value of the specified filed.
+   */
+
+
+  Query.prototype.sum = function (field) {
+    return this.plain().get().reduce(function (sum, item) {
+      if (typeof item[field] === 'number') {
+        sum += item[field];
+      }
+
+      return sum;
+    }, 0);
+  };
+  /**
+   * Create a item from given record.
+   */
+
+
+  Query.prototype.item = function (item) {
+    if (!item) {
+      return null;
+    }
+
+    Loader.eagerLoadRelations(this, [item]);
+    return this.model.make(item, !this.wrap);
+  };
+  /**
+   * Create a collection (array) from given records.
+   */
+
+
+  Query.prototype.collect = function (collection) {
+    var _this = this;
+
+    if (Utils.isEmpty(collection)) {
+      return [];
+    }
+
+    Loader.eagerLoadRelations(this, collection);
+    return collection.map(function (record) {
+      return _this.model.make(record, !_this.wrap);
+    });
+  };
+  /**
+   * Check if the given collection has given relationship.
+   */
+
+
+  Query.prototype.matchesHasRelation = function (name, constraint, count, existence) {
+    if (existence === void 0) {
+      existence = true;
+    }
+
+    var _constraint;
+
+    if (constraint === undefined) {
+      _constraint = function _constraint(record) {
+        return record.length >= 1;
+      };
+    } else if (typeof constraint === 'number') {
+      _constraint = function _constraint(record) {
+        return record.length >= constraint;
+      };
+    } else if (constraint === '=' && typeof count === 'number') {
+      _constraint = function _constraint(record) {
+        return record.length === count;
+      };
+    } else if (constraint === '>' && typeof count === 'number') {
+      _constraint = function _constraint(record) {
+        return record.length > count;
+      };
+    } else if (constraint === '>=' && typeof count === 'number') {
+      _constraint = function _constraint(record) {
+        return record.length >= count;
+      };
+    } else if (constraint === '<' && typeof count === 'number') {
+      _constraint = function _constraint(record) {
+        return record.length < count;
+      };
+    } else if (constraint === '<=' && typeof count === 'number') {
+      _constraint = function _constraint(record) {
+        return record.length <= count;
+      };
+    }
+
+    var data = new Query(this.rootState, this.entity, false).with(name).get();
+    var ids = [];
+    data.forEach(function (item) {
+      var target = item[name];
+      var result = false;
+
+      if (!target) {
+        result = false;
+      } else if (Array.isArray(target) && target.length < 1) {
+        result = false;
+      } else if (Array.isArray(target)) {
+        result = _constraint(target);
+      } else if (target) {
+        result = _constraint([target]);
+      }
+
+      if (result !== existence) {
+        return;
+      }
+
+      ids.push(item.$id);
+    });
+    return ids;
+  };
+  /**
+   * Get all id of the record that matches the relation constraints.
+   */
+
+
+  Query.prototype.matchesWhereHasRelation = function (name, constraint, existence) {
+    if (existence === void 0) {
+      existence = true;
+    }
+
+    var data = this.newPlainQuery().with(name, constraint).get();
+    var ids = [];
+    data.forEach(function (item) {
+      var target = item[name];
+      var result = Array.isArray(target) ? !!target.length : !!target;
+
+      if (result !== existence) {
+        return;
+      }
+
+      ids.push(item.$id);
+    });
+    return ids;
+  };
+  /**
+   * Delete records from the state.
+   */
+
+
+  Query.prototype.delete = function (condition) {
+    if (typeof condition === 'function') {
+      return this.deleteByCondition(condition);
+    }
+
+    return this.deleteById(condition);
+  };
+  /**
+   * Delete a record by id.
+   */
+
+
+  Query.prototype.deleteById = function (id) {
+    id = typeof id === 'number' ? id.toString() : id;
+    var state = this.state.data[id];
+
+    if (!state) {
+      return null;
+    }
+
+    var hookResult = this.hook.execute('beforeDelete', state);
+
+    if (hookResult === false) {
+      return null;
+    }
+
+    this.commitDelete([id]);
+    var item = this.item(hookResult);
+    this.hook.execute('afterDelete', item);
+    return item;
+  };
+  /**
+   * Delete record by condition.
+   */
+
+
+  Query.prototype.deleteByCondition = function (condition) {
+    var toBeDeleted = {};
+    Utils.forOwn(this.state.data, function (record, id) {
+      if (!condition(record)) {
+        return;
+      }
+
+      toBeDeleted[id] = record;
+    });
+    toBeDeleted = this.hook.executeOnRecords('beforeDelete', toBeDeleted);
+    this.commitDelete(Object.keys(toBeDeleted));
+    var collection = this.collect(this.records(toBeDeleted));
+    this.hook.executeOnCollection('afterDelete', collection);
+    return collection;
+  };
+  /**
+   * Delete all records from the state.
+   */
+
+
+  Query.prototype.deleteAll = function () {
+    var toBeDeleted = this.state.data;
+    toBeDeleted = this.hook.executeOnRecords('beforeDelete', toBeDeleted);
+    this.commitDelete(Object.keys(toBeDeleted));
+    var collection = this.collect(this.records(toBeDeleted));
+    this.hook.executeOnCollection('afterDelete', collection);
+    return collection;
+  };
+  /**
+   * Commit `delete` to the state.
+   */
+
+
+  Query.prototype.commitDelete = function (ids) {
+    var _this = this;
+
+    this.commit('commitDelete', {
+      ids: ids
+    }, function () {
+      _this.state.data = Object.keys(_this.state.data).reduce(function (state, id) {
+        if (!ids.includes(id)) {
+          state[id] = _this.state.data[id];
+        }
+
+        return state;
+      }, {});
+    });
+  };
+
+  return Query;
+}();
+
+var Getters = {
+  /**
+   * Create a new Query instance.
+   */
+  query: function query(state, _getters, _rootState, rootGetters) {
+    return function (wrap) {
+      return rootGetters[state.$connection + "/query"](state.$name, wrap);
+    };
+  },
+
+  /**
+   * Get all data of given entity.
+   */
+  all: function all(state, _getters, _rootState, rootGetters) {
+    return function (wrap) {
+      return rootGetters[state.$connection + "/all"](state.$name, wrap);
+    };
+  },
+
+  /**
+   * Find a data of the given entity by given id.
+   */
+  find: function find(state, _getters, _rootState, rootGetters) {
+    return function (id, wrap) {
+      return rootGetters[state.$connection + "/find"](state.$name, id, wrap);
+    };
+  }
+};
+var Actions = {
+  /**
+   * Save new data to the state. It will remove all existing data in the
+   * state. If you want to keep existing data while saving new data,
+   * use `insert` instead.
+   */
+  create: function create(context, payload) {
+    return __awaiter(this, void 0, void 0, function () {
+      var state, entity;
+      return __generator(this, function (_a) {
+        state = context.state;
+        entity = state.$name;
+        return [2
+        /*return*/
+        , context.dispatch(state.$connection + "/create", __assign({
+          entity: entity
+        }, payload), {
+          root: true
+        })];
+      });
+    });
+  },
+
+  /**
+   * Insert given data to the state. Unlike `create`, this method will not
+   * remove existing data within the state, but it will update the data
+   * with the same primary key.
+   */
+  insert: function insert(context, payload) {
+    return __awaiter(this, void 0, void 0, function () {
+      var state, entity;
+      return __generator(this, function (_a) {
+        state = context.state;
+        entity = state.$name;
+        return [2
+        /*return*/
+        , context.dispatch(state.$connection + "/insert", __assign({
+          entity: entity
+        }, payload), {
+          root: true
+        })];
+      });
+    });
+  },
+
+  /**
+   * Update data in the store.
+   */
+  update: function update(context, payload) {
+    return __awaiter(this, void 0, void 0, function () {
+      var state, entity;
+      return __generator(this, function (_a) {
+        state = context.state;
+        entity = state.$name; // If the payload is an array, then the payload should be an array of
+        // data so let's pass the whole payload as data.
+
+        if (Array.isArray(payload)) {
+          return [2
+          /*return*/
+          , context.dispatch(state.$connection + "/update", {
+            entity: entity,
+            data: payload
+          }, {
+            root: true
+          })];
+        } // If the payload doesn't have `data` property, we'll assume that
+        // the user has passed the object as the payload so let's define
+        // the whole payload as a data.
+
+
+        if (payload.data === undefined) {
+          return [2
+          /*return*/
+          , context.dispatch(state.$connection + "/update", {
+            entity: entity,
+            data: payload
+          }, {
+            root: true
+          })];
+        } // Else destructure the payload and let root action handle it.
+
+
+        return [2
+        /*return*/
+        , context.dispatch(state.$connection + "/update", __assign({
+          entity: entity
+        }, payload), {
+          root: true
+        })];
+      });
+    });
+  },
+
+  /**
+   * Insert or update given data to the state. Unlike `insert`, this method
+   * will not replace existing data within the state, but it will update only
+   * the submitted data with the same primary key.
+   */
+  insertOrUpdate: function insertOrUpdate(context, payload) {
+    return __awaiter(this, void 0, void 0, function () {
+      var state, entity;
+      return __generator(this, function (_a) {
+        state = context.state;
+        entity = state.$name;
+        return [2
+        /*return*/
+        , context.dispatch(state.$connection + "/insertOrUpdate", __assign({
+          entity: entity
+        }, payload), {
+          root: true
+        })];
+      });
+    });
+  },
+
+  /**
+   * Delete data from the store.
+   */
+  delete: function _delete(context, payload) {
+    return __awaiter(this, void 0, void 0, function () {
+      var state, entity, where;
+      return __generator(this, function (_a) {
+        state = context.state;
+        entity = state.$name;
+        where = Object(helpers_typeof["default"])(payload) === 'object' ? payload.where : payload;
+        return [2
+        /*return*/
+        , context.dispatch(state.$connection + "/delete", {
+          entity: entity,
+          where: where
+        }, {
+          root: true
+        })];
+      });
+    });
+  },
+
+  /**
+   * Delete all data from the store.
+   */
+  deleteAll: function deleteAll(context) {
+    return __awaiter(this, void 0, void 0, function () {
+      var state, entity;
+      return __generator(this, function (_a) {
+        state = context.state;
+        entity = state.$name;
+        return [2
+        /*return*/
+        , context.dispatch(state.$connection + "/deleteAll", {
+          entity: entity
+        }, {
+          root: true
+        })];
+      });
+    });
+  }
+};
+var RootGetters = {
+  /**
+   * Create a new Query instance.
+   */
+  query: function query(state) {
+    return function (entity, wrap) {
+      return Query.query(state, entity, wrap);
+    };
+  },
+
+  /**
+   * Get all data of given entity.
+   */
+  all: function all(state) {
+    return function (entity, wrap) {
+      return Query.all(state, entity, wrap);
+    };
+  },
+
+  /**
+   * Find a data of the given entity by given id.
+   */
+  find: function find(state) {
+    return function (entity, id, wrap) {
+      return Query.find(state, entity, id, wrap);
+    };
+  }
+};
+
+var OptionsBuilder =
+/** @class */
+function () {
+  function OptionsBuilder() {}
+  /**
+   * Get persist options from the given payload.
+   */
+
+
+  OptionsBuilder.createPersistOptions = function (payload) {
+    return {
+      create: payload.create,
+      insert: payload.insert,
+      update: payload.update,
+      insertOrUpdate: payload.insertOrUpdate
+    };
+  };
+
+  return OptionsBuilder;
+}();
+
+var RootActions = {
+  /**
+   * Save new data to the state. It will remove all existing data in the
+   * state. If you want to keep existing data while saving new data,
+   * use `insert` instead.
+   */
+  create: function create(context, payload) {
+    return __awaiter(this, void 0, void 0, function () {
+      var state, entity, data, options;
+      return __generator(this, function (_a) {
+        state = context.state;
+        entity = payload.entity;
+        data = payload.data;
+        options = OptionsBuilder.createPersistOptions(payload);
+        return [2
+        /*return*/
+        , new Query(state, entity).setActionContext(context).create(data, options)];
+      });
+    });
+  },
+
+  /**
+   * Insert given data to the state. Unlike `create`, this method will not
+   * remove existing data within the state, but it will update the data
+   * with the same primary key.
+   */
+  insert: function insert(context, payload) {
+    return __awaiter(this, void 0, void 0, function () {
+      var state, entity, data, options;
+      return __generator(this, function (_a) {
+        state = context.state;
+        entity = payload.entity;
+        data = payload.data;
+        options = OptionsBuilder.createPersistOptions(payload);
+        return [2
+        /*return*/
+        , new Query(state, entity).setActionContext(context).insert(data, options)];
+      });
+    });
+  },
+
+  /**
+   * Update data in the store.
+   */
+  update: function update(context, payload) {
+    return __awaiter(this, void 0, void 0, function () {
+      var state, entity, data, where, options;
+      return __generator(this, function (_a) {
+        state = context.state;
+        entity = payload.entity;
+        data = payload.data;
+        where = payload.where;
+        options = OptionsBuilder.createPersistOptions(payload);
+        return [2
+        /*return*/
+        , new Query(state, entity).setActionContext(context).update(data, where, options)];
+      });
+    });
+  },
+
+  /**
+   * Insert or update given data to the state. Unlike `insert`, this method
+   * will not replace existing data within the state, but it will update only
+   * the submitted data with the same primary key.
+   */
+  insertOrUpdate: function insertOrUpdate(context, payload) {
+    return __awaiter(this, void 0, void 0, function () {
+      var state, entity, data, options;
+      return __generator(this, function (_a) {
+        state = context.state;
+        entity = payload.entity;
+        data = payload.data;
+        options = OptionsBuilder.createPersistOptions(payload);
+        return [2
+        /*return*/
+        , new Query(state, entity).setActionContext(context).insertOrUpdate(data, options)];
+      });
+    });
+  },
+
+  /**
+   * Delete data from the store.
+   */
+  delete: function _delete(context, payload) {
+    return __awaiter(this, void 0, void 0, function () {
+      var state, entity, where;
+      return __generator(this, function (_a) {
+        state = context.state;
+        entity = payload.entity;
+        where = payload.where;
+        return [2
+        /*return*/
+        , new Query(state, entity).setActionContext(context).delete(where)];
+      });
+    });
+  },
+
+  /**
+   * Delete all data from the store.
+   */
+  deleteAll: function deleteAll(context, payload) {
+    return __awaiter(this, void 0, void 0, function () {
+      var entity;
+      return __generator(this, function (_a) {
+        entity = payload ? payload.entity : undefined;
+        return [2
+        /*return*/
+        , context.commit('deleteAll', {
+          entity: entity
+        })];
+      });
+    });
+  }
+};
+var RootMutations = {
+  /**
+   * Save new data to the state. It will remove all existing data in the
+   * state. If you want to keep existing data while saving new data,
+   * use `insert` instead.
+   */
+  create: function create(state, _a) {
+    var entity = _a.entity,
+        data = _a.data,
+        create = _a.create,
+        insert = _a.insert,
+        update = _a.update,
+        insertOrUpdate = _a.insertOrUpdate;
+    Query.create(state, entity, data, {
+      create: create,
+      insert: insert,
+      update: update,
+      insertOrUpdate: insertOrUpdate
+    });
+  },
+
+  /**
+   * Commit `create` to the state.
+   */
+  commitCreate: function commitCreate(state, _a) {
+    var entity = _a.entity,
+        data = _a.data;
+    Query.commitCreate(state, entity, data);
+  },
+
+  /**
+   * Insert given data to the state. Unlike `create`, this method will not
+   * remove existing data within the state, but it will update the data
+   * with the same primary key.
+   */
+  insert: function insert(state, _a) {
+    var entity = _a.entity,
+        data = _a.data,
+        create = _a.create,
+        insert = _a.insert,
+        update = _a.update,
+        insertOrUpdate = _a.insertOrUpdate;
+    Query.insert(state, entity, data, {
+      create: create,
+      insert: insert,
+      update: update,
+      insertOrUpdate: insertOrUpdate
+    });
+  },
+
+  /**
+   * Commit `insert` to the state.
+   */
+  commitInsert: function commitInsert(state, _a) {
+    var entity = _a.entity,
+        data = _a.data;
+    Query.commitInsert(state, entity, data);
+  },
+
+  /**
+   * Update data in the store.
+   */
+  update: function update(state, _a) {
+    var entity = _a.entity,
+        data = _a.data,
+        where = _a.where,
+        create = _a.create,
+        insert = _a.insert,
+        update = _a.update,
+        insertOrUpdate = _a.insertOrUpdate;
+    Query.update(state, entity, data, where, {
+      create: create,
+      insert: insert,
+      update: update,
+      insertOrUpdate: insertOrUpdate
+    });
+  },
+
+  /**
+   * Commit `create` to the state.
+   */
+  commitUpdate: function commitUpdate(state, _a) {
+    var entity = _a.entity,
+        data = _a.data;
+    Query.commitUpdate(state, entity, data);
+  },
+
+  /**
+   * Insert or update given data to the state. Unlike `insert`, this method
+   * will not replace existing data within the state, but it will update only
+   * the submitted data with the same primary key.
+   */
+  insertOrUpdate: function insertOrUpdate(state, _a) {
+    var entity = _a.entity,
+        data = _a.data,
+        create = _a.create;
+    Query.insertOrUpdate(state, entity, data, create);
+  },
+
+  /**
+   * Delete data from the store.
+   */
+  delete: function _delete(state, _a) {
+    var entity = _a.entity,
+        where = _a.where;
+    Query.delete(state, entity, where);
+  },
+
+  /**
+   * Delete all data from the store.
+   */
+  deleteAll: function deleteAll(state, payload) {
+    if (payload && payload.entity) {
+      Query.deleteAll(state, payload.entity);
+      return;
+    }
+
+    Query.deleteAll(state);
+  },
+
+  /**
+   * Commit `delete` to the state.
+   */
+  commitDelete: function commitDelete(state, _a) {
+    var entity = _a.entity,
+        ids = _a.ids;
+    Query.commitDelete(state, entity, ids);
+  }
+};
+
+function use(plugin, options) {
+  if (options === void 0) {
+    options = {};
+  }
+
+  var components = {
+    Model: Model,
+    Query: Query,
+    Attribute: Attribute,
+    Type: Type,
+    Attr: Attr,
+    String: String$1,
+    Number: vuex_orm_esm_Number,
+    Boolean: Boolean,
+    Increment: Increment,
+    Relation: vuex_orm_esm_Relation,
+    HasOne: HasOne,
+    BelongsTo: BelongsTo,
+    HasMany: vuex_orm_esm_HasMany,
+    HasManyBy: vuex_orm_esm_HasManyBy,
+    BelongsToMany: vuex_orm_esm_BelongsToMany,
+    HasManyThrough: vuex_orm_esm_HasManyThrough,
+    MorphTo: MorphTo,
+    MorphOne: MorphOne,
+    MorphMany: vuex_orm_esm_MorphMany,
+    MorphToMany: vuex_orm_esm_MorphToMany,
+    MorphedByMany: vuex_orm_esm_MorphedByMany,
+    Getters: Getters,
+    Actions: Actions,
+    RootGetters: RootGetters,
+    RootActions: RootActions,
+    RootMutations: RootMutations
+  };
+  plugin.install(components, options);
+}
+
+var NoKey =
+/** @class */
+function () {
+  function NoKey() {}
+  /**
+   * Set new unique id value.
+   */
+
+
+  NoKey.set = function () {
+    this.value = "" + this.prefix + this.count;
+  };
+  /**
+   * Get the current unique id value.
+   */
+
+
+  NoKey.get = function () {
+    return this.value;
+  };
+  /**
+   * Increment the count, new unique id value.
+   */
+
+
+  NoKey.increment = function () {
+    this.count++;
+    this.set();
+    return this.get();
+  };
+  /**
+   * Count to create a unique id for the record that missing its primary key.
+   */
+
+
+  NoKey.count = 0;
+  /**
+   * Prefix string to be used for undefined primary key value.
+   */
+
+  NoKey.prefix = '_no_key_';
+  /**
+   * The current unique id value. This is the combination of
+   * the `prefix` and the `count`.
+   */
+
+  NoKey.value = '';
+  return NoKey;
+}();
+
+var IdAttribute =
+/** @class */
+function () {
+  function IdAttribute() {}
+  /**
+   * Create the id attribute.
+   */
+
+
+  IdAttribute.create = function (model) {
+    return function (value, _parent, _key) {
+      var id = model.id(value);
+      return id === undefined || id === null || id === '' ? NoKey.get() : id;
+    };
+  };
+
+  return IdAttribute;
+}();
+
+var ProcessStrategy =
+/** @class */
+function () {
+  function ProcessStrategy() {}
+  /**
+   * Create the process strategy.
+   */
+
+
+  ProcessStrategy.create = function (model) {
+    var _this = this;
+
+    return function (value, _parentValue, _key) {
+      var id = _this.getId(model, value);
+
+      return __assign({}, value, {
+        $id: id
+      });
+    };
+  };
+  /**
+   * Get the ID value for the given record.
+   */
+
+
+  ProcessStrategy.getId = function (model, value) {
+    var id = model.id(value);
+    return id === undefined || id === null || id === '' ? NoKey.increment() : id;
+  };
+
+  return ProcessStrategy;
+}();
+
+var Schema =
+/** @class */
+function () {
+  /**
+   * Create a new schema instance.
+   */
+  function Schema(model) {
+    var _this = this;
+    /**
+     * List of generated schemas.
+     */
+
+
+    this.schemas = {};
+    this.model = model;
+    var models = model.database().models();
+    Object.keys(models).forEach(function (name) {
+      _this.one(models[name]);
+    });
+  }
+  /**
+   * Create a schema for the given model.
+   */
+
+
+  Schema.create = function (model) {
+    return new this(model).one();
+  };
+  /**
+   * Create a single schema for the given model.
+   */
+
+
+  Schema.prototype.one = function (model) {
+    model = model || this.model;
+
+    if (this.schemas[model.entity]) {
+      return this.schemas[model.entity];
+    }
+
+    var schema$$1 = new src_3.Entity(model.entity, {}, {
+      idAttribute: IdAttribute.create(model),
+      processStrategy: ProcessStrategy.create(model)
+    });
+    this.schemas[model.entity] = schema$$1;
+    var definition = this.definition(model);
+    schema$$1.define(definition);
+    return schema$$1;
+  };
+  /**
+   * Create an array schema for the given model.
+   */
+
+
+  Schema.prototype.many = function (model) {
+    return new src_3.Array(this.one(model));
+  };
+  /**
+   * Create an union schema for the given model.
+   */
+
+
+  Schema.prototype.union = function (callback) {
+    return new src_3.Union(this.schemas, callback);
+  };
+  /**
+   * Create a dfinition for the given model.
+   */
+
+
+  Schema.prototype.definition = function (model) {
+    var _this = this;
+
+    var fields = model.fields();
+    return Object.keys(fields).reduce(function (definition, key) {
+      var field = fields[key];
+
+      if (field instanceof vuex_orm_esm_Relation) {
+        definition[key] = field.define(_this);
+      }
+
+      return definition;
+    }, {});
+  };
+
+  return Schema;
+}();
+
+var Builder =
+/** @class */
+function () {
+  function Builder() {}
+  /**
+   * Create module from the given modules.
+   */
+
+
+  Builder.create = function (namespace, modules) {
+    var tree = {
+      namespaced: true,
+      state: {
+        $name: namespace
+      },
+      getters: RootGetters,
+      actions: RootActions,
+      mutations: RootMutations,
+      modules: {}
+    };
+    return this.createModules(tree, namespace, modules);
+  };
+  /**
+   * Creates module tree to be registered under top level module
+   * from the given entities.
+   */
+
+
+  Builder.createModules = function (tree, namespace, modules) {
+    var _this = this;
+
+    Object.keys(modules).forEach(function (name) {
+      var module = modules[name];
+      tree.modules[name] = {
+        namespaced: true
+      };
+      tree.modules[name].state = _this.createState(namespace, name, module);
+
+      tree.getters[name] = function (_state, getters, _rootState, _rootGetters) {
+        return function () {
+          return getters.query(name);
+        };
+      };
+
+      tree.modules[name].getters = __assign({}, Getters, module.getters);
+      tree.modules[name].actions = __assign({}, Actions, module.actions);
+      tree.modules[name].mutations = module.mutations || {};
+    });
+    return tree;
+  };
+  /**
+   * Get new state to be registered to the modules.
+   */
+
+
+  Builder.createState = function (namespace, name, module) {
+    var state = typeof module.state === 'function' ? module.state() : module.state;
+    return __assign({}, state, {
+      $connection: namespace,
+      $name: name,
+      data: {}
+    });
+  };
+
+  return Builder;
+}();
+
+var Database =
+/** @class */
+function () {
+  function Database() {
+    /**
+     * The list of entities to be registered to the Vuex Store. It contains
+     * models and modules with its name.
+     */
+    this.entities = [];
+    /**
+     * The database schema definition. This schema will be used when normalizing
+     * the data before persisting them to the Vuex Store.
+     */
+
+    this.schemas = {};
+  }
+  /**
+   * Initialize the database before a user can start using it.
+   */
+
+
+  Database.prototype.start = function (store, namespace) {
+    this.store = store;
+    this.namespace = namespace;
+    this.registerModules();
+    this.createSchema();
+  };
+  /**
+   * Register a model and module to the entities list.
+   */
+
+
+  Database.prototype.register = function (model, module) {
+    this.entities.push({
+      name: model.entity,
+      model: model,
+      module: module
+    });
+  };
+  /**
+   * Get the model of the given name from the entities list.
+   */
+
+
+  Database.prototype.model = function (name) {
+    return this.models()[name];
+  };
+  /**
+   * Get all models from the entities list.
+   */
+
+
+  Database.prototype.models = function () {
+    return this.entities.reduce(function (models, entity) {
+      models[entity.name] = entity.model;
+      return models;
+    }, {});
+  };
+  /**
+   * Get the module of the given name from the entities list.
+   */
+
+
+  Database.prototype.module = function (name) {
+    return this.modules()[name];
+  };
+  /**
+   * Get all modules from the entities list.
+   */
+
+
+  Database.prototype.modules = function () {
+    return this.entities.reduce(function (modules, entity) {
+      modules[entity.name] = entity.module;
+      return modules;
+    }, {});
+  };
+  /**
+   * Create the Vuex Module from registered entities.
+   */
+
+
+  Database.prototype.registerModules = function () {
+    var modules = Builder.create(this.namespace, this.modules());
+    this.store.registerModule(this.namespace, modules);
+  };
+  /**
+   * Create the schema definition from registered entities list and set
+   * it to the property. This schema will be used by the normalizer
+   * to normalize data before persisting them to the Vuex Store.
+   */
+
+
+  Database.prototype.createSchema = function () {
+    var _this = this;
+
+    this.entities.forEach(function (entity) {
+      _this.schemas[entity.name] = Schema.create(entity.model);
+    });
+  };
+
+  return Database;
+}();
+
+var index$1 = {
+  install: vuex_orm_esm_install,
+  use: use,
+  Database: Database,
+  Model: Model,
+  Query: Query,
+  Attribute: Attribute,
+  Type: Type,
+  Attr: Attr,
+  String: String$1,
+  Number: vuex_orm_esm_Number,
+  Boolean: Boolean,
+  Increment: Increment,
+  Relation: vuex_orm_esm_Relation,
+  HasOne: HasOne,
+  BelongsTo: BelongsTo,
+  HasMany: vuex_orm_esm_HasMany,
+  HasManyBy: vuex_orm_esm_HasManyBy,
+  BelongsToMany: vuex_orm_esm_BelongsToMany,
+  HasManyThrough: vuex_orm_esm_HasManyThrough,
+  MorphTo: MorphTo,
+  MorphOne: MorphOne,
+  MorphMany: vuex_orm_esm_MorphMany,
+  MorphToMany: vuex_orm_esm_MorphToMany,
+  MorphedByMany: vuex_orm_esm_MorphedByMany,
+  Getters: Getters,
+  Actions: Actions,
+  RootGetters: RootGetters,
+  RootActions: RootActions,
+  RootMutations: RootMutations
+};
+/* harmony default export */ var vuex_orm_esm = (index$1);
+
+// CONCATENATED MODULE: ./src/support/interfaces.js
+
+var AxiosRequestConfig = {
+  /**
+   * Default Base URL
+   */
+  baseURL: 'http://localhost:3000',
+
+  /**
+   * Default URL
+   */
+  url: '/',
+
+  /**
+   * Default Method
+   */
+  method: 'get',
+
+  /**
+   * Access Token Variable
+   */
+  access_token: '',
+
+  /**
+   * Default Headers
+   */
+  headers: {
+    'Content-Type': 'application/json',
+    Accept: 'application/json'
+  },
+
+  /**
+   * Default Data
+   */
+  data: {},
+
+  /**
+   * Default Timout
+   */
+  timeout: 0,
+
+  /**
+   * Default With Credentials Flag
+   */
+  withCredentials: false,
+
+  /**
+   * Default Response Type
+   */
+  responseType: 'json',
+
+  /**
+   * Default Response Encoding
+   */
+  responseEncoding: 'utf8',
+
+  /**
+   * Default Validate Status Method
+   * @param {number} status
+   */
+  validateStatus: function validateStatus(status) {
+    return status >= 200 && status < 300; // default
+  },
+
+  /**
+   * Default Max Redirects
+   */
+  maxRedirects: 5,
+
+  /**
+   * Default Socket Path
+   */
+  socketPath: null,
+
+  /**
+   * Default Proxy
+   */
+  proxy: {},
+
+  /**
+   * Default on Response interceptor
+   * @param {object} response
+   */
+  onResponse: function onResponse(response) {
+    return response.data;
+  },
+
+  /**
+   * Default on Request interceptor
+   * @param {object} config
+   */
+  onRequest: function onRequest(config) {
+    return config;
+  },
+
+  /**
+   * On 401 Unauthorised
+   * @param {object} error
+   */
+  onUnauthorised: function onUnauthorised(error) {//
+  },
+
+  /**
+   * On 404 Not Found
+   * @param {object} error
+   */
+  onNotFound: function onNotFound(error) {//
+  },
+
+  /**
+   * On 500 Server Error
+   * @param {object} error
+   */
+  onServerError: function onServerError(error) {//
+  },
+
+  /**
+   * On Generic Error
+   * @param {object} error
+   */
+  onGenericError: function onGenericError(error) {//
+  },
+
+  /**
+   * On Laravel Validation Error (Or 422 Error).
+   * @param {object} error
+   */
+  onValidationError: function onValidationError(error) {//
+  },
+
+  /**
+   * Default on Error
+   * @param {object} error
+   */
+  onError: function onError(error) {
+    switch (error.response.status) {
+      case 401:
+        this.onUnauthorised(error);
+        break;
+
+      case 404:
+        this.onNotFound(error);
+        break;
+
+      case 422:
+        this.onValidationError(error);
+        break;
+
+      case 500:
+        this.onServerError(error);
+        break;
+
+      default:
+        this.onGenericError(error);
+        break;
+    }
+
+    return Promise.reject(error);
+  }
+};
+var VuexOrmPluginConfig = {
+  /**
+   * Default VuexORM Database
+   */
+  database: new Database(),
+
+  /**
+   * Default Axios Config
+   */
+  http: AxiosRequestConfig
+};
+var ModuleConfig = {
+  /**
+   * Vuex Default Getters
+   */
+  getters: {
+    loading: function loading(state) {
+      return state.loading;
+    },
+    errors: function errors(state) {
+      return state.errors;
+    }
+  },
+
+  /**
+   * Vuex Default Mutations
+   */
+  mutations: {
+    /**
+     * On Default Request
+     * @param {object} state
+     */
+    onRequest: function onRequest(state) {
+      state.loading = true;
+      state.errors = [];
+    },
+
+    /**
+     * On Error Request
+     * @param {object} state
+     * @param {object} response
+     */
+    onError: function onError(state, response) {
+      state.loading = false;
+      state.errors = response.data;
+    },
+
+    /**
+     * On Success Request
+     * @param {object} state
+     * @param {object} response
+     */
+    onSuccess: function onSuccess(state) {
+      state.loading = false;
+      state.errors = [];
+    }
+  },
+
+  /**
+   * Vuex Defualt State
+   */
+  state: {
+    loading: false,
+    errors: []
+  }
+};
+var FetchConfig = {
+  name: 'fetch',
+  http: {
+    url: '',
+    method: 'get'
+  }
+};
+var GetConfig = {
+  name: 'get',
+  http: {
+    url: '/:id',
+    method: 'get'
+  }
+};
+var CreateConfig = {
+  name: 'create',
+  alias: ['insert'],
+  http: {
+    url: '',
+    method: 'post'
+  }
+};
+var UpdateConfig = {
+  name: 'update',
+  http: {
+    url: '/:id',
+    method: 'put'
+  }
+};
+var DeleteConfig = {
+  name: 'delete',
+  http: {
+    url: '/:id',
+    method: 'delete'
+  }
+};
+var ModelConfig = {
+  http: AxiosRequestConfig,
+  methods: {
+    $fetch: FetchConfig,
+    $get: GetConfig,
+    $create: CreateConfig,
+    $update: UpdateConfig,
+    $delete: DeleteConfig
+  }
+};
+// CONCATENATED MODULE: ./src/common/context.js
+
+
+
+
+
+var context_Context =
+/*#__PURE__*/
+function () {
+  /**
+   * Private constructor, called by the setup method
+   *
+   * @constructor
+   * @param {Components} components The Vuex-ORM Components collection
+   * @param {Options} options The options passed to VuexORM.install
+   */
+  function Context(components, options) {
+    classCallCheck_default()(this, Context);
+
+    this.components = components;
+    this.options = lodash_es_merge({}, VuexOrmPluginConfig, options);
+    this.database = options.database;
+
+    if (!options.database) {
+      throw new Error('database option is required to initialise!');
+    }
+  }
+  /**
+   * This is called only once and creates a new instance of the Context.
+   * @param {Components} components The Vuex-ORM Components collection
+   * @param {Options} options The options passed to VuexORM.install
+   * @returns {Context}
+   */
+
+
+  createClass_default()(Context, [{
+    key: "getModelFromState",
+
+    /**
+     * Get Model from State
+     * @param {object} state
+     */
+    value: function getModelFromState(state) {
+      return this.database.entities.find(function (_ref) {
+        var name = _ref.name;
+        return name == state.$name;
+      }).model;
+    }
+  }], [{
+    key: "setup",
+    value: function setup(components, options) {
+      this.instance = new Context(components, options);
+      return this.instance;
+    }
+    /**
+     * Get the singleton instance of the context.
+     * @returns {Context}
+     */
+
+  }, {
+    key: "getInstance",
+    value: function getInstance() {
+      return this.instance;
+    }
+  }]);
+
+  return Context;
+}();
+
+
+// CONCATENATED MODULE: ./src/actions/Action.js
+
+
+
+
+
+
+var Action_Action =
+/*#__PURE__*/
+function () {
+  function Action() {
+    classCallCheck_default()(this, Action);
+  }
+
+  createClass_default()(Action, null, [{
+    key: "transformModule",
+
+    /**
+     * Transform Module to include ModuleConfig
+     * @param {object} model
+     */
+    value: function transformModule(module) {
+      return lodash_es_merge({}, ModuleConfig, module);
+    }
+    /**
+     * Transform Model to include ModelConfig
+     * @param {object} model
+     */
+
+  }, {
+    key: "transformModel",
+    value: function transformModel(model) {
+      var context = context_Context.getInstance();
+      ModelConfig.http = lodash_es_merge({}, ModelConfig.http, context.options.http);
+      model.methodConf = lodash_es_merge({}, ModelConfig, model.methodConf);
+      model.methodConf.http.url = model.methodConf.http.url === '/' ? "/".concat(model.entity) : model.methodConf.http.url;
+      /**
+       * Add Model Interface to each model
+       */
+
+      model.getFields = function () {
+        if (!model.cachedFields) {
+          model.cachedFields = lodash_es_merge({}, {
+            $id: model.attr(undefined),
+            $isUpdating: model.boolean(false),
+            $updateErrors: model.attr([]),
+            $isDeleting: model.boolean(false),
+            $deleteErrors: model.attr([])
+          }, model.fields());
+        }
+
+        return model.cachedFields;
+      };
+
+      return model;
+    }
+    /**
+     * Transform Params and Return Endpoint
+     * @param {string} type
+     * @param {object} model
+     * @param {object} config
+     */
+
+  }, {
+    key: "transformParams",
+    value: function transformParams(type, model) {
+      var config = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+      var endpoint = "".concat(model.methodConf.http.url).concat(model.methodConf.methods[type].http.url);
+      var params = (endpoint.match(/(\/?)(:)([A-z]*)/gm) || []).map(function (param) {
+        return param.replace('/', '');
+      });
+      params.forEach(function (param) {
+        var paramName = param.replace(':', '');
+        var paramValue = paramName in config.params ? config.params[paramName] : '';
+        endpoint = endpoint.replace(param, paramValue).replace('//', '/');
+      });
+      var context = context_Context.getInstance();
+      var suffix = context.options.http.suffix;
+      if (suffix) endpoint += suffix;
+      if (config.query) endpoint += "?".concat(Object.keys(config.query).map(function (k) {
+        return "".concat(encodeURIComponent(k), "=").concat(encodeURIComponent(config.query[k]));
+      }).join('&'));
+      return endpoint;
+    }
+  }]);
+
+  return Action;
+}();
+
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/regenerator/index.js
+var regenerator = __webpack_require__(1);
+var regenerator_default = /*#__PURE__*/__webpack_require__.n(regenerator);
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/asyncToGenerator.js
+var asyncToGenerator = __webpack_require__(4);
+var asyncToGenerator_default = /*#__PURE__*/__webpack_require__.n(asyncToGenerator);
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js
+var possibleConstructorReturn = __webpack_require__(6);
+var possibleConstructorReturn_default = /*#__PURE__*/__webpack_require__.n(possibleConstructorReturn);
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/getPrototypeOf.js
+var getPrototypeOf = __webpack_require__(7);
+var getPrototypeOf_default = /*#__PURE__*/__webpack_require__.n(getPrototypeOf);
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/inherits.js
+var inherits = __webpack_require__(8);
+var inherits_default = /*#__PURE__*/__webpack_require__.n(inherits);
+
+// EXTERNAL MODULE: external "axios"
+var external_axios_ = __webpack_require__(15);
+var external_axios_default = /*#__PURE__*/__webpack_require__.n(external_axios_);
+
+// CONCATENATED MODULE: ./src/orm/axios.js
+
+
+
+
+
+
+var axios_Axios =
+/*#__PURE__*/
+function () {
+  function Axios(http) {
+    classCallCheck_default()(this, Axios);
+
+    this.instance = external_axios_default.a.create(http);
+    this.setAuthentication(http.access_token);
+    this.instance.interceptors.request.use(function (config) {
+      return http.onRequest(config);
+    }, function (error) {
+      return http.onError(error);
+    });
+    this.instance.interceptors.request.use(function (config) {
+      return http.onRequest(config);
+    }, function (error) {
+      return http.onError(error);
+    });
+    return this.instance;
+  }
+
+  createClass_default()(Axios, [{
+    key: "setAuthentication",
+    value: function setAuthentication(token) {
+      if (!token) return;
+      var isFunction = typeof token === 'function';
+      var tokenStr = isFunction ? token() : token;
+      this.instance.defaults.headers.common['Authorization'] = "Bearer ".concat(tokenStr);
+    }
+    /**
+     * Head Request
+     * @param {string} url
+     * @param {object} config
+     */
+
+  }, {
+    key: "head",
+    value: function () {
+      var _head = asyncToGenerator_default()(
+      /*#__PURE__*/
+      regenerator_default.a.mark(function _callee(url) {
+        var config,
+            _args = arguments;
+        return regenerator_default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                config = _args.length > 1 && _args[1] !== undefined ? _args[1] : {};
+                return _context.abrupt("return", this.instance.head(url, config));
+
+              case 2:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, this);
+      }));
+
+      function head(_x) {
+        return _head.apply(this, arguments);
+      }
+
+      return head;
+    }()
+    /**
+     * GET Request
+     * @param {string} url
+     * @param {object} config
+     */
+
+  }, {
+    key: "get",
+    value: function () {
+      var _get = asyncToGenerator_default()(
+      /*#__PURE__*/
+      regenerator_default.a.mark(function _callee2(url) {
+        var config,
+            _args2 = arguments;
+        return regenerator_default.a.wrap(function _callee2$(_context2) {
+          while (1) {
+            switch (_context2.prev = _context2.next) {
+              case 0:
+                config = _args2.length > 1 && _args2[1] !== undefined ? _args2[1] : {};
+                return _context2.abrupt("return", this.instance.get(url, config));
+
+              case 2:
+              case "end":
+                return _context2.stop();
+            }
+          }
+        }, _callee2, this);
+      }));
+
+      function get(_x2) {
+        return _get.apply(this, arguments);
+      }
+
+      return get;
+    }()
+    /**
+     * POST Request
+     * @param {string} url
+     * @param {object} config
+     */
+
+  }, {
+    key: "post",
+    value: function () {
+      var _post = asyncToGenerator_default()(
+      /*#__PURE__*/
+      regenerator_default.a.mark(function _callee3(url) {
+        var data,
+            config,
+            _args3 = arguments;
+        return regenerator_default.a.wrap(function _callee3$(_context3) {
+          while (1) {
+            switch (_context3.prev = _context3.next) {
+              case 0:
+                data = _args3.length > 1 && _args3[1] !== undefined ? _args3[1] : {};
+                config = _args3.length > 2 && _args3[2] !== undefined ? _args3[2] : {};
+                return _context3.abrupt("return", this.instance.post(url, data, config));
+
+              case 3:
+              case "end":
+                return _context3.stop();
+            }
+          }
+        }, _callee3, this);
+      }));
+
+      function post(_x3) {
+        return _post.apply(this, arguments);
+      }
+
+      return post;
+    }()
+    /**
+     * PATCH Request
+     * @param {string} url
+     * @param {object} config
+     */
+
+  }, {
+    key: "patch",
+    value: function () {
+      var _patch = asyncToGenerator_default()(
+      /*#__PURE__*/
+      regenerator_default.a.mark(function _callee4(url) {
+        var data,
+            config,
+            _args4 = arguments;
+        return regenerator_default.a.wrap(function _callee4$(_context4) {
+          while (1) {
+            switch (_context4.prev = _context4.next) {
+              case 0:
+                data = _args4.length > 1 && _args4[1] !== undefined ? _args4[1] : {};
+                config = _args4.length > 2 && _args4[2] !== undefined ? _args4[2] : {};
+                return _context4.abrupt("return", this.instance.patch(url, data, config));
+
+              case 3:
+              case "end":
+                return _context4.stop();
+            }
+          }
+        }, _callee4, this);
+      }));
+
+      function patch(_x4) {
+        return _patch.apply(this, arguments);
+      }
+
+      return patch;
+    }()
+    /**
+     * PUT Request
+     * @param {string} url
+     * @param {object} config
+     */
+
+  }, {
+    key: "put",
+    value: function () {
+      var _put = asyncToGenerator_default()(
+      /*#__PURE__*/
+      regenerator_default.a.mark(function _callee5(url) {
+        var data,
+            config,
+            _args5 = arguments;
+        return regenerator_default.a.wrap(function _callee5$(_context5) {
+          while (1) {
+            switch (_context5.prev = _context5.next) {
+              case 0:
+                data = _args5.length > 1 && _args5[1] !== undefined ? _args5[1] : {};
+                config = _args5.length > 2 && _args5[2] !== undefined ? _args5[2] : {};
+                return _context5.abrupt("return", this.instance.put(url, data, config));
+
+              case 3:
+              case "end":
+                return _context5.stop();
+            }
+          }
+        }, _callee5, this);
+      }));
+
+      function put(_x5) {
+        return _put.apply(this, arguments);
+      }
+
+      return put;
+    }()
+    /**
+     * DELETE Request
+     * @param {string} url
+     * @param {object} config
+     */
+
+  }, {
+    key: "delete",
+    value: function () {
+      var _delete2 = asyncToGenerator_default()(
+      /*#__PURE__*/
+      regenerator_default.a.mark(function _callee6(url) {
+        var config,
+            _args6 = arguments;
+        return regenerator_default.a.wrap(function _callee6$(_context6) {
+          while (1) {
+            switch (_context6.prev = _context6.next) {
+              case 0:
+                config = _args6.length > 1 && _args6[1] !== undefined ? _args6[1] : {};
+                return _context6.abrupt("return", this.instance.delete(url, config));
+
+              case 2:
+              case "end":
+                return _context6.stop();
+            }
+          }
+        }, _callee6, this);
+      }));
+
+      function _delete(_x6) {
+        return _delete2.apply(this, arguments);
+      }
+
+      return _delete;
+    }()
+  }]);
+
+  return Axios;
+}();
+
+
+// CONCATENATED MODULE: ./src/actions/Fetch.js
+
+
+
+
+
+
+
+
+
+
+
+var Fetch_Fetch =
+/*#__PURE__*/
+function (_Action) {
+  inherits_default()(Fetch, _Action);
+
+  function Fetch() {
+    classCallCheck_default()(this, Fetch);
+
+    return possibleConstructorReturn_default()(this, getPrototypeOf_default()(Fetch).apply(this, arguments));
+  }
+
+  createClass_default()(Fetch, null, [{
+    key: "call",
+
+    /**
+     * Call $fetch method
+     * @param {object} store
+     * @param {object} params
+     */
+    value: function () {
+      var _call = asyncToGenerator_default()(
+      /*#__PURE__*/
+      regenerator_default.a.mark(function _callee(_ref) {
+        var _this = this;
+
+        var state,
+            commit,
+            params,
+            context,
+            model,
+            endpoint,
+            axios,
+            request,
+            _args = arguments;
+        return regenerator_default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                state = _ref.state, commit = _ref.commit;
+                params = _args.length > 1 && _args[1] !== undefined ? _args[1] : {};
+                context = context_Context.getInstance();
+                model = context.getModelFromState(state);
+                endpoint = Action_Action.transformParams('$fetch', model, params);
+                axios = new axios_Axios(model.methodConf.http);
+                request = axios.get(endpoint);
+                this.onRequest(commit);
+                request.then(function (data) {
+                  return _this.onSuccess(commit, model, data);
+                }).catch(function (error) {
+                  return _this.onError(commit, error);
+                });
+                return _context.abrupt("return", request);
+
+              case 10:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, this);
+      }));
+
+      function call(_x) {
+        return _call.apply(this, arguments);
+      }
+
+      return call;
+    }()
+    /**
+     * On Request Method
+     * @param {object} commit
+     */
+
+  }, {
+    key: "onRequest",
+    value: function onRequest(commit) {
+      commit('onRequest');
+    }
+    /**
+     * On Successful Request Method
+     * @param {object} commit
+     * @param {object} model
+     * @param {object} data
+     */
+
+  }, {
+    key: "onSuccess",
+    value: function onSuccess(commit, model, data) {
+      commit('onSuccess');
+      model.insertOrUpdate({
+        data: data
+      });
+    }
+    /**
+     * On Failed Request Method
+     * @param {object} commit
+     * @param {object} error
+     */
+
+  }, {
+    key: "onError",
+    value: function onError(commit, error) {
+      commit('onError', error);
+    }
+  }]);
+
+  return Fetch;
+}(Action_Action);
+
+
+// CONCATENATED MODULE: ./src/actions/Get.js
+
+
+
+
+
+
+
+
+
+
+
+var Get_Get =
+/*#__PURE__*/
+function (_Action) {
+  inherits_default()(Get, _Action);
+
+  function Get() {
+    classCallCheck_default()(this, Get);
+
+    return possibleConstructorReturn_default()(this, getPrototypeOf_default()(Get).apply(this, arguments));
+  }
+
+  createClass_default()(Get, null, [{
+    key: "call",
+
+    /**
+     * Call $get method
+     * @param {object} store
+     * @param {object} params
+     */
+    value: function () {
+      var _call = asyncToGenerator_default()(
+      /*#__PURE__*/
+      regenerator_default.a.mark(function _callee(_ref) {
+        var _this = this;
+
+        var state,
+            commit,
+            params,
+            context,
+            model,
+            endpoint,
+            axios,
+            request,
+            _args = arguments;
+        return regenerator_default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                state = _ref.state, commit = _ref.commit;
+                params = _args.length > 1 && _args[1] !== undefined ? _args[1] : {};
+                context = context_Context.getInstance();
+                model = context.getModelFromState(state);
+                endpoint = Action_Action.transformParams('$get', model, params);
+                axios = new axios_Axios(model.methodConf.http);
+                request = axios.get(endpoint);
+                this.onRequest(commit);
+                request.then(function (data) {
+                  return _this.onSuccess(commit, model, data);
+                }).catch(function (error) {
+                  return _this.onError(commit, error);
+                });
+                return _context.abrupt("return", request);
+
+              case 10:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, this);
+      }));
+
+      function call(_x) {
+        return _call.apply(this, arguments);
+      }
+
+      return call;
+    }()
+    /**
+     * On Request Method
+     * @param {object} commit
+     */
+
+  }, {
+    key: "onRequest",
+    value: function onRequest(commit) {
+      commit('onRequest');
+    }
+    /**
+     * On Successful Request Method
+     * @param {object} commit
+     * @param {object} model
+     * @param {object} data
+     */
+
+  }, {
+    key: "onSuccess",
+    value: function onSuccess(commit, model, data) {
+      commit('onSuccess');
+      model.insertOrUpdate({
+        data: data
+      });
+    }
+    /**
+     * On Failed Request Method
+     * @param {object} commit
+     * @param {object} error
+     */
+
+  }, {
+    key: "onError",
+    value: function onError(commit, error) {
+      commit('onError', error);
+    }
+  }]);
+
+  return Get;
+}(Action_Action);
+
+
+// CONCATENATED MODULE: ./src/actions/Create.js
+
+
+
+
+
+
+
+
+
+
+
+
+var Create_Create =
+/*#__PURE__*/
+function (_Action) {
+  inherits_default()(Create, _Action);
+
+  function Create() {
+    classCallCheck_default()(this, Create);
+
+    return possibleConstructorReturn_default()(this, getPrototypeOf_default()(Create).apply(this, arguments));
+  }
+
+  createClass_default()(Create, null, [{
+    key: "call",
+
+    /**
+     * Call $create method
+     * @param {object} store
+     * @param {object} params
+     */
+    value: function () {
+      var _call = asyncToGenerator_default()(
+      /*#__PURE__*/
+      regenerator_default.a.mark(function _callee(_ref) {
+        var _this = this;
+
+        var state,
+            commit,
+            params,
+            context,
+            model,
+            endpoint,
+            axios,
+            request,
+            _args = arguments;
+        return regenerator_default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                state = _ref.state, commit = _ref.commit;
+                params = _args.length > 1 && _args[1] !== undefined ? _args[1] : {};
+
+                if (!(!params.data || Object(helpers_typeof["default"])(params) !== 'object')) {
+                  _context.next = 4;
+                  break;
+                }
+
+                throw new TypeError('You must include a data object in the params to send a POST request', params);
+
+              case 4:
+                context = context_Context.getInstance();
+                model = context.getModelFromState(state);
+                endpoint = Action_Action.transformParams('$create', model, params);
+                axios = new axios_Axios(model.methodConf.http);
+                request = axios.post(endpoint, params.data);
+                this.onRequest(commit);
+                request.then(function (data) {
+                  return _this.onSuccess(commit, model, data);
+                }).catch(function (error) {
+                  return _this.onError(commit, error);
+                });
+                return _context.abrupt("return", request);
+
+              case 12:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, this);
+      }));
+
+      function call(_x) {
+        return _call.apply(this, arguments);
+      }
+
+      return call;
+    }()
+    /**
+     * On Request Method
+     * @param {object} commit
+     */
+
+  }, {
+    key: "onRequest",
+    value: function onRequest(commit) {
+      commit('onRequest');
+    }
+    /**
+     * On Successful Request Method
+     * @param {object} commit
+     * @param {object} model
+     * @param {object} data
+     */
+
+  }, {
+    key: "onSuccess",
+    value: function onSuccess(commit, model, data) {
+      commit('onSuccess');
+      model.insertOrUpdate({
+        data: data
+      });
+    }
+    /**
+     * On Failed Request Method
+     * @param {object} commit
+     * @param {object} error
+     */
+
+  }, {
+    key: "onError",
+    value: function onError(commit, error) {
+      commit('onError', error);
+    }
+  }]);
+
+  return Create;
+}(Action_Action);
+
+
+// CONCATENATED MODULE: ./src/actions/Update.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+var Update_Update =
+/*#__PURE__*/
+function (_Action) {
+  inherits_default()(Update, _Action);
+
+  function Update() {
+    classCallCheck_default()(this, Update);
+
+    return possibleConstructorReturn_default()(this, getPrototypeOf_default()(Update).apply(this, arguments));
+  }
+
+  createClass_default()(Update, null, [{
+    key: "call",
+
+    /**
+     * Call $update method
+     * @param {object} store
+     * @param {object} params
+     * @param {boolean} save
+     */
+    value: function () {
+      var _call = asyncToGenerator_default()(
+      /*#__PURE__*/
+      regenerator_default.a.mark(function _callee(_ref) {
+        var _this = this;
+
+        var state,
+            commit,
+            params,
+            context,
+            model,
+            endpoint,
+            axios,
+            request,
+            _args = arguments;
+        return regenerator_default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                state = _ref.state, commit = _ref.commit;
+                params = _args.length > 1 && _args[1] !== undefined ? _args[1] : {
+                  save: true
+                };
+
+                if (!(!params.data || Object(helpers_typeof["default"])(params) !== 'object')) {
+                  _context.next = 4;
+                  break;
+                }
+
+                throw new TypeError('You must include a data object in the params to send a POST request', params);
+
+              case 4:
+                context = context_Context.getInstance();
+                model = context.getModelFromState(state);
+                endpoint = Action_Action.transformParams('$update', model, params);
+                axios = new axios_Axios(model.methodConf.http);
+                request = axios.put(endpoint, params.data);
+                this.onRequest(model, params);
+                request.then(function (data) {
+                  return _this.onSuccess(model, params, data, params.save);
+                }).catch(function (error) {
+                  return _this.onError(model, params, error);
+                });
+                return _context.abrupt("return", request);
+
+              case 12:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, this);
+      }));
+
+      function call(_x) {
+        return _call.apply(this, arguments);
+      }
+
+      return call;
+    }()
+    /**
+     * On Request Method
+     * @param {object} model
+     * @param {object} params
+     */
+
+  }, {
+    key: "onRequest",
+    value: function onRequest(model, params) {
+      model.update({
+        where: params.params.id,
+        data: {
+          $isUpdating: true,
+          $updateErrors: []
+        }
+      });
+    }
+    /**
+     * On Successful Request Method
+     * @param {object} model
+     * @param {object} params
+     * @param {object} data
+     */
+
+  }, {
+    key: "onSuccess",
+    value: function onSuccess(model, params, data, save) {
+      if (save === true) {
+        model.update({
+          where: params.params.id || data.id,
+          data: lodash_es_merge({}, data, {
+            $isUpdating: false,
+            $updateErrors: []
+          })
+        });
+      }
+    }
+    /**
+     * On Failed Request Method
+     * @param {object} model
+     * @param {object} params
+     * @param {object} error
+     */
+
+  }, {
+    key: "onError",
+    value: function onError(model, params, error) {
+      model.update({
+        where: params.params.id,
+        data: {
+          $isUpdating: false,
+          $updateErrors: error
+        }
+      });
+    }
+  }]);
+
+  return Update;
+}(Action_Action);
+
+
+// CONCATENATED MODULE: ./src/actions/Delete.js
+
+
+
+
+
+
+
+
+
+
+
+var Delete_Delete =
+/*#__PURE__*/
+function (_Action) {
+  inherits_default()(Delete, _Action);
+
+  function Delete() {
+    classCallCheck_default()(this, Delete);
+
+    return possibleConstructorReturn_default()(this, getPrototypeOf_default()(Delete).apply(this, arguments));
+  }
+
+  createClass_default()(Delete, null, [{
+    key: "call",
+
+    /**
+     * Call $delete method
+     * @param {object} store
+     * @param {object} params
+     */
+    value: function () {
+      var _call = asyncToGenerator_default()(
+      /*#__PURE__*/
+      regenerator_default.a.mark(function _callee(_ref) {
+        var _this = this;
+
+        var state,
+            commit,
+            params,
+            context,
+            model,
+            endpoint,
+            axios,
+            request,
+            _args = arguments;
+        return regenerator_default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                state = _ref.state, commit = _ref.commit;
+                params = _args.length > 1 && _args[1] !== undefined ? _args[1] : {};
+                context = context_Context.getInstance();
+                model = context.getModelFromState(state);
+                endpoint = Action_Action.transformParams('$delete', model, params);
+                axios = new axios_Axios(model.methodConf.http);
+                request = axios.delete(endpoint);
+                this.onRequest(model, params);
+                request.then(function (data) {
+                  return _this.onSuccess(model, params, data);
+                }).catch(function (error) {
+                  return _this.onError(model, params, error);
+                });
+                return _context.abrupt("return", request);
+
+              case 10:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, this);
+      }));
+
+      function call(_x) {
+        return _call.apply(this, arguments);
+      }
+
+      return call;
+    }()
+    /**
+     * On Request Method
+     * @param {object} model
+     * @param {object} params
+     */
+
+  }, {
+    key: "onRequest",
+    value: function onRequest(model, params) {
+      model.update({
+        where: params.params.id,
+        data: {
+          $isDeleting: true,
+          $deleteErrors: []
+        }
+      });
+    }
+    /**
+     * On Successful Request Method
+     * @param {object} model
+     * @param {object} params
+     * @param {object} data
+     */
+
+  }, {
+    key: "onSuccess",
+    value: function onSuccess(model, params, data) {
+      model.delete({
+        where: params.params.id || data.id
+      });
+    }
+    /**
+     * On Failed Request Method
+     * @param {object} model
+     * @param {object} params
+     * @param {object} error
+     */
+
+  }, {
+    key: "onError",
+    value: function onError(model, params, error) {
+      model.update({
+        where: params.params.id,
+        data: {
+          $isDeleting: false,
+          $deleteErrors: error
+        }
+      });
+    }
+  }]);
+
+  return Delete;
+}(Action_Action);
+
+
+// CONCATENATED MODULE: ./src/vuex-orm-axios.js
+
+
+
+
+
+
+
+
+
+
+var vuex_orm_axios_VuexOrmAxios =
+/*#__PURE__*/
+function () {
+  /**
+   * @constructor
+   * @param {Components} components The Vuex-ORM Components collection
+   * @param {Options} options The options passed to VuexORM.install
+   */
+  function VuexOrmAxios(components, options) {
+    classCallCheck_default()(this, VuexOrmAxios);
+
+    context_Context.setup(components, options);
+    this.setupActions();
+    this.setupModels();
+  }
+  /**
+   * This method will setup following Vuex actions: $fetch, $get, $create, $update, $delete
+   */
+
+
+  createClass_default()(VuexOrmAxios, [{
+    key: "setupActions",
+    value: function setupActions() {
+      var context = context_Context.getInstance();
+      context.components.Actions.$fetch = Fetch_Fetch.call.bind(Fetch_Fetch);
+      context.components.Actions.$get = Get_Get.call.bind(Get_Get);
+      context.components.Actions.$create = Create_Create.call.bind(Create_Create);
+      context.components.Actions.$update = Update_Update.call.bind(Update_Update);
+      context.components.Actions.$delete = Delete_Delete.call.bind(Delete_Delete);
+    }
+    /**
+     * This method will setup following model methods: Model.$fetch, Model.$get, Model.$create,
+     * Model.$update, Model.$delete
+     */
+
+  }, {
+    key: "setupModels",
+    value: function setupModels() {
+      var context = context_Context.getInstance();
+      /**
+       * Transform Model and Modules
+       */
+
+      context.database.entities.map(function (entity) {
+        entity.module = Action_Action.transformModule(entity.module);
+        entity.model = Action_Action.transformModel(entity.model);
+        return entity;
+      });
+
+      context.components.Model.$fetch = function () {
+        var config = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+        return this.dispatch('$fetch', config);
+      };
+
+      context.components.Model.$get = function () {
+        var config = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+        return this.dispatch('$get', config);
+      };
+
+      context.components.Model.$create = function () {
+        var config = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+        return this.dispatch('$create', config);
+      };
+
+      context.components.Model.$update = function () {
+        var config = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+        return this.dispatch('$update', config);
+      };
+
+      context.components.Model.$delete = function () {
+        var config = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+        return this.dispatch('$delete', config);
+      };
+    }
+  }]);
+
+  return VuexOrmAxios;
+}();
+
+
+// CONCATENATED MODULE: ./src/index.js
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return src_VuexOrmAxiosPlugin; });
+
+
+
+
+var src_VuexOrmAxiosPlugin =
+/*#__PURE__*/
+function () {
+  function VuexOrmAxiosPlugin() {
+    classCallCheck_default()(this, VuexOrmAxiosPlugin);
+  }
+
+  createClass_default()(VuexOrmAxiosPlugin, null, [{
+    key: "install",
+
+    /**
+     * This is called, when VuexORM.install(VuexOrmAxios, options) is called.
+     *
+     * @param {Components} components The Vuex-ORM Components collection
+     * @param {Options} options The options passed to VuexORM.install
+     * @returns {VuexOrmAxios}
+     */
+    value: function install(components, options) {
+      return new vuex_orm_axios_VuexOrmAxios(components, options);
+    }
+  }]);
+
+  return VuexOrmAxiosPlugin;
+}();
+
+
+
+/***/ })
+/******/ ]);
+//# sourceMappingURL=index.js.map
