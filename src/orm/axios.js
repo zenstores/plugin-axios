@@ -2,19 +2,18 @@ import axios from 'axios'
 
 export default class Axios {
   constructor(http) {
-    this.instance = axios.create(http);
-    this.setAuthentication(http.access_token);
+    this.instance = axios.create(http)
+    this.setAuthentication(http.access_token)
 
     this.instance.interceptors.request.use(
       config => http.onRequest(config),
       error => http.onError(error),
-    );
+    )
 
-
-    this.instance.interceptors.request.use(
-      config => http.onRequest(config),
+    this.instance.interceptors.response.use(
+      config => http.onResponse(config),
       error => http.onError(error),
-    );
+    )
 
     return this.instance;
   }

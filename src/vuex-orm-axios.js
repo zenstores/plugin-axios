@@ -43,7 +43,8 @@ export default class VuexOrmAxios {
      */
     context.database.entities.map(entity => {
       entity.module = Action.transformModule(entity.module)
-      entity.model = Action.transformModel(entity.model)
+      // NOTE: This has been removed because it causes issues (IE11)
+      // entity.model = Action.transformModel(entity.model)
       return entity
     })
 

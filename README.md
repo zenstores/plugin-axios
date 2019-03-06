@@ -19,6 +19,10 @@ VuexORM.use(VuexORMAxios, {
       'Accept': 'application/json',
       'Content-Type': 'application/json'
     }
+  },
+  // Include an HTTPConf for each entity
+  modelHttpConfigs: {
+    'todo': TodoHTTPConf
   }
 })
 ..
@@ -29,6 +33,46 @@ export default () => new Vuex.Store({
 })
 
 ```
+
+### HTTPConf (for each model)
+``` js
+export const TodoHTTPConf = {
+  http: {
+    url: '/batch'
+  },
+  methods: {
+    $fetch: {
+      name: 'fetch',
+      http: {
+        url: '',
+        method: 'get'
+      }
+    },
+    $get: {
+      name: 'get',
+      http: {
+        url: '/:id',
+        method: 'get',
+      },
+    },
+    $update: {
+      name: 'update',
+      http: {
+        url: '/:id/mark/',
+        method: 'put'
+      }
+    },
+    $delete: {
+      name: 'delete',
+      http: {
+        url: '/:id',
+        method: 'delete'
+      }
+    }
+  }
+}
+```
+
 
 # Axios Request Config
 
@@ -203,7 +247,7 @@ User.$get({
   params: {
     id: 1
   }
-}); 
+});
 
 /**
  * @uri `/users`
